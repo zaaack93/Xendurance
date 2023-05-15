@@ -1097,6 +1097,10 @@ var SlideshowCarousel = class extends EffectCarousel5 {
         });
       });
     }
+
+    document.addEventListener('slide-category:update', (event) => {
+      this.goToSpecificSlide(event.detail?.category)
+    });
   }
   get transitionType() {
     return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "fade" : this.getAttribute("transition");
@@ -1170,6 +1174,18 @@ var SlideshowCarousel = class extends EffectCarousel5 {
       [toSlide.querySelectorAll('[data-sequence="subheading"], .button'), { opacity: [0, 1] }, { duration: 0.3, at: "content" }],
       [...getHeadingKeyframe4(toSlide.querySelector('[data-sequence="heading"]'), { duration: 0.3, at: "content" })]
     ]);
+  }
+  /**
+   * goSlideByCategory
+   */
+  goToSpecificSlide(category){
+    const slides = Array.from(this.querySelectorAll('.slideshow__slide'));
+        slides.forEach((slide,index) => {
+          const slideChild=slide.querySelector('.content-over-media')
+          if(slideChild.dataset.category==category){
+            this.select(index)
+          }
+    });
   }
 };
 if (!window.customElements.get("x-slideshow")) {

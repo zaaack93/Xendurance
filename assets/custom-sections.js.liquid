@@ -1,0 +1,60 @@
+// js/sections/Hero-section-with-bubbles.js
+class BubblesContainer extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+    connectedCallback() {
+      this.render();
+    }
+  
+    render() {
+      const categoryBubbles = Array.from(this.querySelectorAll('.bubble'));
+      const groupedBlocks = groupBlocksByCategory(categoryBubbles);
+  
+      const tabHeader = document.createElement('div');
+      tabHeader.classList.add('tab-header');
+  
+      groupedBlocks.forEach((category) => {
+        const tabItem = document.createElement('div');
+        tabItem.classList.add('tab-item');
+        tabItem.textContent = category;
+        tabItem.addEventListener('click', () => {
+          this.toggleVisibility(category);
+        });
+        tabHeader.appendChild(tabItem);
+      });
+  
+      this.prepend(tabHeader);
+      this.toggleVisibility(groupedBlocks[0])
+    }
+  
+    toggleVisibility(category) {
+        const bubbles = Array.from(this.querySelectorAll('.bubble'));
+        bubbles.forEach((bubble) => {
+            if (bubble.dataset.category === category) {
+                bubble.style.display = 'block';
+            }
+            else{
+                bubble.style.display = 'none';
+            }
+        });
+
+        const tabItems = Array.from(this.querySelectorAll('.tab-item'));
+        tabItems.forEach((tabItem) => {
+          if (tabItem.textContent === category) {
+            tabItem.classList.add('active');
+          } else {
+            tabItem.classList.remove('active');
+          }
+        });
+        document.dispatchEvent(new CustomEvent('slide-category:update', { detail: { category } }));
+    }
+  }
+  
+  function groupBlocksByCategory(blocks) {
+    const categories = new Set(blocks.map((block) => block.dataset.category));
+    return Array.from(categories);
+  }
+  
+  customElements.define('bubbles-container', BubblesContainer);

@@ -1,0 +1,101 @@
+bubbles-container{
+    top: -1px;
+    position: relative;
+    .tab-header {
+        display: flex;
+        background-color: white;
+      
+      .tab-item {
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        margin-right: 10px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+        border-radius: 21.5px 21.5px 0px 0px;
+        background: rgba(246, 246, 247, 0.5);
+        margin: 0px;
+        width: 50%;
+      }
+      
+      .tab-item.active {
+        background-color: #ECEDEE
+      }
+    }
+
+    .bubbles-inner{
+        position: relative;
+        display: flex;
+        column-gap: 20px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 19px;
+        padding-bottom: 13px;
+        background-color: #ECEDEE;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .bubble {
+            padding: 0px;
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 19%;
+            min-width: 72px;
+            a{
+                border-radius: 50%;
+                border: 3px solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                aspect-ratio: 1 / 1;
+                width: 100%;
+                img{
+                    width: calc(100% - 5px);
+                    aspect-ratio: 1px;
+                    border-radius: 50%;
+                }
+        }
+        h3{
+            margin-top: 7px;
+            display: block;
+            text-align: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #000000;
+        }
+        }
+    }
+}
+.hero-section-wtih-bubble{
+    @media only screen and (max-width: 769px){
+        .prose{
+            button{
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+        .text-custom{
+            grid-area: 5 / 2 / auto / span 1;
+        }
+        .content-over-media{
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+  

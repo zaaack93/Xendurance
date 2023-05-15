@@ -1,0 +1,93 @@
+bubbles-container {
+  top: -1px;
+  position: relative;
+}
+bubbles-container .tab-header {
+  display: flex;
+  background-color: white;
+}
+bubbles-container .tab-header .tab-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 21.5px 21.5px 0px 0px;
+  background: rgba(246, 246, 247, 0.5);
+  margin: 0px;
+  width: 50%;
+}
+bubbles-container .tab-header .tab-item.active {
+  background-color: #ECEDEE;
+}
+bubbles-container .bubbles-inner {
+  position: relative;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 19px;
+  padding-bottom: 13px;
+  background-color: #ECEDEE;
+  overflow-x: scroll;
+}
+bubbles-container .bubbles-inner::-webkit-scrollbar {
+  display: none;
+}
+bubbles-container .bubbles-inner .bubble {
+  padding: 0px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 19%;
+  min-width: 72px;
+}
+bubbles-container .bubbles-inner .bubble a {
+  border-radius: 50%;
+  border: 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+bubbles-container .bubbles-inner .bubble a img {
+  width: calc(100% - 5px);
+  aspect-ratio: 1px;
+  border-radius: 50%;
+}
+bubbles-container .bubbles-inner .bubble h3 {
+  margin-top: 7px;
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 769px) {
+  .hero-section-wtih-bubble .prose button {
+    width: 100%;
+    max-width: 360px;
+  }
+  .hero-section-wtih-bubble .text-custom {
+    grid-area: 5/2/auto/span 1;
+  }
+  .hero-section-wtih-bubble .content-over-media::before {
+    display: none;
+  }
+}
