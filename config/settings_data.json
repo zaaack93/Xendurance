@@ -19,8 +19,9 @@
     "secondary_button_background": "#353435",
     "secondary_button_text_color": "#ffffff",
     "product_card_text_color": "#353435",
-    "product_on_sale_accent": "#e93b40",
-    "product_primary_badge_background": "#00a9e0",
+    "product_on_sale_accent": "#ffffff",
+    "product_sold_out_badge_background": "#ffffff",
+    "product_primary_badge_background": "#ffffff",
     "heading_font": "inter_n6",
     "heading_font_size": "large",
     "heading_letter_spacing": 0,
@@ -33,6 +34,7 @@
     "reduce_menu_animation": false,
     "heading_apparition": "split_fade",
     "show_vendor": false,
+    "show_quick_buy": false,
     "show_product_rating": true,
     "product_color_display": "swatch",
     "product_info_alignment": "start",
@@ -40,7 +42,15 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Sound": {
