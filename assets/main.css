@@ -52,6 +52,7 @@ bubbles-container .bubbles-inner .bubble {
   flex-shrink: 0;
   flex-basis: 19%;
   min-width: 72px;
+  max-width: 84px;
 }
 bubbles-container .bubbles-inner .bubble a {
   border-radius: 50%;
@@ -79,10 +80,19 @@ bubbles-container .bubbles-inner .bubble h3 {
   color: #000000;
 }
 
-@media only screen and (max-width: 769px) {
-  .hero-section-wtih-bubble .prose button {
+.hero-section-wtih-bubble .prose .button--secondary {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 699px) {
+  .hero-section-wtih-bubble .prose {
+    color: #1A191C;
+  }
+  .hero-section-wtih-bubble .prose .button {
     width: 100%;
     max-width: 360px;
+  }
+  .hero-section-wtih-bubble .prose .button--secondary {
+    display: none;
   }
   .hero-section-wtih-bubble .text-custom {
     grid-area: 5/2/auto/span 1;

@@ -52,6 +52,7 @@ bubbles-container{
             flex-shrink: 0;
             flex-basis: 19%;
             min-width: 72px;
+            max-width: 84px;
             a{
                 border-radius: 50%;
                 border: 3px solid;
@@ -81,11 +82,20 @@ bubbles-container{
     }
 }
 .hero-section-wtih-bubble{
-    @media only screen and (max-width: 769px){
+    .prose{
+        .button--secondary{
+            margin-left: 15px;
+        }
+    }
+    @media only screen and (max-width: 699px){
         .prose{
-            button{
+            color: #1A191C;
+            .button{
                 width: 100%;
                 max-width: 360px;
+            }
+            .button--secondary{
+                display: none;
             }
         }
         .text-custom{
