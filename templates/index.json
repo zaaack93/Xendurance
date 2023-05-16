@@ -3,33 +3,6 @@
     "db387067-1395-44ce-8b90-da3484c2ea9f": {
       "type": "Hero-section-with-bubbles",
       "blocks": {
-        "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0": {
-          "type": "image",
-          "settings": {
-            "bubble_category": "Skin",
-            "image": "shopify:\/\/shop_images\/XND_-_Hero.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Extreme_Endurance_3_c928c64d-8128-4d05-a984-42eb58b87ebf.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "Effective skincare you can actually trust. Informed Sport Certified.",
-            "title": "First Ever skincare tested for banned substances",
-            "heading_tag": "h2",
-            "button_text": "Shop All SKIN",
-            "button_link": "shopify:\/\/collections\/all",
-            "secondary_button_text": "Shop All SKIN",
-            "secondary_button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#00a9e0",
-            "button_text_color": "#ffffff",
-            "secondary_button_background": "#f83a3a",
-            "secondary_button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "#ecedee",
-            "background_gradient": ""
-          }
-        },
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-1": {
           "type": "image",
           "settings": {
@@ -57,14 +30,31 @@
             "background_gradient": ""
           }
         },
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
-          "type": "text",
+        "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0": {
+          "type": "image",
           "settings": {
             "bubble_category": "Skin",
-            "bubble_collection": "",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-Transparent_with_shadow.png",
-            "bubble_text": "All SKIN"
+            "image": "shopify:\/\/shop_images\/XND_-_Hero.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Extreme_Endurance_3_c928c64d-8128-4d05-a984-42eb58b87ebf.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "Effective skincare you can actually trust. Informed Sport Certified.",
+            "title": "First Ever skincare tested for banned substances",
+            "heading_tag": "h2",
+            "button_text": "Shop All SKIN",
+            "button_link": "shopify:\/\/collections\/all",
+            "secondary_button_text": "Shop All SKIN",
+            "secondary_button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#00a9e0",
+            "button_text_color": "#ffffff",
+            "secondary_button_background": "#f83a3a",
+            "secondary_button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "#ecedee",
+            "background_gradient": ""
           }
         },
         "058688b9-1ab6-4706-8af8-256285b23670": {
@@ -75,6 +65,16 @@
             "bubble_color": "#e93b40",
             "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
             "bubble_text": "Energy"
+          }
+        },
+        "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Skin",
+            "bubble_collection": "",
+            "bubble_color": "#00a9e0",
+            "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-Transparent_with_shadow.png",
+            "bubble_text": "All SKIN"
           }
         },
         "875832ff-ea4f-469d-9149-27254d87110c": {
@@ -139,10 +139,10 @@
         }
       },
       "block_order": [
-        "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0",
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-1",
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
+        "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0",
         "058688b9-1ab6-4706-8af8-256285b23670",
+        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
         "875832ff-ea4f-469d-9149-27254d87110c",
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c",
         "f4122a0f-70e0-4220-adf0-3f2f634c9c85",
