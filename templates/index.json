@@ -57,6 +57,16 @@
             "background_gradient": ""
           }
         },
+        "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Skin",
+            "bubble_collection": "",
+            "bubble_color": "#00a9e0",
+            "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-Transparent_with_shadow.png",
+            "bubble_text": "All SKIN"
+          }
+        },
         "058688b9-1ab6-4706-8af8-256285b23670": {
           "type": "text",
           "settings": {
@@ -107,16 +117,6 @@
             "bubble_text": "Recovery"
           }
         },
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-Transparent_with_shadow.png",
-            "bubble_text": "All SKIN"
-          }
-        },
         "8c296aac-2089-4f5a-aa10-15dab5e4fbea": {
           "type": "text",
           "settings": {
@@ -141,12 +141,12 @@
       "block_order": [
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0",
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-1",
+        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
         "058688b9-1ab6-4706-8af8-256285b23670",
         "875832ff-ea4f-469d-9149-27254d87110c",
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c",
         "f4122a0f-70e0-4220-adf0-3f2f634c9c85",
         "c2b11881-c704-447d-8eaa-4f0ec9f01ad8",
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
         "8c296aac-2089-4f5a-aa10-15dab5e4fbea",
         "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac"
       ],
