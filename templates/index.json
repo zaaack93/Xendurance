@@ -9,12 +9,12 @@
             "bubble_category": "Supplements",
             "image": "shopify:\/\/shop_images\/6Q5A6288_fdff5d93-1aa1-46e4-8372-3cf9140bc127.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Extreme_Endurance.jpg",
-            "content_max_width": 780,
+            "content_max_width": 400,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
             "title": "Certified Sport and Performance Formulas",
-            "heading_tag": "h2",
+            "heading_tag": "h3",
             "button_text": "Shop All Supplements",
             "button_link": "",
             "secondary_button_text": "Shop All SkIn",
@@ -25,7 +25,7 @@
             "secondary_button_background": "#00a9e0",
             "secondary_button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "#ecedee",
             "background_gradient": ""
           }
@@ -153,7 +153,7 @@
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
-        "image_size": "auto",
+        "image_size": "lg",
         "controls_type": "none",
         "transition_type": "fade_with_text",
         "autoplay": false,
