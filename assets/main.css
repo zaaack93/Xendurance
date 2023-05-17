@@ -42,31 +42,30 @@ bubbles-container .bubbles-inner {
   background-color: #ECEDEE;
   overflow-x: scroll;
 }
-bubbles-container .bubbles-inner::-webkit-scrollbar {
-  display: none;
-}
 bubbles-container .bubbles-inner .bubble {
   padding: 0px;
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 19%;
-  min-width: 72px;
-  max-width: 84px;
+  width: 71px;
 }
 bubbles-container .bubbles-inner .bubble a {
-  border-radius: 50%;
-  border: 3px solid;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1/1;
-  width: 100%;
+  width: 71px;
+  display: block;
 }
-bubbles-container .bubbles-inner .bubble a img {
-  width: calc(100% - 5px);
-  aspect-ratio: 1px;
-  border-radius: 50%;
+bubbles-container .bubbles-inner .bubble .bubble_image_container {
+  position: relative;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #141414, #7b7b7b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 50px;
+}
+bubbles-container .bubbles-inner .bubble .bubble_image_container img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid transparent;
 }
 bubbles-container .bubbles-inner .bubble h3 {
   margin-top: 7px;
@@ -78,6 +77,25 @@ bubbles-container .bubbles-inner .bubble h3 {
   font-size: 12px;
   line-height: 14px;
   color: #000000;
+}
+
+.judge_me_widget_container {
+  background-color: #353435;
+  color: white;
+}
+.judge_me_widget_container .jdgm-all-reviews-text__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: white;
+  text-align: center;
+  display: block;
 }
 
 .hero-section-wtih-bubble .prose .button--secondary {

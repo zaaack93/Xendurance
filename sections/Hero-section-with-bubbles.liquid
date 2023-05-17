@@ -55,15 +55,41 @@ CSS
         {% for block in section.blocks %}
          {%if block.type == "text" %}
           <div class="bubble" data-category="{{ block.settings.bubble_category }}">
-            <a href="{{ block.settings.bubble_collection }}" style="border-color:{{ block.settings.bubble_color }}">
-              <img src="{{ block.settings.bubble_image | img_url }}" alt="{{ block.settings.bubble_text }}" loading="lazy" />
-            </a>
+            <a href="{{ block.settings.bubble_collection }}">
+            <div class="bubble_image_container" style="border-color:{{ block.settings.bubble_color }}">
+              <img
+                srcset="{%- if block.settings.bubble_image.width >= 165 -%}{{ block.settings.bubble_image | img_url: '165x' }} 165w,{%- endif -%}
+                  {%- if block.settings.bubble_image.width >= 330 -%}{{ block.settings.bubble_image | img_url: '330x' }} 330w,{%- endif -%}
+                  {%- if block.settings.bubble_image.width >= 535 -%}{{ block.settings.bubble_image | img_url: '535x' }} 535w,{%- endif -%}
+                  {%- if block.settings.bubble_image.width >= 750 -%}{{ block.settings.bubble_image | img_url: '750x' }} 750w,{%- endif -%}
+                  {%- if block.settings.bubble_image.width >= 1000 -%}{{ block.settings.bubble_image | img_url: '1000x' }} 1000w,{%- endif -%}
+                  {%- if block.settings.bubble_image.width >= 1500 -%}{{ block.settings.bubble_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                  {%- if block.settings.bubble_image.width >= 3000 -%}{{ block.settings.bubble_image | img_url: '3000x' }} 3000w{%- endif -%}"
+                src="{{ block.settings.bubble_image | img_url: '1500x' }}"
+                sizes="
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                (min-width: 750px) {% if section.blocks.size > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                calc(100vw - 3rem)"
+                alt="{{ block.settings.bubble_text | escape }}"
+                height="{{ block.settings.bubble_image.height }}"
+                width="{{ block.settings.bubble_image.width }}"
+                loading="lazy"
+                class="motion-reduce"
+              />
+            </div>
             <h3>{{ block.settings.bubble_text }}</h3>
+          </a>
           </div>
           {%endif%}
         {% endfor %}
       </div>
       </bubbles-container>
+
+
+      {%comment%}Judgme widget{%endcomment%}
+      <div class="judge_me_widget_container sm:hidden">
+        {% render 'judgeme_widgets', widget_type: 'judgeme_all_reviews_text', concierge_install: false%}
+      </div>
 
     {%- comment -%}
     ------------------------------------------------------------------------------------------------------------------------
