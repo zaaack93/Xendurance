@@ -98,6 +98,31 @@ bubbles-container .bubbles-inner .bubble h3 {
   display: block;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.judge_me_widget_container .jdgm-all-reviews-text__text .rating-container {
+  display: inline-flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  top: 1.2px;
+  position: relative;
+  margin-right: 9px;
+}
+.judge_me_widget_container .jdgm-all-reviews-text__text .rating-container svg {
+  width: 15px;
+  height: 15px;
+}
+.judge_me_widget_container .jdgm-all-reviews-text__text .plus--icon {
+  position: relative;
+  top: -1.2px;
+}
+.judge_me_widget_container .jdgm-all-reviews-text__text .rating-text-separator {
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 12px;
+  position: relative;
+  top: -3px;
+}
 
 .hero-section-wtih-bubble .prose .button--secondary {
   margin-left: 15px;
