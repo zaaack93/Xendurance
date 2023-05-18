@@ -86,10 +86,7 @@ CSS
       </bubbles-container>
 
 
-      {%comment%}Judgme widget{%endcomment%}
-      <div class="judge_me_widget_container sm:hidden">
-        {% render 'judgeme_widgets', widget_type: 'judgeme_all_reviews_text', concierge_install: false%}
-      </div>
+
 
     {%- comment -%}
     ------------------------------------------------------------------------------------------------------------------------
@@ -140,13 +137,19 @@ CSS
             {%- endif -%}
   
             {%- comment -%}---------------- CONTENT ----------------{%- endcomment -%}
-            {%- capture content_class -%}{{ block.settings.mobile_text_position }} {{ block.settings.desktop_text_position }}{%- endcapture -%}
+            {%- capture content_class -%}{{ block.settings.mobile_text_position }} {{ block.settings.desktop_text_position }} container-containt-bottom {%- endcapture -%}
   
             <div {% render 'surface', class: content_class, text_color: block.settings.text_color %}>
+              
+              {%comment%}Judgme widget{%endcomment%}
+              <div class="judge_me_widget_container sm:hidden">
+                {% render 'judgeme_widgets', widget_type: 'judgeme_all_reviews_text', concierge_install: false%}
+              </div>
+
               <div class="prose">
                 {%- if block.settings.title != blank -%}
                   <p class="{{ block.settings.heading_tag }}" data-sequence="heading">
-                    {%- render 'styled-text', content: block.settings.title, apparition_effect: true -%}
+                    {%- render 'styled-text', content: block.settings.title, apparition_effect: false -%}
                   </p>
                 {%- endif -%}
 
@@ -159,6 +162,11 @@ CSS
                 {%- endif -%}
                 {%- if block.settings.secondary_button_text != blank -%}
                   {%- render 'button', href: block.settings.secondary_button_link, content: block.settings.secondary_button_text, size: 'lg',secondary:true, background: block.settings.secondary_button_background, text_color: block.settings.secondary_button_text_color -%}
+                {%- endif -%}
+                {%- if block.settings.content != blank -%}
+                  <div {{ block.shopify_attributes }} class="content--footer">
+                    {{- block.settings.content -}}
+                  </div>
                 {%- endif -%}
               </div>
             </div>
@@ -507,6 +515,12 @@ CSS
             "id": "subheading",
             "label": "Subheading",
             "default": "Tell your story"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content",
+            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           },
           {
             "type": "text",
