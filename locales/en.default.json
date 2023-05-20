@@ -59,6 +59,7 @@
   "header": {
     "general": {
       "account": "Account",
+      "account_new": "Login to Account",
       "open_menu": "Open navigation menu",
       "open_search": "Open search",
       "open_account": "Open account page",

@@ -76,7 +76,7 @@ Supported variables
                 {{- link_level_2 -}}
 
                 <div class="panel__wrapper" {% if mega_menu_block.settings.promo_content_layout == 'grid' or mega_menu_block.settings.promo_content_layout == 'collage' %}style="--panel-wrapper-justify-content: flex-start"{% endif %} hidden>
-                  <ul class="v-stack {% if is_mega_menu and is_image_shown == 'show' %}gap-3{% else %}gap-4{% endif %}">
+                  <ul class="v-stack link_item_sublevel {% if is_mega_menu and is_image_shown == 'show' %}gap-3{% else %}gap-4{% endif %}">
                     <li class="{% if layout != 'drawer' %}lg:hidden{% endif %}">
                       <button class="text-with-icon h6 text-subdued" data-panel="0">
                         {%- render 'icon' with 'chevron-left', direction_aware: true -%} {{ link.title }}
@@ -92,29 +92,22 @@ Supported variables
                               <span class="circle-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
                             </button>
                           {%- else -%}
-                            <a class="group {% if is_image_shown and is_mega_menu %}h-stack gap-4{% else %}block w-full{% endif %}" href="{{ sub_link.url }}">
-                              {%- if is_image_shown and sub_link.object != blank and is_mega_menu -%}
-                                {%- assign sub_link_image = '' -%}
+                            <a class="group v-stack gap-3" href="{{ sub_link.url }}">
+                              <div class="product-card__figure">
+                              {% capture image_link %}
+                                {% assign imgAssetLink = 'menu-link-' | append: sub_link.title | replace: " ","-" | downcase %}
+                                {% assign imgAssetLink = imgAssetLink | append: '.jpg' %}
+                                {% assign imgAssetLink = imgAssetLink | file_url %}
+                                {% if imgAssetLink != blank %}
+                                  <img
+                                    class="nav-item_linkimage"
+                                    src="{{ imgAssetLink }}"
+                                    loading="lazy">
+                                {% endif %}
+                              {% endcapture %}
 
-                                {%- case sub_link.type -%}
-                                  {%- when 'collection_link' -%}
-                                    {%- assign sub_link_image = sub_link.object.products.first.featured_media -%}
-
-                                  {%- when 'product_link' -%}
-                                    {%- assign sub_link_image = sub_link.object.featured_media -%}
-
-                                  {%- when 'blog_link' -%}
-                                    {%- assign sub_link_image = sub_link.object.articles.first.image -%}
-
-                                  {%- when 'article_link' -%}
-                                    {%- assign sub_link_image = sub_link.object.image -%}
-                                {%- endcase -%}
-
-                                {%- if sub_link_image != '' -%}
-                                  {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
-                                {%- endif -%}
-                              {%- endif -%}
-
+                              {{ image_link }}
+                              </span>
                               <span><span class="reversed-link">{{ sub_link.title }}</span></span>
                             </a>
                           {%- endif -%}
@@ -180,12 +173,12 @@ Supported variables
             {%- endif -%}
           {%- endfor -%}
         </ul>
-
+        <div class="separator-content"></div>
         {%- if secondary_menu != blank -%}
-          <ul class="v-stack gap-3">
+          <ul class="v-stack gap-5 secondary-items-list">
             {%- for link in secondary_menu.links -%}
               <li>
-                <a href="{{ link.url }}" class="h6 group"><span><span class="reversed-link">{{ link.title }}</span></span></a>
+                <a href="{{ link.url }}" class="group"><span><span class="reversed-link">{{ link.title }}</span></span></a>
               </li>
             {%- endfor -%}
           </ul>
@@ -214,8 +207,19 @@ Supported variables
         {%- endif -%}
 
         {%- if social_media != blank or country_selector or locale_selector or shop.customer_accounts_enabled -%}
-          <div class="panel-footer v-stack gap-5">
+          <div class="panel-footer v-stack gap-4">
+            {%comment%}
             {{- social_media -}}
+            {%endcomment%}
+            {%- if settings.footer_button_text != blank -%}
+              {% render 'button', content: settings.footer_button_text, href: settings.footer_button_url, size: 'xl', background: settings.footer_button_background, text_color: settings.footer_button_text_color %}
+            {%- endif -%}
+            {%comment%}Judgme widget{%endcomment%}
+            {% if settings.footer_collout_badge %}
+              <div class="judge_me_widget_container">
+                {% render 'judgeme_widgets', widget_type: 'judgeme_all_reviews_text', concierge_install: false%}
+              </div>
+            {%endif%}
 
             {%- if country_selector or locale_selector or shop.customer_accounts_enabled -%}
               <div class="panel-footer__localization-wrapper h-stack gap-6 border-t md:hidden">
@@ -228,7 +232,7 @@ Supported variables
                 {%- endif -%}
 
                 {%- if shop.customer_accounts_enabled -%}
-                  <a href="{{ routes.account_url }}" class="panel-footer__account-link bold text-sm">{{- 'header.general.account' | t -}}</a>
+                  <a href="{{ routes.account_url }}" class="panel-footer__account-link bold text-sm">{{- 'header.general.account_new' | t -}}</a>
                 {%- endif -%}
               </div>
             {%- endif -%}

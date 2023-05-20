@@ -228,6 +228,7 @@ the underlying logic of the menu.
       {%- endcomment -%}
 
       <div class="header__secondary-nav">
+        {%comment%}
         {%- if section.settings.header != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
           <nav class="header__link-list" role="navigation">
             <ul class="contents">
@@ -239,6 +240,7 @@ the underlying logic of the menu.
             </ul>
           </nav>
         {%- endif -%}
+        {%endcomment%}
 
         <div class="header__icon-list">
           {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
@@ -306,6 +308,7 @@ the underlying logic of the menu.
       show_country_selector: section.settings.show_country_selector,
       show_country_name: section.settings.show_country_name,
       show_country_flag: section.settings.show_country_flag,
+      settings:section.settings,
       show_locale_selector: section.settings.show_locale_selector -%}
   </navigation-drawer>
 {%- endif -%}
@@ -540,6 +543,38 @@ the underlying logic of the menu.
       "unit": "px",
       "label": "Background blur radius",
       "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Footer content"
+    },
+    {
+      "type": "text",
+      "id": "footer_button_text",
+      "label": "Footer Button text"
+    },
+    {
+      "type": "url",
+      "id": "footer_button_url",
+      "label": "Footer Button link"
+    },
+    {
+      "type": "color",
+      "id": "footer_button_background",
+      "label": "Footer Button background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "footer_button_text_color",
+      "label": "Footer Button text",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "footer_collout_badge",
+      "label": "Show social proof callout",
+      "default": false
     }
   ],
   "blocks": [

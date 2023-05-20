@@ -35,8 +35,8 @@
         "logo_max_width": 175,
         "logo_mobile_max_width": 130,
         "menu": "new-theme-test",
-        "sidebar_menu": "new-theme-test",
-        "secondary_menu": "",
+        "sidebar_menu": "menu-new-theme-mobile",
+        "secondary_menu": "navigation-menu-new-theme-mobile-secondary",
         "menu_open_trigger": "click",
         "opening_from": "left",
         "layout": "logo_center_navigation_inline",
@@ -49,7 +49,12 @@
         "transparent_logo": "shopify:\/\/shop_images\/logo_name-white.png",
         "reduce_padding": false,
         "background_opacity": 100,
-        "background_blur_radius": 0
+        "background_blur_radius": 0,
+        "footer_button_text": "Shop Best Sellers",
+        "footer_button_url": "",
+        "footer_button_background": "#e93b40",
+        "footer_button_text_color": "#ffffff",
+        "footer_collout_badge": true
       }
     }
   },

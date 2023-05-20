@@ -429,6 +429,75 @@ product-card .product-card__badge-list .badge {
   transition: width 1s ease-in-out;
 }
 
+navigation-drawer {
+  --drawer-body-padding:20px !important;
+}
+navigation-drawer .panel-list__wrapper .panel__scroller .separator-content {
+  height: 1px;
+  background-color: #E93B40;
+}
+navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list {
+  grid-template-columns: repeat(2, 1fr);
+}
+navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list li a {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container {
+  background-color: transparent;
+  color: black;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text__text {
+  text-shadow: none;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0px;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text__text .rating-text-separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text__text svg {
+  fill: black;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text__text svg path, navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text__text svg circle {
+  fill: black;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .button {
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  line-height: 30px;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .panel-footer__account-link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+navigation-drawer .panel-list__wrapper .link_item_sublevel {
+  grid-template-columns: repeat(2, 1fr);
+}
+navigation-drawer .panel-list__wrapper .link_item_sublevel li:first-child {
+  grid-column: 1/span 2; /* Remaining items span 2 columns each (50% width) */
+}
+navigation-drawer .panel-list__wrapper .link_item_sublevel li:not(:first-child) {
+  padding-bottom: 20px;
+}
+navigation-drawer .panel-list__wrapper .link_item_sublevel li .reversed-link {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
 @media only screen and (max-width: 699px) {
   .bleed {
     -webkit-padding-start: 16px;
