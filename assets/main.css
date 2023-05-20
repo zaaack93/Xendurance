@@ -58,7 +58,7 @@ bubbles-container .bubbles-inner .bubble .bubble_image_container {
   background-clip: content-box, border-box;
   border-radius: 50px;
   width: 71px;
-  aspect-ratio: 1;
+  height: 71px;
 }
 bubbles-container .bubbles-inner .bubble .bubble_image_container img {
   width: 100%;
