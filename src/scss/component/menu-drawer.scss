@@ -13,6 +13,9 @@ navigation-drawer{
                     font-size: 15px;
                     letter-spacing: 0.02em;
                     color: #000000;
+                    img:invalid {
+                        display: none;
+                    }
                 }
             }
         }

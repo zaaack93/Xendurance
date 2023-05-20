@@ -445,6 +445,9 @@ navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list li
   letter-spacing: 0.02em;
   color: #000000;
 }
+navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list li a img:invalid {
+  display: none;
+}
 navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container {
   background-color: transparent;
   color: black;
