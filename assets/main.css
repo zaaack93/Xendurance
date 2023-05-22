@@ -347,9 +347,6 @@ product-card .product-card__badge-list {
 product-card .product-card__badge-list .badge--primary {
   color: #000000;
 }
-product-card .product-card__badge-list .badge--on-sale {
-  color: #E93B40;
-}
 product-card .product-card__badge-list .badge {
   font-style: normal;
   font-weight: 500;
@@ -410,6 +407,14 @@ product-card .product-card__badge-list .badge {
   .callout-container .callout-badge .text-badge {
     font-size: 12px;
     line-height: 20px;
+  }
+}
+.callout-container .padd-same {
+  padding-left: 14px;
+}
+@media only screen and (max-width: 699px) {
+  .callout-container .padd-same {
+    padding-left: 8px;
   }
 }
 

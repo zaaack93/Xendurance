@@ -147,7 +147,7 @@ product-card{
             color: #000000;
         }
         .badge--on-sale{
-            color: #E93B40;
+            //color: #E93B40;
         }
         .badge{
             font-style: normal;
@@ -200,6 +200,12 @@ product-card{
                 font-size: 12px;
                 line-height: 20px;
             }
+        }
+    }
+    .padd-same{
+        padding-left: 14px;
+        @media only screen and (max-width: 699px){
+            padding-left: 8px;
         }
     }
 }
