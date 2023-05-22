@@ -65,13 +65,18 @@ navigation-drawer{
             padding-bottom: 20px;
         }
         li{
-            .reversed-link{
+            .link-title-container{
                 display: block;
                 text-align: center;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 19px;
-                color: black;
+                line-height: 0px;
+                .reversed-link{
+                    display: inline-block;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: black;
+                }
             }
         }
     }

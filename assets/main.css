@@ -492,8 +492,13 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li:first-child {
 navigation-drawer .panel-list__wrapper .link_item_sublevel li:not(:first-child) {
   padding-bottom: 20px;
 }
-navigation-drawer .panel-list__wrapper .link_item_sublevel li .reversed-link {
+navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-container {
   display: block;
+  text-align: center;
+  line-height: 0px;
+}
+navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-container .reversed-link {
+  display: inline-block;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
