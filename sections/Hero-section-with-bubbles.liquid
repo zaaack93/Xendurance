@@ -16,9 +16,13 @@ CSS
       --slideshow-controls-background: {{ controls_background.rgb }};
       --slideshow-controls-color: {{ controls_color.rgb }};
   
-      {%- if section.settings.allow_transparent_header -%}
-        margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
-      {%- endif -%}
+    }
+    @media screen and (min-width: 700px) {
+      #shopify-section-{{ section.id }} {
+        {%- if section.settings.allow_transparent_header -%}
+          margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
+        {%- endif -%}
+      }
     }
   
     {%- for block in section.blocks -%}

@@ -15,30 +15,41 @@ the underlying logic of the menu.
 
 <style>
   :root {
-    --sticky-header-enabled: {%- if section.settings.enable_sticky -%}1{% else %}0{% endif %};
+    --sticky-header-enabled: 0;
   }
-
   #shopify-section-{{ section.id }} {
     --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
     --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-3){% else %}var(--spacing-4-5){% endif %};
     --header-background-opacity: {{ section.settings.background_opacity | divided_by: 100.0 }};
     --header-background-blur-radius: {{ section.settings.background_blur_radius }}px;
-    --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
+    --header-transparent-text-color: rgb(0,0,0);
 
     {%- if section.settings.logo != blank -%}
       --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
       --header-logo-height: {{ section.settings.logo_mobile_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
     {%- endif -%}
 
-    position: {% if section.settings.enable_sticky %}sticky{% else %}relative{% endif %};
+    position: relative;
     top: 0;
     z-index: 10;
   }
-
-  {%- if section.settings.enable_sticky -%}
-    .shopify-section--announcement-bar ~ #shopify-section-{{ section.id }} {
-      top: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px));
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} {
+      --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
     }
+  }
+  {%- if section.settings.enable_sticky -%}
+    {% comment %} @media screen and (min-width: 700px) { {% endcomment %}
+      .shopify-section--announcement-bar ~ #shopify-section-{{ section.id }} {
+        top: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px));
+      }
+      #shopify-section-{{ section.id }} {
+        position: {% if section.settings.enable_sticky %}sticky{% else %}relative{% endif %};
+      }
+      :root {
+        --sticky-header-enabled: {%- if section.settings.enable_sticky -%}1{% else %}0{% endif %};
+      }
+    {% comment %} } {% endcomment %}
   {%- endif -%}
 
   {%- if section.settings.opening_from == 'left' -%}
@@ -206,7 +217,8 @@ the underlying logic of the menu.
           {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
 
           {%- if section.settings.transparent_logo -%}
-            {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
+            {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent sm-max:hidden' -}}
+            {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent sm:hidden' -}}
           {%- endif -%}
         {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
