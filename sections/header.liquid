@@ -22,7 +22,11 @@ the underlying logic of the menu.
     --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-3){% else %}var(--spacing-4-5){% endif %};
     --header-background-opacity: {{ section.settings.background_opacity | divided_by: 100.0 }};
     --header-background-blur-radius: {{ section.settings.background_blur_radius }}px;
-    --header-transparent-text-color: rgb(0,0,0);
+    {% if section.settings.enable_sticky and template.name == 'index' %}
+      --header-transparent-text-color: rgb(0,0,0);
+    {% else %}
+      --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
+    {% endif %}
 
     {%- if section.settings.logo != blank -%}
       --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
@@ -216,9 +220,11 @@ the underlying logic of the menu.
           <span class="sr-only">{{ shop.name }}</span>
           {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
 
-          {%- if section.settings.transparent_logo -%}
+          {% if section.settings.enable_sticky and template.name == 'index' %} 
             {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent sm-max:hidden' -}}
             {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent sm:hidden' -}}
+          {% else %}
+          {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
           {%- endif -%}
         {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
