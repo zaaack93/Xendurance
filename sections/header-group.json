@@ -21,13 +21,44 @@
         "text_size": "text-xs",
         "navigation_mode": "arrows",
         "scrolling_speed": 10,
-        "background": "#f0f0f0",
+        "background": "#353435",
         "background_gradient": "",
-        "text_color": "#000000"
+        "text_color": "#ffffff"
       }
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "92f1bc78-88c9-443e-ad53-895694087c85": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Shop All",
+            "layout": "horizontal_center",
+            "submenu_style": "bold_heading",
+            "image_1": "shopify:\/\/shop_images\/menu-link-shop-all-products.jpg",
+            "image_heading_1": "Shop All Products",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_2": "shopify:\/\/shop_images\/menu-link-shop-supplements.jpg",
+            "image_heading_2": "Shop All Supplements",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_3": "shopify:\/\/shop_images\/xndsups_6_complete_skin_pack1night_moisture_11920x1920-1680293557774.webp",
+            "image_heading_3": "Shop All SKIN",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "92f1bc78-88c9-443e-ad53-895694087c85"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
@@ -39,7 +70,7 @@
         "secondary_menu": "navigation-menu-new-theme-mobile-secondary",
         "menu_open_trigger": "click",
         "opening_from": "left",
-        "layout": "logo_center_navigation_inline",
+        "layout": "logo_left_navigation_center",
         "show_social_media": true,
         "show_locale_selector": false,
         "show_country_selector": false,
@@ -48,8 +79,8 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify:\/\/shop_images\/logo_name-white.png",
         "reduce_padding": false,
-        "background_opacity": 100,
-        "background_blur_radius": 0,
+        "background_opacity": 0,
+        "background_blur_radius": 20,
         "footer_button_text": "Shop Best Sellers",
         "footer_button_url": "",
         "footer_button_background": "#e93b40",
