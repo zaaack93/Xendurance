@@ -144,8 +144,28 @@ var StoreHeader = class extends HTMLElement {
         document.addEventListener("shopify:section:unload", this._setupTransparentHeader.bind(this));
         document.addEventListener("shopify:section:reorder", this._setupTransparentHeader.bind(this));
       }
+      this.checkStickyBarPosition();
+
+      // Call the function on page load
+      window.addEventListener('load', () => this.checkStickyBarPosition());
+
+      // Call the function on scroll
+      window.addEventListener('scroll', () => this.checkStickyBarPosition());
     }
   }
+
+  checkStickyBarPosition() {
+    if (!window.location.pathname.includes('/collections')) {
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      const stickyBarHeight = this.offsetHeight;
+      if (scrollPosition > stickyBarHeight) {
+        this.classList.remove('scrolled');
+      } else {
+        this.classList.add('scrolled');
+      }
+    }
+  }
+
   hide() {
     if (this._isVisible) {
       animate(this, { transform: ["translateY(0)", "translateY(-100%)"] }, { duration: 0.2, easing: "ease" });
