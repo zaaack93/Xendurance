@@ -40,7 +40,7 @@
 {%- endif -%}
 
 <div id="mega-menu-{{ mega_menu_block.id }}" class="mega-menu {% if link.links.size == 0 %}justify-center{% endif %}">
-  {% if show_sub_items %}
+  {% if mega_menu_block.settings.show_sub_item %}
     {%- if link.links.size > 0 -%}
       <ul class="mega-menu__nav" role="list">
         {%- for sub_link in link.links -%}
