@@ -162,12 +162,13 @@ Supported variables
                       {%- endfor -%}
                     {%- endif -%}
                   </ul>
-
-                  {%- unless is_mega_menu -%}
-                    {%- if mega_menu_block != '' -%}
-                      {%- render 'navigation-promo-block', navigation_layout: layout, mega_menu_block: mega_menu_block, is_navigation_drawer: true, link_col: link.links.size -%}
-                    {%- endif -%}
-                  {%- endunless -%}
+                  {%comment%}
+                    {%- unless is_mega_menu -%}
+                      {%- if mega_menu_block != '' -%}
+                        {%- render 'navigation-promo-block', navigation_layout: layout, mega_menu_block: mega_menu_block, is_navigation_drawer: true, link_col: link.links.size -%}
+                      {%- endif -%}
+                    {%- endunless -%}
+                  {%endcomment%}
                 </div>
               {%- endcapture -%}
             {%- endif -%}

@@ -2,7 +2,7 @@
 {%- assign promo_item_count = 0 -%}
 {%- capture promo_id -%}{{ mega_menu_block.id }}{% if is_navigation_drawer %}-drawer{% endif %}-{{ link_col }}-{{ use_carousel_fallback_until }}{%- endcapture -%}
 
-{%- for i in (1..3) -%}
+{%- for i in (1..5) -%}
   {%- assign image_setting = 'image_' | append: i -%}
 
   {%- if mega_menu_block.settings[image_setting] != blank -%}
@@ -119,7 +119,7 @@
         --mega-menu-promo-grid-image-min-width: 220px;
 
         {% if is_promo_carousel %}
-          max-width: {% if is_promo_stretch %}440px{% else %}360px{% endif %};
+          max-width: {% if is_promo_stretch %}300px{% else %}250px{% endif %};
         {% endif %}
 
         {% if is_promo_stretch %}
@@ -156,7 +156,7 @@
 
     @media screen and (min-width: 1400px) {
       #navigation-promo-{{ promo_id }} {
-        --mega-menu-promo-grid-image-max-width: {% if is_promo_stretch %}440px{% else %}360px{% endif %};
+        --mega-menu-promo-grid-image-max-width: {% if is_promo_stretch %}300px{% else %}250px{% endif %};
 
         {% if mega_menu_col >= 5 and is_promo_grid %}
           --promo-heading-font-size: {% if mega_menu_col == 5 %}var(--text-h5){% elsif mega_menu_col >= 6 %}var(--text-h6){% endif %};
@@ -184,23 +184,23 @@
     {%- if mega_menu_block.settings[image_setting] != blank -%}
       {%- capture image_sizes -%}
         {%- if is_promo_grid -%}
-          (max-width: 699px) 172px, (max-width: 1149px) 192px,{% if is_navigation_drawer %}220px{% else %}minmax(220px, 440px){% endif %}
+          (max-width: 699px) 172px, (max-width: 1149px) 192px,{% if is_navigation_drawer %}220px{% else %}minmax(220px, 300px){% endif %}
         {%- elsif is_promo_collage -%}
-          {%- if forloop.first -%}{% if is_promo_stretch %}minmax(350px, 880px){% else %}minmax(350px, 650px){% endif %}{% else %}{% if is_promo_stretch %}minmax(192px, 440px){% else %}minmax(192px, 350px){% endif %}{%- endif -%}
+          {%- if forloop.first -%}{% if is_promo_stretch %}minmax(350px, 880px){% else %}minmax(350px, 650px){% endif %}{% else %}{% if is_promo_stretch %}minmax(192px, 300px){% else %}minmax(192px, 350px){% endif %}{%- endif -%}
         {%- else -%}
-          (max-width: 699px) 100vw, (max-width: 1150px) 316px, {% if is_navigation_drawer %}360px{% else %}{% if is_promo_stretch %}440px{% else %}360px{% endif %}{% endif %}
+          (max-width: 699px) 100vw, (max-width: 1150px) 200px, {% if is_navigation_drawer %}250px{% else %}{% if is_promo_stretch %}330px{% else %}250px{% endif %}{% endif %}
         {%- endif -%}
       {%- endcapture -%}
 
       <a {% if mega_menu_block.settings[image_link_setting] %}href="{{ mega_menu_block.settings[image_link_setting] }}"{% endif %}
-         class="content-over-media {% unless is_promo_stretch %}rounded-sm{% endunless %} group {% if is_promo_carousel and forloop.first == false %}reveal-invisible{% endif %}"
-         style="--text-color: {{ mega_menu_block.settings[image_text_color_setting].rgb }}; grid-area: {% if is_promo_carousel %}1 / -1{% elsif is_promo_collage %}promo-{{ i }}{% endif %};">
+         class="mega-item-container group block w-full"
+         >
 
-        {{- mega_menu_block.settings[image_setting] | image_url: width: image.width | image_tag: loading: 'lazy', sizes: image_sizes, widths: '200,300,400,500,600,800,1000', class: "zoom-image" -}}
+        {{- mega_menu_block.settings[image_setting] | image_url: width: image.width | image_tag: loading: 'lazy', sizes: image_sizes, widths: '200,300,400,500,600,800,1000', class: "zoom-image rounded-sm" -}}
 
         {%- if mega_menu_block.settings[image_heading_setting] != blank -%}
-          <div class="place-self-end-start text-custom">
-            <p class="bold" style="font-size: var(--promo-heading-font-size); line-height: var(--promo-heading-line-height, 1.4)">{{- mega_menu_block.settings[image_heading_setting] | escape -}}</p>
+          <div class="text-custom">
+            <p class="bold reversed-link">{{- mega_menu_block.settings[image_heading_setting] | escape -}}</p>
           </div>
         {%- endif -%}
       </a>
