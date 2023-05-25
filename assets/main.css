@@ -139,6 +139,53 @@ bubbles-container .bubbles-inner .bubble h3 {
   font-size: 18px;
   line-height: 21px;
 }
+@media only screen and (min-width: 700px) {
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge {
+    background-color: transparent;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text {
+    padding: 0px;
+    text-align: initial;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text .rating-container {
+    -moz-column-gap: 2px;
+         column-gap: 2px;
+    top: 4px;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text .rating-container svg {
+    width: 19px;
+    height: 19px;
+    fill: #E93B40;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text .rating-container svg path {
+    fill: #E93B40;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose p[data-sequence=subheading] {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 18px;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .button {
+    min-width: 200px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 34px !important;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .button--secondary {
+    margin-left: 16px;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media::before {
+    display: none;
+  }
+}
 @media only screen and (max-width: 699px) {
   .hero-section-wtih-bubble slideshow-carousel .content-over-media {
     grid-template: none;

@@ -151,6 +151,12 @@ CSS
               </div>
 
               <div class="prose">
+                {%- if block.settings.footer_collout_badge != blank -%}
+                  <div class="judge_me_widget_container hero-callout-badge sm-max:hidden">
+                    {% render 'judgeme_widgets', widget_type: 'judgeme_all_reviews_text', concierge_install: false%}
+                  </div>
+                {% endif %}
+
                 {%- if block.settings.title != blank -%}
                   <p class="{{ block.settings.heading_tag }}" data-sequence="heading">
                     {%- render 'styled-text', content: block.settings.title, apparition_effect: false -%}
@@ -168,7 +174,7 @@ CSS
                   {%- render 'button', href: block.settings.secondary_button_link, content: block.settings.secondary_button_text, size: 'lg',secondary:true, background: block.settings.secondary_button_background, text_color: block.settings.secondary_button_text_color -%}
                 {%- endif -%}
                 {%- if block.settings.content != blank -%}
-                  <div {{ block.shopify_attributes }} class="content--footer">
+                  <div {{ block.shopify_attributes }} class="content--footer sm:hidden">
                     {{- block.settings.content -}}
                   </div>
                 {%- endif -%}
@@ -513,6 +519,12 @@ CSS
               }
             ],
             "default": "sm:place-self-center sm:text-center"
+          },
+          {
+            "type": "checkbox",
+            "id": "footer_collout_badge",
+            "label": "Show social proof callout",
+            "default": true
           },
           {
             "type": "text",
