@@ -593,8 +593,6 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
     margin-right: 16px;
   }
 }
-@media screen and (max-width: 699px) {
-  .scrolled {
-    background-color: white;
-  }
+.scrolled {
+  background-color: white;
 }
