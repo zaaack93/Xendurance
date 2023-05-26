@@ -111,3 +111,87 @@ customElements.define('bubbles-container', BubblesContainer);
 
 }
 customElements.define('featured-collection-list', FeaturedCollectionList);
+
+
+
+
+// js/sections/top-bar-filters.js
+class TopBarFilters extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.available_filters=this.dataset.filtersAvailable.split(',');
+    this.active_filters=this.dataset.filtersActive.split(',');
+    this.render();
+  }
+
+  render() {
+    const categoryFilters = Array.from(this.querySelectorAll('.buttons-to-check'));
+    categoryFilters.forEach((category) =>{
+      let availability=this.checkAvailability(category);
+      switch (availability) {
+        case 'available':
+          category.addEventListener("click", (event)=> {
+            this.handleFilter(category.dataset.forTag);
+          });
+          break;
+        case 'active':
+          category.classList.add('Active_filter');
+          category.addEventListener("click", (event)=> {
+            this.handleFilter(category.dataset.forTag);
+          });
+          break;
+        case 'notallowed':
+          category.disabled=true;
+          break;
+      }
+    })
+
+    //check for all filters and all handle to click
+    let productCard = document.querySelectorAll('product-card');
+    if(this.active_filters.length==1 || productCard.length == 0){
+      this.querySelector('#label-for-all').classList.add('Active_filter');
+    }
+    this.querySelector('#label-for-all').addEventListener("click", (event)=> {
+      // Get the reset button
+      const label = document.querySelector("a.facet-clear-all");
+      // If the label element is found, trigger a click event on it
+      if (label) {
+        label.click();
+      }
+    });
+  }
+
+  handleFilter(category) {
+    const inputElements = document.querySelectorAll('input[name="filter.p.tag"]');
+    inputElements.forEach(function(element){
+        if(element.value.toLowerCase().replaceAll(/\s/g,'')==category.toLowerCase().replaceAll(/\s/g,'')){
+            element.click();
+            return
+        }
+    })
+  }
+
+  checkAvailability(category) {
+    let foundValueActive = this.active_filters.find(function(element) {
+      return element.toLowerCase().replaceAll(/\s/g,'') === category.dataset.forTag.toLowerCase().replaceAll(/\s/g,'');
+    });
+
+    let foundValueAvailable = this.available_filters.find(function(element) {
+      return element.toLowerCase().replaceAll(/\s/g,'') === category.dataset.forTag.toLowerCase().replaceAll(/\s/g,'');
+    });
+    if(foundValueActive){
+      return "active"
+    }
+    else if (foundValueAvailable){
+      return "available"
+    }
+    else {
+      return "notallowed"
+    }
+  }
+}
+
+customElements.define('top-bar-filters', TopBarFilters);

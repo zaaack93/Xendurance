@@ -48,7 +48,7 @@ Supported variables
     {%- endif -%}
   {%- endfor -%}
 
-  {%- if active_values_count > 1 -%}
+  {%- if active_values_count > 0 -%}
     {%- if request.page_type == 'collection' -%}
       {%- assign default_url = collection.url -%}
     {%- else -%}

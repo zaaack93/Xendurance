@@ -87,7 +87,12 @@
             <p class="h5" slot="header">{{ 'collection.faceting.filters' | t }}</p>
             {%- render 'facets-vertical', results: collection, show_filters: true, show_sort_by: section.settings.show_sort_by, update_on_change: false -%}
           </facet-drawer>
-
+          
+          {% for block in section.blocks %}
+             {%if block.type == "collection_filter" and block.settings.collection.title == collection.title %}
+             {% render 'top-bar-filtring' with filters_categories:block.settings.collection_filters %}
+             {%endif%}
+          {% endfor%}
           {%- if section.settings.filter_layout == 'horizontal' -%}
             {%- render 'collection-top-bar', results: collection, show_filters: show_filters, show_active_filters: show_filters, show_sort_by: section.settings.show_sort_by -%}
           {%- else -%}
@@ -126,7 +131,7 @@
             </div>
           {%- else -%}
             <div class="v-stack gap-6">
-              <div class="v-stack gap-4 md:hidden">
+              <div class="v-stack gap-4 hidden">
                 {%- comment -%}We have to duplicate some information on mobile and tablet here{%- endcomment -%}
                 <p class="text-center">{{ 'collection.products_count' | t: count: collection.products_count }}</p>
                 {%- render 'active-facets', results: collection -%}
@@ -223,6 +228,24 @@
   "tag": "section",
   "max_blocks": 5,
   "blocks": [
+    {
+      "type": "collection_filter",
+      "name": "Collection filter bar",
+      "settings": [
+         {
+         "type":"collection",
+         "id":"collection",
+         "label":"Collection"
+         },
+        {
+          "type": "text",
+          "id": "collection_filters",
+          "label": "Collection filters",
+          "info":"Please separate the filter labels using commas, excluding the 'all' tag. For example, 'Skin,Supplements,Nutritions'",
+          "default": "Filter1,Filter2,Filter3"
+        }
+      ]
+    },
     {
       "type": "promotion_image",
       "name": "Promotion image",

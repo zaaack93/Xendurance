@@ -115,10 +115,26 @@
             "overlay_color": "#000000",
             "overlay_opacity": 10
           }
+        },
+        "f1543895-1b75-4769-bbaf-6c1f1f11725a": {
+          "type": "collection_filter",
+          "settings": {
+            "collection": "all-products",
+            "collection_filters": "packs,daily,energy,tranform,recovery,sleep,skin,Apparel & Accessories"
+          }
+        },
+        "1089b347-d343-4e10-a5c5-ebcd5d6fbc60": {
+          "type": "collection_filter",
+          "settings": {
+            "collection": "skin",
+            "collection_filters": "packs,daily,energy,tranform,recovery,sleep,skin"
+          }
         }
       },
       "block_order": [
-        "bcb40938-f2f1-4248-a094-ed116737e41c"
+        "bcb40938-f2f1-4248-a094-ed116737e41c",
+        "f1543895-1b75-4769-bbaf-6c1f1f11725a",
+        "1089b347-d343-4e10-a5c5-ebcd5d6fbc60"
       ],
       "settings": {
         "products_per_page": 40,
