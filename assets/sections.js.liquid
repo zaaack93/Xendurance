@@ -155,7 +155,6 @@ var StoreHeader = class extends HTMLElement {
   }
 
   checkStickyBarPosition() {
-    if (!window.location.pathname.includes('/collections')) {
       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
       const stickyBarHeight = this.offsetHeight;
       if (scrollPosition > stickyBarHeight) {
@@ -163,7 +162,6 @@ var StoreHeader = class extends HTMLElement {
       } else {
         this.classList.add('scrolled');
       }
-    }
   }
 
   hide() {
