@@ -12,6 +12,7 @@
             "content_max_width": 680,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "footer_collout_badge": true,
             "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
             "content": "<p>Unsure where to start <a href=\"\/pages\/perfect-path-quiz\" title=\"Perfect Path Quiz\">Take the Quiz?<\/a><\/p>",
             "title": "Certified Sport and Performance Formulas",
@@ -40,6 +41,7 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "footer_collout_badge": true,
             "subheading": "Effective skincare you can actually trust. Informed Sport Certified.",
             "content": "<p>Unsure where to start? <a href=\"\/pages\/perfect-path-quiz\" title=\"Perfect Path Quiz\">Take the Quiz<\/a><\/p>",
             "title": "First Ever Skincare Tested For Banned Substances",
@@ -73,9 +75,9 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/best-sellers",
+            "bubble_collection": "shopify:\/\/collections\/energy",
             "bubble_color": "#e93b40",
-            "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
+            "bubble_image": "shopify:\/\/shop_images\/image_25.jpg",
             "bubble_text": "Energy"
           }
         },
@@ -89,13 +91,33 @@
             "bubble_text": "All SKIN"
           }
         },
+        "fd2b915b-f73c-45fc-99be-44394c218002": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Skin",
+            "bubble_collection": "",
+            "bubble_color": "#00a9e0",
+            "bubble_image": "shopify:\/\/shop_images\/xendurance-day-skin-33508277256380.png",
+            "bubble_text": "Day SKIN"
+          }
+        },
+        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Skin",
+            "bubble_collection": "",
+            "bubble_color": "#00a9e0",
+            "bubble_image": "shopify:\/\/shop_images\/Night_Skin_Pack-Trio-1.png",
+            "bubble_text": "Night SKIN"
+          }
+        },
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c": {
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/apparel-accessories",
+            "bubble_collection": "shopify:\/\/collections\/daily-2",
             "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Performance_Pack-Float_1024x1024_7b79d152-b565-4989-8286-c127d2e5c570.webp",
+            "bubble_image": "shopify:\/\/shop_images\/Daily_Foundation-Stand_df40e207-78e5-4b61-a6d3-5fa281ca06d9.png",
             "bubble_text": "Daily"
           }
         },
@@ -103,9 +125,9 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/membership",
+            "bubble_collection": "shopify:\/\/collections\/all-products",
             "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
+            "bubble_image": "shopify:\/\/shop_images\/menu-link-shop-supplements.jpg",
             "bubble_text": "Recovery"
           }
         },
@@ -113,10 +135,20 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/products\/complete-skin-1",
+            "bubble_collection": "shopify:\/\/collections\/transform",
+            "bubble_color": "#f83a3a",
+            "bubble_image": "shopify:\/\/shop_images\/Weight_Management_Pack-Stand_d77fc303-694b-473d-b080-ea27d105140c.png",
+            "bubble_text": "Transform"
+          }
+        },
+        "491f5be4-58a1-4565-94f6-a805099fda8e": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Supplements",
+            "bubble_collection": "shopify:\/\/collections\/packs-1",
             "bubble_color": "#f83a3a",
             "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
-            "bubble_text": "Recovery"
+            "bubble_text": "Packs"
           }
         },
         "8c296aac-2089-4f5a-aa10-15dab5e4fbea": {
@@ -146,9 +178,12 @@
         "875832ff-ea4f-469d-9149-27254d87110c",
         "058688b9-1ab6-4706-8af8-256285b23670",
         "8f1ddcb6-bc30-491e-9266-800c6a991dda",
+        "fd2b915b-f73c-45fc-99be-44394c218002",
+        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d",
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c",
         "f4122a0f-70e0-4220-adf0-3f2f634c9c85",
         "c2b11881-c704-447d-8eaa-4f0ec9f01ad8",
+        "491f5be4-58a1-4565-94f6-a805099fda8e",
         "8c296aac-2089-4f5a-aa10-15dab5e4fbea",
         "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac"
       ],
@@ -346,7 +381,7 @@
         "impact_text_style": "fill",
         "text_divider": "none",
         "impact_text_size_ratio": 1,
-        "background": "#fff",
+        "background": "#ffffff",
         "background_gradient": "",
         "heading_text_color": "#f83a3a",
         "heading_gradient": "",
