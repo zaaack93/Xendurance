@@ -37,6 +37,14 @@
       {%- when 'price' -%}
         <div class="product-info__price">
           <div class="rating-with-text">
+
+
+            <div  data-smartrr-product-id="{{ product.id }}" data-smartrr-price-style="overwrite-compare" data-use-quantity="true">
+              <span data-smartrr-compare-price></span>
+              <span data-smartrr-regular-price></span>
+              <span smartrr-top-price data-smartrr-subscribe-price></span>
+            </div>
+            
             {%- render 'price-list', variant: product.selected_or_first_available_variant, form_id: product_form_id, size: 'lg', block: block -%}
             {%- render 'product-badges', types: 'sold_out, discount', product: product, form_id: product_form_id, class: 'product-info__badge-list' -%}
 

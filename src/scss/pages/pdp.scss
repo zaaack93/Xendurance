@@ -1,0 +1,156 @@
+.template--product{
+
+
+
+    //smartrr options
+    .smartrr-purchase-options{
+        .smartrr-title{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+        div[data-smartrr-selling-plan-groups]{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            div[data-smartrr-selling-plan-group-id].smartrr-group-active {
+                background: rgba(233, 59, 64, 0.1);
+                border: 1px solid #E93B40;
+                border-radius: 10px;
+                // .smartrr-pills-header{
+                //     color: black !important;
+                // }
+            }
+
+            div[data-smartrr-selling-plan-group-id] {
+                background-color: white;
+                padding: 16px 18px 16px 14px;
+                border: 1px solid #ADADAD;
+                border-radius: 10px;
+                .smartrr-selling-plan-group-header{
+                    .smartrr-badge-item{
+                        position: absolute;
+                        right: 19px;
+                        background: #353435;
+                        border-radius: 10px;
+                        height: 23px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 7px;
+                        padding-right: 7px;
+                        font-family: 'United Sans SemiCond';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+                    .smartrr-selling-plan-group-label{
+                        display: flex;
+                        align-items: start;
+                        column-gap: 16px;
+
+
+                        input[type="radio"] {
+                            display: initial;
+                            appearance: none;
+                            background-color: #fff;
+                            margin: 0;
+                            font: inherit;
+                            color: currentColor;
+                            width: 24px;
+                            height: 24px;
+                            border: 2px solid #E93B40;
+                            border-radius: 50%;
+                          }
+
+                          input[type="radio"]:checked{
+                            background: radial-gradient(#E93B40 0%, #E93B40 50%, transparent 60%, transparent);
+                          }
+
+
+                        .smartrr-pills-header{
+                            margin: 0px;
+                            flex: 1;
+                            padding: 0px;
+                            border: none;
+                            background: none;
+                            flex-direction: column;
+                            row-gap: 7px;
+                            color: #353435;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 22px;
+                            .smartrr-pricing-dash{
+                                display: none;
+                            }
+                            div[data-smartrr-price-style] {
+                                display: flex;
+                                column-gap: 18px;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 24px;
+                                flex-direction: row-reverse;
+                                justify-content: flex-end;
+                                span[data-smartrr-subscribe-price],.data-smartrr-subscribe-price{
+                                    color: #E93B40 !important;
+                                }
+                                .data-smartrr-subscribe-price{
+                                    margin-left: -11px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div[data-smartrr-selling-plan-group-contents] {
+                    div[data-smartrr-selling-plan-group-plans]{
+                        margin-top: 14px;
+                        padding-top: 16px;
+                        padding-left: 13px;
+                        padding-right: 13px;
+                        padding-bottom: 10px;
+                        border-top: 1px solid #ADADAD;
+                        .smartrr-pills-header{
+                            margin: 0px;
+                        }
+                    }
+                }
+                div[data-smartrr-selling-plans-select]{
+                    background: transparent;
+                    color: inherit;
+                    padding: 0px;
+                    border: none;
+                    .content_inner{
+                        .label_content{
+                            font-size: 16px;
+                            line-height: 19px;
+                            margin-bottom: 11px;  
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 12px;
+                            li{
+                                display: block;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 18px;
+                                background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260');
+                                background-size: 17px; /* Adjust to match the size of your SVG icon */
+                                background-position: left center; /* Adjust the position as needed */
+                                padding-left: 30px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

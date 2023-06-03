@@ -708,6 +708,141 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   border: 0.8px solid #353435;
 }
 
+.template--product .smartrr-purchase-options .smartrr-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id].smartrr-group-active {
+  background: rgba(233, 59, 64, 0.1);
+  border: 1px solid #E93B40;
+  border-radius: 10px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] {
+  background-color: white;
+  padding: 16px 18px 16px 14px;
+  border: 1px solid #ADADAD;
+  border-radius: 10px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-badge-item {
+  position: absolute;
+  right: 19px;
+  background: #353435;
+  border-radius: 10px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-family: "United Sans SemiCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label {
+  display: flex;
+  align-items: start;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio] {
+  display: initial;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #E93B40;
+  border-radius: 50%;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio]:checked {
+  background: radial-gradient(#E93B40 0%, #E93B40 50%, transparent 60%, transparent);
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header {
+  margin: 0px;
+  flex: 1;
+  padding: 0px;
+  border: none;
+  background: none;
+  flex-direction: column;
+  row-gap: 7px;
+  color: #353435;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header .smartrr-pricing-dash {
+  display: none;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] span[data-smartrr-subscribe-price], .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
+  color: #E93B40 !important;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
+  margin-left: -11px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] div[data-smartrr-selling-plan-group-plans] {
+  margin-top: 14px;
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ADADAD;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] div[data-smartrr-selling-plan-group-plans] .smartrr-pills-header {
+  margin: 0px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] {
+  background: transparent;
+  color: inherit;
+  padding: 0px;
+  border: none;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner .label_content {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 11px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner ul li {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260");
+  background-size: 17px; /* Adjust to match the size of your SVG icon */
+  background-position: left center; /* Adjust the position as needed */
+  padding-left: 30px;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 699px) {
   .bleed {
     -webkit-padding-start: 16px;
