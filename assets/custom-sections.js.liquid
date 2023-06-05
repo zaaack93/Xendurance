@@ -196,6 +196,28 @@ class TopBarFilters extends HTMLElement {
 
 customElements.define('top-bar-filters', TopBarFilters);
 
+import {fetchCart} from "{{ 'theme.js' | asset_url }}";
+class MainProduct extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  async render() {
+    const cartContent = await fetchCart; // JSON cart content
+    cartContent?.items.forEach(item => {
+      if(item.id==40692118094012){
+        this.querySelector('.product').classList.add('cart-has-membership')
+      }
+    });
+  }
+}
+
+customElements.define('main-product', MainProduct);
+
 
 // Define the custom web component for smartrr
 class PurchaseOptions extends HTMLElement {
@@ -223,10 +245,23 @@ class PurchaseOptions extends HTMLElement {
     this.prepend(titleElement);
 
     sellingPlans.forEach((sellingPlan) =>{
-      let content,newElement,sellContent;
+      let content,newElement,sellContent,price_cotnainer,newregulralabel;
       switch (sellingPlan.dataset.smartrrSellingPlanGroupId){
         case "6a09e170577cb57e08a9a5e44f9fbf31c342d37e":
           // for the second statement the customer loggedIn
+          // code block
+          content=sellingPlan.querySelector('.smartrr-pills-header');
+          // Update the text content of the div
+          content.firstChild.nodeValue = 'Subscribe';
+          sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]')?.remove();
+          
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(Free U.S Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price';
+          price_cotnainer.prepend(newregulralabel);
           break;
 
         case "da1e61c01b6561e74b0298c2b931b5c94d7a4bd3":
@@ -258,9 +293,8 @@ class PurchaseOptions extends HTMLElement {
           // Update the text content of the div
           content.firstChild.nodeValue = 'Become a Member';
 
-          console.log(content.querySelector('span[data-smartrr-subscribe-price]'))
-          const price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
-          let newregulralabel = document.createElement('span');
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
           newregulralabel.textContent = '(Free U.S Shipping + Rewards)';
@@ -285,6 +319,20 @@ class PurchaseOptions extends HTMLElement {
 
         default:
           // code block
+          content=sellingPlan.querySelector('.smartrr-pills-header');
+          // Update the text content of the div
+          content.firstChild.nodeValue = 'Order once';
+
+          //add reguular price
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(Free U.S Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price';
+          price_cotnainer.prepend(newregulralabel);
+          
+          break;
       }
 
     });

@@ -1,6 +1,56 @@
 .template--product{
+    // cass for member hide 2 and 3 
+    .product.product-for-member{
+        custom-options{
+            div[data-smartrr-selling-plan-groups]{
+                div[data-smartrr-selling-plan-group-id]:nth-child(3),div[data-smartrr-selling-plan-group-id]:nth-child(4){
+                    display: none;
+                }
 
+                div[data-smartrr-selling-plan-group-id]:nth-child(1){
+                    div[data-smartrr-price-style] {
+                        span[data-smartrr-compare-price] {
+                            display: initial;
+                            order: 1;
+                        }
+                        span[data-smartrr-subscribe-price]{
+                            color: #E93B40;
+                        }
+                    }
+                }
 
+            }
+        }
+    }
+    // cass for member hide 1
+    .product:not(.product-for-member){
+        custom-options{
+            div[data-smartrr-selling-plan-groups]{
+                div[data-smartrr-selling-plan-group-id]:nth-child(2){
+                    display: none;
+                }
+                div[data-smartrr-selling-plan-group-id]:nth-child(1){
+                    div[data-smartrr-price-style]{
+                        .data-smartrr-subscribe-price{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product.cart-has-membership{
+        custom-options{
+            div[data-smartrr-selling-plan-groups]{
+                div[data-smartrr-selling-plan-group-id]:nth-child(4){
+                    display: none;
+                }
+            }
+        }
+        .offer {
+            display: none;
+        }
+    }
 
     //smartrr options
     .smartrr-purchase-options{
@@ -23,6 +73,23 @@
                 // .smartrr-pills-header{
                 //     color: black !important;
                 // }
+            }
+            //Set price color regular price for upper second
+            div[data-smartrr-selling-plan-group-id]:not(:first-child) {
+                div[data-smartrr-price-style] {
+                    span[data-smartrr-subscribe-price]{
+                        color: #E93B40 ;
+                    }
+                }
+            }
+            div[data-smartrr-price-style] {
+                span[data-smartrr-regular-price]{
+                    color: inherit;
+                }
+            }
+            //this for label
+            .data-smartrr-subscribe-price{
+                color: #E93B40;
             }
 
             div[data-smartrr-selling-plan-group-id] {
@@ -97,7 +164,7 @@
                                 flex-direction: row-reverse;
                                 justify-content: flex-end;
                                 span[data-smartrr-subscribe-price],.data-smartrr-subscribe-price{
-                                    color: #E93B40 !important;
+                                    //color: #E93B40 ;
                                 }
                                 .data-smartrr-subscribe-price{
                                     margin-left: -11px;

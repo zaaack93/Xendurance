@@ -7,7 +7,19 @@
   \************************/
 /***/ (() => {
 
-
+(function () {
+  if (window.location.pathname.includes('/products')) {
+    document.addEventListener('cart:change', function (event) {
+      var cart = event.detail.cart;
+      document.querySelector('.product').classList.remove('cart-has-membership');
+      cart === null || cart === void 0 ? void 0 : cart.items.forEach(function (item) {
+        if (item.id == 40692118094012) {
+          document.querySelector('.product').classList.add('cart-has-membership');
+        }
+      });
+    });
+  }
+})();
 
 /***/ }),
 

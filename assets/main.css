@@ -708,6 +708,28 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   border: 0.8px solid #353435;
 }
 
+.template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(3), .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
+  display: none;
+}
+.template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] span[data-smartrr-compare-price] {
+  display: initial;
+  order: 1;
+}
+.template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] span[data-smartrr-subscribe-price] {
+  color: #E93B40;
+}
+.template--product .product:not(.product-for-member) custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(2) {
+  display: none;
+}
+.template--product .product:not(.product-for-member) custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] .data-smartrr-subscribe-price {
+  display: none;
+}
+.template--product .product.cart-has-membership custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
+  display: none;
+}
+.template--product .product.cart-has-membership .offer {
+  display: none;
+}
 .template--product .smartrr-purchase-options .smartrr-title {
   font-weight: 600;
   font-size: 20px;
@@ -724,6 +746,15 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   background: rgba(233, 59, 64, 0.1);
   border: 1px solid #E93B40;
   border-radius: 10px;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:not(:first-child) div[data-smartrr-price-style] span[data-smartrr-subscribe-price] {
+  color: #E93B40;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-price-style] span[data-smartrr-regular-price] {
+  color: inherit;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] .data-smartrr-subscribe-price {
+  color: #E93B40;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] {
   background-color: white;
@@ -797,9 +828,6 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   line-height: 24px;
   flex-direction: row-reverse;
   justify-content: flex-end;
-}
-.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] span[data-smartrr-subscribe-price], .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
-  color: #E93B40 !important;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
   margin-left: -11px;

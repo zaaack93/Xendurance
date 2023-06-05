@@ -38,15 +38,17 @@
     }
   }
 </style>
-
+{% include 'membership-check' %}
 <div {% render 'section-properties', tight: true %}>
-  <div class="product">
+  <main-product>
+  <div class="product {% if isMember or product.tags contains "MEMBERS-ONLY" %} product-for-member {% endif %}">
     {%- if product.media.size > 0 -%}
       {%- render 'product-gallery', product: product -%}
     {%- endif -%}
 
     {%- render 'product-info', product: product, update_url: true -%}
   </div>
+  </main-product>
 </div>
 
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
