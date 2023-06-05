@@ -17,12 +17,14 @@
         },
         "rating": {
           "type": "rating",
+          "disabled": true,
           "settings": {
             "show_empty": false
           }
         },
         "badges": {
           "type": "badges",
+          "disabled": true,
           "settings": {
           }
         },
@@ -87,6 +89,7 @@
         },
         "separator": {
           "type": "separator",
+          "disabled": true,
           "settings": {
           }
         },
