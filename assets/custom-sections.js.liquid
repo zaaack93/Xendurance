@@ -358,3 +358,101 @@ element.parentNode.replaceChild(customElement, element);
 
 // Define the custom element for the new custom node name
 customElements.define(customElement.nodeName.toLowerCase(), PurchaseOptions);
+
+//override productForm
+import {ProductForm} from "{{ 'theme.js' | asset_url }}"; // Import the theme web component
+
+class customProductForm extends ProductForm {
+  async _onSubmit(event) {
+    event.preventDefault();
+    if (!this.checkValidity()) {
+      this.reportValidity();
+      return;
+    }
+    const submitButtons = Array.from(this.elements).filter((button) => button.type === "submit");
+    submitButtons.forEach((submitButton) => {
+      submitButton.setAttribute("disabled", "disabled");
+      submitButton.setAttribute("aria-busy", "true");
+    });
+    let sectionsToBundle = ["variant-added"];
+    document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
+    const formData = new FormData(this);
+    formData.set("sections", sectionsToBundle.join(","));
+    formData.set("selling_plan",document.querySelector('input[name="selling_plan"]')?.value)
+    if(document.querySelector('input[name="selling_plan"]')?.value == 4549771452){
+      // const items = [];
+      // let item = {};
+      // for (const [key, value] of formData.entries()) {
+
+      //   if (key === 'id' || key === 'quantity' || key === "selling_plan") {
+      //     item[key] = Number(value);
+      //     formData.delete(key);
+      //   }
+      // }
+      // items.push({ ...item });
+
+      // items.push({id: 40692118094012, quantity:1 , selling_plan: 4565696700 });
+      // formData.set("items", JSON.stringify(items));
+      const formDataMemberShip = new FormData();
+      formDataMemberShip.append('id', 40692118094012);
+      formDataMemberShip.append('quantity', 1);
+      formDataMemberShip.append('selling_plan', 4565696700);
+      await fetch(`${Shopify.routes.root}cart/add.js`, {
+        body: formDataMemberShip,
+        method: "POST",
+        headers: {
+          "X-Requested-With": "XMLHttpRequest"
+          // Needed for Shopify to check inventory
+        }
+      });
+    }
+    
+    formData.set("sections_url", `${Shopify.routes.root}variants/${this.id.value}`);
+    const response = await fetch(`${Shopify.routes.root}cart/add.js`, {
+      body: formData,
+      method: "POST",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest"
+        // Needed for Shopify to check inventory
+      }
+    });
+    submitButtons.forEach((submitButton) => {
+      submitButton.removeAttribute("disabled");
+      submitButton.removeAttribute("aria-busy");
+    });
+    const responseJson = await response.json();
+    if (response.ok) {
+      if (window.themeVariables.settings.cartType === "page" || window.themeVariables.settings.pageType === "cart") {
+        return window.location.href = `${Shopify.routes.root}cart`;
+      }
+      const cartContent = await (await fetch(`${Shopify.routes.root}cart.js`)).json();
+      cartContent["sections"] = responseJson["sections"];
+      this.dispatchEvent(new CustomEvent("variant:add", {
+        bubbles: true,
+        detail: {
+          items: responseJson.hasOwnProperty("items") ? responseJson["items"] : [responseJson],
+          cart: cartContent
+        }
+      }));
+      document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+        bubbles: true,
+        detail: {
+          baseEvent: "variant:add",
+          cart: cartContent
+        }
+      }));
+    } else {
+      this.dispatchEvent(new CustomEvent("cart:error", {
+        bubbles: true,
+        detail: {
+          error: responseJson["description"]
+        }
+      }));
+    }
+  }
+}
+
+// Create the custom elements
+if (!window.customElements.get("custom-product-form")) {
+  window.customElements.define("custom-product-form", customProductForm, { extends: "form" });
+}
