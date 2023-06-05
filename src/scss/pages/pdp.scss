@@ -223,5 +223,20 @@
             }
         }
     }
+
+
+    //product info 
+    .product-info{
+        .product-info__title{
+            font-family: 'Clan Pro';
+            font-style: italic;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 61px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
 }
 
