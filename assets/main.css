@@ -727,7 +727,8 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   border: 0.8px solid #353435;
 }
 
-.template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(3), .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
+.template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(3),
+.template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
   display: none;
 }
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] span[data-smartrr-compare-price] {
@@ -742,6 +743,10 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
 }
 .template--product .product:not(.product-for-member) custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] .data-smartrr-subscribe-price {
   display: none;
+}
+.template--product .shopify-app-block {
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 .template--product .product.cart-has-membership custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
   display: none;
@@ -788,7 +793,8 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   right: 19px;
   background: #353435;
   border-radius: 10px;
-  height: 23px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   display: flex;
   align-items: center;
   padding-left: 7px;
@@ -888,8 +894,10 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-size: 16px;
   line-height: 18px;
   background-image: url("https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260");
-  background-size: 17px; /* Adjust to match the size of your SVG icon */
-  background-position: left center; /* Adjust the position as needed */
+  background-size: 17px;
+  /* Adjust to match the size of your SVG icon */
+  background-position: left center;
+  /* Adjust the position as needed */
   padding-left: 30px;
   background-repeat: no-repeat;
 }
@@ -902,6 +910,50 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #000000;
+}
+.template--product .product-info .product-price_with_rating {
+  margin-top: 13px;
+  margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+}
+.template--product .product-info .product-price_with_rating div[data-smartrr-product-id] {
+  display: inherit;
+}
+.template--product .product-info .product-price_with_rating div[data-smartrr-product-id] span {
+  font-family: "United Sans SemiCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+.template--product .product-info .product-price_with_rating .jdgm-prev-badge {
+  display: flex !important;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+.template--product .product-info .product-info__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0px;
+}
+.template--product .product-info .product-info__text .metafield-rich_text_field {
+  margin-top: 20px !important;
+}
+.template--product .product-info .product-info__text .metafield-rich_text_field ul {
+  margin-top: 17px;
+}
+.template--product .product-info .product-info__text .metafield-rich_text_field ul li {
+  display: block;
+  line-height: 18px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260");
+  background-size: 17px;
+  /* Adjust to match the size of your SVG icon */
+  background-position: left center;
+  /* Adjust the position as needed */
+  padding-left: 27px;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 699px) {

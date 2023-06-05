@@ -3,35 +3,27 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
           }
         },
-        "rating": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "badges": {
-          "type": "badges",
-          "disabled": true,
+        "e00585ce-7192-4586-9567-a2c4bafdd045": {
+          "type": "price_smartrr",
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "3780c535-8911-4fe4-8d1f-605124beb58c": {
+          "type": "text",
           "settings": {
-            "show_taxes_notice": false
+            "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>"
+          }
+        },
+        "8d21c681-30df-4742-8a3a-4317b834ba98": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.product_key_benefit | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -42,11 +34,6 @@
             "selector_mode": "block",
             "color_mode": "color",
             "size_chart_page": ""
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
           }
         },
         "607f9e51-9129-4c62-b3f5-158106b03c22": {
@@ -69,6 +56,11 @@
             "plan_primary_text_color": "#202223",
             "plan_border_color": "#202223",
             "custom_css": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
           }
         },
         "buy_buttons": {
@@ -146,14 +138,13 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "rating",
-        "badges",
-        "price",
+        "e00585ce-7192-4586-9567-a2c4bafdd045",
+        "3780c535-8911-4fe4-8d1f-605124beb58c",
+        "8d21c681-30df-4742-8a3a-4317b834ba98",
         "variant_picker",
-        "quantity_selector",
         "607f9e51-9129-4c62-b3f5-158106b03c22",
+        "quantity_selector",
         "buy_buttons",
         "payment_terms",
         "separator",
