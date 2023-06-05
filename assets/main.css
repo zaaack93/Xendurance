@@ -761,9 +761,11 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   padding: 16px 18px 16px 14px;
   border: 1px solid #ADADAD;
   border-radius: 10px;
+  position: relative;
 }
-.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-badge-item {
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-badge-item {
   position: absolute;
+  top: 16px;
   right: 19px;
   background: #353435;
   border-radius: 10px;
@@ -798,6 +800,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   height: 24px;
   border: 2px solid #E93B40;
   border-radius: 50%;
+  flex: 0 0 24px;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio]:checked {
   background: radial-gradient(#E93B40 0%, #E93B40 50%, transparent 60%, transparent);
@@ -828,6 +831,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   line-height: 24px;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
   margin-left: -11px;
