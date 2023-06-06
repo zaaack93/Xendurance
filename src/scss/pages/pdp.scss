@@ -332,6 +332,7 @@
                 flex: 0 0 142px;
             }
             .product-info__buy-buttons{
+                --input-height:57px;
                 flex: 1;
                 buy-buttons{
                     button{
@@ -351,7 +352,7 @@
             .quantity-selector{
                 background-color: white;
                 border-color: #ADADAD;
-                height: 57px;
+                height: 57px !important;
                 .quantity-selector__button{
                     padding-inline-start: 14px;
                     padding-inline-end: 14px;

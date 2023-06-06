@@ -969,6 +969,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   flex: 0 0 142px;
 }
 .template--product .product-info .buy_button_container .product-info__buy-buttons {
+  --input-height:57px;
   flex: 1;
 }
 .template--product .product-info .buy_button_container .product-info__buy-buttons buy-buttons button {
@@ -986,7 +987,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
 .template--product .product-info .buy_button_container .quantity-selector {
   background-color: white;
   border-color: #ADADAD;
-  height: 57px;
+  height: 57px !important;
 }
 .template--product .product-info .buy_button_container .quantity-selector .quantity-selector__button {
   -webkit-padding-start: 14px;
