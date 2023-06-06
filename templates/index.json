@@ -322,11 +322,11 @@
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
-        "products_count": 8,
+        "products_count": 12,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Shop |All Products|",
+        "title": "Shop |Best Sellers|",
         "content": "<p>Tried and tested by coaches, runners, skiers, everyday athletes and everyone in between.<\/p>",
         "link_url": "",
         "link_text": "View all",
@@ -345,6 +345,7 @@
     },
     "abbcca1b-618a-431c-94d4-c4888a3324c4": {
       "type": "revealed-image-on-scroll",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
         "subheading": "",
@@ -390,72 +391,117 @@
         "button_text_color": ""
       }
     },
-    "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8": {
-      "type": "collection-list",
+    "9c337f61-5b66-4c80-a95f-8e2a71eca744": {
+      "type": "media-with-text",
       "blocks": {
-        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-0": {
-          "type": "collection",
+        "template--16030540497084__9c337f61-5b66-4c80-a95f-8e2a71eca744-1684993689706e73f7-0": {
+          "type": "image",
+          "disabled": true,
           "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
+            "media_width": 50,
+            "media_position": "start",
             "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
             "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
-        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-1": {
-          "type": "collection",
+        "f5eeeeff-9d5e-4186-8966-ef60ad4412a3": {
+          "type": "video",
           "settings": {
-            "collection": "",
+            "external_video_url": "https:\/\/www.youtube.com\/watch?v=VKhd6m_axdE&t=59s",
+            "poster_image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-06_at_11.06.57_am.png",
+            "autoplay": true,
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
             "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "title": "Join Team XND & Save",
+            "content": "<h5>$100 in immediate rewards. Free shipping + 25% off on every order. 2x loyalty points. partner perks.<\/h5>",
+            "link_text": "Learn more",
+            "link_url": "shopify:\/\/products\/team-xnd-membership",
+            "background": "#000000",
+            "background_gradient": "",
             "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
       "block_order": [
-        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-0",
-        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-1",
-        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-2"
+        "template--16030540497084__9c337f61-5b66-4c80-a95f-8e2a71eca744-1684993689706e73f7-0",
+        "f5eeeeff-9d5e-4186-8966-ef60ad4412a3"
       ],
       "settings": {
-        "full_width": true,
-        "stack_collections": true,
-        "collections_per_row": 3,
-        "show_progress_bar": false,
-        "subheading": "",
-        "title": "Collection list",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
+        "full_width": false,
+        "spacing": "none"
+      }
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "16644243327ba53d2a-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Josh.png",
+            "logo_width": 100,
+            "author": "Josh Bridges - Coach\/Athlete",
+            "content": "As a former Navy SEAL and 6x CrossFit Games Athlete, I know the importance of fueling the body with only the best. That is why I have chosen Xendurance for over a decade.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "16644243327ba53d2a-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Hayley.png",
+            "logo_width": 100,
+            "author": "Hayley Manners - College Athlete",
+            "content": "Fuelling my body with clean ingredients is incredibly important. That's why I choose Xendurance products, because I'm confident they will keep me energized and give me the strength I need to be successful!",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "2a1666f6-89ef-470f-90b6-2ebdb6efca55": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Ivet.png",
+            "logo_width": 100,
+            "author": "Ivet Dahl - Coach\/Athlete",
+            "content": "As an athlete, coach, wife and mom of 3 boys, Xendurance products keep me fueled and ready to tackle the day!",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "16644243327ba53d2a-1",
+        "16644243327ba53d2a-0",
+        "2a1666f6-89ef-470f-90b6-2ebdb6efca55"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "small",
+        "background": "#353435",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
+        "text_color": "#ffffff",
+        "heading_color": "#f5f5f5",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
     "media-grid": {
@@ -467,12 +513,12 @@
             "image": "shopify:\/\/shop_images\/IMGL7680.jpg",
             "title": "Unsure Where to Start?",
             "heading_tag": "h2",
-            "link_url": "",
+            "link_url": "shopify:\/\/pages\/perfect-path-quiz",
             "link_text": "Take the Quiz",
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-start text-start",
             "desktop_column_span": 2,
             "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -491,10 +537,10 @@
             "heading_tag": "h2",
             "link_url": "shopify:\/\/pages\/team-xnd-signup",
             "link_text": "Learn More",
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-start text-start",
             "desktop_column_span": 2,
             "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -557,121 +603,12 @@
         "29246d34-c6e0-4373-84f6-b15e57736a00"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "reduce_width": true,
-        "desktop_row_height": 290,
+        "desktop_row_height": 270,
         "mobile_row_height": 150,
-        "background": "",
+        "background": "#f5f5f5",
         "background_gradient": ""
-      }
-    },
-    "press": {
-      "type": "press",
-      "blocks": {
-        "16644243327ba53d2a-0": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "",
-            "content": "Share info about what your customers say about your products.",
-            "show_rating": false,
-            "rating": 4
-          }
-        },
-        "16644243327ba53d2a-1": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "",
-            "content": "Or share content about your promotion, offers...",
-            "show_rating": false,
-            "rating": 4
-          }
-        },
-        "2a1666f6-89ef-470f-90b6-2ebdb6efca55": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "",
-            "content": "Write some content about what they says about your store.",
-            "show_rating": true,
-            "rating": 4
-          }
-        }
-      },
-      "block_order": [
-        "16644243327ba53d2a-0",
-        "16644243327ba53d2a-1",
-        "2a1666f6-89ef-470f-90b6-2ebdb6efca55"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_size": "small",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
-    "9c337f61-5b66-4c80-a95f-8e2a71eca744": {
-      "type": "media-with-text",
-      "blocks": {
-        "template--16030540497084__9c337f61-5b66-4c80-a95f-8e2a71eca744-1684993689706e73f7-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "f5eeeeff-9d5e-4186-8966-ef60ad4412a3": {
-          "type": "video",
-          "settings": {
-            "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "autoplay": true,
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "dfgh",
-            "title": "dfghdfghdfghdfgh",
-            "content": "<p>dfghdfghdfghdfgjdhfjhgddhf<\/p>",
-            "link_text": "asdasd",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540497084__9c337f61-5b66-4c80-a95f-8e2a71eca744-1684993689706e73f7-0",
-        "f5eeeeff-9d5e-4186-8966-ef60ad4412a3"
-      ],
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
       }
     },
     "698a8604-5b1e-491b-af0f-b958f03c9333": {
@@ -692,15 +629,103 @@
       "settings": {
         "full_width": false,
         "show_excerpt": false,
-        "show_date": false,
+        "show_date": true,
         "show_author": false,
         "show_comments_count": false,
         "show_category": false,
         "subheading": "",
-        "title": "Blog posts",
+        "title": "Read the Xendurance Blog",
+        "content": "<p>Our take on the latest in fitness and health trends and news. <\/p>",
+        "link_url": "shopify:\/\/blogs\/blog",
+        "link_text": "View all blog posts",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Join the Squad",
+        "content": "<p>Sign up for exclusive access to anew releases, giveaways and <strong>10% off your first order!<\/strong><\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "skin",
+            "image": "shopify:\/\/shop_images\/Xnd-Sups_6_Complete_Skin_Pack-1-Night_Moisture_2_1024x1024_2b380287-c550-4a5a-b3a4-b03a83fe96c0.webp",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 6
+          }
+        },
+        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "packs-1",
+            "image": "shopify:\/\/shop_images\/menu-link-shop-all-products.jpg",
+            "subheading": "",
+            "title": "PACKS",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5
+          }
+        },
+        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-products",
+            "image": "shopify:\/\/shop_images\/menu-link-shop-supplements.jpg",
+            "subheading": "",
+            "title": "SHOP ALL",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-0",
+        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-1",
+        "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row": 3,
+        "show_progress_bar": true,
+        "subheading": "",
+        "title": "",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -710,6 +735,7 @@
     },
     "faq": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "166442457738b23caf-0": {
           "type": "item",
@@ -768,11 +794,12 @@
     "17338140-d4f4-4fdf-92a0-bc9aad196adb",
     "abbcca1b-618a-431c-94d4-c4888a3324c4",
     "impact-text",
-    "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8",
-    "media-grid",
-    "press",
     "9c337f61-5b66-4c80-a95f-8e2a71eca744",
+    "press",
+    "media-grid",
     "698a8604-5b1e-491b-af0f-b958f03c9333",
+    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad",
+    "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8",
     "faq"
   ]
 }
