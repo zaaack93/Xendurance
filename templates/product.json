@@ -69,6 +69,17 @@
             "payment_button_text_color": ""
           }
         },
+        "ff481666-34da-4089-ad31-cb03d9ffc893": {
+          "type": "icon_with_text",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/mdi_shield-tick.png",
+            "icon_size1": 30,
+            "title1": "Money Back Guarantee",
+            "image2": "shopify:\/\/shop_images\/mdi_truck-delivery.png",
+            "icon_size2": 35,
+            "title12": "Same Day Shipping"
+          }
+        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {
@@ -140,6 +151,7 @@
         "variant_picker",
         "607f9e51-9129-4c62-b3f5-158106b03c22",
         "3cbe7afa-04db-4038-8417-654d1167e569",
+        "ff481666-34da-4089-ad31-cb03d9ffc893",
         "payment_terms",
         "separator",
         "d6e7cc69-7a8b-4051-b445-8b711ed9e361",

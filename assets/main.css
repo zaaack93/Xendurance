@@ -727,6 +727,10 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   border: 0.8px solid #353435;
 }
 
+.template--product product-gallery {
+  position: sticky;
+  top: 109px;
+}
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(3),
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
   display: none;
@@ -959,6 +963,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   display: flex;
   -moz-column-gap: 22px;
        column-gap: 22px;
+  margin-bottom: 0px;
 }
 .template--product .product-info .buy_button_container .product-info__quantity-selector {
   flex: 0 0 142px;
@@ -976,10 +981,12 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   letter-spacing: 0.02em;
   padding-top: 14px;
   padding-bottom: 10px;
+  height: 57px;
 }
 .template--product .product-info .buy_button_container .quantity-selector {
   background-color: white;
   border-color: #ADADAD;
+  height: 57px;
 }
 .template--product .product-info .buy_button_container .quantity-selector .quantity-selector__button {
   -webkit-padding-start: 14px;
@@ -996,6 +1003,33 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+}
+.template--product .product__icon__row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.template--product .product__icon__row .product__icon__container:nth-child(1) {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.template--product .product__icon__row .product__icon__container:nth-child(2) {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.template--product .product__icon__row .product__icon__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.template--product .product__icon__row .product__icon__container .product__icon__text p {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 699px) {
