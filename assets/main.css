@@ -731,6 +731,29 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   position: sticky;
   top: 109px;
 }
+.template--product product-gallery .product-card__badge-list {
+  position: absolute;
+  left: 19px;
+  top: 19px;
+}
+.template--product product-gallery .product-card__badge-list .badge {
+  background: #353435;
+  border-radius: 10px;
+  font-family: "United Sans SemiCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.34px;
+}
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(3),
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(4) {
   display: none;
@@ -741,6 +764,10 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
 }
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] span[data-smartrr-subscribe-price] {
   color: #E93B40;
+}
+.template--product .product.product-for-member .offer,
+.template--product .product.product-for-member buy-buttons span[data-smartrr-compare-price] {
+  display: none;
 }
 .template--product .product:not(.product-for-member) custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(2) {
   display: none;
@@ -797,18 +824,27 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   right: 19px;
   background: #353435;
   border-radius: 10px;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 3px;
   display: flex;
   align-items: center;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
   font-family: "United Sans SemiCond";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   color: #FFFFFF;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .badge-for-ordre-once {
+  background-color: transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #353435;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label {
   display: flex;
@@ -923,6 +959,8 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
 }
 .template--product .product-info .product-price_with_rating div[data-smartrr-product-id] {
   display: inherit;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .template--product .product-info .product-price_with_rating div[data-smartrr-product-id] span {
   font-family: "United Sans SemiCond";
@@ -969,7 +1007,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   flex: 0 0 142px;
 }
 .template--product .product-info .buy_button_container .product-info__buy-buttons {
-  --input-height:57px;
+  --input-height: 57px;
   flex: 1;
 }
 .template--product .product-info .buy_button_container .product-info__buy-buttons buy-buttons button {
@@ -1031,6 +1069,75 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
+}
+.template--product .product-offer-main {
+  margin-bottom: 40px;
+}
+.template--product .product-offer-main .offer {
+  padding-top: 20px;
+  padding-bottom: 27px;
+  padding-left: 17px;
+  padding-right: 17px;
+  row-gap: 0px;
+}
+.template--product .product-offer-main .offer .text-with-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+}
+.template--product .product-offer-main .offer .text-with-icon img {
+  border-radius: 10px;
+}
+.template--product .product-offer-main .offer .text-with-icon span {
+  font-family: "United Sans SemiCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.2684px;
+  line-height: 31px;
+}
+.template--product .product-offer-main .offer .prose {
+  margin-top: 19px;
+  padding-top: 17px;
+  border-top: 1px solid #ADADAD;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.template--product .product-offer-main .offer .prose p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.template--product .product-offer-main .offer .prose ul {
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 13px;
+  padding-right: 13px;
+  row-gap: 5px;
+}
+.template--product .product-offer-main .offer .prose ul li {
+  background-image: url("https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576");
+  background-size: 17px;
+  /* Adjust to match the size of your SVG icon */
+  background-position: left center;
+  /* Adjust the position as needed */
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+.template--product .product-offer-main .offer .product-info__buy-buttons {
+  margin-top: 18px;
+}
+.template--product .product-offer-main .offer .product-info__buy-buttons button {
+  font-family: "United Sans SemiCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 699px) {

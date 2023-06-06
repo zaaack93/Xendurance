@@ -1,9 +1,35 @@
 .template--product {
 
-    product-gallery{
+    product-gallery {
         position: sticky;
         top: 109px;
+
+        .product-card__badge-list {
+            position: absolute;
+            left: 19px;
+            top: 19px;
+
+            .badge {
+                background: #353435;
+                border-radius: 10px;
+                font-family: 'United Sans SemiCond';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 15px;
+                color: white;
+                padding-top: 6px;
+                padding-bottom: 4px;
+                display: flex;
+                align-items: center;
+                padding-left: 14px;
+                padding-right: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.34px;
+            }
+        }
     }
+
     // cass for member hide 2 and 3 
     .product.product-for-member {
         custom-options {
@@ -29,6 +55,11 @@
 
             }
         }
+
+        .offer,
+        buy-buttons span[data-smartrr-compare-price] {
+            display: none;
+        }
     }
 
     // cass for member hide 1
@@ -49,10 +80,12 @@
             }
         }
     }
-    .shopify-app-block{
+
+    .shopify-app-block {
         margin-top: 28px;
         margin-bottom: 28px;
     }
+
     .product.cart-has-membership {
         custom-options {
             div[data-smartrr-selling-plan-groups] {
@@ -124,18 +157,28 @@
                     right: 19px;
                     background: #353435;
                     border-radius: 10px;
-                    padding-top: 3px;
+                    padding-top: 5px;
                     padding-bottom: 3px;
                     display: flex;
                     align-items: center;
-                    padding-left: 7px;
-                    padding-right: 7px;
+                    padding-left: 14px;
+                    padding-right: 14px;
                     font-family: 'United Sans SemiCond';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 16px;
                     color: #FFFFFF;
+                }
+
+                .badge-for-ordre-once {
+                    background-color: transparent;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #353435;
                 }
 
                 .smartrr-selling-plan-group-header {
@@ -281,6 +324,7 @@
 
             div[data-smartrr-product-id] {
                 display: inherit;
+                column-gap: 10px;
 
                 span {
                     font-family: 'United Sans SemiCond';
@@ -306,8 +350,10 @@
 
             .metafield-rich_text_field {
                 margin-top: 20px !important;
+
                 ul {
                     margin-top: 17px;
+
                     li {
                         display: block;
                         line-height: 18px;
@@ -324,18 +370,21 @@
         }
 
         //quantty selector with buy button
-        .buy_button_container{
+        .buy_button_container {
             display: flex;
             column-gap: 22px;
             margin-bottom: 0px;
-            .product-info__quantity-selector{
+
+            .product-info__quantity-selector {
                 flex: 0 0 142px;
             }
-            .product-info__buy-buttons{
-                --input-height:57px;
+
+            .product-info__buy-buttons {
+                --input-height: 57px;
                 flex: 1;
-                buy-buttons{
-                    button{
+
+                buy-buttons {
+                    button {
                         font-family: 'United Sans SemiCond';
                         font-style: normal;
                         font-weight: 700;
@@ -349,19 +398,23 @@
                     }
                 }
             }
-            .quantity-selector{
+
+            .quantity-selector {
                 background-color: white;
                 border-color: #ADADAD;
                 height: 57px !important;
-                .quantity-selector__button{
+
+                .quantity-selector__button {
                     padding-inline-start: 14px;
                     padding-inline-end: 14px;
-                    svg{
+
+                    svg {
                         width: 8px;
                         height: 8px;
                     }
                 }
-                .quantity-selector__input{
+
+                .quantity-selector__input {
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -370,29 +423,115 @@
             }
         }
     }
-    .product__icon__row{
+
+    .product__icon__row {
         display: flex;
         flex-flow: row wrap;
         margin-top: 16px;
         margin-bottom: 16px;
-        .product__icon__container:nth-child(1){
+
+        .product__icon__container:nth-child(1) {
             column-gap: 8px;
         }
-        .product__icon__container:nth-child(2){
+
+        .product__icon__container:nth-child(2) {
             column-gap: 16px;
         }
-        .product__icon__container{
+
+        .product__icon__container {
             display: flex;
             align-items: center;
             justify-content: center;
             flex: 0 0 50%;
             max-width: 50%;
-            .product__icon__text{
-                p{
+
+            .product__icon__text {
+                p {
                     margin: 0px;
                     font-weight: 500;
                     font-size: 17px;
                     line-height: 20px;
+                }
+            }
+        }
+    }
+
+    //product to offer
+    .product-offer-main {
+        //margin-top: 45px;
+        margin-bottom: 40px;
+
+        .offer {
+            padding-top: 20px;
+            padding-bottom: 27px;
+            padding-left: 17px;
+            padding-right: 17px;
+            row-gap: 0px;
+
+            .text-with-icon {
+                padding-left: 10px;
+                padding-right: 10px;
+                column-gap: 27px;
+
+                img {
+                    border-radius: 10px;
+                }
+
+                span {
+                    font-family: 'United Sans SemiCond';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 31.2684px;
+                    line-height: 31px;
+                }
+            }
+
+            .prose {
+                margin-top: 19px;
+                padding-top: 17px;
+                border-top: 1px solid #ADADAD;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                ul {
+                    margin-top: 13px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    padding-left: 13px;
+                    padding-right: 13px;
+                    row-gap: 5px;
+
+                    li {
+                        background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576');
+                        background-size: 17px;
+                        /* Adjust to match the size of your SVG icon */
+                        background-position: left center;
+                        /* Adjust the position as needed */
+                        padding-left: 30px;
+                        background-repeat: no-repeat;
+                        list-style: none;
+                    }
+                }
+            }
+
+            .product-info__buy-buttons {
+                margin-top: 18px;
+
+                button {
+                    font-family: 'United Sans SemiCond';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
                 }
             }
         }

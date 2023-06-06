@@ -91,16 +91,17 @@
           "settings": {
           }
         },
-        "d6e7cc69-7a8b-4051-b445-8b711ed9e361": {
-          "type": "offer",
+        "cd6ba36a-48e1-40f2-a783-9541c8adc725": {
+          "type": "product_offer",
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
             "icon": "picto-coupon",
             "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
-            "icon_width": 80,
-            "title": "Become a Member & Save 25%",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
+            "icon_width": 72,
+            "title": "Become a Member & |Save 25% OFF|",
+            "content": "<p>Purchase a Team XND Membership and receive:<\/p><ul><li> 25% Off Sitewide<\/li><li>$100 Worth of Product Rewards  <\/li><li>Free US Shipping.<\/li><li>No Order Minimums.  Exclusive Partner Perks<\/li><\/ul>",
+            "product": "team-xnd-membership",
             "background": "#353435",
             "text_color": "#ffffff"
           }
@@ -131,16 +132,6 @@
             "title": "When to Consume",
             "content": "<p>Share some content to your customers about your products.<\/p>"
           }
-        },
-        "f6277ae5-3a7d-4dea-9c23-52c21e5e270e": {
-          "type": "associated_products",
-          "settings": {
-            "title": "Buy it with",
-            "stack_products": true,
-            "products_count": 2,
-            "background": "",
-            "text_color": ""
-          }
         }
       },
       "block_order": [
@@ -154,12 +145,11 @@
         "ff481666-34da-4089-ad31-cb03d9ffc893",
         "payment_terms",
         "separator",
-        "d6e7cc69-7a8b-4051-b445-8b711ed9e361",
+        "cd6ba36a-48e1-40f2-a783-9541c8adc725",
         "description",
         "9a72e9ef-1e05-4816-9035-41a075bdf809",
         "b833a344-c331-427c-9113-de7b76a2738c",
-        "ebb6b23d-4582-4ee7-b484-aa7711332c3f",
-        "f6277ae5-3a7d-4dea-9c23-52c21e5e270e"
+        "ebb6b23d-4582-4ee7-b484-aa7711332c3f"
       ],
       "settings": {
         "full_width": true,

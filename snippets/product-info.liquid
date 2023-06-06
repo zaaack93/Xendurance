@@ -356,6 +356,12 @@
           </div>
         {%- endif -%}
 
+        {%- when 'product_offer' -%}
+  
+          {%- if block.settings.title != blank or block.settings.content != blank -%}
+            {%- render 'product_offer', block: block -%}
+          {%- endif -%}
+
       {%- when 'share_buttons' -%}
         <div class="product-form__share {% if block.settings.alignment == 'center' %}justify-self-center{% elsif block.settings.alignment == 'end' %}justify-self-end{% endif %}" {{ block.shopify_attributes }}>
           <div class="product-info__share-buttons">

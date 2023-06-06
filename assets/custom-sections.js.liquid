@@ -322,6 +322,15 @@ class PurchaseOptions extends HTMLElement {
           content=sellingPlan.querySelector('.smartrr-pills-header');
           // Update the text content of the div
           content.firstChild.nodeValue = 'Order once';
+          // Create a new element
+          newElement = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newElement.textContent = document.querySelector('main-product')?.dataset.productSellingPlan;
+          newElement.className = 'smartrr-badge-item badge-for-ordre-once';
+
+          // Append the new element as a child to the div
+          sellingPlan.appendChild(newElement);
 
           //add reguular price
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
