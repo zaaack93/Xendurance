@@ -58,13 +58,8 @@
             "custom_css": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "3cbe7afa-04db-4038-8417-654d1167e569": {
+          "type": "buy_buttons_quantite",
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
@@ -144,8 +139,7 @@
         "8d21c681-30df-4742-8a3a-4317b834ba98",
         "variant_picker",
         "607f9e51-9129-4c62-b3f5-158106b03c22",
-        "quantity_selector",
-        "buy_buttons",
+        "3cbe7afa-04db-4038-8417-654d1167e569",
         "payment_terms",
         "separator",
         "d6e7cc69-7a8b-4051-b445-8b711ed9e361",

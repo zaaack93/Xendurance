@@ -125,8 +125,9 @@ quick buy information in a template, that will be extracted in JS, but ensure it
         {%- when 'variant_picker' -%}
           {%- render 'variant-picker', product: product, form_id: product_form_id, update_url: false, hide_sold_out_variants: block.settings.hide_sold_out_variants, hide_size_chart: true, force_dropdown_as_block: true, block: block -%}
 
-        {%- when 'buy_buttons' -%}
+        {%- when 'buy_buttons' or 'buy_buttons_quantite' -%}
           {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, button_size: 'lg' -%}
+          
       {%- endcase -%}
     {%- endfor -%}
   </div>
@@ -470,6 +471,59 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "max": 100,
           "step": 1,
           "default": 0
+        }
+      ]
+    },
+    {
+      "type": "buy_buttons_quantite",
+      "name": "Buy buttons with quantity",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Buy button"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_payment_button",
+          "label": "Show dynamic checkout button",
+          "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gift_card_recipient",
+          "label": "Show recipient information form for gift card products",
+          "info": "Gift card products can optionally be sent directly to a recipient along with a personal message. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "atc_button_background",
+          "label": "Add to cart background"
+        },
+        {
+          "type": "color",
+          "id": "atc_button_text_color",
+          "label": "Add to cart color"
+        },
+        {
+          "type": "color",
+          "id": "payment_button_background",
+          "label": "Buy now button background"
+        },
+        {
+          "type": "color",
+          "id": "payment_button_text_color",
+          "label": "Buy now button color"
+        },
+        {
+          "type": "header",
+          "content": "Quantity selector"
+        },
+        {
+          "type": "paragraph",
+          "content": "The selector is automatically hidden if all variants are sold out. When at least one variant is available, the selector is always visible to prevent the page from moving when switching variants."
         }
       ]
     },

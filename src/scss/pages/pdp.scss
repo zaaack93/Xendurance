@@ -319,5 +319,48 @@
             }
         }
 
+        //quantty selector with buy button
+        .buy_button_container{
+            display: flex;
+            column-gap: 22px;
+            .product-info__quantity-selector{
+                flex: 0 0 142px;
+            }
+            .product-info__buy-buttons{
+                flex: 1;
+                buy-buttons{
+                    button{
+                        font-family: 'United Sans SemiCond';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.02em;
+                        padding-top: 14px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .quantity-selector{
+                background-color: white;
+                border-color: #ADADAD;
+                .quantity-selector__button{
+                    padding-inline-start: 14px;
+                    padding-inline-end: 14px;
+                    svg{
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+                .quantity-selector__input{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+
     }
 }
