@@ -23,7 +23,7 @@
       var product = event.detail.product; // Gives you access to the whole product that the variant belongs to
       var form = event.target; // The form that triggers the change
       if (variant.available) {
-        var newItem = "&nbsp;&nbsp;|&nbsp;<span  data-smartrr-product-id=\"".concat(product.id, "\" data-smartrr-price-style=\"overwrite-compare\" data-use-quantity=\"true\"><span data-smartrr-compare-price></span><span data-smartrr-regular-price></span><span smartrr-top-price data-smartrr-subscribe-price></span></span>");
+        var newItem = "&nbsp;&nbsp;|&nbsp;&nbsp;<span  data-smartrr-product-id=\"".concat(product.id, "\" data-smartrr-price-style=\"overwrite-compare\" data-use-quantity=\"true\"><span data-smartrr-compare-price></span><span data-smartrr-regular-price></span><span smartrr-top-price data-smartrr-subscribe-price></span></span>");
         form.querySelector('button[type="submit"]').querySelector('div').innerHTML += newItem;
 
         //this button reload the sell price for button add to cart
