@@ -36,7 +36,7 @@
   <div class="section-stack gab-reducer">
     {%- assign link_url = section.settings.link_url | default: section.settings.collection.url -%}
     {%- render 'section-header-v2',collections:section.blocks, subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: link_url -%}
-    
+    {% include 'membership-check' %}
     {% for block in section.blocks %}
         <div class="products-category {% if section.settings.show_progress_bar %}scrollable-with-controls{% else %}floating-controls-container{% endif %}" data-category="{{block.settings.collection.handle}}">
         {%- assign scroll_area_id = 'scroll-area-' | append: section.id -%}
@@ -44,8 +44,11 @@
         <scroll-carousel selector="product-card" id="{{ scroll_area_id }}" class="scroll-area bleed  {% if section.settings.products_count > section.settings.products_per_row_desktop %}is-scrollable{% endif %}">
             <reveal-items selector=".product-list > *">
             <product-list class="product-list" >
-                {%- assign products = block.settings.collection.products -%}
-
+                {% if isMember %}
+                  {%- assign products = block.settings.collection_member.products -%}
+                {%else%}
+                  {%- assign products = block.settings.collection.products -%}
+                {%endif%}
                 {%- for product in products limit: section.settings.products_count -%}
                 {%- render 'product-card-v2', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
                 {%- else -%}
@@ -260,7 +263,12 @@
                 "type": "collection",
                 "id": "collection",
                 "label": "Collection"
-            }
+            },
+            {
+              "type": "collection",
+              "id": "collection_member",
+              "label": "Collection for members"
+          }
         ]
     }
   ],
