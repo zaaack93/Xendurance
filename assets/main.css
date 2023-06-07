@@ -1104,6 +1104,8 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   padding-top: 14px;
