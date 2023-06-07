@@ -1043,6 +1043,9 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-size: 24px;
   line-height: 24px;
 }
+.template--product .product-info .product-price_with_rating div[data-smartrr-product-id] span[data-smartrr-compare-price]:not(.smartrr-widget-hide) ~ span[data-smartrr-subscribe-price] {
+  color: red;
+}
 .template--product .product-info .product-price_with_rating .jdgm-prev-badge {
   display: flex !important;
   -moz-column-gap: 11px;
