@@ -803,6 +803,11 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   color: #000000;
   margin-bottom: 12px;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options .smartrr-title {
+    margin-bottom: 9px;
+  }
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] {
   display: flex;
   flex-direction: column;
@@ -848,6 +853,12 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   line-height: 16px;
   color: #FFFFFF;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-badge-item {
+    top: 14px;
+    right: 16px;
+  }
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .badge-for-ordre-once {
   background-color: transparent;
   font-family: "Inter";
@@ -856,12 +867,20 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-size: 16px;
   line-height: 19px;
   color: #353435;
+  padding: 0px;
+  padding-top: 2px;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label {
   display: flex;
   align-items: start;
   -moz-column-gap: 16px;
        column-gap: 16px;
+}
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio] {
   display: initial;
@@ -895,6 +914,12 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-size: 18px;
   line-height: 22px;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header .smartrr-pricing-dash {
   display: none;
 }
@@ -909,8 +934,21 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   justify-content: flex-end;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] {
+    font-size: 16px;
+    line-height: 19px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
   margin-left: -11px;
+}
+@media only screen and (max-width: 699px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
+    margin-left: -5px;
+  }
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] div[data-smartrr-selling-plan-group-plans] {
   margin-top: 14px;
@@ -920,6 +958,12 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   padding-bottom: 10px;
   border-top: 1px solid #ADADAD;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] div[data-smartrr-selling-plan-group-plans] {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] div[data-smartrr-selling-plan-group-plans] .smartrr-pills-header {
   margin: 0px;
 }
@@ -928,6 +972,9 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   color: inherit;
   padding: 0px;
   border: none;
+}
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner {
+  white-space: initial;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner .label_content {
   font-size: 16px;
@@ -951,6 +998,11 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   /* Adjust the position as needed */
   padding-left: 30px;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 989px) {
+  .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner ul li {
+    font-size: 15px;
+  }
 }
 .template--product .product-info .product-info__title {
   font-family: "Clan Pro";
@@ -1150,6 +1202,11 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
 .template--product .product-offer-main {
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .product-offer-main {
+    margin-bottom: 20px;
+  }
+}
 .template--product .product-offer-main .offer {
   padding-top: 20px;
   padding-bottom: 27px;
@@ -1163,6 +1220,13 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   -moz-column-gap: 27px;
        column-gap: 27px;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .product-offer-main .offer .text-with-icon {
+    padding: 0px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}
 .template--product .product-offer-main .offer .text-with-icon img {
   border-radius: 10px;
 }
@@ -1173,12 +1237,24 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   font-size: 31.2684px;
   line-height: 31px;
 }
+@media only screen and (max-width: 989px) {
+  .template--product .product-offer-main .offer .text-with-icon span {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
 .template--product .product-offer-main .offer .prose {
   margin-top: 19px;
   padding-top: 17px;
   border-top: 1px solid #ADADAD;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media only screen and (max-width: 989px) {
+  .template--product .product-offer-main .offer .prose {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .template--product .product-offer-main .offer .prose p {
   font-weight: 500;
@@ -1193,6 +1269,14 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   padding-left: 13px;
   padding-right: 13px;
   row-gap: 5px;
+}
+@media only screen and (max-width: 989px) {
+  .template--product .product-offer-main .offer .prose ul {
+    margin-top: 9px;
+    font-size: 14.5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .template--product .product-offer-main .offer .prose ul li {
   background-image: url("https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576");
@@ -1215,6 +1299,12 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 989px) {
+  .template--product .product-offer-main .offer .product-info__buy-buttons button {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 @media only screen and (max-width: 699px) {

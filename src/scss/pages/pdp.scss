@@ -119,6 +119,9 @@
             line-height: 24px;
             color: #000000;
             margin-bottom: 12px;
+            @media only screen and (max-width: 989px) {
+                margin-bottom: 9px;
+            }
         }
 
         div[data-smartrr-selling-plan-groups] {
@@ -180,6 +183,10 @@
                     font-size: 16px;
                     line-height: 16px;
                     color: #FFFFFF;
+                    @media only screen and (max-width: 989px) {
+                        top: 14px;
+                        right: 16px;
+                    }
                 }
 
                 .badge-for-ordre-once {
@@ -190,6 +197,8 @@
                     font-size: 16px;
                     line-height: 19px;
                     color: #353435;
+                    padding: 0px;
+                    padding-top: 2px;
                 }
 
                 .smartrr-selling-plan-group-header {
@@ -197,8 +206,10 @@
                         display: flex;
                         align-items: start;
                         column-gap: 16px;
-
-
+                        @media only screen and (max-width: 989px) {
+                            column-gap: 12px;
+                        }
+                        
                         input[type="radio"] {
                             display: initial;
                             appearance: none;
@@ -231,6 +242,10 @@
                             font-weight: 600;
                             font-size: 18px;
                             line-height: 22px;
+                            @media only screen and (max-width: 989px) {
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
 
                             .smartrr-pricing-dash {
                                 display: none;
@@ -245,6 +260,11 @@
                                 flex-direction: row-reverse;
                                 justify-content: flex-end;
                                 flex-wrap: wrap;
+                                @media only screen and (max-width: 989px) {
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    column-gap: 10px;
+                                }
 
                                 span[data-smartrr-subscribe-price],
                                 .data-smartrr-subscribe-price {
@@ -253,6 +273,9 @@
 
                                 .data-smartrr-subscribe-price {
                                     margin-left: -11px;
+                                    @media only screen and (max-width: 699px) {
+                                        margin-left: -5px;
+                                    }
                                 }
                             }
                         }
@@ -267,6 +290,10 @@
                         padding-right: 13px;
                         padding-bottom: 10px;
                         border-top: 1px solid #ADADAD;
+                        @media only screen and (max-width: 989px) {
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        }
 
                         .smartrr-pills-header {
                             margin: 0px;
@@ -281,6 +308,7 @@
                     border: none;
 
                     .content_inner {
+                        white-space: initial;
                         .label_content {
                             font-size: 16px;
                             line-height: 19px;
@@ -304,6 +332,10 @@
                                 /* Adjust the position as needed */
                                 padding-left: 30px;
                                 background-repeat: no-repeat;
+                                @media only screen and (max-width: 989px) {
+                                    font-size: 15px;
+                                }
+                                
                             }
                         }
                     }
@@ -511,6 +543,9 @@
     .product-offer-main {
         //margin-top: 45px;
         margin-bottom: 40px;
+        @media only screen and (max-width: 989px) {
+            margin-bottom: 20px;
+        }
 
         .offer {
             padding-top: 20px;
@@ -523,6 +558,10 @@
                 padding-left: 10px;
                 padding-right: 10px;
                 column-gap: 27px;
+                @media only screen and (max-width: 989px) {
+                    padding: 0px;
+                    column-gap: 25px;
+                }
 
                 img {
                     border-radius: 10px;
@@ -534,6 +573,10 @@
                     font-weight: 700;
                     font-size: 31.2684px;
                     line-height: 31px;
+                    @media only screen and (max-width: 989px) {
+                        font-size: 28px;
+                        line-height: 28px;
+                    }
                 }
             }
 
@@ -543,6 +586,10 @@
                 border-top: 1px solid #ADADAD;
                 padding-left: 10px;
                 padding-right: 10px;
+                @media only screen and (max-width: 989px) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
 
                 p {
                     font-weight: 500;
@@ -558,6 +605,12 @@
                     padding-left: 13px;
                     padding-right: 13px;
                     row-gap: 5px;
+                    @media only screen and (max-width: 989px) {
+                        margin-top: 9px;
+                        font-size: 14.5px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
 
                     li {
                         background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576');
@@ -574,7 +627,6 @@
 
             .product-info__buy-buttons {
                 margin-top: 18px;
-
                 button {
                     font-family: 'United Sans SemiCond';
                     font-style: normal;
@@ -583,6 +635,10 @@
                     line-height: 24px;
                     letter-spacing: 0.02em;
                     text-transform: uppercase;
+                    @media only screen and (max-width: 989px) {
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
                 }
             }
         }

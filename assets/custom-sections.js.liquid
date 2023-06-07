@@ -298,7 +298,18 @@ class PurchaseOptions extends HTMLElement {
 
           // Set attributes or properties for the new element if needed
           newregulralabel.textContent = '(Free U.S Shipping + Rewards)';
-          newregulralabel.className = 'data-smartrr-subscribe-price';
+          newregulralabel.className = 'data-smartrr-subscribe-price sm-max:hidden';
+          price_cotnainer.prepend(newregulralabel);
+
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(+Free Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price sm:hidden';
           price_cotnainer.prepend(newregulralabel);
 
           //create new badge
