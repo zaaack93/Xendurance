@@ -770,7 +770,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   display: none;
 }
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] span[data-smartrr-compare-price] {
-  display: initial;
+  display: initial !important;
   order: 1;
 }
 .template--product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id]:nth-child(1) div[data-smartrr-price-style] span[data-smartrr-subscribe-price] {
@@ -875,6 +875,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   align-items: start;
   -moz-column-gap: 16px;
        column-gap: 16px;
+  flex-direction: row !important;
 }
 @media only screen and (max-width: 989px) {
   .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label {
@@ -883,7 +884,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   }
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio] {
-  display: initial;
+  display: initial !important;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -950,6 +951,9 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
     margin-left: -5px;
   }
 }
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] {
+  margin: 0px !important;
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plan-group-contents] div[data-smartrr-selling-plan-group-plans] {
   margin-top: 14px;
   padding-top: 16px;
@@ -971,7 +975,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   background: transparent;
   color: inherit;
   padding: 0px;
-  border: none;
+  border: none !important;
 }
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] div[data-smartrr-selling-plans-select] .content_inner {
   white-space: initial;

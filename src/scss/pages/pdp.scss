@@ -54,7 +54,7 @@
                 div[data-smartrr-selling-plan-group-id]:nth-child(1) {
                     div[data-smartrr-price-style] {
                         span[data-smartrr-compare-price] {
-                            display: initial;
+                            display: initial !important;
                             order: 1;
                         }
 
@@ -206,12 +206,13 @@
                         display: flex;
                         align-items: start;
                         column-gap: 16px;
+                        flex-direction: row !important;
                         @media only screen and (max-width: 989px) {
                             column-gap: 12px;
                         }
                         
                         input[type="radio"] {
-                            display: initial;
+                            display: initial !important;
                             appearance: none;
                             background-color: #fff;
                             margin: 0;
@@ -283,6 +284,7 @@
                 }
 
                 div[data-smartrr-selling-plan-group-contents] {
+                    margin: 0px !important;
                     div[data-smartrr-selling-plan-group-plans] {
                         margin-top: 14px;
                         padding-top: 16px;
@@ -305,7 +307,7 @@
                     background: transparent;
                     color: inherit;
                     padding: 0px;
-                    border: none;
+                    border: none !important;
 
                     .content_inner {
                         white-space: initial;
