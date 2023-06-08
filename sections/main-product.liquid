@@ -41,7 +41,7 @@
 {% include 'membership-check' %}
 <div {% render 'section-properties', tight: true %}>
   <main-product data-product-selling-plan="{{product.metafields.custom.product_once_selling_plan_}}">
-  <div class="product {% if isMember or product.tags contains "MEMBERS-ONLY" %} product-for-member {% endif %}">
+  <div class="product {% if isMember and product.tags contains "MEMBERS-ONLY" %} product-for-member {% endif %}">
     {%- if product.media.size > 0 -%}
       {%- render 'product-gallery', product: product -%}
     {%- endif -%}

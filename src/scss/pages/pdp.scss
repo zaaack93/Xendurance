@@ -383,7 +383,7 @@
                     line-height: 24px;
                 }
                 span[data-smartrr-compare-price]:not(.smartrr-widget-hide) ~ span[data-smartrr-subscribe-price] {
-                    color: red;
+                    color: #E93B40;
                 }
                 // span[data-smartrr-compare-price]{
                 //     color: #E93B40;
@@ -471,6 +471,8 @@
                 background-color: white;
                 border-color: #ADADAD;
                 height: 57px !important;
+                width: 100%;
+                justify-content: space-around;
 
                 .quantity-selector__button {
                     padding-inline-start: 14px;
@@ -644,7 +646,11 @@
                     line-height: 24px;
                     letter-spacing: 0.02em;
                     text-transform: uppercase;
+                    padding-top: 18px;
+                    padding-bottom: 16px;
                     @media only screen and (max-width: 989px) {
+                        padding-top: 15px;
+                        padding-bottom: 13px;
                         font-size: 18px;
                         line-height: 18px;
                     }

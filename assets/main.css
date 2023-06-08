@@ -1044,7 +1044,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   line-height: 24px;
 }
 .template--product .product-info .product-price_with_rating div[data-smartrr-product-id] span[data-smartrr-compare-price]:not(.smartrr-widget-hide) ~ span[data-smartrr-subscribe-price] {
-  color: red;
+  color: #E93B40;
 }
 .template--product .product-info .product-price_with_rating .jdgm-prev-badge {
   display: flex !important;
@@ -1122,6 +1122,8 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   background-color: white;
   border-color: #ADADAD;
   height: 57px !important;
+  width: 100%;
+  justify-content: space-around;
 }
 .template--product .product-info .buy_button_container .quantity-selector .quantity-selector__button {
   -webkit-padding-start: 14px;
@@ -1304,9 +1306,13 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  padding-top: 18px;
+  padding-bottom: 16px;
 }
 @media only screen and (max-width: 989px) {
   .template--product .product-offer-main .offer .product-info__buy-buttons button {
+    padding-top: 15px;
+    padding-bottom: 13px;
     font-size: 18px;
     line-height: 18px;
   }

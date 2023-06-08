@@ -253,7 +253,6 @@ class PurchaseOptions extends HTMLElement {
           content=sellingPlan.querySelector('.smartrr-pills-header');
           // Update the text content of the div
           content.firstChild.nodeValue = 'Subscribe';
-          sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]')?.remove();
           
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
           newregulralabel = document.createElement('span');
@@ -262,6 +261,10 @@ class PurchaseOptions extends HTMLElement {
           newregulralabel.textContent = '(Free U.S Shipping)';
           newregulralabel.className = 'data-smartrr-subscribe-price';
           price_cotnainer.prepend(newregulralabel);
+
+          //content options
+          sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>" 
           break;
 
         case "da1e61c01b6561e74b0298c2b931b5c94d7a4bd3":
