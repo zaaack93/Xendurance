@@ -14,21 +14,21 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Free shipping",
+            "title": "Free Shipping",
             "content": "<p>Join Team XND Membership & Receive Free Shipping (& Much More)<\/p>"
           }
         },
         "customer-support": {
           "type": "item",
           "settings": {
-            "icon": "picto-customer-support",
+            "icon": "picto-validation",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Customer service",
-            "content": "<p>Tell your customers how they can reach you.<\/p>"
+            "title": "Over 5000 Reviews",
+            "content": "<p>Put to the test by America's peak performers - and passed with flying colours.<\/p>"
           }
         },
         "discount": {
@@ -40,21 +40,22 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Refer a friend",
-            "content": "<p>Tell your customers about your promotional offers.<\/p>"
+            "title": "Money Back Guarantee",
+            "content": "<p>All Xendurance products come with a 30-Day Money Back Guarantee. We got you.<\/p>"
           }
         },
         "payment": {
           "type": "item",
           "settings": {
-            "icon": "picto-lock",
+            "icon": "picto-earth",
+            "custom_icon": "shopify:\/\/shop_images\/usa_2.png",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Secure payment",
-            "content": "<p>Tel your customers about your payment methods.<\/p>"
+            "title": "American Made",
+            "content": "<p>Proudly manufactured and shipped in the USA, since 1998.<\/p>"
           }
         }
       },
@@ -66,7 +67,7 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "title": "",
         "heading_tag": "h6",
         "text_alignment": "center",
