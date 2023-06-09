@@ -59,7 +59,7 @@ Supported variables
 
   {%- if block.settings.product != blank -%}
     <div class="product-info__buy-buttons">
-{%- form 'product', block.settings.product, is: 'product-form' -%}
+{%- form 'product', block.settings.product, is: 'quick-product-form' -%}
   <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ block.settings.product.selected_or_first_available_variant.id }}">
   <input type="hidden" name="selling_plan" value="4565696700">
   {%- assign button_disabled = false -%}
