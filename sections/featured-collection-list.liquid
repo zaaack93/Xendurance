@@ -93,7 +93,12 @@
       {%- endif -%}
 
       {%- if section.settings.footer_button_text != blank -%}
-        {% render 'button', content: section.settings.footer_button_text, href: section.settings.footer_button_url, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color %}
+        {% if isMember %}
+          {%- assign buttonn_link = block.settings.members_footer_button_url -%}
+        {%else%}
+          {%- assign buttonn_link = block.settings.footer_button_url -%}
+        {%endif%}
+        {% render 'button', content: section.settings.footer_button_text, href: buttonn_link, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color %}
       {%- endif -%}
     </div>
   </div>
@@ -252,6 +257,11 @@
       "type": "url",
       "id": "footer_button_url",
       "label": "Button link"
+    },
+    {
+      "type": "url",
+      "id": "members_footer_button_url",
+      "label": "Members button link"
     }
   ],
   "blocks": [
