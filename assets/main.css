@@ -813,6 +813,9 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   flex-direction: column;
   row-gap: 10px;
 }
+.template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] {
+  margin-bottom: 0px !important;
+}
 .template--product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id].smartrr-group-active {
   background: rgba(233, 59, 64, 0.1);
   border: 1px solid #E93B40;
