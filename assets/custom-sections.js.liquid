@@ -367,20 +367,21 @@ const element = document.querySelector('.smartrr-purchase-options');
 
 // Create an instance of the custom element with the new node name
 const customElement = document.createElement('custom-options');
+if(element && customElement){
+  // Clone the attributes and children from the original element to the custom element
+  Array.from(element.attributes).forEach((attr) => {
+    customElement.setAttribute(attr.name, attr.value);
+  });
+  while (element.firstChild) {
+    customElement.appendChild(element.firstChild);
+  }
 
-// Clone the attributes and children from the original element to the custom element
-Array.from(element.attributes).forEach((attr) => {
-  customElement.setAttribute(attr.name, attr.value);
-});
-while (element.firstChild) {
-  customElement.appendChild(element.firstChild);
+  // Replace the original element with the new custom element
+  element.parentNode.replaceChild(customElement, element);
+
+  // Define the custom element for the new custom node name
+  customElements.define(customElement.nodeName.toLowerCase(), PurchaseOptions);
 }
-
-// Replace the original element with the new custom element
-element.parentNode.replaceChild(customElement, element);
-
-// Define the custom element for the new custom node name
-customElements.define(customElement.nodeName.toLowerCase(), PurchaseOptions);
 
 //override productForm
 import {ProductForm} from "{{ 'theme.js' | asset_url }}"; // Import the theme web component

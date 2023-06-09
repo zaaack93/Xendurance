@@ -19,11 +19,11 @@
                 form.querySelector('button[type="submit"]').querySelector('div').innerHTML+=newItem
 
                 //this button reload the sell price for button add to cart
-                const radioBtns = document.querySelectorAll('input[name="purchase_option"]');
-                radioBtns.forEach(radioBtn => {
+                const radioBtn = document.querySelector('custom-options .smartrr-group-active input[name="purchase_option"]');
+                if(radioBtn){
                     const changeEvent = new Event('change');
                     radioBtn.dispatchEvent(changeEvent);
-                });
+                }
             }
         });
     }

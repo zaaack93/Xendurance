@@ -94,9 +94,9 @@
 
       {%- if section.settings.footer_button_text != blank -%}
         {% if isMember %}
-          {%- assign buttonn_link = block.settings.members_footer_button_url -%}
+          {%- assign buttonn_link = section.settings.members_footer_button_url -%}
         {%else%}
-          {%- assign buttonn_link = block.settings.footer_button_url -%}
+          {%- assign buttonn_link = section.settings.footer_button_url -%}
         {%endif%}
         {% render 'button', content: section.settings.footer_button_text, href: buttonn_link, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color %}
       {%- endif -%}
