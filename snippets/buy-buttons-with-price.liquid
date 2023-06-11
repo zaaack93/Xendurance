@@ -22,7 +22,7 @@ Supported variables
 
 {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
 
-{%- form 'product', product, is: 'product-form', id: form_id -%}
+{%- form 'product', product, is: 'custom-product-form', id: form_id -%}
   <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
   {%- assign button_disabled = false -%}
@@ -32,7 +32,13 @@ Supported variables
     {%- if product.template_suffix contains 'pre-order' -%}
       {%- capture button_content -%}{{ 'product.general.pre_order_button' | t }}{%- endcapture -%}
     {%- else -%}
-      {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+      {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}&nbsp;&nbsp;|&nbsp;
+      <span  data-smartrr-product-id="{{ product.id }}" data-smartrr-price-style="overwrite-compare" data-use-quantity="true">
+        <span data-smartrr-compare-price></span>
+        <span data-smartrr-regular-price></span>
+        <span smartrr-top-price data-smartrr-subscribe-price></span>
+      </span>
+      {%- endcapture -%}
     {%- endif -%}
   {%- else -%}
     {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}

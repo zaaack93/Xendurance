@@ -27,10 +27,12 @@
         form.querySelector('button[type="submit"]').querySelector('div').innerHTML += newItem;
 
         //this button reload the sell price for button add to cart
-        var radioBtn = document.querySelector('custom-options .smartrr-group-active input[name="purchase_option"]');
-        if (radioBtn) {
-          var changeEvent = new Event('change');
-          radioBtn.dispatchEvent(changeEvent);
+        var radioBtns = document.querySelectorAll('custom-options .smartrr-group-active input[name="purchase_option"]');
+        if (radioBtns) {
+          radioBtns.forEach(function (radioBtn) {
+            var changeEvent = new Event('change');
+            radioBtn.dispatchEvent(changeEvent);
+          });
         }
       }
     });

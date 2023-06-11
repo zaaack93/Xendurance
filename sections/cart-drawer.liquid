@@ -43,49 +43,50 @@
             {%- render 'line-item', line_item: line_item, show_desktop_quantity: true -%}
           {%- endfor -%}
         </div>
-
-        {%- if section.settings.products.count > 0 -%}
-          <div class="cart-drawer__recommendations">
-            <div class="v-stack gap-2.5 sm:gap-4">
-              {%- capture carousel_id -%}cart-drawer-recommendations{%- endcapture -%}
-
-              {%- if section.settings.recommendations_title != blank or section.settings.products.count > 1 -%}
-                <div class="h-stack justify-between gap-4">
-                  {%- if section.settings.recommendations_title != blank -%}
-                    <p>{{ section.settings.recommendations_title | escape }}</p>
-                  {%- endif -%}
-
-                  {%- if section.settings.products.count > 1 -%}
-                    <div class="h-stack gap-2 hidden sm:flex">
-                      <button is="prev-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.previous' | t | escape }}" disabled>{%- render 'icon' with 'chevron-left-small', direction_aware: true -%}</button>
-                      <button is="next-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.next' | t | escape }}">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</button>
-                    </div>
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
-
-              {%- assign horizontal_products_blends = true -%}
-              {%- assign product_card_background = section.settings.product_card_background | default: product.settings.product_card_background -%}
-
-              {%- if product_card_background != 'rgba(0,0,0,0)' and product_card_background != blank and product_card_background != settings.dialog_background -%}
-                {%- assign horizontal_products_blends = false -%}
-              {%- endif -%}
-
-              <scroll-carousel selector=".horizontal-product" id="{{ carousel_id }}" class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
-                <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
-                  {%- for recommended_product in section.settings.products -%}
-                    {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
-                  {%- endfor -%}
-                </div>
-              </scroll-carousel>
-            </div>
-          </div>
-        {%- endif -%}
       </div>
     </div>
 
-    <div class="v-stack gap-4 sm:gap-6" slot="footer">
-      <div class="v-stack gap-1">
+    <div class="v-stack gap-4" slot="footer">
+      {%- if section.settings.products.count > 0 -%}
+        <div class="cart-drawer__recommendations ">
+          <div class="v-stack gap-2.5 sm:gap-4">
+            {%- capture carousel_id -%}cart-drawer-recommendations{%- endcapture -%}
+
+            {%- if section.settings.recommendations_title != blank or section.settings.products.count > 1 -%}
+              <div class="h-stack justify-between gap-4">
+                {%- if section.settings.recommendations_title != blank -%}
+                  <p>{{ section.settings.recommendations_title | escape }}</p>
+                {%- endif -%}
+
+                {%- if section.settings.products.count > 1 -%}
+                  <div class="h-stack gap-2 hidden sm:flex">
+                    <button is="prev-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.previous' | t | escape }}" disabled>{%- render 'icon' with 'chevron-left-small', direction_aware: true -%}</button>
+                    <button is="next-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.next' | t | escape }}">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</button>
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            {%- assign horizontal_products_blends = true -%}
+            {%- assign product_card_background = section.settings.product_card_background | default: product.settings.product_card_background -%}
+
+            {%- if product_card_background != 'rgba(0,0,0,0)' and product_card_background != blank and product_card_background != settings.dialog_background -%}
+              {%- assign horizontal_products_blends = false -%}
+            {%- endif -%}
+
+            <scroll-carousel selector=".horizontal-product" id="{{ carousel_id }}" class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
+              <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
+                {%- for recommended_product in section.settings.products -%}
+                  {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
+                {%- endfor -%}
+              </div>
+            </scroll-carousel>
+          </div>
+        </div>
+      {%- endif -%}
+      
+      {% render 'add-membership-cart' %}
+      <div class="v-stack gap-1 total-footer-section">
         {% for discount_application in cart.cart_level_discount_applications %}
           <div class="h-stack gap-4 justify-between">
             <div class="badge">
@@ -99,6 +100,10 @@
         <div class="h-stack gap-4 justify-between">
           <span class="h5">{{ 'cart.general.total' | t }}</span>
           <span class="h5">{{- cart.total_price | money_with_currency -}}</span>
+        </div>
+        <div class="h-stack gap-4 justify-between subscription--price">
+          <span>{{ 'cart.general.total_with_subs' | t }}</span>
+          <span>{{- cart.total_price | times : 0.75 | money_with_currency -}}</span>
         </div>
 
         {%- if section.settings.show_shipping_text -%}

@@ -1,0 +1,30 @@
+<div class="add-membership-cart">
+    <div class="add-membership-container">
+        <div class="text__zone">
+        </div>
+        {%- if block.settings.product != blank -%}
+        <div class="button__zone">
+            {%- form 'product', block.settings.product, is: 'quick-product-form' -%}
+                <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ block.settings.product.selected_or_first_available_variant.id }}">
+                <input type="hidden" name="selling_plan" value="4565696700">
+                {%- assign button_disabled = false -%}
+                {%- assign button_size = button_size | default: 'sm' -%}
+              
+                {%- if product.selected_or_first_available_variant.available -%}
+                  {%- if product.template_suffix contains 'pre-order' -%}
+                    {%- capture button_content -%}{{ 'product.general.pre_order_button' | t }}{%- endcapture -%}
+                  {%- else -%}
+                    {%- capture button_content -%}{{ 'product.general.add_to_cart_short' | t }}{%- endcapture -%}
+                  {%- endif -%}
+                {%- else -%}
+                  {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+                  {%- assign button_disabled = true -%}
+                {%- endif -%}
+                  <buy-buttons class="buy-buttons {% if show_payment_button %}buy-buttons--multiple{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
+                    {%- render 'button', content: button_content, type: 'submit', size: button_size, disabled: button_disabled, secondary: show_payment_button, subdued: button_disabled, background: atc_button_background, text_color: atc_button_text_color -%}
+                  </buy-buttons>
+                {%- endform -%} 
+        </div>
+        {%endif%}
+    </div>
+</div>
