@@ -85,7 +85,7 @@
         </div>
       {%- endif -%}
       
-      {% render 'add-membership-cart' %}
+      {% render 'add-membership-cart', product:section.settings.product, image:section.settings.custom_icon %}
       <div class="v-stack gap-1 total-footer-section">
         {% for discount_application in cart.cart_level_discount_applications %}
           <div class="h-stack gap-4 justify-between">
@@ -229,6 +229,21 @@
       "type": "color",
       "id": "product_card_text_color",
       "label": "Product card text"
+    },
+    {
+      "type": "header",
+      "content": "Product offer"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product to add"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_icon",
+      "label": "Custom icon",
+      "info": "240 x 240px .png recommended"
     }
   ]
 }
