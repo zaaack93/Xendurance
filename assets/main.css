@@ -727,6 +727,17 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   border: 0.8px solid #353435;
 }
 
+cart-drawer.membership-in-cart .add-membership-cart {
+  display: none;
+}
+
+cart-drawer.cart-for-members .add-membership-cart, cart-drawer.cart-for-members .subscription--price.without-saving {
+  display: none;
+}
+cart-drawer.cart-for-members .subscription--price.with-saving {
+  display: flex !important;
+}
+
 cart-drawer .cart-drawer__top {
   padding-bottom: 18px;
   margin-bottom: 23px;
@@ -750,6 +761,9 @@ cart-drawer .subscription--price {
   color: #E93B40;
   margin-top: 7px;
 }
+cart-drawer .subscription--price.with-saving {
+  display: none;
+}
 cart-drawer .total-footer-section {
   -webkit-margin-start: calc(-1 * var(--container-outer-width));
           margin-inline-start: calc(-1 * var(--container-outer-width));
@@ -759,6 +773,56 @@ cart-drawer .total-footer-section {
   padding-top: 18px;
   padding-bottom: 0px;
   border-top: 1px solid #D6D6D6;
+}
+cart-drawer .add-membership-cart {
+  margin-bottom: 7px;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+@media only screen and (max-width: 700px) {
+  cart-drawer .add-membership-cart .horizontal-product {
+    padding: 14px;
+    -moz-column-gap: 13px;
+         column-gap: 13px;
+  }
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info {
+  display: flex;
+  align-self: center;
+}
+@media only screen and (max-width: 700px) {
+  cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__image {
+    max-width: 54px;
+    max-height: 54px;
+  }
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .specialize-price {
+  color: #FF6266;
+  font-style: italic;
+}
+@media only screen and (max-width: 420px) {
+  cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .second-line-text {
+    display: block;
+  }
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__cta {
+  display: flex;
+  align-items: center;
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__cta button {
+  width: 72.97px;
+  height: 37px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 4px;
 }
 
 @media only screen and (max-width: 989px) {
@@ -981,7 +1045,7 @@ cart-drawer .total-footer-section {
   }
 }
 .template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
-  margin-left: -11px;
+  margin-left: -5px;
 }
 @media only screen and (max-width: 699px) {
   .template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] .data-smartrr-subscribe-price {
@@ -1158,6 +1222,9 @@ cart-drawer .total-footer-section {
     font-size: 20px;
     line-height: 20px;
   }
+}
+.template--product .shopify-section--main-product .product-info .buy_button_container .product-info__buy-buttons buy-buttons button span[data-smartrr-compare-price] {
+  display: none;
 }
 .template--product .shopify-section--main-product .product-info .buy_button_container .quantity-selector {
   background-color: white;

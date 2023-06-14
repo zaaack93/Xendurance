@@ -1,4 +1,15 @@
-<cart-drawer {% if request.design_mode %}handle-section-events{% endif %} class="cart-drawer drawer drawer--lg" id="cart-drawer">
+{% include 'membership-check' %}
+
+{% assign desiredProductId = 40692118094012 %}
+{% assign productInCart = false %}
+
+{% for item in cart.items %}
+  {% if item.variant_id == desiredProductId %}
+    {% assign productInCart = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+<cart-drawer {% if request.design_mode %}handle-section-events{% endif %} class="cart-drawer drawer drawer--lg {% if productInCart %} membership-in-cart {%endif%} {%if isMember%} cart-for-members {%endif%}" id="cart-drawer">
   {%- if cart.item_count == 0 -%}
     <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
       {%- render 'icon' with 'close' -%}
@@ -85,7 +96,7 @@
         </div>
       {%- endif -%}
       
-      {% render 'add-membership-cart', product:section.settings.product, image:section.settings.custom_icon %}
+      {% render 'add-membership-cart', product:section.settings.product, image:section.settings.custom_icon,background:section.settings.background,text_color:section.settings.text_color,atc_button_background: section.settings.atc_button_background, atc_button_text_color: section.settings.atc_button_text_color %}
       <div class="v-stack gap-1 total-footer-section">
         {% for discount_application in cart.cart_level_discount_applications %}
           <div class="h-stack gap-4 justify-between">
@@ -101,10 +112,28 @@
           <span class="h5">{{ 'cart.general.total' | t }}</span>
           <span class="h5">{{- cart.total_price | money_with_currency -}}</span>
         </div>
-        <div class="h-stack gap-4 justify-between subscription--price">
+        <div class="h-stack gap-4 justify-between subscription--price without-saving">
           <span>{{ 'cart.general.total_with_subs' | t }}</span>
           <span>{{- cart.total_price | times : 0.75 | money_with_currency -}}</span>
         </div>
+
+        {% assign totalPrice = 0 %}
+        {% assign totalCompareAtPrice = 0 %}
+
+        {% for item in cart.items %}
+          {% assign lineItemPrice = item.final_price | money_without_currency %}
+          {% assign lineItemCompareAtPrice = item.product.compare_at_price | money_without_currency %}
+          
+          {% assign totalPrice = totalPrice | plus: lineItemPrice %}
+          {% assign totalCompareAtPrice = totalCompareAtPrice | plus: lineItemCompareAtPrice %}
+        {% endfor %}
+        {% assign difference = totalCompareAtPrice | minus: totalPrice | times: 100 %}
+        {% if difference > 0 %}
+          <div class="h-stack gap-4 justify-between subscription--price with-saving">
+            <span>{{ 'cart.general.total_with_saving' | t }}</span>
+            <span>{{- difference | money_with_currency -}}</span>
+          </div>
+        {%endif%}
 
         {%- if section.settings.show_shipping_text -%}
           {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
@@ -244,6 +273,30 @@
       "id": "custom_icon",
       "label": "Custom icon",
       "info": "240 x 240px .png recommended"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#eaf2ed"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#00a341"
+    },
+    {
+      "type": "color",
+      "id": "atc_button_background",
+      "label": "Background button",
+      "default": "#E83C41"
+    },
+    {
+      "type": "color",
+      "id": "atc_button_text_color",
+      "label": "Text color button",
+      "default": "#fff"
     }
   ]
 }

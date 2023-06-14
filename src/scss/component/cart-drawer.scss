@@ -1,4 +1,22 @@
+cart-drawer.membership-in-cart{
+    .add-membership-cart{
+        display: none;
+    }
+}
+cart-drawer.cart-for-members{
+    .add-membership-cart,.subscription--price.without-saving{
+        display: none;
+    }
+    .subscription--price.with-saving{
+        display: flex !important;
+    }
+}
+
 cart-drawer{
+    // @media only screen and (max-width: 700px) {
+    //     --drawer-body-padding: 20px !important;
+    //     --drawer-footer-padding: 20px !important;
+    // }
     .cart-drawer__top{
         padding-bottom: 18px;
         margin-bottom: 23px;
@@ -23,6 +41,9 @@ cart-drawer{
         color: #E93B40;
         margin-top: 7px;
     }
+    .subscription--price.with-saving{
+        display: none;
+    }
     .total-footer-section{
         margin-inline-start: calc(-1 * var(--container-outer-width));
         margin-inline-end: calc(-1 * var(--container-outer-width));
@@ -30,5 +51,54 @@ cart-drawer{
         padding-top: 18px;
         padding-bottom: 0px;
         border-top: 1px solid #D6D6D6;
+    }
+    .add-membership-cart{
+        margin-bottom: 7px;
+        margin-left: -3px;
+        margin-right: -3px;
+        .horizontal-product{
+            @media only screen and (max-width: 700px) {
+                padding: 14px;
+                column-gap: 13px;
+            }
+        .horizontal-product__info{
+            display: flex;
+            align-self: center;
+            @media only screen and (max-width: 700px) {
+                .horizontal-product__image{
+                    max-width: 54px;
+                    max-height: 54px;
+                }
+            }
+            .text-membership-with-price{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                letter-spacing: 0px;
+                .specialize-price{
+                    color: #FF6266;
+                    font-style: italic;
+                }
+                @media only screen and (max-width: 420px) {
+                    .second-line-text{
+                        display: block;
+                    }
+                }
+            }
+        .horizontal-product__cta{
+            display: flex;
+            align-items: center;
+            button{
+                width: 72.97px;
+                height: 37px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                padding: 4px;
+            }
+        }
+    }
+    }
     }
 }

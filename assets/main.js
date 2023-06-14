@@ -8,6 +8,20 @@
 /***/ (() => {
 
 (function () {
+  document.addEventListener('cart:change', function (event) {
+    var _document$querySelect, _document$querySelect2;
+    var cart = event.detail.cart;
+    (_document$querySelect = document.querySelector('.product')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.classList.remove('cart-has-membership');
+    (_document$querySelect2 = document.querySelector('cart-drawer')) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.classList.remove('membership-in-cart');
+    cart === null || cart === void 0 ? void 0 : cart.items.forEach(function (item) {
+      if (item.id == 40692118094012) {
+        var _document$querySelect3, _document$querySelect4;
+        (_document$querySelect3 = document.querySelector('.product')) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.classList.add('cart-has-membership');
+        (_document$querySelect4 = document.querySelector('cart-drawer')) === null || _document$querySelect4 === void 0 ? void 0 : _document$querySelect4.classList.add('membership-in-cart');
+        return;
+      }
+    });
+  });
   if (window.location.pathname.includes('/products')) {
     document.addEventListener('cart:change', function (event) {
       var cart = event.detail.cart;
@@ -15,6 +29,7 @@
       cart === null || cart === void 0 ? void 0 : cart.items.forEach(function (item) {
         if (item.id == 40692118094012) {
           document.querySelector('.product').classList.add('cart-has-membership');
+          return;
         }
       });
     });

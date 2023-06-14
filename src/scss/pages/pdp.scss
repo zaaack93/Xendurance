@@ -277,7 +277,7 @@
                                 }
 
                                 .data-smartrr-subscribe-price {
-                                    margin-left: -11px;
+                                    margin-left: -5px;
                                     @media only screen and (max-width: 699px) {
                                         margin-left: -5px;
                                     }
@@ -468,6 +468,9 @@
                         @media only screen and (max-width: 989px) {
                             font-size: 20px;
                             line-height: 20px;
+                        }
+                        span[data-smartrr-compare-price]{
+                            display: none;
                         }
                     }
                 }

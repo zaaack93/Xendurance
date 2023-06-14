@@ -1,11 +1,27 @@
 (() => {
+
+    document.addEventListener('cart:change', function(event) {
+        let cart = event.detail.cart;
+        document.querySelector('.product')?.classList.remove('cart-has-membership')
+        document.querySelector('cart-drawer')?.classList.remove('membership-in-cart')
+        cart?.items.forEach(item => {
+        if(item.id==40692118094012){
+            document.querySelector('.product')?.classList.add('cart-has-membership');
+            document.querySelector('cart-drawer')?.classList.add('membership-in-cart')
+            return;
+        }
+        });
+    });
+
+
     if(window.location.pathname.includes('/products')){
         document.addEventListener('cart:change', function(event) {
             let cart = event.detail.cart;
             document.querySelector('.product').classList.remove('cart-has-membership')
             cart?.items.forEach(item => {
             if(item.id==40692118094012){
-                document.querySelector('.product').classList.add('cart-has-membership')
+                document.querySelector('.product').classList.add('cart-has-membership');
+                return;
             }
             });
         });
