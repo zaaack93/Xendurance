@@ -107,7 +107,7 @@
             "image": "shopify:\/\/shop_images\/Extreme_Endurance_4.jpg",
             "title": "JOIN TEAM XND & SAVE",
             "content": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/products\/team-xnd-membership",
             "link_text": "Learn More",
             "heading_tag": "h3",
             "text_position": "place-self-center text-center",
@@ -120,7 +120,7 @@
           "type": "collection_filter",
           "settings": {
             "collection": "all-products",
-            "collection_filters": "packs,daily,energy,tranform,recovery,sleep,skin,Apparel & Accessories"
+            "collection_filters": "packs,daily,energy,transform,recovery,skin,Apparel & Accessories"
           }
         },
         "1089b347-d343-4e10-a5c5-ebcd5d6fbc60": {

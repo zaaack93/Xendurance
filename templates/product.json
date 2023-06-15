@@ -116,21 +116,21 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Key Benefits",
-            "content": "<p>Share some content to your customers about your products.<\/p>"
+            "content": "<p>{{ product.metafields.custom.key_benefits | metafield_tag }}<\/p>"
           }
         },
         "b833a344-c331-427c-9113-de7b76a2738c": {
           "type": "collapsible_text",
           "settings": {
             "title": "What's Inside",
-            "content": "<p>Share some content to your customers about your products.<\/p>"
+            "content": "{{ product.metafields.custom.key_ingredients | metafield_tag }}"
           }
         },
         "ebb6b23d-4582-4ee7-b484-aa7711332c3f": {
           "type": "collapsible_text",
           "settings": {
             "title": "When to Consume",
-            "content": "<p>Share some content to your customers about your products.<\/p>"
+            "content": "{{ product.metafields.custom.consumption | metafield_tag }}"
           }
         }
       },
@@ -154,7 +154,7 @@
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,
-        "desktop_media_width": 55,
+        "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
@@ -169,6 +169,148 @@
         "input_text_color": ""
       }
     },
+    "b5bae039-0209-417a-9002-2d5904e516f8": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-0": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_1.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_1 | metafield_tag }}"
+          }
+        },
+        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-1": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_2.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_2 | metafield_tag }}"
+          }
+        },
+        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-2": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_3.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_3 | metafield_tag }}"
+          }
+        },
+        "3a055e44-0985-4287-b5ba-d30a703ed0da": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_4.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_4 | metafield_tag }}"
+          }
+        },
+        "2645c719-7e83-405b-b7ae-02ffb2430c11": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_5.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_5 | metafield_tag }}"
+          }
+        },
+        "88211187-4dd7-4ab2-b0e2-78f4d5dce849": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_6.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_6 | metafield_tag }}"
+          }
+        },
+        "fc772d0c-cea9-4e65-9955-933fd6d64b0f": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_7.value }}",
+            "content": "{{ product.metafields.custom.pdp_answer_7 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-0",
+        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-1",
+        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-2",
+        "3a055e44-0985-4287-b5ba-d30a703ed0da",
+        "2645c719-7e83-405b-b7ae-02ffb2430c11",
+        "88211187-4dd7-4ab2-b0e2-78f4d5dce849",
+        "fc772d0c-cea9-4e65-9955-933fd6d64b0f"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "{{ product.metafields.custom.faq_subtitle.value }}",
+        "title": "{{ product.metafields.custom.faq_title.value }}",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#353435",
+        "accordion_text_color": "#ffffff"
+      }
+    },
+    "808ce943-d064-4ee0-9d4c-5381ae09074f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.pdp_athlete_1.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom.pdp_athlete_name_1.value }}",
+            "heading_tag": "h4",
+            "content": "<p><em>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/em><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.pdp_athlete_2.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom.pdp_athlete_name_2.value }}",
+            "heading_tag": "h4",
+            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_2 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.pdp_athlete_3.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom.pdp_athlete_name_3.value }}",
+            "heading_tag": "h4",
+            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_3 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0",
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1",
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Proven by Clinical Studies.",
+        "title": "Trusted by Clinical Athletes.",
+        "content": "<p>Trust is EVERYTHING... That's why Extreme Endurance is used by world-class performers like Josh Bridges to help their chances to get on top of the podium.<\/p>",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#1a1a1a"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -179,7 +321,7 @@
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
-        "products_per_row_mobile": "1",
+        "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
         "title": "You may also like",
@@ -192,10 +334,49 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "0a1f82a6-b53d-4501-9a94-2860da5741ce": {
+      "type": "media-with-text",
+      "blocks": {
+        "3e31e3c1-0def-48dd-9655-fe42742306f4": {
+          "type": "video",
+          "settings": {
+            "external_video_url": "https:\/\/www.youtube.com\/watch?v=VKhd6m_axdE&t=59s",
+            "poster_image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-06_at_11.06.57_am.png",
+            "autoplay": false,
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Join Team XND & Save",
+            "content": "<h5>$100 in immediate rewards. Free shipping + 25% off on every order. 2x loyalty points. partner perks.<\/h5>",
+            "link_text": "Learn More",
+            "link_url": "shopify:\/\/products\/team-xnd-membership",
+            "background": "#353435",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#e93a3f",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "3e31e3c1-0def-48dd-9655-fe42742306f4"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "b5bae039-0209-417a-9002-2d5904e516f8",
+    "808ce943-d064-4ee0-9d4c-5381ae09074f",
+    "related-products",
+    "0a1f82a6-b53d-4501-9a94-2860da5741ce"
   ]
 }

@@ -6,10 +6,13 @@
         "totals": {
           "type": "totals",
           "settings": {
+            "show_order_weight": false,
+            "show_shipping_text": false
           }
         },
         "cart_note": {
           "type": "cart_note",
+          "disabled": true,
           "settings": {
           }
         },
@@ -25,6 +28,8 @@
         "checkout_button"
       ],
       "settings": {
+        "show_shipping_estimator": false,
+        "show_payment_icons": true
       }
     }
   },

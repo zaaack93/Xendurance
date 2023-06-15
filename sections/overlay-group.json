@@ -31,17 +31,15 @@
         "show_view_cart_button": false,
         "show_checkout_button": true,
         "recommendations_title": "Often bought with",
-        "products": [
-          "blender-bottle-3-colors",
-          "blender-bottle-3-colors-1",
-          "collagen-greens"
-        ],
-        "product_card_background": "#f5f5f5",
+        "products": "{{ section.settings.product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "product_card_background": "#ffffff",
         "product_card_text_color": "",
         "product": "team-xnd-membership",
         "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
         "background": "#353435",
-        "text_color": "#fff"
+        "text_color": "#ffffff",
+        "atc_button_background": "#E83C41",
+        "atc_button_text_color": "#fff"
       }
     },
     "search-drawer": {

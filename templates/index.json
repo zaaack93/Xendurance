@@ -22,7 +22,7 @@
             "secondary_button_text": "Shop All SkIn",
             "secondary_button_link": "shopify:\/\/collections\/skin",
             "text_color": "#ffffff",
-            "button_background": "#f83a3a",
+            "button_background": "#e93a3f",
             "button_text_color": "#ffffff",
             "secondary_button_background": "#00a9e0",
             "secondary_button_text_color": "#ffffff",
@@ -343,7 +343,8 @@
         "footer_text_paragraphe": "Proudly American Made",
         "footer_image_paragraph": "shopify:\/\/shop_images\/image_49.png",
         "footer_button_text": "Shop All Supplements",
-        "footer_button_url": "shopify:\/\/collections"
+        "footer_button_url": "shopify:\/\/collections",
+        "members_footer_button_url": ""
       }
     },
     "abbcca1b-618a-431c-94d4-c4888a3324c4": {
@@ -507,6 +508,57 @@
         "logo_item_border": ""
       }
     },
+    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Join the Squad",
+        "content": "<p>Sign up for exclusive access to anew releases, giveaways and <strong>10% off your first order!<\/strong><\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "698a8604-5b1e-491b-af0f-b958f03c9333": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--16030540497084__698a8604-5b1e-491b-af0f-b958f03c9333-1684994267f30d0014-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "blog",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540497084__698a8604-5b1e-491b-af0f-b958f03c9333-1684994267f30d0014-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_excerpt": false,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "",
+        "title": "Read the Xendurance Blog",
+        "content": "<p>Our take on the latest in fitness and health trends and news. <\/p>",
+        "link_url": "shopify:\/\/blogs\/blog",
+        "link_text": "View all blog posts",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "media-grid": {
       "type": "media-grid",
       "blocks": {
@@ -606,63 +658,12 @@
         "29246d34-c6e0-4373-84f6-b15e57736a00"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "reduce_width": true,
         "desktop_row_height": 270,
         "mobile_row_height": 150,
         "background": "#f5f5f5",
         "background_gradient": ""
-      }
-    },
-    "698a8604-5b1e-491b-af0f-b958f03c9333": {
-      "type": "blog-posts",
-      "blocks": {
-        "template--16030540497084__698a8604-5b1e-491b-af0f-b958f03c9333-1684994267f30d0014-0": {
-          "type": "blog",
-          "settings": {
-            "blog": "blog",
-            "posts_count": 3,
-            "stack_items": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540497084__698a8604-5b1e-491b-af0f-b958f03c9333-1684994267f30d0014-0"
-      ],
-      "settings": {
-        "full_width": false,
-        "show_excerpt": false,
-        "show_date": true,
-        "show_author": false,
-        "show_comments_count": false,
-        "show_category": false,
-        "subheading": "",
-        "title": "Read the Xendurance Blog",
-        "content": "<p>Our take on the latest in fitness and health trends and news. <\/p>",
-        "link_url": "shopify:\/\/blogs\/blog",
-        "link_text": "View all blog posts",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
-      "type": "newsletter",
-      "settings": {
-        "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
-        "show_icon": false,
-        "title": "Join the Squad",
-        "content": "<p>Sign up for exclusive access to anew releases, giveaways and <strong>10% off your first order!<\/strong><\/p>",
-        "button_text": "Subscribe",
-        "subtext": "",
-        "background": "#353435",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8": {
@@ -799,9 +800,9 @@
     "impact-text",
     "9c337f61-5b66-4c80-a95f-8e2a71eca744",
     "press",
-    "media-grid",
-    "698a8604-5b1e-491b-af0f-b958f03c9333",
     "f590c992-488f-4ce3-bfe1-63e2cb55d4ad",
+    "698a8604-5b1e-491b-af0f-b958f03c9333",
+    "media-grid",
     "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8",
     "faq"
   ]
