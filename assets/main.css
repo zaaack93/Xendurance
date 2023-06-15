@@ -738,6 +738,17 @@ cart-drawer.cart-for-members .subscription--price.with-saving {
   display: flex !important;
 }
 
+@media only screen and (min-width: 700px) {
+  cart-drawer .cart-drawer__line-items > * + * {
+    -webkit-padding-before: 14px;
+            padding-block-start: 14px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  cart-drawer {
+    --drawer-footer-padding: 15px 2.5rem 20px 2.5rem !important;
+  }
+}
 cart-drawer .cart-drawer__top {
   padding-bottom: 18px;
   margin-bottom: 23px;
@@ -749,9 +760,6 @@ cart-drawer .cart-drawer__top p {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-}
-cart-drawer::part(footer) {
-  border: none !important;
 }
 cart-drawer .subscription--price {
   font-style: italic;
@@ -775,15 +783,26 @@ cart-drawer .total-footer-section {
   border-top: 1px solid #D6D6D6;
 }
 cart-drawer .add-membership-cart {
-  margin-bottom: 7px;
   margin-left: -3px;
   margin-right: -3px;
 }
 @media only screen and (max-width: 700px) {
+  cart-drawer .add-membership-cart {
+    margin-bottom: 7px;
+  }
+}
+@media only screen and (max-width: 699px) {
   cart-drawer .add-membership-cart .horizontal-product {
     padding: 14px;
     -moz-column-gap: 13px;
          column-gap: 13px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  cart-drawer .add-membership-cart .horizontal-product {
+    padding: 10px 15px 10px 17px;
+    -moz-column-gap: 31px;
+         column-gap: 31px;
   }
 }
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info {
@@ -803,18 +822,23 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
   color: #FFFFFF;
   letter-spacing: 0px;
 }
+@media only screen and (min-width: 700px) {
+  cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .specialize-price {
   color: #FF6266;
   font-style: italic;
 }
-@media only screen and (max-width: 420px) {
-  cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .second-line-text {
-    display: block;
-  }
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .second-line-text {
+  display: block;
 }
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__cta {
   display: flex;
   align-items: center;
+  margin-right: 0px;
 }
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__cta button {
   width: 72.97px;

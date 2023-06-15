@@ -17,6 +17,14 @@ cart-drawer{
     //     --drawer-body-padding: 20px !important;
     //     --drawer-footer-padding: 20px !important;
     // }
+    .cart-drawer__line-items > * + *{
+        @media only screen and (min-width: 700px) {
+            padding-block-start: 14px
+        }
+    }
+    @media only screen and (min-width: 700px) {
+            --drawer-footer-padding: 15px 2.5rem 20px 2.5rem !important;
+    }
     .cart-drawer__top{
         padding-bottom: 18px;
         margin-bottom: 23px;
@@ -30,9 +38,9 @@ cart-drawer{
         }
     }
 
-    &::part(footer){
-        border: none !important;
-    }
+    // &::part(footer){
+    //     border: none !important;
+    // }
     .subscription--price{
         font-style: italic;
         font-weight: 500;
@@ -53,13 +61,19 @@ cart-drawer{
         border-top: 1px solid #D6D6D6;
     }
     .add-membership-cart{
-        margin-bottom: 7px;
+        @media only screen and (max-width: 700px) {
+            margin-bottom: 7px;
+        }
         margin-left: -3px;
         margin-right: -3px;
         .horizontal-product{
-            @media only screen and (max-width: 700px) {
+            @media only screen and (max-width: 699px) {
                 padding: 14px;
                 column-gap: 13px;
+            }
+            @media only screen and (min-width: 700px) {
+                padding: 10px 15px 10px 17px;
+                column-gap: 31px;
             }
         .horizontal-product__info{
             display: flex;
@@ -76,19 +90,22 @@ cart-drawer{
                 line-height: 17px;
                 color: #FFFFFF;
                 letter-spacing: 0px;
+                @media only screen and (min-width: 700px) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
                 .specialize-price{
                     color: #FF6266;
                     font-style: italic;
                 }
-                @media only screen and (max-width: 420px) {
                     .second-line-text{
                         display: block;
                     }
-                }
             }
         .horizontal-product__cta{
             display: flex;
             align-items: center;
+            margin-right: 0px;
             button{
                 width: 72.97px;
                 height: 37px;
