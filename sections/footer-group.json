@@ -80,43 +80,51 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "Xendurance Logo",
+            "content": "<p>Proudly owned, manufactured and shipped in the USA, since 1998.<\/p><p>Email: <a href=\"mailto:info@xendurance.com\">info@xendurance.com<\/a><\/p><p>Text: 480-531-7093<\/p><p>Address: Example Address Street, City, Postcode. <\/p>",
+            "enable_follow_on_shop": false
+          }
+        },
         "newsletter": {
           "type": "newsletter",
           "settings": {
             "image_width": 150,
-            "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "heading_size": "h5",
+            "title": "Join the Squad!",
+            "content": "<p>Sign up for exclusive access to anew releases, giveaways and <strong>10% off your first order!<\/strong><\/p>"
           }
         },
         "links": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "support",
             "show_menu_title": true
           }
         },
-        "text": {
-          "type": "text",
+        "6402ca96-f268-4e87-b6b4-88d9c6860ebf": {
+          "type": "links",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
-            "enable_follow_on_shop": true
+            "menu": "policies",
+            "show_menu_title": true
           }
         }
       },
       "block_order": [
+        "text",
         "newsletter",
         "links",
-        "text"
+        "6402ca96-f268-4e87-b6b4-88d9c6860ebf"
       ],
       "settings": {
         "show_social_media": true,
         "show_payment_icons": true,
-        "show_country_selector": true,
-        "show_country_flag": true,
-        "show_country_name": true,
-        "show_locale_selector": true
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
+        "show_locale_selector": false
       }
     }
   },

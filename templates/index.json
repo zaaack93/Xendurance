@@ -28,7 +28,7 @@
             "secondary_button_text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
-            "background": "#ecedee",
+            "background": "#ffffff",
             "background_gradient": ""
           }
         },
@@ -325,7 +325,7 @@
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
-        "products_count": 12,
+        "products_count": 8,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
@@ -345,6 +345,160 @@
         "footer_button_text": "Shop All Supplements",
         "footer_button_url": "shopify:\/\/collections",
         "members_footer_button_url": ""
+      }
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "16644243327ba53d2a-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Josh.png",
+            "logo_width": 100,
+            "author": "Josh Bridges - Coach\/Athlete",
+            "content": "As a former Navy SEAL and 6x CrossFit Games Athlete, I know the importance of fueling the body with only the best. That is why I have chosen Xendurance for over a decade.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "16644243327ba53d2a-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Hayley.png",
+            "logo_width": 100,
+            "author": "Hayley Manners - College Athlete",
+            "content": "Fuelling my body with clean ingredients is incredibly important. That's why I choose Xendurance products, because I'm confident they will keep me energized and give me the strength I need to be successful!",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "2a1666f6-89ef-470f-90b6-2ebdb6efca55": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Ivet.png",
+            "logo_width": 100,
+            "author": "Ivet Dahl - Coach\/Athlete",
+            "content": "As an athlete, coach, wife and mom of 3 boys, Xendurance products keep me fueled and ready to tackle the day!",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "16644243327ba53d2a-1",
+        "16644243327ba53d2a-0",
+        "2a1666f6-89ef-470f-90b6-2ebdb6efca55"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "small",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "#f0f0f0",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "8cf929de-0fb4-4e67-b62b-298ae59259c5": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mens-Health-logo_1_Medium_eea0f5fb-fa28-49bb-9ebe-f82f828957c8.png",
+            "logo_width": 180,
+            "link": ""
+          }
+        },
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/JRE.webp",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Ironman_Triathlon__logo__svg.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/bikelogo-1643683619278.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-4": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-3",
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-0",
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-2",
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-1",
+        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-4"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_mobile": true,
+        "title": "",
+        "content": "<p>As Seen In<\/p>",
+        "text_alignment": "center",
+        "items_per_row": 4,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "#ffffff",
+        "logo_item_border": ""
+      }
+    },
+    "62dd1bf9-cd1d-41b3-abb2-cccc26614f18": {
+      "type": "video",
+      "blocks": {
+        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-0": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Secret is Out",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-0",
+        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "shopify:\/\/files\/videos\/221029_Joe_Rogan_Mashup_YOUTUBE_LANDSCAPE_LOW_RES.mp4",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 6
       }
     },
     "abbcca1b-618a-431c-94d4-c4888a3324c4": {
@@ -425,7 +579,7 @@
           "settings": {
             "external_video_url": "https:\/\/www.youtube.com\/watch?v=VKhd6m_axdE&t=59s",
             "poster_image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-06_at_11.06.57_am.png",
-            "autoplay": true,
+            "autoplay": false,
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -433,14 +587,14 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Join Team XND & Save",
-            "content": "<h5>$100 in immediate rewards. Free shipping + 25% off on every order. 2x loyalty points. partner perks.<\/h5>",
+            "content": "<ul><li><strong>$100 in immediate rewards. <\/strong><\/li><li><strong>Free shipping + 25% off.<\/strong><\/li><li><strong>2x loyalty points<\/strong><\/li><li><strong>Partner perks.<\/strong><\/li><\/ul>",
             "link_text": "Learn more",
             "link_url": "shopify:\/\/products\/team-xnd-membership",
-            "background": "#000000",
+            "background": "#e93b40",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
-            "button_background": "",
+            "button_background": "#353435",
             "button_text_color": ""
           }
         }
@@ -450,79 +604,8 @@
         "f5eeeeff-9d5e-4186-8966-ef60ad4412a3"
       ],
       "settings": {
-        "full_width": false,
-        "spacing": "none"
-      }
-    },
-    "press": {
-      "type": "press",
-      "blocks": {
-        "16644243327ba53d2a-1": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Josh.png",
-            "logo_width": 100,
-            "author": "Josh Bridges - Coach\/Athlete",
-            "content": "As a former Navy SEAL and 6x CrossFit Games Athlete, I know the importance of fueling the body with only the best. That is why I have chosen Xendurance for over a decade.",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "16644243327ba53d2a-0": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Hayley.png",
-            "logo_width": 100,
-            "author": "Hayley Manners - College Athlete",
-            "content": "Fuelling my body with clean ingredients is incredibly important. That's why I choose Xendurance products, because I'm confident they will keep me energized and give me the strength I need to be successful!",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "2a1666f6-89ef-470f-90b6-2ebdb6efca55": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Ivet.png",
-            "logo_width": 100,
-            "author": "Ivet Dahl - Coach\/Athlete",
-            "content": "As an athlete, coach, wife and mom of 3 boys, Xendurance products keep me fueled and ready to tackle the day!",
-            "show_rating": true,
-            "rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "16644243327ba53d2a-1",
-        "16644243327ba53d2a-0",
-        "2a1666f6-89ef-470f-90b6-2ebdb6efca55"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_size": "small",
-        "background": "#353435",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "heading_color": "#f5f5f5",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
-    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
-      "type": "newsletter",
-      "settings": {
-        "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
-        "show_icon": false,
-        "title": "Join the Squad",
-        "content": "<p>Sign up for exclusive access to anew releases, giveaways and <strong>10% off your first order!<\/strong><\/p>",
-        "button_text": "Subscribe",
-        "subtext": "",
-        "background": "#353435",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "button_background": "",
-        "button_text_color": ""
+        "full_width": true,
+        "spacing": "small"
       }
     },
     "698a8604-5b1e-491b-af0f-b958f03c9333": {
@@ -557,6 +640,23 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
+      }
+    },
+    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Join the Squad",
+        "content": "<p>Sign up for exclusive access to anew releases, giveaways and <strong>10% off your first order!<\/strong><\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "media-grid": {
@@ -668,6 +768,7 @@
     },
     "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--16030540497084__bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8-168499392978c14703-0": {
           "type": "collection",
@@ -796,12 +897,14 @@
     "slideshow",
     "featured-collection",
     "17338140-d4f4-4fdf-92a0-bc9aad196adb",
+    "press",
+    "8cf929de-0fb4-4e67-b62b-298ae59259c5",
+    "62dd1bf9-cd1d-41b3-abb2-cccc26614f18",
     "abbcca1b-618a-431c-94d4-c4888a3324c4",
     "impact-text",
     "9c337f61-5b66-4c80-a95f-8e2a71eca744",
-    "press",
-    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad",
     "698a8604-5b1e-491b-af0f-b958f03c9333",
+    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad",
     "media-grid",
     "bb1d6349-f5b6-4feb-9a86-c40ff2dbc9f8",
     "faq"

@@ -130,7 +130,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "When to Consume",
-            "content": "{{ product.metafields.custom.consumption | metafield_tag }}"
+            "content": "<p>{{ product.metafields.custom.consumption | metafield_tag }}<\/p>"
           }
         }
       },
@@ -167,6 +167,121 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "30d03795-8f63-485e-b581-13a9457eafe7": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "TRAIN HARDER. RECOVER FASTER. SET NEW PRS.",
+        "text_size": "medium",
+        "text_style": "fill",
+        "scrolling_mode": "scroll",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#353435",
+        "text_gradient": ""
+      }
+    },
+    "bcaba574-df57-48cf-807f-7d37103cb89b": {
+      "type": "video",
+      "blocks": {
+        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-0": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The XND X-Factor",
+            "heading_tag": "h1"
+          }
+        },
+        "d4298b0d-8e4b-4fcc-8d79-e0d6a17898e4": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-0",
+        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-1",
+        "d4298b0d-8e4b-4fcc-8d79-e0d6a17898e4"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=zeJ3V9vEGUs",
+        "poster": "shopify:\/\/shop_images\/IMGL7680.jpg",
+        "text_color": "#f5f5f5",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "808ce943-d064-4ee0-9d4c-5381ae09074f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.pdp_athlete_1.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom.pdp_athlete_name_1.value }}",
+            "heading_tag": "h4",
+            "content": "<p><em>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/em><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.pdp_athlete_2.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom.pdp_athlete_name_2.value }}",
+            "heading_tag": "h4",
+            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_2 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.pdp_athlete_3.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom.pdp_athlete_name_3.value }}",
+            "heading_tag": "h4",
+            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_3 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0",
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1",
+        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "{{ product.metafields.custom.pdp_testimonial_section_subheading.value }}",
+        "title": "{{ product.metafields.custom.pdp_testimonial_section_heading.value }}",
+        "content": "{{ product.metafields.custom.pdp_testimonial_section_body | metafield_tag }}",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#1a1a1a"
       }
     },
     "b5bae039-0209-417a-9002-2d5904e516f8": {
@@ -250,89 +365,232 @@
         "accordion_text_color": "#ffffff"
       }
     },
-    "808ce943-d064-4ee0-9d4c-5381ae09074f": {
-      "type": "multi-column",
+    "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c": {
+      "type": "rich-text",
+      "disabled": true,
       "blocks": {
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0": {
-          "type": "item",
+        "template--16030540726460__c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c-16868891644e92fc9b-1": {
+          "type": "heading",
           "settings": {
-            "image": "{{ product.metafields.custom.pdp_athlete_1.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom.pdp_athlete_name_1.value }}",
-            "heading_tag": "h4",
-            "content": "<p><em>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/em><\/p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom.pdp_athlete_2.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom.pdp_athlete_name_2.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_2 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom.pdp_athlete_3.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom.pdp_athlete_name_3.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_3 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "text": "Optimal Results",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
           }
         }
       },
       "block_order": [
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0",
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1",
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2"
+        "template--16030540726460__c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c-16868891644e92fc9b-1"
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "Proven by Clinical Studies.",
-        "title": "Trusted by Clinical Athletes.",
-        "content": "<p>Trust is EVERYTHING... That's why Extreme Endurance is used by world-class performers like Josh Bridges to help their chances to get on top of the podium.<\/p>",
-        "background": "rgba(0,0,0,0)",
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
         "background_gradient": "",
-        "text_color": "#1a1a1a"
+        "text_color": ""
       }
     },
-    "related-products": {
-      "type": "related-products",
+    "2a0ceef1-a819-4f7d-abc3-691d2dac0a8a": {
+      "type": "media-grid",
+      "disabled": true,
+      "blocks": {
+        "template--16030540726460__2a0ceef1-a819-4f7d-abc3-691d2dac0a8a-16868887419509b226-2": {
+          "type": "image",
+          "settings": {
+            "title": "Morning",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "Take 3 Tablets Of Extreme Endurance with or without food first thing in the morning",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#00a9dd",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#00a9dd",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "85823df1-6ee8-48e0-b6f7-b4eb181a009e": {
+          "type": "image",
+          "settings": {
+            "title": "Evening",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "Take 3 Tablets Of Extreme Endurance with or without food before bed",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#f83a3a",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#f83a3a",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__2a0ceef1-a819-4f7d-abc3-691d2dac0a8a-16868887419509b226-2",
+        "85823df1-6ee8-48e0-b6f7-b4eb181a009e"
+      ],
       "settings": {
-        "recommendations_count": 6,
-        "products": [
-
-        ],
         "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
+        "reduce_width": false,
+        "desktop_row_height": 230,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Yes<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#ffffff",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-0",
+        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-1",
+        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-2"
+      ],
+      "settings": {
+        "full_width": true,
         "subheading": "",
-        "title": "You may also like",
-        "content": "",
+        "title": "Xendurance vs the Competition ",
+        "content": "<p>When it’s time to unleash your inner-Hercules and bounce back stronger than ever… Its very hard to beat the results you will feel with Extreme Endurance.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "16868735100eb8db37": {
+      "type": "apps",
+      "blocks": {
+        "ac1aad6e-0494-43e6-a5a6-e20655a87179": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ac1aad6e-0494-43e6-a5a6-e20655a87179"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     },
     "0a1f82a6-b53d-4501-9a94-2860da5741ce": {
@@ -370,13 +628,41 @@
         "full_width": false,
         "spacing": "small"
       }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 4,
+        "products": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Often Bought With",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "b5bae039-0209-417a-9002-2d5904e516f8",
+    "30d03795-8f63-485e-b581-13a9457eafe7",
+    "bcaba574-df57-48cf-807f-7d37103cb89b",
     "808ce943-d064-4ee0-9d4c-5381ae09074f",
-    "related-products",
-    "0a1f82a6-b53d-4501-9a94-2860da5741ce"
+    "b5bae039-0209-417a-9002-2d5904e516f8",
+    "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c",
+    "2a0ceef1-a819-4f7d-abc3-691d2dac0a8a",
+    "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d",
+    "16868735100eb8db37",
+    "0a1f82a6-b53d-4501-9a94-2860da5741ce",
+    "related-products"
   ]
 }
