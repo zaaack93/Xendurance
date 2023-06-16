@@ -21,9 +21,9 @@ Supported variables
 
 <div {% render 'surface', class: class, background: background, text_color: text_color %}>
   {% if image != blank %}
-    {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 64px, 80px', widths: '64,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+    {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 54px, 80px', widths: '54,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
   {% else %}
-    {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 64px, 80px', widths: '64,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+    {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 54px, 80px', widths: '54,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
   {% endif %}
   <div class="horizontal-product__info">
     <div class="v-stack">
@@ -49,11 +49,13 @@ Supported variables
           {%- else -%}
             {%- capture quick_buy_id -%}quick-buy-horizontal-{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
-            {%- render 'button', content: button_content, size: 'md', subdued: true, aria_controls: quick_buy_id, background: atc_button_background, text_color: atc_button_text_color -%}
-
-            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
-              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
-            </quick-buy-drawer>
+            {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input type="hidden" name="selling_plan" value="{{product.selling_plan_groups[0].selling_plans[0].id}}">
+              {%- render 'button', type : "submit", content: button_content, size: 'md', subdued: true, background: atc_button_background, text_color: atc_button_text_color -%}
+            {%- endform -%}
+            
           {%- endif -%}
         {%- else -%}
           {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
