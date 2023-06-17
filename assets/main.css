@@ -1051,11 +1051,11 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 }
 .template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-header div[data-smartrr-price-style] {
   display: flex;
-  -moz-column-gap: 18px;
-       column-gap: 18px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   flex-direction: row-reverse;
   justify-content: flex-end;
   flex-wrap: wrap;
