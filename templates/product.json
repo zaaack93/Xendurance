@@ -272,9 +272,9 @@
         "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "large",
         "text_alignment": "start",
         "subheading": "{{ product.metafields.custom.pdp_testimonial_section_subheading.value }}",
         "title": "{{ product.metafields.custom.pdp_testimonial_section_heading.value }}",
