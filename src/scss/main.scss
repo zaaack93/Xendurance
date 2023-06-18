@@ -24,3 +24,10 @@
 .scrolled{
         background-color: white;
 }
+
+//commun rouned
+.without-rounded-image{
+    img.rounded{
+        border-radius: 0px;
+    }
+}

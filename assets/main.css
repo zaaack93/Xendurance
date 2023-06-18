@@ -853,6 +853,7 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
   .template--product .shopify-section--main-product .section {
     padding-left: 19px;
     padding-right: 19px;
+    overflow-x: hidden;
   }
   .template--product .shopify-section--main-product .section .product {
     row-gap: 19px;
@@ -1464,4 +1465,8 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 }
 .scrolled {
   background-color: white;
+}
+
+.without-rounded-image img.rounded {
+  border-radius: 0px;
 }

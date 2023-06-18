@@ -1,5 +1,17 @@
-{%- render 'section-spacing-collapsing' -%}
+{% assign checkValidity = false%}
+{% for block in section.blocks %}
+  {% assign content_without_html = block.settings.content | strip_html %}
+  {% if block.settings.title != blank or content_without_html != blank or block.settings.link_text != blank%}
+    {% assign checkValidity = true%}
+  {%endif%}
+{%endfor%}
+{% assign content_without_html = block.settings.content | strip_html %}
+{% if section.settings.subheading != blank or  section.settings.title != blank or content_without_html != blank %}
+  {% assign checkValidity = true%}
+{%endif%}
 
+{%if checkValidity %}
+  {%- render 'section-spacing-collapsing' -%}
 {%- assign text_position = section.settings.text_position -%}
 
 <style>
@@ -8,7 +20,6 @@
     --section-stack-main: 50%;
   }
 </style>
-
 <div {% render 'section-properties' %}>
   <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
     {%- capture content -%}
@@ -54,7 +65,7 @@
     {%- endif -%}
   </div>
 </div>
-
+{%endif%}
 {% schema %}
 {
   "name": "Accordion content",

@@ -1,4 +1,16 @@
-{%- if section.blocks.size > 0 -%}
+{% assign checkValidity = false%}
+{% for block in section.blocks %}
+  {% assign content_without_html = block.settings.content | strip_html %}
+  {% if block.settings.title != blank or content_without_html != blank or block.settings.link_text != blank%}
+    {% assign checkValidity = true%}
+  {%endif%}
+{%endfor%}
+{% assign content_without_html = block.settings.content | strip_html %}
+{% if section.settings.subheading != blank or  section.settings.title != blank or content_without_html != blank %}
+  {% assign checkValidity = true%}
+{%endif%}
+
+{%- if section.blocks.size > 0 and checkValidity -%}
   {%- render 'section-spacing-collapsing' -%}
 
   <style>
