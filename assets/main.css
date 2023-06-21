@@ -104,6 +104,14 @@ bubbles-container .bubbles-inner .bubble h3 {
   background-color: #353435;
   color: white;
 }
+.judge_me_widget_container .jdgm-all-reviews-text a {
+  background: none;
+}
+@media only screen and (max-width: 699px) {
+  .judge_me_widget_container .jdgm-all-reviews-text a {
+    justify-content: center;
+  }
+}
 .judge_me_widget_container .jdgm-all-reviews-text__text {
   font-family: "Inter";
   font-style: normal;
@@ -165,6 +173,9 @@ bubbles-container .bubbles-inner .bubble h3 {
   .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text {
     padding: 0px;
     text-align: initial;
+  }
+  .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text a {
+    background: none;
   }
   .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom .prose .hero-callout-badge .jdgm-all-reviews-text__text .rating-container {
     -moz-column-gap: 2px;
@@ -523,6 +534,10 @@ navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list li
 navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container {
   background-color: transparent;
   color: black;
+}
+navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text a {
+  background: none;
+  justify-content: center;
 }
 navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container .jdgm-all-reviews-text__text {
   text-shadow: none;

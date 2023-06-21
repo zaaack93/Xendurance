@@ -95,7 +95,14 @@ bubbles-container {
 .judge_me_widget_container {
     background-color: #353435;
     color: white;
-
+    .jdgm-all-reviews-text{
+        a{
+            background: none;
+            @media only screen and (max-width: 699px) {
+                justify-content: center;
+            }
+        }
+    }
     .jdgm-all-reviews-text__text {
         font-family: 'Inter';
         font-style: normal;
@@ -168,6 +175,9 @@ bubbles-container {
                             .jdgm-all-reviews-text__text{
                                 padding: 0px;
                                 text-align: initial;
+                                a{
+                                    background: none;
+                                }
                                 .rating-container{
                                     column-gap: 2px;
                                     top: 4px;

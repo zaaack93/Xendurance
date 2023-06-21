@@ -23,6 +23,12 @@ navigation-drawer{
         .judge_me_widget_container{
             background-color: transparent;
             color: black;
+            .jdgm-all-reviews-text{
+                a{
+                    background: none;
+                    justify-content: center;
+                }
+            }
             .jdgm-all-reviews-text__text{
                 text-shadow: none;
                 color: black;
