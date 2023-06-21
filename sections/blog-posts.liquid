@@ -14,6 +14,7 @@
 
   @media screen and (min-width: 1000px) {
     #shopify-section-{{ section.id }} {
+      --blog-posts-per-row: {{section.settings.posts_count_per_row}} !important;
       --blog-posts-grid: auto / repeat(var(--blog-posts-per-row), minmax(0, 1fr));
     }
   }
@@ -155,6 +156,14 @@
       "type": "color_background",
       "id": "heading_gradient",
       "label": "Heading gradient"
+    },
+    {
+      "type": "range",
+      "id": "posts_count_per_row",
+      "min": 2,
+      "max": 6,
+      "label": "Posts to show per row on desktop",
+      "default": 4
     }
   ],
   "blocks": [
