@@ -1,3 +1,5 @@
+{%- assign poster_image = section.settings.poster | default: section.settings.video.preview_image -%}
+{%if poster_image!=blank or section.settings.video!=blank  %}
 {%- unless section.settings.full_width -%}
   {%- render 'section-spacing-collapsing' -%}
 {%- endunless -%}
@@ -101,6 +103,7 @@
     {%- endif -%}
   </div>
 </div>
+{%endif%}
 
 {% schema %}
 {
