@@ -1,12 +1,297 @@
 {
   "sections": {
+    "b3543429-1b58-4fbc-8b00-b6770b20b5fd": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540595388__b3543429-1b58-4fbc-8b00-b6770b20b5fd-16873227670826701c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Frequently Asked And Answered",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--16030540595388__b3543429-1b58-4fbc-8b00-b6770b20b5fd-16873227670826701c-1": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__b3543429-1b58-4fbc-8b00-b6770b20b5fd-16873227670826701c-0",
+        "template--16030540595388__b3543429-1b58-4fbc-8b00-b6770b20b5fd-16873227670826701c-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "6bc2d039-d8a2-40d1-90b6-75ff9d8e955b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-0": {
+          "type": "item",
+          "settings": {
+            "title": "Do they work?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-1": {
+          "type": "item",
+          "settings": {
+            "title": "What happens if I miss a day?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-2": {
+          "type": "item",
+          "settings": {
+            "title": "Are the competition legal?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-0",
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-1",
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Products",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "278214ed-c4eb-4c9b-8a99-671bd27887f2": {
+      "type": "accordion-content",
+      "blocks": {
+        "58a84670-1786-41e3-969e-4f18c57ef6c4": {
+          "type": "item",
+          "settings": {
+            "title": "How much does shipping cost?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "f9dfd31b-0581-467e-8295-02cf5576561c": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "6a89a497-9dd0-4a57-bcc2-9201bde2328a": {
+          "type": "item",
+          "settings": {
+            "title": "What is your returns policy?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "58a84670-1786-41e3-969e-4f18c57ef6c4",
+        "f9dfd31b-0581-467e-8295-02cf5576561c",
+        "6a89a497-9dd0-4a57-bcc2-9201bde2328a"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Shipping",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "3ccf898c-e0e6-4510-a68d-baaf06439ebb": {
+      "type": "accordion-content",
+      "blocks": {
+        "7ac82b1d-1c6f-4574-af69-d3fc200c2957": {
+          "type": "item",
+          "settings": {
+            "title": "Return Policy",
+            "content": "<p>Xendurance offers a one hundred percent (100%) 30-day, money-back satisfaction guarantee on all Xendurance products.<br\/><br\/>Refunds are valid for 30 days from purchase date. Please email info@xendurance.com if you would like to return or exchange your order.<\/p>"
+          }
+        },
+        "7ec304d7-7dd0-49cd-9c3e-2feb280d7e8a": {
+          "type": "item",
+          "settings": {
+            "title": "Damaged or Faulty Products",
+            "content": "<p>In the rare case that you have received a damaged product, please reach. <\/p>"
+          }
+        },
+        "380fd811-9821-4106-b515-a19d895f24e8": {
+          "type": "item",
+          "settings": {
+            "title": "What is your returns policy?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7ac82b1d-1c6f-4574-af69-d3fc200c2957",
+        "7ec304d7-7dd0-49cd-9c3e-2feb280d7e8a",
+        "380fd811-9821-4106-b515-a19d895f24e8"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Returns & Warranty",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b61efea8-74e1-42aa-a66d-dd5d20728b4a": {
+      "type": "accordion-content",
+      "blocks": {
+        "627ac6ad-f2d9-4370-ac73-d0d2a3bfa4f7": {
+          "type": "item",
+          "settings": {
+            "title": "Why should I create an XND account?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "9033ab7c-5c74-4da9-9e84-64ee93a39092": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "8bdd047e-d741-4099-8d3a-a84ae78571f2": {
+          "type": "item",
+          "settings": {
+            "title": "What is your returns policy?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "627ac6ad-f2d9-4370-ac73-d0d2a3bfa4f7",
+        "9033ab7c-5c74-4da9-9e84-64ee93a39092",
+        "8bdd047e-d741-4099-8d3a-a84ae78571f2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Team XND",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "f93cb3e1-be2e-48be-a35b-06fd722b8f69": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Still can't find what you're looking for?",
+        "content": "<p>Get in touch with us through the form, and we will get back to you. <\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "b3543429-1b58-4fbc-8b00-b6770b20b5fd",
+    "main",
+    "6bc2d039-d8a2-40d1-90b6-75ff9d8e955b",
+    "278214ed-c4eb-4c9b-8a99-671bd27887f2",
+    "3ccf898c-e0e6-4510-a68d-baaf06439ebb",
+    "b61efea8-74e1-42aa-a66d-dd5d20728b4a",
+    "f93cb3e1-be2e-48be-a35b-06fd722b8f69"
   ]
 }

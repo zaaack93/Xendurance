@@ -4,16 +4,94 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "3237ac8e-9834-478f-a97f-1933e329e9a2": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540562620__3237ac8e-9834-478f-a97f-1933e329e9a2-16873227670826701c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_Desktop_1_889aa2a0-57a5-4112-828e-2068d2333bf3.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Contact XND",
+            "heading_tag": "h1",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--16030540562620__3237ac8e-9834-478f-a97f-1933e329e9a2-16873227670826701c-1": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540562620__3237ac8e-9834-478f-a97f-1933e329e9a2-16873227670826701c-0",
+        "template--16030540562620__3237ac8e-9834-478f-a97f-1933e329e9a2-16873227670826701c-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
       }
     },
     "contact": {
       "type": "contact",
       "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Need something answered?",
+        "content": "",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     }
   },
   "order": [
     "main",
+    "3237ac8e-9834-478f-a97f-1933e329e9a2",
     "contact"
   ]
 }
