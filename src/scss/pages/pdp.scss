@@ -1,5 +1,4 @@
-.template--product {
-    .shopify-section--main-product{
+.template--product .shopify-section--main-product,.shopify-section--featured-product {
     @media only screen and (max-width: 989px) {
         .section {
             padding-left: 19px;
@@ -667,6 +666,5 @@
                 }
             }
         }
-    }
     }
 }
