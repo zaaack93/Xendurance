@@ -11,6 +11,22 @@
       --footer-block-list-justify-content: space-between;
     }
   }
+
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.logo != blank -%}
+      --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
+      --header-logo-height: {{ section.settings.logo_mobile_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
+    {%- endif -%}
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.logo != blank -%}
+        --header-logo-width: {{ section.settings.logo_max_width }}px;
+        --header-logo-height: {{ section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
+      {%- endif -%}
+    }
+  }
 </style>
 {%- endif -%}
 
@@ -28,11 +44,21 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'text' -%}
-                {%- if block.settings.title != blank or block.settings.content != blank or shop.features.follow_on_shop? and block.settings.enable_follow_on_shop -%}
+                    {%- capture logo_content -%}
+                      {%- if section.settings.logo -%}
+                        {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
+                        {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
+                        <span class="sr-only">{{ shop.name }}</span>
+                        {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
+                      {%- else -%}
+                        {%- if block.settings.title != blank -%}
+                          <p class="bold">{{ block.settings.title | escape }}</p>
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endcapture -%}
+                {%- if section.settings.logo != blank or block.settings.title != blank or block.settings.content != blank or shop.features.follow_on_shop? and block.settings.enable_follow_on_shop -%}
                   <div class="footer__block footer__block--text" {{ block.shopify_attributes }}>
-                    {%- if block.settings.title != blank -%}
-                      <p class="bold">{{ block.settings.title | escape }}</p>
-                    {%- endif -%}
+                    {{ logo_content }}
 
                     {%- if block.settings.content != blank -%}
                       <div class="prose text-subdued">
@@ -172,7 +198,7 @@
             </div>
           {%- endif -%}
 
-          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {{ powered_by_link }}</p>
+          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. <a target="_blank" rel="nofollow" href="http://yonder-studio.com">Site Design by Yonder Studio.</a></p>
         </div>
       </div>
     </div>
@@ -232,6 +258,36 @@
       "id": "show_locale_selector",
       "label": "Show language selector",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Image",
+      "info": "280 x 80px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 40,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Image width",
+      "default": 140
+    },
+    {
+      "type": "range",
+      "id": "logo_mobile_max_width",
+      "min": 25,
+      "max": 170,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile image width",
+      "default": 100
     }
   ],
   "blocks": [
