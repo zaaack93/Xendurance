@@ -1,5 +1,7 @@
 {%- assign poster_image = section.settings.poster | default: section.settings.video.preview_image -%}
-{%if poster_image!=blank or section.settings.video!=blank  %}
+
+{%if poster_image!=blank or section.settings.video!=blank  or section.settings.external_video_url!=blank  or section.settings.external_video_url_metafield!=blank %}
+
 {%- unless section.settings.full_width -%}
   {%- render 'section-spacing-collapsing' -%}
 {%- endunless -%}
@@ -48,6 +50,16 @@
         {{- section.settings.video | video_tag: playsinline: true, preload: 'metadata', muted: section.settings.autoplay, loop: section.settings.autoplay, controls: show_controls, image_size: '800x' -}}
         {{- poster -}}
       </video-media>
+    {%- elsif section.settings.external_video_url_metafield!=blank -%}
+    {% assign video_id = section.settings.external_video_url_metafield | split: "watch?v=" %}
+      <video-media host="youtube" {% if section.settings.autoplay %}autoplay class="pointer-events-none"{% endif %}>
+        {{- poster -}}
+
+        <template>
+            <iframe src="https://www.youtube.com/embed/{{video_id.last}}?playsinline=1&{% if section.settings.autoplay %}autoplay=1&controls=0&mute=1&loop=1&{% endif %}playlist={{video_id.last}}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+        </template>
+      </video-media>
+
     {%- else -%}
       <video-media host="{{ section.settings.external_video_url.type }}" {% if section.settings.autoplay %}autoplay class="pointer-events-none"{% endif %}>
         {{- poster -}}
@@ -171,6 +183,12 @@
       "id": "video",
       "label": "Video",
       "info": "Replaces external video if both are set."
+    },
+    {
+      "type": "url",
+      "id": "external_video_url_metafield",
+      "label": "Video URL",
+      "info": "Use this option if you want to set the video through metafield"
     },
     {
       "type": "video_url",
