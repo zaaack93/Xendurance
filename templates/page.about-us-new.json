@@ -6,7 +6,7 @@
         "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XND_1.jpg",
+            "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -52,8 +52,8 @@
       ],
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
-        "image_size": "auto",
+        "allow_transparent_header": false,
+        "image_size": "md",
         "controls_type": "dots",
         "transition_type": "fade_with_text",
         "autoplay": false,
@@ -62,20 +62,13 @@
         "background_gradient": ""
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "content_width": "80ch"
-      }
-    },
     "101ee25b-89f4-4386-82b3-fe92ae53ba66": {
       "type": "media-with-text",
       "blocks": {
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
+            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -94,34 +87,12 @@
             "button_text_color": ""
           }
         },
-        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Newsletter.jpg",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "The Xendurance Promise",
-            "content": "<p>Our promise<strong> <\/strong>is to continue to make an impact on the wellness of every active person along with providing trust that you can use Xendurance products as the foundation for living a longer, healthier life.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#f5f5f5",
-            "background_gradient": "",
-            "text_color": "#353435",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
         "23f5141a-b6f2-472c-a781-edc2e3d0b6af": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
+            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
             "media_width": 50,
-            "media_position": "end",
+            "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
@@ -141,8 +112,104 @@
       },
       "block_order": [
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2",
-        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0",
         "23f5141a-b6f2-472c-a781-edc2e3d0b6af"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "c9cc259c-76dc-442f-af45-4b259df34acb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-0": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Xendurance Promise",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our promise<strong> <\/strong>is to continue to make an impact on the wellness of every active person along with providing trust that you can use Xendurance products as the foundation for living a longer, healthier life.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-0",
+        "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-1",
+        "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "1782d0d6-94da-454f-a381-d65a9e20ce78": {
+      "type": "media-with-text",
+      "blocks": {
+        "d7aed1a7-488b-4ef6-8793-3cdc6ca783f0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "State-of-the-Art Manufacturing",
+            "content": "<p>Inconsistent manufacturing standards have plagued much of the supplement industry with products relying on proprietary blends that don’t contain effective dosing or tainted with foreign substances. <\/p><p>Our products are produced in controlled environments, only in Good Manufacturing Practice (GMP) certified and\/or equivalent facilities. Dedication to these NSF\/ANSI standards, ensure the product you receive contains exactly the ingredients listed and nothing it shouldn’t. Xendurance partners with LGC, the largest independent sports drug laboratory in the world, to certify their supplements and skincare are free of banned substances with the <strong>Informed Sport <\/strong>certification.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "43ef2c1f-4b71-4c82-be56-249e62222fca": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Xendurance Ecosystem Of Health",
+            "content": "<p>We believe that living a longer, healthier life is all encompassing. The Xendurance Ecosystem of health is made of 5 pillars of health: eating whole foods, movement, quality supplementation & skincare, sleep & recovery and prioritizing mental health. This integrated approach provides a foundation for life span; the total years of your life in combination with health span; the number of years you are active and healthy without debilitating disease or limitations.<\/p><p>Xendurance strives to provide clean, proven and performance driven products to support the Ecosystem of Health.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "d7aed1a7-488b-4ef6-8793-3cdc6ca783f0",
+        "43ef2c1f-4b71-4c82-be56-249e62222fca"
       ],
       "settings": {
         "full_width": false,
@@ -181,67 +248,11 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?time_continue=1&v=6UBKnfeH6Ps&embeds_referring_euri=https%3A%2F%2Fxendurance.com%2F&source_ve_path=NzY3NTg&feature=emb_yt_watermark",
+        "poster": "shopify:\/\/shop_images\/Screen_Shot_2023-06-22_at_1.48.19_pm.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
-    "1782d0d6-94da-454f-a381-d65a9e20ce78": {
-      "type": "media-with-text",
-      "blocks": {
-        "d7aed1a7-488b-4ef6-8793-3cdc6ca783f0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1S8A9847.jpg",
-            "media_width": 45,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "State-of-the-Art Manufacturing.",
-            "title": "",
-            "content": "<p>Inconsistent manufacturing standards have plagued much of the supplement industry with products relying on proprietary blends that don’t contain effective dosing or tainted with foreign substances. <\/p><p>Our products are produced in controlled environments, only in Good Manufacturing Practice (GMP) certified and\/or equivalent facilities. Dedication to these NSF\/ANSI standards, ensure the product you receive contains exactly the ingredients listed and nothing it shouldn’t. Xendurance partners with LGC, the largest independent sports drug laboratory in the world, to certify their supplements and skincare are free of banned substances with the <strong>Informed Sport <\/strong>certification.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#f5f5f5",
-            "background_gradient": "",
-            "text_color": "#353435",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "43ef2c1f-4b71-4c82-be56-249e62222fca": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1S8A9847.jpg",
-            "media_width": 45,
-            "media_position": "end",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "Xendurance Ecosystem Of Health.",
-            "title": "",
-            "content": "<p>We believe that living a longer, healthier life is all encompassing. The Xendurance Ecosystem of health is made of 5 pillars of health: eating whole foods, movement, quality supplementation & skincare, sleep & recovery and prioritizing mental health. This integrated approach provides a foundation for life span; the total years of your life in combination with health span; the number of years you are active and healthy without debilitating disease or limitations.<\/p><p>Xendurance strives to provide clean, proven and performance driven products to support the Ecosystem of Health.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#f5f5f5",
-            "background_gradient": "",
-            "text_color": "#353435",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "d7aed1a7-488b-4ef6-8793-3cdc6ca783f0",
-        "43ef2c1f-4b71-4c82-be56-249e62222fca"
-      ],
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
+        "overlay_opacity": 20
       }
     },
     "1284832e-4ff2-46b3-8365-2765229b44f4": {
@@ -265,7 +276,7 @@
         "99c4c99d-ad0c-437b-ada1-8a45e053e80b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/menu-link-shop-supplements.jpg",
+            "image": "shopify:\/\/shop_images\/1_0c1fa6c2-6263-4601-aa38-8e54fdaaf441.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -273,9 +284,9 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Products Built For You",
-            "content": "<p>Products designed to maximize your health. Find the right products when you take our <strong>Quiz!<\/strong><\/p>",
+            "content": "<p>Our products are designed to maximize your health. <strong>Find the right products when you take our Quiz!<\/strong><\/p>",
             "link_text": "Take The Quiz",
-            "link_url": "",
+            "link_url": "shopify:\/\/pages\/product-finder",
             "background": "#ffffff",
             "background_gradient": "",
             "text_color": "#353435",
@@ -292,15 +303,23 @@
         "full_width": false,
         "spacing": "small"
       }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
     }
   },
   "order": [
     "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0",
-    "main",
     "101ee25b-89f4-4386-82b3-fe92ae53ba66",
-    "21fd67c5-5442-419a-9ca3-099fd99c3989",
+    "c9cc259c-76dc-442f-af45-4b259df34acb",
     "1782d0d6-94da-454f-a381-d65a9e20ce78",
+    "21fd67c5-5442-419a-9ca3-099fd99c3989",
     "1284832e-4ff2-46b3-8365-2765229b44f4",
-    "ba9b6f73-dc0f-4e32-b0c3-e804688b02e5"
+    "ba9b6f73-dc0f-4e32-b0c3-e804688b02e5",
+    "main"
   ]
 }

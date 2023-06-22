@@ -216,9 +216,7 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
-        "video": "{{ product.metafields.custom.product_video.value }}",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=zeJ3V9vEGUs",
-        "poster": "{{ product.metafields.custom.product_poster.value }}",
+        "external_video_url": "",
         "text_color": "#f5f5f5",
         "overlay_color": "#000000",
         "overlay_opacity": 0
