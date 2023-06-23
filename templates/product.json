@@ -129,8 +129,8 @@
         "ebb6b23d-4582-4ee7-b484-aa7711332c3f": {
           "type": "collapsible_text",
           "settings": {
-            "title": "When to Consume",
-            "content": "<p>{{ product.metafields.custom.consumption | metafield_tag }}<\/p>"
+            "title": "Usage",
+            "content": "{{ product.metafields.custom.consumption | metafield_tag }}"
           }
         }
       },

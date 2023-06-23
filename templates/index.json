@@ -561,7 +561,7 @@
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -570,7 +570,7 @@
         "content": "<p>Our products are used by world-class performers like Josh Bridges to help their chances to get on top of the podium.<\/p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#050505"
       }
     },
     "62dd1bf9-cd1d-41b3-abb2-cccc26614f18": {
@@ -599,6 +599,7 @@
         "autoplay": false,
         "video_size": "auto",
         "video": "shopify:\/\/files\/videos\/221029_Joe_Rogan_Mashup_YOUTUBE_LANDSCAPE_LOW_RES.mp4",
+        "external_video_url_metafield": "",
         "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",

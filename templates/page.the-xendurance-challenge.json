@@ -6,7 +6,7 @@
         "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XND_1.jpg",
+            "image": "shopify:\/\/shop_images\/A451A6FB-31EC-4BBE-9FB7-16D40E0B14F9_Large_08e096d7-8a20-4182-a0ea-43cce7a23631.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -53,7 +53,7 @@
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
+            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -75,7 +75,7 @@
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
+            "image": "shopify:\/\/shop_images\/EE_Challenge_a345452b-200b-4106-9be9-76ef6f21dc96.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -113,9 +113,9 @@
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 7,
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#e93b40",
         "text_gradient": ""
       }
     },
@@ -172,7 +172,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
@@ -293,6 +293,7 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
+        "external_video_url_metafield": "",
         "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
@@ -307,8 +308,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify:\/\/shop_images\/1-1643686487072.png",
-            "mobile_icon_width": 24,
-            "icon_width": 92,
+            "mobile_icon_width": 80,
+            "icon_width": 100,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -321,8 +322,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify:\/\/shop_images\/2-1643686487074_Large_6871f92a-e3fd-4d14-acfc-7e8942840bca.png",
-            "mobile_icon_width": 24,
-            "icon_width": 92,
+            "mobile_icon_width": 80,
+            "icon_width": 100,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -335,8 +336,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify:\/\/shop_images\/3-1643686487076_Large_445ce96f-663a-466c-90ea-35bd35ae836c.png",
-            "mobile_icon_width": 24,
-            "icon_width": 92,
+            "mobile_icon_width": 80,
+            "icon_width": 100,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -353,7 +354,7 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "title": "Meet Extreme Endurance.",
+        "title": "Meet Extreme Endurance",
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "medium",
@@ -596,15 +597,32 @@
         "button_text": "",
         "button_url": "",
         "text_position": "center",
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "button_background": "",
+        "button_background": "#e93b40",
         "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
+        "accordion_background": "#ffffff",
+        "accordion_text_color": "#050505"
+      }
+    },
+    "9b1d6454-7659-43be-a2f3-ffb461255dbe": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Get The Latest From Xendurance",
+        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
       }
     }
   },
@@ -619,6 +637,7 @@
     "f12c65b4-479f-4d49-98f5-cede8e305199",
     "1e177313-5d14-4e72-a7e9-0a844add9467",
     "1782d0d6-94da-454f-a381-d65a9e20ce78",
-    "6ae6922e-7b13-4fd4-8a1f-5a684c04e323"
+    "6ae6922e-7b13-4fd4-8a1f-5a684c04e323",
+    "9b1d6454-7659-43be-a2f3-ffb461255dbe"
   ]
 }
