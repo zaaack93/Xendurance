@@ -24,7 +24,7 @@ Supported parameters
 {%- capture card_content -%}
   {%- if article -%}
     {%- if article.image != blank -%}
-      <a href="{{ article.url }}" class="blog-post-card__figure {% unless featured %}rounded{% endunless %}">
+  <a href="{{ article.url }}" class="blog-post-card__figure {% unless featured %}rounded{% endunless %}"  {% unless aspect_ratio == "original" %} style="aspect-ratio:{{aspect_ratio}}{%endunless%}">
         {%- if featured != true and show_category and article.tags.size > 0 -%}
           <span class="badge badge--primary">{{ article.tags | first }}</span>
         {%- endif -%}
