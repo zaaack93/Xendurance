@@ -127,6 +127,7 @@
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/all-products",
             "bubble_color": "#f83a3a",
+            "bubble_image": "shopify:\/\/shop_images\/menu-link-all-skin.png",
             "bubble_text": "Recovery"
           }
         },
@@ -785,6 +786,7 @@
         "template--16030540497084__698a8604-5b1e-491b-af0f-b958f03c9333-1684994267f30d0014-0"
       ],
       "settings": {
+        "aspect_ration_blog_image": "1",
         "full_width": true,
         "show_excerpt": false,
         "show_date": true,
