@@ -50,7 +50,13 @@
                     {{- block.settings.content -}}
 
                     {%- if block.settings.button_text != blank -%}
-                      {%- render 'button', content: block.settings.button_text, href: block.settings.button_url, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+                      {% include 'membership-check' %}
+                      {% if isMember %}
+                        {%- assign button_link = block.settings.button_url_members -%}
+                      {%else%}
+                        {%- assign button_link = block.settings.button_url -%}
+                      {%endif%}
+                      {%- render 'button', content: block.settings.button_text, href: button_link, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
                     {%- endif -%}
                   </div>
                 </div>
@@ -117,6 +123,11 @@
           "type": "url",
           "id": "button_url",
           "label": "Button link"
+        },
+        {
+          "type": "url",
+          "id": "button_url_members",
+          "label": "Button link for members"
         },
         {
           "type": "header",
