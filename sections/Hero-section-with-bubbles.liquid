@@ -59,7 +59,13 @@ CSS
         {% for block in section.blocks %}
          {%if block.type == "text" %}
           <div class="bubble" data-category="{{ block.settings.bubble_category }}">
-            <a href="{{ block.settings.bubble_collection }}">
+            {% include 'membership-check' %}
+            {% if isMember %}
+              {% assign url = block.settings.bubble_collection_members %}
+            {%else%}
+              {% assign url = block.settings.bubble_collection %}
+            {%endif%}
+            <a href="{{ url }}">
             <div class="bubble_image_container" style="border-color:{{ block.settings.bubble_color }}">
               <img
                 srcset="{%- if block.settings.bubble_image.width >= 165 -%}{{ block.settings.bubble_image | img_url: '165x' }} 165w,{%- endif -%}
@@ -166,7 +172,14 @@ CSS
                 {%- if block.settings.subheading != blank -%}
                   <p data-sequence="subheading">{{ block.settings.subheading | escape }}</p>
                 {%- endif -%}
-  
+                {% include 'membership-check' %}
+                {% if isMember %}
+                  {% assign url_main = block.settings.button_link_members %}
+                  {% assign url_secondary = block.settings.secondary_button_link_members %}
+                {%else%}
+                  {% assign url_main = block.settings.button_link %}
+                  {% assign url_secondary = block.settings.secondary_button_link %}
+                {%endif%}
                 {%- if block.settings.button_text != blank -%}
                   {%- render 'button', href: block.settings.button_link, content: block.settings.button_text, size: 'lg', background: block.settings.button_background, text_color: block.settings.button_text_color -%}
                 {%- endif -%}
@@ -385,6 +398,11 @@ CSS
                "label":"Link"
                },
                {
+                "type":"url",
+                "id":"bubble_collection_members",
+                "label":"Link for members"
+                },
+               {
                 "type": "color",
                 "id": "bubble_color",
                 "label": "Icon image",
@@ -592,6 +610,12 @@ CSS
             "info": "Leave the button text empty to make the slide fully clickable."
           },
           {
+            "type": "url",
+            "id": "button_link_members",
+            "label": "Button link for members",
+            "info": "Leave the button text empty to make the slide fully clickable."
+          },
+          {
             "type": "text",
             "id": "secondary_button_text",
             "label": "Secondary Button text"
@@ -600,6 +624,12 @@ CSS
             "type": "url",
             "id": "secondary_button_link",
             "label": "Secondary Button link",
+            "info": "Leave the button text empty to make the slide fully clickable."
+          },
+          {
+            "type": "url",
+            "id": "secondary_button_link_members",
+            "label": "Secondary Button link for members",
             "info": "Leave the button text empty to make the slide fully clickable."
           },
           {
