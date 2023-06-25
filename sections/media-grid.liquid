@@ -45,7 +45,13 @@ LIQUID
 <div {% render 'section-properties', narrow: section.settings.reduce_width %}>
   <media-grid class="media-grid">
     {%- for block in section.blocks -%}
-      <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="media-grid__item shadow group" reveal-js style="--media-grid-column-span: {{ block.settings.desktop_column_span }}; --media-grid-row-span: {{ block.settings.desktop_row_span }}" {{ block.shopify_attributes }}>
+      {% include 'membership-check' %}
+      {% if isMember %}
+        {%- assign link_url = block.settings.link_url_members -%}
+      {%else%}
+        {%- assign link_url = block.settings.link_url -%}
+      {%endif%}
+      <a {% if link_url != blank %}href="{{ link_url }}"{% endif %} class="media-grid__item shadow group" reveal-js style="--media-grid-column-span: {{ block.settings.desktop_column_span }}; --media-grid-row-span: {{ block.settings.desktop_row_span }}" {{ block.shopify_attributes }}>
         {%- capture style -%}
           --content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }};
 
@@ -170,6 +176,11 @@ LIQUID
           "type": "url",
           "id": "link_url",
           "label": "Link URL"
+        },
+        {
+          "type": "url",
+          "id": "link_url_members",
+          "label": "Link URL for members"
         },
         {
           "type": "text",
@@ -416,6 +427,11 @@ LIQUID
           "type": "url",
           "id": "link_url",
           "label": "Link URL"
+        },
+        {
+          "type": "url",
+          "id": "link_url_members",
+          "label": "Link URL for members"
         },
         {
           "type": "text",
