@@ -13,11 +13,34 @@ Supported variables
 * item: the search result item
 * type: the object type. Can be "product", "query", "article", "collection" or "page"
 {%- endcomment -%}
-
+{% assign isMember = false %}
+{% if customer and customer.tags contains "XNDSHIP" %}
+	{% assign isMember = true %}
+{% endif %}
 {%- case type -%}
   {%- when 'product' -%}
     {%- assign product = item -%}
+    {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+      <a href="{{ product.url }}" data-instant class="predictive-search-result group">
+        {%- if product.featured_media -%}
+          {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: sizes: '96px', widths: '96,192' -}}
+        {%- endif -%}
 
+        <div class="v-stack gap-1 sm:gap-1.5">
+          {%- if settings.show_vendor -%}
+            <span class="text-xs text-subdued">{{ product.vendor }}</span>
+          {%- endif -%}
+
+          <div class="v-stack justify-items-start gap-0.5">
+            <span class="bold">
+              <span class="reversed-link">{{ product.title }}</span>
+            </span>
+
+            {%- render 'price-list', product: product -%}
+          </div>
+        </div>
+      </a>
+    {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}
     <a href="{{ product.url }}" data-instant class="predictive-search-result group">
       {%- if product.featured_media -%}
         {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: sizes: '96px', widths: '96,192' -}}
@@ -37,6 +60,7 @@ Supported variables
         </div>
       </div>
     </a>
+    {% endif %}
 
   {%- when 'query' -%}
     {%- assign query = item -%}
