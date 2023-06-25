@@ -954,7 +954,14 @@ var ProductRecommendations = class extends HTMLElement {
       return;
     }
     this._isLoaded = true;
-    const section = this.closest(".shopify-section"), intent = this.getAttribute("intent") || "related", url = `${Shopify.routes.root}recommendations/products?product_id=${this.getAttribute("product")}&limit=${this.getAttribute("limit") || 4}&section_id=${section.id.replace("shopify-section-", "")}&intent=${intent}`, response = await fetch(url, { priority: "low" });
+    let queryForMember=''
+    if(window.themeVariables.isMember){
+      queryForMember = "&filter.p.tag=MEMBERS-ONLY"
+    }
+    else{
+      queryForMember = "&filter.p.tag=ALL-PRODUCTS"
+    }
+    const section = this.closest(".shopify-section"), intent = this.getAttribute("intent") || "related", url = `${Shopify.routes.root}recommendations/products?product_id=${this.getAttribute("product")}&q${queryForMember}&limit=${this.getAttribute("limit") || 4}&section_id=${section.id.replace("shopify-section-", "")}&intent=${intent}`, response = await fetch(url, { priority: "low" });
     const tempDiv = new DOMParser().parseFromString(await response.text(), "text/html"), productRecommendationsElement = tempDiv.querySelector("product-recommendations");
     if (productRecommendationsElement.childElementCount > 0) {
       this.replaceChildren(...document.importNode(productRecommendationsElement, true).childNodes);
