@@ -206,8 +206,12 @@
                         </a>
                       </div>
                     {%- endfor -%}
-
-                    {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                    {% include 'membership-check' %}
+                    {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+                      {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                    {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}
+                      {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                    {% endif %}
                   {%- endfor -%}
                 </product-list>
               </reveal-items>

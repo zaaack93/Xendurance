@@ -741,7 +741,7 @@
         "footer_text_paragraphe": "",
         "footer_button_text": "Shop All Energy",
         "footer_button_url": "shopify:\/\/collections\/energy",
-        "members_footer_button_url": ""
+        "members_footer_button_url": "shopify:\/\/collections\/energy-1"
       }
     },
     "9c337f61-5b66-4c80-a95f-8e2a71eca744": {
@@ -850,6 +850,7 @@
             "title": "Unsure Where to Start?",
             "heading_tag": "h2",
             "link_url": "shopify:\/\/pages\/perfect-path-quiz",
+            "link_url_members": "",
             "link_text": "Take Our 60 Second Quiz",
             "mobile_text_position": "place-self-start text-start",
             "desktop_column_span": 4,
@@ -873,6 +874,7 @@
             "title": "Join Team XND and Save",
             "heading_tag": "h2",
             "link_url": "shopify:\/\/pages\/team-xnd-signup",
+            "link_url_members": "",
             "link_text": "Learn More",
             "mobile_text_position": "place-self-end-start text-start",
             "desktop_column_span": 2,
@@ -895,6 +897,7 @@
             "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
             "desktop_column_span": 1,
@@ -917,6 +920,7 @@
             "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
             "desktop_column_span": 2,
@@ -1037,6 +1041,7 @@
         "answer_time": "Average answer time: 24h",
         "button_text": "",
         "button_url": "",
+        "button_url_members": "",
         "text_position": "start",
         "background": "#ffffff",
         "background_gradient": "",
