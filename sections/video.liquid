@@ -105,8 +105,14 @@
                 {%- endif -%}
 
               {%- when 'button' -%}
+                {% include 'membership-check' %}
+                {% if isMember %}
+                  {%- assign button_link = block.settings.url_members -%}
+                {%else%}
+                  {%- assign button_link = block.settings.url -%}
+                {%endif%}
                 {%- if block.settings.text != blank -%}
-                  {% render 'button', content: block.settings.text, href: block.settings.url, size: block.settings.size, style: block.settings.style, background: block.settings.background, text_color: block.settings.text_color, block: block %}
+                  {% render 'button', content: block.settings.text, href: button_link, size: block.settings.size, style: block.settings.style, background: block.settings.background, text_color: block.settings.text_color, block: block %}
                 {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
@@ -368,6 +374,11 @@
           "type": "url",
           "id": "url",
           "label": "Link"
+        },
+        {
+          "type": "url",
+          "id": "url_members",
+          "label": "Link for members"
         },
         {
           "type": "color",
