@@ -19,8 +19,10 @@
             "heading_tag": "h2",
             "button_text": "Shop All Supplements",
             "button_link": "shopify:\/\/collections\/all-products",
+            "button_link_members": "shopify:\/\/collections\/team-xnd-products",
             "secondary_button_text": "Shop All SkIn",
-            "secondary_button_link": "shopify:\/\/collections\/skin",
+            "secondary_button_link": "shopify:\/\/collections\/skincare",
+            "secondary_button_link_members": "shopify:\/\/collections\/skin",
             "text_color": "#ffffff",
             "button_background": "#e93a3f",
             "button_text_color": "#ffffff",
@@ -48,8 +50,10 @@
             "heading_tag": "h2",
             "button_text": "Shop All SKIN",
             "button_link": "shopify:\/\/collections\/all",
+            "button_link_members": "",
             "secondary_button_text": "Shop All SKIN",
             "secondary_button_link": "",
+            "secondary_button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#00a9e0",
             "button_text_color": "#ffffff",
@@ -66,6 +70,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/best-sellers",
+            "bubble_collection_members": "shopify:\/\/collections\/best-sellers",
             "bubble_color": "#e93b40",
             "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-_1.png",
             "bubble_text": "Best Sellers"
@@ -76,6 +81,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/energy",
+            "bubble_collection_members": "shopify:\/\/collections\/energy-1",
             "bubble_color": "#e93b40",
             "bubble_image": "shopify:\/\/shop_images\/image_25.jpg",
             "bubble_text": "Energy"
@@ -85,7 +91,8 @@
           "type": "text",
           "settings": {
             "bubble_category": "Skin",
-            "bubble_collection": "",
+            "bubble_collection": "shopify:\/\/collections\/skincare",
+            "bubble_collection_members": "shopify:\/\/collections\/skin",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/Xnd-Sups_6_Complete_Skin_Pack-1-Night_Moisture_2_1_Small_69a367b3-fba2-4e92-9c48-9e8d7244eae5.jpg",
             "bubble_text": "All SKIN"
@@ -96,6 +103,7 @@
           "settings": {
             "bubble_category": "Skin",
             "bubble_collection": "",
+            "bubble_collection_members": "",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/xendurance-day-skin-33508277256380.png",
             "bubble_text": "Day SKIN"
@@ -106,6 +114,7 @@
           "settings": {
             "bubble_category": "Skin",
             "bubble_collection": "",
+            "bubble_collection_members": "",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/Night_Skin_Pack-Trio-1.png",
             "bubble_text": "Night SKIN"
@@ -116,6 +125,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/daily-2",
+            "bubble_collection_members": "shopify:\/\/collections\/daily-1",
             "bubble_color": "#f83a3a",
             "bubble_image": "shopify:\/\/shop_images\/Daily_Foundation-Stand_df40e207-78e5-4b61-a6d3-5fa281ca06d9.png",
             "bubble_text": "Daily"
@@ -126,6 +136,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/all-products",
+            "bubble_collection_members": "shopify:\/\/collections\/team-xnd-products",
             "bubble_color": "#f83a3a",
             "bubble_image": "shopify:\/\/shop_images\/menu-link-all-skin.png",
             "bubble_text": "Recovery"
@@ -136,6 +147,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/transform",
+            "bubble_collection_members": "shopify:\/\/collections\/transform-1",
             "bubble_color": "#f83a3a",
             "bubble_image": "shopify:\/\/shop_images\/Weight_Management_Pack-Stand_d77fc303-694b-473d-b080-ea27d105140c.png",
             "bubble_text": "Transform"
@@ -146,6 +158,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/packs-1",
+            "bubble_collection_members": "shopify:\/\/collections\/packs",
             "bubble_color": "#f83a3a",
             "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
             "bubble_text": "Packs"
@@ -156,6 +169,7 @@
           "settings": {
             "bubble_category": "Skin",
             "bubble_collection": "",
+            "bubble_collection_members": "",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
             "bubble_text": "Membership"
@@ -166,6 +180,7 @@
           "settings": {
             "bubble_category": "Skin",
             "bubble_collection": "",
+            "bubble_collection_members": "",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/QUIZ_Logo_100x100px.jpg",
             "bubble_text": "Quiz"
