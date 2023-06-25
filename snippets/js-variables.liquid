@@ -1,3 +1,7 @@
+{% assign isMember = false %}
+{% if customer and customer.tags contains "XNDSHIP" %}
+	{% assign isMember = true %}
+{% endif %}
 <script>
   document.documentElement.classList.replace('no-js', 'js');
 
@@ -14,6 +18,7 @@
       showDiscount: {{ settings.show_discount | json }},
       discountMode: {{ settings.discount_mode | json }}
     },
+    isMember: {{ isMember }},
 
     strings: {
       accessibilityClose: {{ 'general.accessibility.close' | t | json }},

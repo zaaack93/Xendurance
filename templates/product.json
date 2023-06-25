@@ -236,6 +236,7 @@
             "heading_tag": "h4",
             "content": "<p><em>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/em><\/p>",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -249,6 +250,7 @@
             "heading_tag": "h4",
             "content": "{{ product.metafields.custom.pdp_athlete_testimonial_2 | metafield_tag }}",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -262,6 +264,7 @@
             "heading_tag": "h4",
             "content": "{{ product.metafields.custom.pdp_athlete_testimonial_3 | metafield_tag }}",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -549,6 +552,7 @@
         "content": "<p>When it’s time to unleash your inner-Hercules and bounce back stronger than ever… Its very hard to beat the results you will feel with Extreme Endurance.<\/p>",
         "button_text": "",
         "button_url": "",
+        "button_url_members": "",
         "text_position": "center",
         "max_rows": 5,
         "view_all_text": "View all",
@@ -613,6 +617,7 @@
             "content": "<h5>$100 in Immediate Rewards. Free Shipping + 25% OFF On Every Order. 2x Loyalty Points. Partner Perks + More.<\/h5>",
             "link_text": "Learn More",
             "link_url": "shopify:\/\/products\/team-xnd-membership",
+            "link_url_members": "",
             "background": "#353435",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -651,6 +656,27 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "full_width": true,
+        "products_count": 6,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
@@ -664,6 +690,7 @@
     "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d",
     "16868735100eb8db37",
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
-    "related-products"
+    "related-products",
+    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1"
   ]
 }
