@@ -65,7 +65,14 @@
         </div>
       {%- endif -%}
 
-      {%- if section.settings.featured_product != blank -%}
+      {% include 'membership-check' %}
+      {% if isMember %}
+        {%- assign featured_product = section.settings.featured_product_members -%}
+      {%else%}
+        {%- assign featured_product = section.settings.featured_product -%}
+      {%endif%}
+
+      {%- if featured_product != blank -%}
         {%- if section.settings.desktop_text_position contains 'center-end' or section.settings.desktop_text_position contains 'start-end' -%}
           {%- assign featured_product_position = 'place-self-end-start' -%}
         {%- else -%}
@@ -79,7 +86,7 @@
             {%- endif -%}
 
             <a href="{{ section.settings.featured_product.url }}" class="collection-featured-product__content">
-              {%- render 'horizontal-product', product: section.settings.featured_product, size: 'sm', output_link: false -%}
+              {%- render 'horizontal-product', product: featured_product, size: 'sm', output_link: false -%}
             </a>
           </div>
         </div>
@@ -300,6 +307,11 @@
       "type": "product",
       "id": "featured_product",
       "label": "Product"
+    },
+    {
+      "type": "product",
+      "id": "featured_product_members",
+      "label": "Product for members"
     },
     {
       "type": "text",

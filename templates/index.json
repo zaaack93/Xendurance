@@ -366,7 +366,7 @@
         "footer_image_paragraph": "shopify:\/\/shop_images\/image_49.png",
         "footer_button_text": "Shop All Supplements",
         "footer_button_url": "shopify:\/\/collections",
-        "members_footer_button_url": ""
+        "members_footer_button_url": "shopify:\/\/collections"
       }
     },
     "press": {
@@ -433,7 +433,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Mens-Health-logo_1_Medium_eea0f5fb-fa28-49bb-9ebe-f82f828957c8.png",
             "logo_width": 180,
-            "link": ""
+            "link": "",
+            "link_members": ""
           }
         },
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-0": {
@@ -441,7 +442,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/JRE.webp",
             "logo_width": 120,
-            "link": ""
+            "link": "",
+            "link_members": ""
           }
         },
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-2": {
@@ -449,7 +451,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Ironman_Triathlon__logo__svg.png",
             "logo_width": 120,
-            "link": ""
+            "link": "",
+            "link_members": ""
           }
         },
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-1": {
@@ -457,7 +460,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/bikelogo-1643683619278.png",
             "logo_width": 120,
-            "link": ""
+            "link": "",
+            "link_members": ""
           }
         },
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-4": {
@@ -465,7 +469,8 @@
           "disabled": true,
           "settings": {
             "logo_width": 120,
-            "link": ""
+            "link": "",
+            "link_members": ""
           }
         }
       },
@@ -504,6 +509,7 @@
             "title": "Heading 1",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_url": "",
+            "button_url_members": "",
             "button_text": ""
           }
         },
@@ -515,6 +521,7 @@
             "title": "Heading 2",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_url": "",
+            "button_url_members": "",
             "button_text": ""
           }
         }
@@ -546,6 +553,7 @@
             "heading_tag": "h4",
             "content": "<p><em>Former Navy Seal and 6x CrossFit Games Athlete<\/em><\/p>",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -559,6 +567,7 @@
             "heading_tag": "h4",
             "content": "<p><em>Coach\/Athlete\/Mom<\/em><\/p>",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -572,6 +581,7 @@
             "heading_tag": "h4",
             "content": "<p><em>College Athlete<\/em><\/p>",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -652,6 +662,7 @@
             "content": "",
             "button_text": "",
             "button_url": "",
+            "button_url_members": "",
             "animate_impact_text": true,
             "animate_impact_text_duration": 2
           }
@@ -774,6 +785,7 @@
             "content": "<p>☑️  <strong>$100 In Immediate Product Rewards<\/strong><\/p><p>☑️  <strong>Free Shipping + 25% OFF<\/strong><\/p><p>☑️  <strong>2x Loyalty Reward Points<\/strong><\/p><p>☑️  <strong>Partner Perks + More!<\/strong><\/p>",
             "link_text": "Learn more",
             "link_url": "shopify:\/\/products\/team-xnd-membership",
+            "link_url_members": "",
             "background": "#e93b40",
             "background_gradient": "",
             "text_color": "#ffffff",

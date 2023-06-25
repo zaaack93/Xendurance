@@ -15,6 +15,7 @@
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "featured_product": "lean",
+        "featured_product_members": "lean-3",
         "featured_product_heading": "Featured product",
         "text_color": "#ffffff",
         "overlay_color": "#000000",

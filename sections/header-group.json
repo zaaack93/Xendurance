@@ -9,7 +9,8 @@
           "type": "message",
           "settings": {
             "text": "TRUSTED BY 300,000+ PEAK PERFORMERS",
-            "url": "shopify:\/\/collections\/all"
+            "url": "shopify:\/\/collections\/all",
+            "url_members": ""
           }
         }
       },
@@ -39,12 +40,12 @@
             "image_1": "shopify:\/\/shop_images\/menu-link-all-products.png",
             "image_heading_1": "All Products",
             "image_link_1": "shopify:\/\/collections\/all-products",
-            "image_link_1_members": "shopify:\/\/collections\/all-products",
+            "image_link_1_members": "shopify:\/\/collections\/team-xnd-products",
             "image_text_color_1": "#ffffff",
             "image_2": "shopify:\/\/shop_images\/menu-link-all-supplements.png",
             "image_heading_2": "All Supplements",
             "image_link_2": "shopify:\/\/collections\/all-products",
-            "image_link_2_members": "shopify:\/\/collections\/all-products",
+            "image_link_2_members": "shopify:\/\/collections\/team-xnd-products",
             "image_text_color_2": "#ffffff",
             "image_3": "shopify:\/\/shop_images\/menu-link-all-skin.png",
             "image_heading_3": "All SKIN",
