@@ -57,9 +57,15 @@
           {% capture item_attribute %}
            {%- render 'surface', class: 'logo-list__item', background: section.settings.logo_item_background, background_fallback: 'bg-secondary' -%}
           {%- endcapture -%}
+          {% include 'membership-check' %}
+          {% if isMember %}
+            {%- assign link_url = block.settings.link_members -%}
+          {%else%}
+            {%- assign link_url = block.settings.link -%}
+          {%endif%}
 
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" {{ item_attribute }} {{ block.shopify_attributes }}>
+          {%- if link_url != blank -%}
+            <a href="{{ link_url }}" {{ item_attribute }} {{ block.shopify_attributes }}>
               {{- block_content -}}
             </a>
           {%- else -%}
@@ -196,6 +202,11 @@
           "type": "url",
           "id": "link",
           "label": "Link"
+        },
+        {
+          "type": "url",
+          "id": "link_members",
+          "label": "Link for members"
         }
       ]
     }
