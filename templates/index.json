@@ -231,6 +231,7 @@
             "heading_tag": "h2",
             "button_text": "Shop All Supplements",
             "button_link": "shopify:\/\/collections\/all-products",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#e93b40",
             "button_text_color": "#ffffff",
@@ -252,6 +253,7 @@
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -283,7 +285,11 @@
       "disabled": true,
       "settings": {
         "collection": "best-sellers",
+        "collection_members": "best-sellers-1",
         "products": [
+
+        ],
+        "products_members": [
 
         ],
         "full_width": true,
@@ -296,6 +302,7 @@
         "title": "Featured collection",
         "content": "",
         "link_url": "",
+        "link_url_members": "",
         "link_text": "View all",
         "background": "",
         "background_gradient": "",
