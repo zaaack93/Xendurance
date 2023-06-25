@@ -9,6 +9,12 @@
 {%- capture search_form -%}
   <form class="main-search-form" action="{{ routes.search_url }}" method="get" role="search">
     <input type="hidden" name="type" value="product">
+    {% include 'membership-check' %}
+    {% if isMember %}
+      <input type="hidden" name="filter.p.tag" value="MEMBERS-ONLY">
+    {%else%}
+      <input type="hidden" name="filter.p.tag" value="ALL-PRODUCTS">
+    {%endif%}
 
     <div class="v-stack gap-6 sm:gap-12">
       <div class="search-input">
