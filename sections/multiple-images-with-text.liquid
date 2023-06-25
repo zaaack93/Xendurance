@@ -109,7 +109,13 @@ LIQUID
               {{- block.settings.content -}}
 
               {%- if block.settings.button_text != blank -%}
-                {%- render 'button', href: block.settings.button_url, content: block.settings.button_text, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+                {% include 'membership-check' %}
+                {% if isMember %}
+                  {%- assign button_link = block.settings.button_url_members -%}
+                {%else%}
+                  {%- assign button_link = block.settings.button_url -%}
+                {%endif%}
+                {%- render 'button', href: button_link, content: block.settings.button_text, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
               {%- endif -%}
             </div>
 
@@ -266,6 +272,11 @@ LIQUID
           "type": "url",
           "id": "button_url",
           "label": "Button URL"
+        },
+        {
+          "type": "url",
+          "id": "button_url_members",
+          "label": "Button URL for members"
         },
         {
           "type": "text",
