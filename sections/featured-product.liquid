@@ -41,18 +41,12 @@
 
 <div {% render 'section-properties', tight: true %}>
   <div class="product">
-    {% include 'membership-check' %}
-    {% if isMember %}
-      {%- assign product = section.settings.product_members -%}
-    {%else%}
-      {%- assign product = section.settings.product -%}
-    {%endif%}
-    {%- if product != blank -%}
-      {%- if product.media.size > 0 -%}
-        {%- render 'product-gallery', product: product -%}
+    {%- if section.settings.product != blank -%}
+      {%- if section.settings.product.media.size > 0 -%}
+        {%- render 'product-gallery', product: section.settings.product -%}
       {%- endif -%}
 
-      {%- render 'product-info', product: product, update_url: false -%}
+      {%- render 'product-info', product: section.settings.product, update_url: false -%}
     {%- else -%}
       <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
         <div class="product-gallery__ar-wrapper">
@@ -1105,11 +1099,6 @@
       "type": "product",
       "id": "product",
       "label": "Product"
-    },
-    {
-      "type": "product",
-      "id": "product_members",
-      "label": "Product for members"
     },
     {
       "type": "header",

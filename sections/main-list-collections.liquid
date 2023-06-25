@@ -40,7 +40,12 @@
 
         {%- paginate collections by 48 -%}
           <collection-list class="collection-list">
+          {% include 'membership-check' %}
+          {% if isMember %}
+            {% assign collections_list = section.settings.collections_members | default: collections %}
+          {%else%}
             {% assign collections_list = section.settings.collections | default: collections %}
+          {%endif%}
 
             {%- for collection in collections_list -%}
               <a href="{{ collection.url }}" class="collection-card" reveal-js>
@@ -81,6 +86,12 @@
       "type": "collection_list",
       "id": "collections",
       "label": "Selected collections",
+      "limit": 48
+    },
+    {
+      "type": "collection_list",
+      "id": "collections_members",
+      "label": "Selected collections for members",
       "limit": 48
     },
     {
