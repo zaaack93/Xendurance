@@ -111,10 +111,18 @@ the underlying logic of the menu.
             {%- render 'icon' with 'search' -%}
           </a>
 
-          {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
+          {% include 'membership-check' %}
+          {% if isMember %}
+            {% assign menu = section.settings.menu_members %}
+          {% else %}
+            {% assign menu = section.settings.menu %}
+          {%endif%}
+
+          {%- if section.settings.layout != 'drawer' and menu.links.size > 0 -%}
             <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
               <ul class="contents" role="list">
-                {%- for link in section.settings.menu.links -%}
+                
+                {%- for link in menu.links -%}
                   {% liquid
                     assign link_title_downcase = link.title | downcase
                     assign mega_menu_block = ''
@@ -306,9 +314,14 @@ the underlying logic of the menu.
   NAVIGATION MENU DRAWER
   --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
-
-{%- assign main_menu = section.settings.sidebar_menu | default: section.settings.menu -%}
-{%- assign secondary_menu = section.settings.secondary_menu -%}
+{% include 'membership-check' %}
+{% if isMember %}
+  {%- assign main_menu = section.settings.sidebar_menu_members | default: section.settings.menu_members -%}
+  {%- assign secondary_menu = section.settings.secondary_menu_members -%}
+{%else%}
+  {%- assign main_menu = section.settings.sidebar_menu | default: section.settings.menu -%}
+  {%- assign secondary_menu = section.settings.secondary_menu -%}
+{%endif%}
 
 {%- if main_menu.links.size > 0 or secondary_menu.links.size > 0 -%}
   <navigation-drawer mobile-opening="{{ section.settings.opening_from }}" open-from="left" id="header-sidebar-menu" class="navigation-drawer drawer {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" {% if request.design_mode %}handle-section-events{% endif %}>
@@ -395,13 +408,30 @@ the underlying logic of the menu.
     },
     {
       "type": "link_list",
+      "id": "menu_members",
+      "label": "Menu for members",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
       "id": "sidebar_menu",
       "label": "Drawer menu"
     },
     {
       "type": "link_list",
+      "id": "sidebar_menu_members",
+      "label": "Drawer menu for members"
+    },
+    {
+      "type": "link_list",
       "id": "secondary_menu",
       "label": "Secondary menu",
+      "info": "This menu won't show dropdown items. For best results, limit the number of links to 1 or 2."
+    },
+    {
+      "type": "link_list",
+      "id": "secondary_menu_members",
+      "label": "Secondary menu for members",
       "info": "This menu won't show dropdown items. For best results, limit the number of links to 1 or 2."
     },
     {
@@ -577,6 +607,11 @@ the underlying logic of the menu.
       "label": "Footer Button link"
     },
     {
+      "type": "url",
+      "id": "footer_button_url_members",
+      "label": "Footer Button link for members"
+    },
+    {
       "type": "color",
       "id": "footer_button_background",
       "label": "Footer Button background",
@@ -669,6 +704,11 @@ the underlying logic of the menu.
           "label": "Link"
         },
         {
+          "type": "url",
+          "id": "image_link_1_members",
+          "label": "Link for members"
+        },
+        {
           "type": "color",
           "id": "image_text_color_1",
           "label": "Heading",
@@ -693,6 +733,11 @@ the underlying logic of the menu.
           "type": "url",
           "id": "image_link_2",
           "label": "Link"
+        },
+        {
+          "type": "url",
+          "id": "image_link_2_members",
+          "label": "Link for members"
         },
         {
           "type": "color",
@@ -721,6 +766,11 @@ the underlying logic of the menu.
           "label": "Link"
         },
         {
+          "type": "url",
+          "id": "image_link_3_members",
+          "label": "Link for members"
+        },
+        {
           "type": "color",
           "id": "image_text_color_3",
           "label": "Heading",
@@ -745,6 +795,11 @@ the underlying logic of the menu.
           "type": "url",
           "id": "image_link_4",
           "label": "Link"
+        },
+        {
+          "type": "url",
+          "id": "image_link_4_members",
+          "label": "Link for members"
         },
         {
           "type": "color",
@@ -773,6 +828,11 @@ the underlying logic of the menu.
           "label": "Link"
         },
         {
+          "type": "url",
+          "id": "image_link_5_members",
+          "label": "Link for members"
+        },
+        {
           "type": "color",
           "id": "image_text_color_5",
           "label": "Heading",
@@ -786,6 +846,11 @@ the underlying logic of the menu.
           "type": "product",
           "id": "product",
           "label": "Product"
+        },
+        {
+          "type": "product",
+          "id": "product_members",
+          "label": "Product for members"
         },
         {
           "type": "color",

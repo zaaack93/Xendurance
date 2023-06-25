@@ -212,8 +212,19 @@ Supported variables
             {%comment%}
             {{- social_media -}}
             {%endcomment%}
+            {% comment %} membership check {% endcomment %}
+            {% assign isMember = false %}
+            {% if customer and customer.tags contains "XNDSHIP" %}
+              {% assign isMember = true %}
+            {% endif %}
+            {% comment %} end membership check {% endcomment %}
+            {% if isMember %}
+              {% assign button_footer = settings.footer_button_url_members%}
+            {%else%}
+              {% assign button_footer = settings.footer_button_url%}
+            {%endif%}
             {%- if settings.footer_button_text != blank -%}
-              {% render 'button', content: settings.footer_button_text, href: settings.footer_button_url, size: 'xl', background: settings.footer_button_background, text_color: settings.footer_button_text_color %}
+              {% render 'button', content: settings.footer_button_text, href: button_footer, size: 'xl', background: settings.footer_button_background, text_color: settings.footer_button_text_color %}
             {%- endif -%}
             {%comment%}Judgme widget{%endcomment%}
             {% if settings.footer_collout_badge %}
