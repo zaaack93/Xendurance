@@ -405,6 +405,7 @@
             "title": "Morning",
             "heading_tag": "h4",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "Take 3 Tablets Of Extreme Endurance with or without food first thing in the morning",
             "mobile_text_position": "place-self-center text-center",
             "desktop_column_span": 2,
@@ -426,6 +427,7 @@
             "title": "Evening",
             "heading_tag": "h4",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "Take 3 Tablets Of Extreme Endurance with or without food before bed",
             "mobile_text_position": "place-self-center text-center",
             "desktop_column_span": 2,
@@ -659,6 +661,7 @@
     },
     "cf8b928d-f9b0-4c53-bcbb-2f59458566b1": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "products_count": 6,

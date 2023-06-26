@@ -561,11 +561,53 @@
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8.png",
+            "image": "shopify:\/\/shop_images\/4_3a645ed1-666c-4714-9f2e-e116bbbfed7e.png",
             "column_size": "3",
-            "title": "Ivet Dahl",
+            "title": "Danielle Brandon",
             "heading_tag": "h4",
-            "content": "<p><em>Coach\/Athlete\/Mom<\/em><\/p>",
+            "content": "<p><em>5x Crossfit Games Athlete<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "65dafed1-b5f9-49c7-9939-0ceb44d0c567": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.12.55_PM.png",
+            "column_size": "3",
+            "title": "Matt Centrowitz",
+            "heading_tag": "h4",
+            "content": "<p>1500 Olympic Gold Medalist<\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "edcf3f90-9b2a-4a23-a9ba-e107992868ed": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.15.10_PM.png",
+            "column_size": "3",
+            "title": "Amanda Barnhart",
+            "heading_tag": "h4",
+            "content": "<p>6x Crossfit Games Athlete<\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
+            "column_size": "3",
+            "title": "Donavan Brazier",
+            "heading_tag": "h4",
+            "content": "<p>800m American Record Holder<\/p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -575,11 +617,11 @@
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Extreme_Endurance_3.jpg",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.04.50_PM.png",
             "column_size": "3",
-            "title": "Hayley Manners",
+            "title": "Craig Engels",
             "heading_tag": "h4",
-            "content": "<p><em>College Athlete<\/em><\/p>",
+            "content": "<p><em>Your Mothers Favorite Runner<\/em><\/p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -590,16 +632,19 @@
       "block_order": [
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0",
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1",
+        "65dafed1-b5f9-49c7-9939-0ceb44d0c567",
+        "edcf3f90-9b2a-4a23-a9ba-e107992868ed",
+        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3",
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2"
       ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "Over 5,000+ 5 star reviews",
-        "title": "Trusted by 300,000 Peak Performers",
-        "content": "<p>Our products are used by world-class performers like Josh Bridges to help their chances to get on top of the podium.<\/p>",
+        "title": "Trusted By The Best",
+        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle today, you deserve the best.<\/p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "#050505"
@@ -615,6 +660,7 @@
         },
         "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "The Secret is Out",
             "heading_tag": "h1"
@@ -628,7 +674,7 @@
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
-        "autoplay": false,
+        "autoplay": true,
         "video_size": "auto",
         "video": "shopify:\/\/files\/videos\/221029_Joe_Rogan_Mashup_YOUTUBE_LANDSCAPE_LOW_RES.mp4",
         "external_video_url_metafield": "",
@@ -774,7 +820,7 @@
           "settings": {
             "external_video_url": "https:\/\/www.youtube.com\/watch?v=VKhd6m_axdE&t=59s",
             "poster_image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-06_at_11.06.57_am.png",
-            "autoplay": false,
+            "autoplay": true,
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
