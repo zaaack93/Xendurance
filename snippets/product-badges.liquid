@@ -61,7 +61,9 @@ Supported variables
             {%- endcomment -%}
             <on-sale-badge {% unless is_variant_on_sale %}hidden{% endunless %} {% if settings.show_discount %}discount-mode="{{ settings.discount_mode | escape }}"{% endif %} {% if form_id != blank %}form="{{ form_id }}"{% endif %} class="badge badge--on-sale">
               {%- if form_id == blank and product.price_varies -%}
-                {{- 'product.general.on_sale_badge' | t -}}
+                {% comment %} {{- 'product.general.on_sale_badge' | t -}} {% endcomment %}
+                {% comment %} show saving also for product if varies {% endcomment %}
+                {{- 'product.general.discount_badge_html' | t: savings: savings -}}
               {%- else -%}
                 {{- 'product.general.discount_badge_html' | t: savings: savings -}}
               {%- endif -%}
