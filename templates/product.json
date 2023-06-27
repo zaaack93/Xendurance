@@ -680,6 +680,152 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8": {
+      "type": "feature-chart-v2",
+      "blocks": {
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "BENEFITS",
+            "heading_2": "XND",
+            "heading_3": "OTHERS",
+            "heading_4": "",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>{{ block.settings.product.metafields.custom.comp_chart_line_1 | metafield_tag }}<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>{{ block.settings.product.metafields.custom.comp_chart_line_2 | metafield_tag }}<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "83dae4f6-d04e-41cf-8a73-16e29fd223cb": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>{{ block.settings.product.metafields.custom.comp_chart_line_3 | metafield_tag }}<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0",
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1",
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2",
+        "83dae4f6-d04e-41cf-8a73-16e29fd223cb"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Xendurance vs the Competition ",
+        "content": "<p>When it’s time to unleash your inner-Hercules and bounce back stronger than ever… Its very hard to beat the results you will feel with Extreme Endurance.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "button_url_members": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
     }
   },
   "order": [
@@ -694,6 +840,7 @@
     "16868735100eb8db37",
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
     "related-products",
-    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1"
+    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1",
+    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8"
   ]
 }

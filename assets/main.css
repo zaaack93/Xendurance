@@ -864,6 +864,29 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
   padding: 4px;
 }
 
+.section--feature-chart-v2 .section-stack__intro, .section--feature-chart-v2 .section-stack__main {
+  width: 100% !important;
+}
+.section--feature-chart-v2 .feature-chat-customized {
+  padding: 0px 50px;
+}
+.section--feature-chart-v2 .feature-chat-customized table {
+  padding: 0px;
+  max-width: initial;
+}
+.section--feature-chart-v2 .feature-chat-customized table thead {
+  color: #000;
+  font-size: 36px;
+  font-family: Clan Pro;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+.section--feature-chart-v2 .feature-chat-customized table thead th {
+  padding: 36px 0px 30px;
+}
+
 @media only screen and (max-width: 989px) {
   .template--product .shopify-section--main-product .section, .shopify-section--featured-product .section {
     padding-left: 19px;

@@ -1,0 +1,25 @@
+.section--feature-chart-v2{
+    .section-stack__intro,.section-stack__main{
+        width: 100% !important;
+    }
+
+    .feature-chat-customized{
+        padding: 0px 50px;
+        table{
+            padding: 0px;
+            max-width: initial;
+            thead{
+                color: #000;
+                font-size: 36px;
+                font-family: Clan Pro;
+                font-style: italic;
+                font-weight: 900;
+                letter-spacing: 1.08px;
+                text-transform: uppercase;
+                th{
+                    padding: 36px 0px 30px;
+                }
+            }
+        }
+    }
+}
