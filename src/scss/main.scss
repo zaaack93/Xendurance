@@ -31,3 +31,9 @@
         border-radius: 0px;
     }
 }
+
+.shopify-section--media-with-text{
+    video-media[autoplay], video-media:not([autoplay]) ~ *{
+        pointer-events: initial;
+    }
+}

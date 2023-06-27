@@ -1486,3 +1486,7 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 .without-rounded-image img.rounded {
   border-radius: 0px;
 }
+
+.shopify-section--media-with-text video-media[autoplay], .shopify-section--media-with-text video-media:not([autoplay]) ~ * {
+  pointer-events: initial;
+}
