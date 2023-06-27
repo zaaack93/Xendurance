@@ -15,6 +15,7 @@
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -45,6 +46,55 @@
       "disabled": true,
       "settings": {
         "content_width": "80ch"
+      }
+    },
+    "be50793b-f8d4-4246-9c53-f7d93753bb8c": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-0": {
+          "type": "item",
+          "settings": {
+            "title": "What is Xendurance and its mission?",
+            "content": ""
+          }
+        },
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-1": {
+          "type": "item",
+          "settings": {
+            "title": "Question 2",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-2": {
+          "type": "item",
+          "settings": {
+            "title": "Question 3",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-0",
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-1",
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Brand",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
       }
     },
     "6bc2d039-d8a2-40d1-90b6-75ff9d8e955b": {
@@ -267,6 +317,7 @@
   "order": [
     "b3543429-1b58-4fbc-8b00-b6770b20b5fd",
     "main",
+    "be50793b-f8d4-4246-9c53-f7d93753bb8c",
     "6bc2d039-d8a2-40d1-90b6-75ff9d8e955b",
     "278214ed-c4eb-4c9b-8a99-671bd27887f2",
     "3ccf898c-e0e6-4510-a68d-baaf06439ebb",

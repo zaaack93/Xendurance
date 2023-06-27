@@ -8,11 +8,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/team_xnd.webp",
             "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-start text-start",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Become a Member",
-            "title": "Join and Save 25%",
-            "heading_tag": "h1",
+            "subheading": "$100 In Product Rewards | 25% OFF Every Order | Free Shipping | + More!",
+            "title": "Team XND",
+            "heading_tag": "h3",
             "button_text": "",
             "button_link": "",
             "button_link_members": "",
@@ -68,7 +68,7 @@
         "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-1": {
           "type": "heading",
           "settings": {
-            "text": "Why You Should Become a Team XND Member",
+            "text": "Why Join Team XND?",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -77,7 +77,7 @@
         "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>It's simple, sign up to our monthly program and receive.... including the following benefits. <\/p>"
+            "content": ""
           }
         }
       },
@@ -176,7 +176,7 @@
             "icon": "picto-percent",
             "icon_width": 48,
             "subheading": "",
-            "title": "Entire Site Discount",
+            "title": "25% Site Discount",
             "content": "<p>Sign up and receive 25% off all products, apparel and accessories on all orders at all times!<\/p>",
             "link_text": "",
             "link_url": "",
@@ -220,7 +220,7 @@
             "icon": "picto-box",
             "icon_width": 48,
             "subheading": "",
-            "title": "Free Domestic Shipping",
+            "title": "Free Shipping",
             "content": "<p>Receive free shipping anywhere in the US and Military APOs. $15 flat rate for Team XND Canada.<\/p>",
             "link_text": "",
             "link_url": "https:\/\/chrome-extension\/\/efaidnbmnnnibpcajpcglclefindmkaj\/https:\/\/cdn.shopify.com\/s\/files\/1\/0574\/3450\/5404\/files\/EE_Challenge-Workouts-2.pdf?v=1643835918",
@@ -403,14 +403,14 @@
       "settings": {
         "full_width": true,
         "product": "team-xnd-membership",
-        "desktop_media_width": 55,
+        "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
+        "max_image_zoom_level": 2.5,
         "background": "#fdfdfd",
         "background_gradient": "",
         "text_color": "",
@@ -550,7 +550,7 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
-        "title": "Join Our Squad Of 10K Strong Members",
+        "title": "Join 10K Strong Team Members",
         "content": "<p>Time to become part of the A-Team. <\/p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -671,7 +671,7 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
@@ -768,7 +768,7 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "#fff",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#353435",
         "heading_color": "",
@@ -1010,28 +1010,28 @@
           "type": "item",
           "settings": {
             "title": "What happens if I change my mind?",
-            "content": "<p>Placeholder text.<\/p>"
+            "content": "<p>No worries, we will refund you.<\/p>"
           }
         },
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1": {
           "type": "item",
           "settings": {
             "title": "Does the discount work on every product?",
-            "content": "<p>Placeholder Text.<\/p>"
+            "content": "<p>Yes, every product found on our website!<\/p>"
           }
         },
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2": {
           "type": "item",
           "settings": {
-            "title": "What if I haven't used XND before?",
-            "content": "<p>Placeholder text. <\/p>"
+            "title": "What if I haven't used Xendurance products before?",
+            "content": "<p>Thats okay! 90% of Team Members save more money than the cost of the membership on their first order!<\/p>"
           }
         },
         "795cb8e4-7e18-40df-83ca-31944929a21f": {
           "type": "item",
           "settings": {
             "title": "What if i'm based outside of the USA?",
-            "content": "<p>Placeholder text.<\/p>"
+            "content": "<p>You can still receive 25% off products but will have to pay for shipping<\/p>"
           }
         }
       },
