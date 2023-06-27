@@ -13,7 +13,7 @@
         "template--16030540562620__3237ac8e-9834-478f-a97f-1933e329e9a2-16873227670826701c-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_Desktop_1_889aa2a0-57a5-4112-828e-2068d2333bf3.jpg",
+            "image": "shopify:\/\/shop_images\/Hero_Desktop_4.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -22,6 +22,7 @@
             "heading_tag": "h1",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -43,6 +44,7 @@
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -75,7 +77,7 @@
         "full_width": true,
         "subheading": "Contact Us",
         "title": "Need something answered?",
-        "content": "",
+        "content": "<p>Contact our dedicated customer service team below and we will get back to you as soon as possible. <\/p>",
         "text_position": "start",
         "contact_form_size": "large",
         "background": "#ffffff",
@@ -88,11 +90,46 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "7e97da11-e4fd-4914-bfe3-6c4f3711b54d": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16030540562620__7e97da11-e4fd-4914-bfe3-6c4f3711b54d-16878681235929d6a4-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_154cd3a6-cde1-433e-91ab-04aef726743c.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Got a simple question?",
+            "title": "Check out our Frequently Asked Questions",
+            "content": "",
+            "link_text": "Read All FAQs",
+            "link_url": "shopify:\/\/pages\/faqs",
+            "background": "#353435",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540562620__7e97da11-e4fd-4914-bfe3-6c4f3711b54d-16878681235929d6a4-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
     }
   },
   "order": [
     "main",
     "3237ac8e-9834-478f-a97f-1933e329e9a2",
-    "contact"
+    "contact",
+    "7e97da11-e4fd-4914-bfe3-6c4f3711b54d"
   ]
 }

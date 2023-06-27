@@ -6,7 +6,8 @@
         "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day3-126-16x9.jpg",
+            "image": "shopify:\/\/shop_images\/Hero_Desktop_9.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/REWARDS_MOBILE.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -15,6 +16,7 @@
             "heading_tag": "h1",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -36,6 +38,7 @@
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
