@@ -260,7 +260,7 @@
       "settings": {
         "full_width": true,
         "text": "FUEL WHAT MATTERS.",
-        "text_size": "xsmall",
+        "text_size": "small",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 7,

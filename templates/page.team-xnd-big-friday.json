@@ -6,15 +6,16 @@
         "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/A451A6FB-31EC-4BBE-9FB7-16D40E0B14F9_Large_08e096d7-8a20-4182-a0ea-43cce7a23631.jpg",
+            "image": "shopify:\/\/shop_images\/Workouts.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Stay In Motion With Workouts Posted By Team XND",
-            "title": "Big Friday",
+            "subheading": "Workouts posted by the best of Team XND",
+            "title": "BIG FRIDAY",
             "heading_tag": "h1",
             "button_text": "",
             "button_link": "",
+            "button_link_members": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -79,7 +80,7 @@
       ],
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
@@ -98,6 +99,7 @@
             "heading_tag": "h4",
             "content": "",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -111,6 +113,7 @@
             "heading_tag": "h4",
             "content": "",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -124,6 +127,7 @@
             "heading_tag": "h4",
             "content": "",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -149,6 +153,7 @@
     },
     "2823adf9-0afa-4247-b18e-fb935b268813": {
       "type": "multi-column",
+      "disabled": true,
       "blocks": {
         "511dc69e-632c-4483-b161-4abaff4b85ff": {
           "type": "item",
@@ -159,6 +164,7 @@
             "heading_tag": "h4",
             "content": "",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -172,6 +178,7 @@
             "heading_tag": "h4",
             "content": "",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -185,6 +192,7 @@
             "heading_tag": "h4",
             "content": "",
             "link_url": "",
+            "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
@@ -213,7 +221,7 @@
       "settings": {
         "full_width": true,
         "text": "SUBMIT YOUR WORKOUTS",
-        "text_size": "medium",
+        "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 7,
@@ -229,7 +237,7 @@
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EE_Challenge_a345452b-200b-4106-9be9-76ef6f21dc96.jpg",
+            "image": "shopify:\/\/shop_images\/workout.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -257,13 +265,41 @@
         "spacing": "small"
       }
     },
+    "168792061600bca8d9": {
+      "type": "apps",
+      "blocks": {
+        "f6c8559d-e25f-4481-b876-955fcb38fcd7": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "V7YSgZ"
+          }
+        }
+      },
+      "block_order": [
+        "f6c8559d-e25f-4481-b876-955fcb38fcd7"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "1828aa6e-41b6-4ab4-85b0-c522cc626228": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "show_icon": false,
-        "title": "Get The Latest From Xendurance",
+        "title": "Replace with",
         "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts.<\/p>",
         "button_text": "Subscribe",
         "subtext": "",
@@ -272,6 +308,32 @@
         "text_color": "#ffffff",
         "button_background": "",
         "button_text_color": ""
+      }
+    },
+    "7ee026b0-fa9e-4d97-a017-ba3e7f67916c": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"klaviyo-form-V7YSgZ\"><\/div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "b6b63dab-7d7d-48f8-8878-0d6d9d1a722f": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"klaviyo-form-V7YSgZ\"><\/div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     }
   },
@@ -283,6 +345,9 @@
     "2823adf9-0afa-4247-b18e-fb935b268813",
     "1284832e-4ff2-46b3-8365-2765229b44f4",
     "101ee25b-89f4-4386-82b3-fe92ae53ba66",
-    "1828aa6e-41b6-4ab4-85b0-c522cc626228"
+    "168792061600bca8d9",
+    "1828aa6e-41b6-4ab4-85b0-c522cc626228",
+    "7ee026b0-fa9e-4d97-a017-ba3e7f67916c",
+    "b6b63dab-7d7d-48f8-8878-0d6d9d1a722f"
   ]
 }

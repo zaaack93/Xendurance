@@ -71,26 +71,6 @@
         "background_gradient": ""
       }
     },
-    "contact": {
-      "type": "contact",
-      "settings": {
-        "full_width": true,
-        "subheading": "Contact Us",
-        "title": "Need something answered?",
-        "content": "<p>Contact our dedicated customer service team below and we will get back to you as soon as possible. <\/p>",
-        "text_position": "start",
-        "contact_form_size": "large",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "7e97da11-e4fd-4914-bfe3-6c4f3711b54d": {
       "type": "media-with-text",
       "blocks": {
@@ -105,7 +85,7 @@
             "icon_width": 48,
             "subheading": "Got a simple question?",
             "title": "Check out our Frequently Asked Questions",
-            "content": "",
+            "content": "<p>We cover topics like product questions, team XND membership, shipping and returns, and more. <\/p>",
             "link_text": "Read All FAQs",
             "link_url": "shopify:\/\/pages\/faqs",
             "background": "#353435",
@@ -124,12 +104,73 @@
         "full_width": false,
         "spacing": "small"
       }
+    },
+    "19dc86f4-f4c1-47c1-800c-7d384c5ee349": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Contact Us"
+          }
+        },
+        "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Still need something answered?",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Contact our dedicated customer service team below and we will get back to you as soon as possible. <\/p><p>Get in touch by emailing our team at <a href=\"mailto:info@xendurance.com\">info@xendurance.com<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-0",
+        "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-1",
+        "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Need something answered?",
+        "content": "<p>Contact our dedicated customer service team below and we will get back to you as soon as possible. <\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "3237ac8e-9834-478f-a97f-1933e329e9a2",
-    "contact",
-    "7e97da11-e4fd-4914-bfe3-6c4f3711b54d"
+    "7e97da11-e4fd-4914-bfe3-6c4f3711b54d",
+    "19dc86f4-f4c1-47c1-800c-7d384c5ee349",
+    "contact"
   ]
 }

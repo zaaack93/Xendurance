@@ -85,39 +85,154 @@ LIQUID
         {%- assign background_color = settings.background | color_mix: text_color, 95 -%}
       {%- endif -%}
 
-      <feature-chart max-rows="{{ section.settings.max_rows }}" {% render 'surface', class: 'feature-chart feature-chat-customized', background: background_color, text_color: text_color %}>
-        
-        <table class="order-table-list">
-            <thead>
-              <tr>
-                <th>benefits</th>
-                <th>XND</th>
-                <th>Others</th>
-              </tr>
-            </thead>
+      <feature-chart max-rows="{{ section.settings.max_rows }}" {% render 'surface', class: 'feature-chart', background: background_color, text_color: text_color %}>
+        {%- assign has_product = false -%}
 
-            <tbody><tr class="table-row-hover">
-                  <td class="text-subdued">February 8, 2023</td>
-                  <td class="text-subdued">Partially refunded</td>
-                </tr><tr class="table-row-hover">
-                  <td class="text-subdued">November 24, 2022</td>
-                  <td class="text-subdued">Refunded</td>
-                </tr><tr class="table-row-hover">
-                  <td class="bold">#75372</td>
-                  <td class="text-subdued">November 22, 2022</td>
-                </tr><tr class="table-row-hover" >
-                  <td class="bold">#60562</td>
-                  <td class="text-subdued">July 20, 2022</td>
-                </tr><tr class="table-row-hover">
-                  <td class="bold">#42037</td>
-                  <td class="text-subdued">February 15, 2022</td>
-                </tr><tr class="table-row-hover">
-                  <td class="bold">#28557</td>
-                  <td class="text-subdued">September 16, 2021</td>
-                </tr></tbody>
-          </table>
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'values' and block.settings.product != blank -%}
+            {%- assign has_product = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
 
+        <div class="feature-chart__table {% if values_column_count > 1 %}feature-chart__table--multi-columns{% endif %} {% if has_product %}feature-chart__table--product{% endif %} divide-y scroll-area">
+          {%- assign headings_block = section.blocks | where: 'type', 'headings' | first -%}
+          {%- assign values_blocks = section.blocks | where: 'type', 'values' -%}
+          {%- assign outputted_count = 0 -%}
+          {%- assign total_rows_count = 0 -%}
 
+          {%- for i in (1..20) -%}
+            {%- assign heading_key = 'heading_' | append: i -%}
+            {%- assign value_key = 'value_' | append: i -%}
+
+            {%- assign heading_value = headings_block.settings[heading_key] -%}
+
+            {%- comment -%}We only output the line if at least one value is defined{%- endcomment -%}
+            {%- if heading_value != blank and values_blocks[0].settings[value_key] != blank or values_blocks[1].settings[value_key] != blank or values_blocks[2].settings[value_key] != blank -%}
+              {%- assign total_rows_count = total_rows_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- comment -%}We need to create a first row for the products if any{%- endcomment -%}
+          {%- if has_product -%}
+            {%- capture product_row -%}
+              {%- for i in (0..2) -%}
+                {%- if values_blocks[i].settings.product != blank -%}
+                  {%- assign chart_product = values_blocks[i].settings.product -%}
+
+                  <div class="feature-chart__product">
+                    {%- if section.settings.viewing_product != blank and request.page_type == 'product' and product == chart_product -%}
+                      <span class="badge">{{ section.settings.viewing_product }}</span>
+                    {%- endif -%}
+
+                    {%- if chart_product.featured_media -%}
+                      <a href="{{ chart_product.url }}">
+                        {{- chart_product.featured_image | image_url: width: chart_product.featured_image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 80px, 150px', widths: '80,150,160,300' -}}
+                      </a>
+                    {%- endif -%}
+
+                    {%- capture color_swatch -%}
+                      {%- if section.settings.show_product_swatch -%}
+                        {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+
+                        {%- for color_label in color_label_list -%}
+                          {%- if chart_product.options_by_name[color_label] != blank -%}
+                            <div class="h-stack gap-2 sm:gap-2-5">
+                              {%- for color_name in chart_product.options_by_name[color_label].values -%}
+                                {%- assign product_option = chart_product.options_by_name[color_label] -%}
+                                {%- assign product_option_name = 'option' | append: product_option.position -%}
+                                {%- assign first_variant = chart_product.variants | where: product_option_name, color_name | first -%}
+
+                                {%- render 'swatch' with 'color', value: color_name, href: first_variant.url, size: 'sm' -%}
+                              {%- endfor -%}
+                            </div>
+
+                            {%- break -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      {%- endif -%}
+                    {%- endcapture -%}
+
+                    <div class="v-stack {% if color_swatch != blank %}gap-6{% else %}gap-5{% endif %}">
+                      <div class="v-stack gap-2">
+                        <div class="v-stack sm:gap-0.5">
+                          <a href="{{ chart_product.url }}" class="bold line-clamp">{{ chart_product.title }}</a>
+                          {%- render 'price-list', product: chart_product, hide_unit_price: true -%}
+                        </div>
+
+                        {{- color_swatch -}}
+                      </div>
+
+                      {%- if section.settings.view_product != blank -%}
+                        <div class="feature-chart__view-button-container hidden justify-self-start md:block">
+                          {%- render 'button', href: chart_product.url, content: section.settings.view_product, background: values_blocks[i].settings.view_button_background, text_color: values_blocks[i].settings.view_button_text_color, subdued: true -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endcapture -%}
+
+            <div class="feature-chart__table-row feature-chart__table-row--product">
+              {{- product_row -}}
+            </div>
+
+            {%- if total_rows_count > 6 -%}
+              <div class="feature-chart__table-row feature-chart__table-row--product feature-chart__table-row--sticky">
+                {{- product_row -}}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- for i in (1..20) -%}
+            {%- assign heading_key = 'heading_' | append: i -%}
+            {%- assign value_key = 'value_' | append: i -%}
+
+            {%- assign heading_value = headings_block.settings[heading_key] -%}
+
+            {%- comment -%}We only output the line if at least one value is defined{%- endcomment -%}
+            {%- if heading_value != blank and values_blocks[0].settings[value_key] != blank or values_blocks[1].settings[value_key] != blank or values_blocks[2].settings[value_key] != blank -%}
+              {%- assign outputted_count = outputted_count | plus: 1 -%}
+
+              <div class="feature-chart__table-row" {% if outputted_count > section.settings.max_rows %}hidden{% endif %}>
+                {%- if heading_value != blank -%}
+                  <div class="feature-chart__heading bold" {% if outputted_count == 0 %}{{ headings_block.shopify_attributes }}{% endif %}>{{ heading_value }}</div>
+                {%- endif -%}
+
+                {%- for i in (0..2) -%}
+                  {%- if values_blocks[i] != blank -%}
+                    {%- assign value = values_blocks[i].settings[value_key] -%}
+                    {%- assign stripped_value = value | strip_html | strip -%}
+
+                    <div class="feature-chart__value prose text-subdued" {% if outputted_count == 0 %}{{ values_blocks[i].shopify_attributes }}{% endif %}>
+                      {%- if stripped_value == 'FALSE' -%}
+                        <svg fill="none" class="icon offset-icon" width="16" height="16" viewBox="0 0 16 16" style="--icon-height: 16px">
+                          <path d="m.94 3.06 12 12 2.12-2.12-12-12L.94 3.06Zm2.12 12 12-12L12.94.94l-12 12 2.12 2.12Z" fill="{{ section.settings.chart_true_false_color | default: section.settings.chart_text_color | default: settings.text_color }}"></path>
+                        </svg>
+                      {%- elsif stripped_value == 'TRUE' -%}
+                        <svg fill="none" class="icon offset-icon" width="20" height="16" viewBox="0 0 20 16" style="--icon-height: 16px">
+                          <path d="m2 7.6 5.259 5.6L18 2" stroke="{{ section.settings.chart_true_false_color | default: section.settings.chart_text_color | default: settings.text_color }}" stroke-width="3"></path>
+                        </svg>
+                      {%- else -%}
+                        {{- value | default: '—' -}}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        {%- if outputted_count > section.settings.max_rows -%}
+          <div class="feature-chart__toggle">
+            <button data-action="toggle-rows" data-view-more="{{ section.settings.view_all_text | escape }}" data-view-less="{{ section.settings.view_less_text | escape }}" class="text-with-icon group">
+              <span class="feature-chart__toggle-text reversed-link">{{- section.settings.view_all_text | escape -}}</span>
+              <span class="circle-chevron group-hover:colors">{%- render 'icon' with 'chevron-bottom-small' -%}</span>
+            </button>
+          </div>
+        {%- endif -%}
       </feature-chart>
     </div>
   </div>
@@ -404,7 +519,7 @@ LIQUID
     {
       "name": "Values column",
       "type": "values",
-      "limit": 5,
+      "limit": 3,
       "settings": [
         {
           "type": "product",
