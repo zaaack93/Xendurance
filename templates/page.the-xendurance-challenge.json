@@ -460,6 +460,10 @@
       "settings": {
         "full_width": true,
         "product": "extreme-endurance",
+        "product_list": [
+          "extreme-endurance",
+          "extreme-endurance-1"
+        ],
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",

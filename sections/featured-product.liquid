@@ -40,13 +40,23 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
+    {% include 'membership-check' %}
+    {% for product in section.settings.product_list %}
+      {% if isMember and product.tags contains 'MEMBERS-ONLY' %}
+        {% assign product_selected = product %}
+
+      {% elsif isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+        {% assign product_selected = product %}
+      {%endif%}
+    {%endfor%}
   <div class="product">
-    {%- if section.settings.product != blank -%}
-      {%- if section.settings.product.media.size > 0 -%}
-        {%- render 'product-gallery', product: section.settings.product -%}
+    {%- if section.settings.product_list != blank -%}
+    
+      {%- if product_selected.media.size > 0 -%}
+        {%- render 'product-gallery', product: product_selected -%}
       {%- endif -%}
 
-      {%- render 'product-info', product: section.settings.product, update_url: false -%}
+      {%- render 'product-info', product: product_selected, update_url: false -%}
     {%- else -%}
       <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
         <div class="product-gallery__ar-wrapper">
@@ -1096,9 +1106,11 @@
       "default": true
     },
     {
-      "type": "product",
-      "id": "product",
-      "label": "Product"
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products",
+      "info": "Please select one for member and the other for no-member",
+      "limit": 2
     },
     {
       "type": "header",
