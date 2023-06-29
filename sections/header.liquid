@@ -90,6 +90,15 @@ the underlying logic of the menu.
   {%- endif -%}
 </style>
 
+{% comment %} FIRESTORM CODE {% endcomment %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://shopxnd.com/membertoolsdotnet/externalintegration/shopify/js/FSShopify.js"></script> 
+<div id="replicatedInfo"></div>
+<script>
+  displayReplicatedInfo('shopxnd.com', 'HEADER', 'replicatedInfo');
+</script>
+{% comment %} END FIRESTORM CODE {% endcomment %}
+
 <height-observer variable="header">
   <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
     <div class="header__wrapper">

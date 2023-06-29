@@ -70,6 +70,7 @@
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-28_at_7.55.05_AM.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -91,6 +92,7 @@
         "23f5141a-b6f2-472c-a781-edc2e3d0b6af": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-28_at_7.56.09_AM.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -165,6 +167,7 @@
         "d7aed1a7-488b-4ef6-8793-3cdc6ca783f0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-28_at_7.59.26_AM.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -186,6 +189,7 @@
         "43ef2c1f-4b71-4c82-be56-249e62222fca": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-28_at_8.02.23_AM.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
