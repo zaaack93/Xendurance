@@ -8,7 +8,6 @@
   font-weight: 300;
 }
 @font-face {
-  
   font-family: "United Sans SemiCond";
   src: url("UnitedSansSmCdMd.otf") format("opentype");
   font-weight: 500;
@@ -865,27 +864,109 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
   padding: 4px;
 }
 
-.section--feature-chart-v2 .section-stack__intro, .section--feature-chart-v2 .section-stack__main {
-  width: 100% !important;
+@media only screen and (min-width: 700px) {
+  .section--feature-chart-v2 .section-stack__intro,
+  .section--feature-chart-v2 .section-stack__main {
+    width: 100% !important;
+  }
 }
-.section--feature-chart-v2 .feature-chat-customized {
-  padding: 0px 50px;
+.section--feature-chart-v2 feature-chart-customized {
+  background-color: transparent;
 }
-.section--feature-chart-v2 .feature-chat-customized table {
-  padding: 0px;
-  max-width: initial;
+@media only screen and (min-width: 700px) {
+  .section--feature-chart-v2 feature-chart-customized {
+    padding: 0px;
+  }
 }
-.section--feature-chart-v2 .feature-chat-customized table thead {
+.section--feature-chart-v2 feature-chart-customized .row {
+  overflow: hidden;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table {
+  text-align: left;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table thead {
+  background-color: #D9D9D9;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table thead .feature-row-header td {
   color: #000;
   font-size: 36px;
   font-family: Clan Pro;
   font-style: italic;
   font-weight: 900;
+  line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
+  padding: 40px 50px 30px;
+  text-align: center;
 }
-.section--feature-chart-v2 .feature-chat-customized table thead th {
-  padding: 36px 0px 30px;
+@media only screen and (max-width: 699px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table thead .feature-row-header td {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    padding: 35px 23px 27px;
+  }
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table thead .feature-row-header td:first-child {
+  width: 55%;
+  text-align: left;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr {
+  position: relative;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 20px;
+  text-align: center;
+  border: none;
+}
+@media only screen and (max-width: 699px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td {
+    font-size: 15px;
+  }
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td:first-child {
+  text-align: left;
+}
+@media only screen and (min-width: 700px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td:first-child {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: calc(100% - 100px);
+  border-bottom: 1px solid black;
+}
+@media only screen and (max-width: 699px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td::after {
+    width: calc(100% - 46px);
+    left: 23px;
+  }
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr:last-child td::after {
+  display: none;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table table {
+  border-radius: 20px;
+  background-color: #D9D9D9;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.section--feature-chart-v2 feature-chart-customized .row .feature-table table tbody {
+  background-color: #EAEAEA;
 }
 
 form-klaviyo-newsletter .form-klaviyo-newsletter .form_on_success {
