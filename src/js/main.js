@@ -45,4 +45,51 @@
             }
         });
     }
+
+//     //prevent klaviyo form
+//     // Get the form element by its class name
+//     var form = document.querySelector('.form-klaviyo-newsletter');
+
+//     // Add an event listener to the form
+//     form.addEventListener('submit', function(event) {
+//     // Prevent the default form submission behavior
+//     event.preventDefault();
+    
+//     debugger
+//     // Add any additional logic or validation here
+//     var emailInput = form.querySelector('input[name="contact[email]"]').value;
+
+//     var url = 'https://a.klaviyo.com/client/subscriptions/?company_id=VQ9yJa';
+
+//     var data = {
+//     data: {
+//         type: "subscription",
+//         attributes: {
+//         list_id: "XQXPxW",
+//         email: emailInput,
+//         }
+//     }
+//     };
+
+// fetch(url, {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json',
+//         'Revision': '2023-06-15'
+//     },
+//         body: JSON.stringify(data)
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//     console.log(data);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     console.error('Error:', error);
+//     });
+
+
+
+//     // If you want to submit the form programmatically later, you can call form.submit()
+//     });
 })();

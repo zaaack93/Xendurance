@@ -8,6 +8,7 @@
   font-weight: 300;
 }
 @font-face {
+  
   font-family: "United Sans SemiCond";
   src: url("UnitedSansSmCdMd.otf") format("opentype");
   font-weight: 500;
@@ -862,6 +863,44 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
   font-size: 16px;
   line-height: 19px;
   padding: 4px;
+}
+
+.section--feature-chart-v2 .section-stack__intro, .section--feature-chart-v2 .section-stack__main {
+  width: 100% !important;
+}
+.section--feature-chart-v2 .feature-chat-customized {
+  padding: 0px 50px;
+}
+.section--feature-chart-v2 .feature-chat-customized table {
+  padding: 0px;
+  max-width: initial;
+}
+.section--feature-chart-v2 .feature-chat-customized table thead {
+  color: #000;
+  font-size: 36px;
+  font-family: Clan Pro;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+.section--feature-chart-v2 .feature-chat-customized table thead th {
+  padding: 36px 0px 30px;
+}
+
+form-klaviyo-newsletter .form-klaviyo-newsletter .form_on_success {
+  display: none;
+}
+form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on_danger {
+  display: none;
+  margin-bottom: var(--spacing-6);
+}
+
+.footer__block--newsletter form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container {
+  grid-template-columns: initial;
+}
+.footer__block--newsletter form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on_danger {
+  margin-bottom: initial;
 }
 
 @media only screen and (max-width: 989px) {

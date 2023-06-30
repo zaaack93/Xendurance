@@ -110,8 +110,29 @@
                         {{- block.settings.content -}}
                       </div>
                     {%- endif -%}
+                    <form-klaviyo-newsletter>
+                        <form id="footer-newslterr" class="form form-klaviyo-newsletter">
+                        <div class="form_on_success">
+                            {%- assign success_message = 'general.newsletter.subscribed_successfully' | t -%}
+                            {%- render 'banner', content: success_message, status: 'success' -%}
+                        </div>
+                
+                        <div class="form_submit_container fieldset-with-submit">
+                            <div class="form_on_danger">
+                                {%- render 'banner', content: "an error has occurred, please retry later.", status: 'error' -%}
+                            </div>
+                
+                            {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
+                            {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
+                        </div>
+                
+                        {%- if section.settings.subtext != blank -%}
+                            <p class="text-xs text-subdued">{{ section.settings.subtext | escape }}</p>
+                        {%- endif -%}
+                    </form>
+                  </form-klaviyo-newsletter>
 
-                    {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+                    {% comment %} {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
                       {%- if form.posted_successfully? -%}
                         {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
                         {%- render 'banner', content: success_message, status: 'success' -%}
@@ -126,7 +147,7 @@
                         {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
                         {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
                       {%- endif -%}
-                    {%- endform -%}
+                    {%- endform -%} {% endcomment %}
                   </div>
                 </div>
             {%- endcase -%}

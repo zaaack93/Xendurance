@@ -1102,9 +1102,27 @@
     },
     "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Get The Latest From Xendurance",
+        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "0a056584-5b9c-4c1e-917c-55e0edfec204": {
+      "type": "newsletter-v2",
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter_c00d0991-3371-43a8-8c60-8e4239e0bc1c.jpg",
         "show_icon": false,
         "title": "Get The Latest From Xendurance",
         "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
@@ -1136,6 +1154,7 @@
     "media-grid",
     "45161d55-8e32-4d11-89f6-e54c9473e74f",
     "faq",
-    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad"
+    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad",
+    "0a056584-5b9c-4c1e-917c-55e0edfec204"
   ]
 }
