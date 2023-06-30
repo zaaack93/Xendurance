@@ -428,6 +428,58 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "aa04e43e-e0da-4f85-861e-34e534dc1b81": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Membership"
+          }
+        },
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Have a question about Team XND?",
+            "heading_tag": "h1",
+            "text_color": "#ffffff",
+            "gradient": ""
+          }
+        },
+        "260e082f-2beb-4467-bb96-c4a45dc7298e": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Visit Team XND Page",
+            "url": "shopify:\/\/pages\/team-xnd-signup",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-2": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-0",
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-1",
+        "260e082f-2beb-4467-bb96-c4a45dc7298e",
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -440,6 +492,7 @@
     "7f6a1770-498a-4c6b-8afd-1369e19a6e65",
     "3ccf898c-e0e6-4510-a68d-baaf06439ebb",
     "b61efea8-74e1-42aa-a66d-dd5d20728b4a",
-    "f93cb3e1-be2e-48be-a35b-06fd722b8f69"
+    "f93cb3e1-be2e-48be-a35b-06fd722b8f69",
+    "aa04e43e-e0da-4f85-861e-34e534dc1b81"
   ]
 }

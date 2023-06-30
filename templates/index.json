@@ -14,8 +14,8 @@
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "footer_collout_badge": true,
             "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
-            "content": "<p>Unsure where to start <a href=\"\/pages\/perfect-path-quiz\" title=\"Perfect Path Quiz\">Take the Quiz?<\/a><\/p>",
-            "title": "Certified Sport and Performance Formulas",
+            "content": "<p>Unsure where to start <a href=\"\/pages\/product-finder\" title=\"Product Finder\">Take the Quiz?<\/a><\/p>",
+            "title": "Certified Sport and Performance Products",
             "heading_tag": "h2",
             "button_text": "Shop All Supplements",
             "button_link": "shopify:\/\/collections\/all-products",
@@ -87,6 +87,50 @@
             "bubble_text": "Energy"
           }
         },
+        "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Supplements",
+            "bubble_collection": "shopify:\/\/collections\/daily-2",
+            "bubble_collection_members": "shopify:\/\/collections\/daily-1",
+            "bubble_color": "#f83a3a",
+            "bubble_image": "shopify:\/\/shop_images\/Daily_Foundation-Stand_df40e207-78e5-4b61-a6d3-5fa281ca06d9.png",
+            "bubble_text": "Daily"
+          }
+        },
+        "f4122a0f-70e0-4220-adf0-3f2f634c9c85": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Supplements",
+            "bubble_collection": "shopify:\/\/collections\/recovery",
+            "bubble_collection_members": "shopify:\/\/collections\/recovery-1",
+            "bubble_color": "#f83a3a",
+            "bubble_image": "shopify:\/\/shop_images\/menu-link-all-supplements.jpg",
+            "bubble_text": "Recovery"
+          }
+        },
+        "c2b11881-c704-447d-8eaa-4f0ec9f01ad8": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Supplements",
+            "bubble_collection": "shopify:\/\/collections\/transform",
+            "bubble_collection_members": "shopify:\/\/collections\/transform-1",
+            "bubble_color": "#f83a3a",
+            "bubble_image": "shopify:\/\/shop_images\/Weight_Management_Pack-Stand_d77fc303-694b-473d-b080-ea27d105140c.png",
+            "bubble_text": "Transform"
+          }
+        },
+        "491f5be4-58a1-4565-94f6-a805099fda8e": {
+          "type": "text",
+          "settings": {
+            "bubble_category": "Supplements",
+            "bubble_collection": "shopify:\/\/collections\/packs-1",
+            "bubble_collection_members": "shopify:\/\/collections\/packs",
+            "bubble_color": "#f83a3a",
+            "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
+            "bubble_text": "Packs"
+          }
+        },
         "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
           "type": "text",
           "settings": {
@@ -120,56 +164,12 @@
             "bubble_text": "Night SKIN"
           }
         },
-        "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/daily-2",
-            "bubble_collection_members": "shopify:\/\/collections\/daily-1",
-            "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Daily_Foundation-Stand_df40e207-78e5-4b61-a6d3-5fa281ca06d9.png",
-            "bubble_text": "Daily"
-          }
-        },
-        "f4122a0f-70e0-4220-adf0-3f2f634c9c85": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/all-products",
-            "bubble_collection_members": "shopify:\/\/collections\/team-xnd-products",
-            "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/menu-link-all-skin.png",
-            "bubble_text": "Recovery"
-          }
-        },
-        "c2b11881-c704-447d-8eaa-4f0ec9f01ad8": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/transform",
-            "bubble_collection_members": "shopify:\/\/collections\/transform-1",
-            "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Weight_Management_Pack-Stand_d77fc303-694b-473d-b080-ea27d105140c.png",
-            "bubble_text": "Transform"
-          }
-        },
-        "491f5be4-58a1-4565-94f6-a805099fda8e": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/packs-1",
-            "bubble_collection_members": "shopify:\/\/collections\/packs",
-            "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
-            "bubble_text": "Packs"
-          }
-        },
         "8c296aac-2089-4f5a-aa10-15dab5e4fbea": {
           "type": "text",
           "settings": {
             "bubble_category": "Skin",
-            "bubble_collection": "",
-            "bubble_collection_members": "",
+            "bubble_collection": "shopify:\/\/pages\/team-xnd-signup",
+            "bubble_collection_members": "shopify:\/\/pages\/team-xnd-signup",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
             "bubble_text": "Membership"
@@ -192,13 +192,13 @@
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0",
         "875832ff-ea4f-469d-9149-27254d87110c",
         "058688b9-1ab6-4706-8af8-256285b23670",
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
-        "fd2b915b-f73c-45fc-99be-44394c218002",
-        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d",
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c",
         "f4122a0f-70e0-4220-adf0-3f2f634c9c85",
         "c2b11881-c704-447d-8eaa-4f0ec9f01ad8",
         "491f5be4-58a1-4565-94f6-a805099fda8e",
+        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
+        "fd2b915b-f73c-45fc-99be-44394c218002",
+        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d",
         "8c296aac-2089-4f5a-aa10-15dab5e4fbea",
         "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac"
       ],
@@ -365,8 +365,8 @@
         "footer_text_paragraphe": "Proudly American Made",
         "footer_image_paragraph": "shopify:\/\/shop_images\/image_49.png",
         "footer_button_text": "Shop All Supplements",
-        "footer_button_url": "shopify:\/\/collections",
-        "members_footer_button_url": "shopify:\/\/collections"
+        "footer_button_url": "shopify:\/\/collections\/all-products",
+        "members_footer_button_url": "shopify:\/\/collections\/team-xnd-products"
       }
     },
     "press": {
@@ -579,7 +579,7 @@
             "column_size": "3",
             "title": "Matt Centrowitz",
             "heading_tag": "h4",
-            "content": "<p>1500 Olympic Gold Medalist<\/p>",
+            "content": "<p><em>1500 Olympic Gold Medalist<\/em><\/p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -593,7 +593,7 @@
             "column_size": "3",
             "title": "Amanda Barnhart",
             "heading_tag": "h4",
-            "content": "<p>6x Crossfit Games Athlete<\/p>",
+            "content": "<p><em>6x Crossfit Games Athlete<\/em><\/p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -607,7 +607,7 @@
             "column_size": "3",
             "title": "Donavan Brazier",
             "heading_tag": "h4",
-            "content": "<p>800m American Record Holder<\/p>",
+            "content": "<p><em>800m American Record Holder<\/em><\/p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -830,8 +830,8 @@
             "title": "Join Team XND & Save",
             "content": "<p>☑️  <strong>$100 In Immediate Product Rewards<\/strong><\/p><p>☑️  <strong>Free Shipping + 25% OFF<\/strong><\/p><p>☑️  <strong>2x Loyalty Reward Points<\/strong><\/p><p>☑️  <strong>Partner Perks + More!<\/strong><\/p>",
             "link_text": "Learn more",
-            "link_url": "shopify:\/\/products\/team-xnd-membership",
-            "link_url_members": "",
+            "link_url": "shopify:\/\/pages\/team-xnd-signup",
+            "link_url_members": "shopify:\/\/pages\/team-xnd-signup",
             "background": "#e93b40",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -895,8 +895,8 @@
             "image": "shopify:\/\/shop_images\/IMGL7680.jpg",
             "title": "Unsure Where to Start?",
             "heading_tag": "h2",
-            "link_url": "shopify:\/\/pages\/perfect-path-quiz",
-            "link_url_members": "",
+            "link_url": "shopify:\/\/pages\/product-finder",
+            "link_url_members": "shopify:\/\/pages\/product-finder",
             "link_text": "Take Our 60 Second Quiz",
             "mobile_text_position": "place-self-start text-start",
             "desktop_column_span": 4,

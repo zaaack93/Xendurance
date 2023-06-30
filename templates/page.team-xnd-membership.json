@@ -402,7 +402,9 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "team-xnd-membership",
+        "product_list": [
+          "team-xnd-membership"
+        ],
         "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",

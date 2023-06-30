@@ -31,15 +31,17 @@
         "show_view_cart_button": false,
         "show_checkout_button": true,
         "recommendations_title": "Often bought with",
-        "products": "{{ section.settings.product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "products": [
+
+        ],
         "product_card_background": "#ffffff",
         "product_card_text_color": "",
         "product": "team-xnd-membership",
         "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
         "background": "#353435",
         "text_color": "#ffffff",
-        "atc_button_background": "#E83C41",
-        "atc_button_text_color": "#fff"
+        "atc_button_background": "#e83c41",
+        "atc_button_text_color": "#ffffff"
       }
     },
     "search-drawer": {

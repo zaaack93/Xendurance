@@ -220,6 +220,19 @@
             "link_text": "Shop Now",
             "link_style": "link"
           }
+        },
+        "3a347a70-2431-47ff-a378-ef3046184ebf": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "PSO RITE",
+            "heading_tag": "h4",
+            "content": "<p>Feels Pso Rite. <br\/><\/p><p>For for 10% OFF use code XNDPSO10 at checkout!<\/p>",
+            "link_url": "https:\/\/pso-rite.com",
+            "link_url_members": "https:\/\/pso-rite.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -234,11 +247,12 @@
         "a01a3310-507f-4241-8c1f-5155bbccbed1",
         "7088882f-a228-43d2-be4c-7e84559bc4ef",
         "90b263ac-30f0-4d2b-add1-19b55417d8c7",
-        "06c6e494-3998-4202-8d9e-9b534ee978e4"
+        "06c6e494-3998-4202-8d9e-9b534ee978e4",
+        "3a347a70-2431-47ff-a378-ef3046184ebf"
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -598,7 +612,9 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "team-xnd-membership",
+        "product_list": [
+
+        ],
         "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",

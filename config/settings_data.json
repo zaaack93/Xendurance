@@ -41,6 +41,7 @@
     "product_color_display": "swatch",
     "product_info_alignment": "start",
     "cart_type": "drawer",
+    "cart_empty_button_link": "shopify:\/\/collections\/best-sellers",
     "cart_show_free_shipping_threshold": false,
     "social_facebook": "https:\/\/www.facebook.com\/XENDURANCE1",
     "social_twitter": "https:\/\/twitter.com\/Xendurance",

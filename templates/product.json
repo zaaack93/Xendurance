@@ -174,10 +174,10 @@
       "settings": {
         "full_width": true,
         "text": "{{ product.metafields.custom.scrolling_text_product_tagline.value }}",
-        "text_size": "medium",
+        "text_size": "small",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 7,
+        "scrolling_speed": 5,
         "background": "",
         "background_gradient": "",
         "text_color": "#353435",
@@ -234,7 +234,7 @@
             "column_size": "3",
             "title": "{{ product.metafields.custom.pdp_athlete_name_1.value }}",
             "heading_tag": "h4",
-            "content": "<p><em>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/em><\/p>",
+            "content": "<p>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -459,6 +459,7 @@
     },
     "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d": {
       "type": "feature-chart",
+      "disabled": true,
       "blocks": {
         "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-0": {
           "type": "headings",
@@ -616,7 +617,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Join Team XND & Save",
-            "content": "<h5>$100 in Immediate Rewards. Free Shipping + 25% OFF On Every Order. 2x Loyalty Points. Partner Perks + More.<\/h5>",
+            "content": "<ul><li>$100 in Immediate Rewards. <\/li><li>Free Shipping + 25% OFF On Every Order. <\/li><li>2x Loyalty Points. <\/li><li>Partner Perks + More.<\/li><\/ul>",
             "link_text": "Learn More",
             "link_url": "shopify:\/\/products\/team-xnd-membership",
             "link_url_members": "",
@@ -683,6 +684,7 @@
     },
     "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8": {
       "type": "feature-chart-v2",
+      "disabled": true,
       "blocks": {
         "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0": {
           "type": "headings",
