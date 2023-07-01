@@ -938,6 +938,7 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
   padding: 20px;
   text-align: center;
   border: none;
+  vertical-align: middle;
 }
 @media only screen and (max-width: 699px) {
   .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td {
