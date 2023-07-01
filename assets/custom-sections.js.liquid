@@ -611,3 +611,74 @@ class KlaviyoFormComponent extends HTMLElement {
 }
 
 customElements.define('form-klaviyo-newsletter', KlaviyoFormComponent);
+class FeaturedChartCustomized extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    //calculate the width
+    const calculateWidth = () => {
+      if (window.innerWidth < 700) {
+        // Select the table within the web component
+        const table = this.querySelector('.feature-table');
+  
+        // Get the computed width of the table
+        const tableWidth = getComputedStyle(table).width;
+  
+        const secondTd = this.querySelector('tbody td:nth-child(2)');
+        const secondTdWidth = getComputedStyle(secondTd).width;
+  
+        // Calculate the width for the first <td> in <thead>
+        const tdWidth = `calc(${tableWidth} - ${secondTdWidth})`;
+  
+        // Set the width for the first <td> in <thead>
+        const firstTd = this.querySelector('thead td');
+        firstTd.style.minWidth = tdWidth;
+        firstTd.style.maxWidth = tdWidth;
+      }
+    }
+    calculateWidth();
+    window.addEventListener('resize', calculateWidth);
+
+    //add bullet checked
+    const firstBullet = this.querySelector('.bullet-pagination li:first-child');
+    const secondBullet = this.querySelector('.bullet-pagination li:last-child');
+
+
+    firstBullet.addEventListener('click', () => {
+      const table = this.querySelector('.feature-table');
+      table.scrollLeft = 0; // Scroll to the beginning of the scrollbar
+    });
+
+    secondBullet.addEventListener('click', () => {
+      const table = this.querySelector('.feature-table');
+      table.scrollLeft = table.scrollWidth - table.clientWidth; // Scroll to the end of the scrollbar
+    });
+
+    const table = this.querySelector('.feature-table');
+    table.addEventListener('scroll', () => {
+      setActiveBulletBasedOnScroll(table, firstBullet, secondBullet);
+    });
+
+    //trigger click on the first button
+    setActiveBulletBasedOnScroll(table, firstBullet, secondBullet);
+
+    
+  }
+}
+function setActiveBullet(activeBullet, inactiveBullet) {
+  activeBullet.classList.add('active-bull');
+  inactiveBullet.classList.remove('active-bull');
+}
+
+function setActiveBulletBasedOnScroll(table, firstBullet, secondBullet) {
+  const scrollLeft = table.scrollLeft;
+
+  if (scrollLeft === 0) {
+    setActiveBullet(firstBullet, secondBullet);
+  } else if (scrollLeft === table.scrollWidth - table.clientWidth) {
+    setActiveBullet(secondBullet, firstBullet);
+  }
+}
+customElements.define('feature-chart-customized', FeaturedChartCustomized);

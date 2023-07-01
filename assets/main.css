@@ -884,6 +884,12 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 .section--feature-chart-v2 feature-chart-customized .row .feature-table {
   text-align: left;
 }
+@media only screen and (max-width: 699px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table {
+    overflow-x: scroll;
+    border-radius: 20px;
+  }
+}
 .section--feature-chart-v2 feature-chart-customized .row .feature-table thead {
   background-color: #D9D9D9;
 }
@@ -901,14 +907,24 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 }
 @media only screen and (max-width: 699px) {
   .section--feature-chart-v2 feature-chart-customized .row .feature-table thead .feature-row-header td {
-    font-size: 32px;
-    letter-spacing: 0.96px;
-    padding: 35px 23px 27px;
+    font-size: 24px;
+    letter-spacing: 0.72px;
   }
 }
 .section--feature-chart-v2 feature-chart-customized .row .feature-table thead .feature-row-header td:first-child {
   width: 55%;
   text-align: left;
+}
+@media only screen and (max-width: 699px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table thead .feature-row-header td:first-child {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    padding: 35px 23px 27px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #D9D9D9;
+  }
 }
 .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr {
   position: relative;
@@ -935,24 +951,39 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td:first-child {
   text-align: left;
 }
+@media only screen and (max-width: 699px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td:first-child {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #EAEAEA;
+  }
+}
 @media only screen and (min-width: 700px) {
   .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td:first-child {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-.section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50px;
-  width: calc(100% - 100px);
-  border-bottom: 1px solid black;
+@media only screen and (min-width: 700px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td::after {
+    z-index: 99;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: calc(100% - 100px);
+    border-bottom: 1px solid black;
+  }
 }
 @media only screen and (max-width: 699px) {
-  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td::after {
-    width: calc(100% - 46px);
-    left: 23px;
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: calc(100% + 100px);
+    border-bottom: 1px solid black;
   }
 }
 .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr:last-child td::after {
@@ -961,12 +992,38 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 .section--feature-chart-v2 feature-chart-customized .row .feature-table table {
   border-radius: 20px;
   background-color: #D9D9D9;
-  overflow: hidden;
   width: 100%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 700px) {
+  .section--feature-chart-v2 feature-chart-customized .row .feature-table table {
+    overflow: hidden;
+  }
+}
 .section--feature-chart-v2 feature-chart-customized .row .feature-table table tbody {
   background-color: #EAEAEA;
+}
+.section--feature-chart-v2 .bullet-pagination {
+  display: flex;
+  margin-top: 29px;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.section--feature-chart-v2 .bullet-pagination li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #464646;
+  cursor: pointer;
+}
+.section--feature-chart-v2 .bullet-pagination li.active-bull {
+  background-color: #464646;
+}
+@media only screen and (min-width: 700px) {
+  .section--feature-chart-v2 .bullet-pagination {
+    display: none;
+  }
 }
 
 form-klaviyo-newsletter .form-klaviyo-newsletter .form_on_success {

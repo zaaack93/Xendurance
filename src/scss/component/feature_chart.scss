@@ -18,6 +18,10 @@
 
             .feature-table {
                 text-align: left;
+                @media only screen and (max-width: 699px) {
+                    overflow-x: scroll;
+                    border-radius: 20px;
+                }
 
                 thead {
                     background-color: #D9D9D9;
@@ -35,15 +39,23 @@
                             padding: 40px 50px 30px;
                             text-align: center;
                             @media only screen and (max-width: 699px) {
-                                font-size: 32px;
-                                letter-spacing: 0.96px;
-                                padding: 35px 23px 27px;
+                                font-size: 24px;
+                                letter-spacing: 0.72px;
                             }
                         }
 
                         td:first-child {
                             width: 55%;
                             text-align: left;
+                            @media only screen and (max-width: 699px) {
+                                font-size: 32px;
+                                letter-spacing: 0.96px;
+                                padding: 35px 23px 27px;
+                                position: sticky;
+                                top: 0px;
+                                left: 0px;
+                                background-color: #D9D9D9;
+                            }
                         }
                     }
                 }
@@ -69,21 +81,36 @@
                         }
                         td:first-child {
                             text-align: left;
+                            @media only screen and (max-width: 699px) {
+                                position: sticky;
+                                top: 0px;
+                                left: 0px;
+                                background-color: #EAEAEA;
+                            }
                             @media only screen and (min-width: 700px) {
                                 padding-left: 50px;
                                 padding-right: 50px;
                             }
                         }
                         td::after {
-                            content: '';
-                            position: absolute;
-                            bottom: 0;
-                            left: 50px;
-                            width: calc(100% - 100px);
-                            border-bottom: 1px solid black;
-                            @media only screen and (max-width: 699px) {
-                                width: calc(100% - 46px);
-                                left: 23px;
+                            @media only screen and (min-width: 700px) {
+                                z-index: 99;
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 50px;
+                                width: calc(100% - 100px);
+                                border-bottom: 1px solid black;
+                            }
+                        }
+                        @media only screen and (max-width: 699px) {
+                            td:first-child::after{
+                                content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: calc(100% + 100px);
+    border-bottom: 1px solid black;
                             }
                         }
                     }
@@ -96,7 +123,9 @@
                 table {
                     border-radius: 20px;
                     background-color: #D9D9D9;
-                    overflow: hidden;
+                    @media only screen and (min-width: 700px) {
+                        overflow: hidden;
+                    }
                     width: 100%;
                     margin: 0 auto;
 
@@ -105,6 +134,28 @@
                     }
                 }
             }
+        }
+    }
+
+
+    .bullet-pagination{
+        display: flex;
+        margin-top: 29px;
+        justify-content: center;
+        column-gap: 8px;
+        li{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid#464646;
+            cursor: pointer;
+        }
+        li.active-bull{
+            background-color: #464646;
+        }
+
+        @media only screen and (min-width: 700px) {
+            display: none;
         }
     }
 }
