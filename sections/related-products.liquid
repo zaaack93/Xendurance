@@ -77,7 +77,12 @@ LIQUID
               <reveal-items selector=".product-list > *">
                 <product-list class="product-list">
                   {%- for product in recommendations.products -%}
-                    {%- render 'product-card', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                    {% include 'membership-check' %}
+                    {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+                      {%- render 'product-card', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                    {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}
+                      {%- render 'product-card', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                    {% endif %}
                   {%- endfor -%}
                 </product-list>
               </reveal-items>
