@@ -967,7 +967,6 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
 }
 @media only screen and (min-width: 700px) {
   .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr td::after {
-    z-index: 99;
     content: "";
     position: absolute;
     bottom: 0;
@@ -984,6 +983,7 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .
     left: 20px;
     width: calc(100% + 100px);
     border-bottom: 1px solid black;
+    z-index: 99;
   }
 }
 .section--feature-chart-v2 feature-chart-customized .row .feature-table tbody tr:last-child td::after {

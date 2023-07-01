@@ -642,21 +642,22 @@ class FeaturedChartCustomized extends HTMLElement {
     window.addEventListener('resize', calculateWidth);
 
     //add bullet checked
+    const table = this.querySelector('.feature-table');
     const firstBullet = this.querySelector('.bullet-pagination li:first-child');
     const secondBullet = this.querySelector('.bullet-pagination li:last-child');
 
 
     firstBullet.addEventListener('click', () => {
-      const table = this.querySelector('.feature-table');
       table.scrollLeft = 0; // Scroll to the beginning of the scrollbar
+      setActiveBullet(firstBullet,secondBullet)
     });
 
     secondBullet.addEventListener('click', () => {
-      const table = this.querySelector('.feature-table');
       table.scrollLeft = table.scrollWidth - table.clientWidth; // Scroll to the end of the scrollbar
+      setActiveBullet(secondBullet,firstBullet)
     });
 
-    const table = this.querySelector('.feature-table');
+
     table.addEventListener('scroll', () => {
       setActiveBulletBasedOnScroll(table, firstBullet, secondBullet);
     });
@@ -677,7 +678,7 @@ function setActiveBulletBasedOnScroll(table, firstBullet, secondBullet) {
 
   if (scrollLeft === 0) {
     setActiveBullet(firstBullet, secondBullet);
-  } else if (scrollLeft === table.scrollWidth - table.clientWidth) {
+  } else if (Math.floor(scrollLeft) >= Math.floor(table.scrollWidth - table.clientWidth - 5 )) {
     setActiveBullet(secondBullet, firstBullet);
   }
 }
