@@ -35,7 +35,26 @@ CSS
 LIQUID
 ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
-
+{%- if section.settings.products.count > 0 -%}
+  {%- for product in section.settings.products -%}
+    {% include 'membership-check' %}
+    {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}   
+      {% assign is_found = true%}
+    {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}    
+      {% assign is_found = true%}
+    {% endif %}
+  {%- endfor -%}
+  {%else%}
+  {%- for product in recommendations.products -%}
+    {% include 'membership-check' %}
+    {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+      {% assign is_found = true%}
+    {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}
+    {% assign is_found = true%}
+  {% endif %} 
+  {%- endfor -%}
+{%endif%}
+{% if is_found %}
 <div {% render 'section-properties' %}>
   <div class="section-stack">
     {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content -%}
@@ -48,7 +67,12 @@ LIQUID
           <reveal-items selector=".product-list > *">
             <product-list class="product-list">
               {%- for product in section.settings.products -%}
-                {%- render 'product-card', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                  {% include 'membership-check' %}
+                  {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}   
+                    {%- render 'product-card', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                  {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}    
+                    {%- render 'product-card', product: product, stacked: section.settings.stack_products, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                  {% endif %}
               {%- endfor -%}
             </product-list>
           </reveal-items>
@@ -110,6 +134,7 @@ LIQUID
     </div>
   </div>
 </div>
+{%endif%}
 
 {% schema %}
 {
