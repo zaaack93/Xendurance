@@ -41,14 +41,20 @@
 
 <div {% render 'section-properties', tight: true %}>
     {% include 'membership-check' %}
-    {% for product in section.settings.product_list %}
-      {% if isMember and product.tags contains 'MEMBERS-ONLY' %}
-        {% assign product_selected = product %}
+    {% if section.settings.product_list.count == 2 %}
+      {% for product in section.settings.product_list %}
+        {% if isMember and product.tags contains 'MEMBERS-ONLY' %}
+          {% assign product_selected = product %}
 
-      {% elsif isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+        {% elsif isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+          {% assign product_selected = product %}
+        {%endif%}
+      {%endfor%}
+    {%elsif section.settings.product_list.count ==1 %}
+      {% for product in section.settings.product_list %}
         {% assign product_selected = product %}
-      {%endif%}
-    {%endfor%}
+      {%endfor%}
+    {%endif%}
   <div class="product">
     {%- if section.settings.product_list != blank -%}
     
