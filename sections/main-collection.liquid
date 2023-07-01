@@ -140,6 +140,9 @@
               <reveal-items selector=".product-list > *">
                 <product-list class="product-list" role="region" aria-live="polite">
                   {%- for product in collection.products -%}
+                    
+                    {% include 'membership-check' %}
+                    {% if isMember == false %}
                     {%- for block in section.blocks -%}
                       {%- if forloop.parentloop.index != block.settings.position -%}
                         {%- continue -%}
@@ -206,7 +209,7 @@
                         </a>
                       </div>
                     {%- endfor -%}
-                    {% include 'membership-check' %}
+                    {%endif%}
                     {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
                       {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
                     {%elsif collection.handle=='apparel-accessories-1' and isMember == false and product.tags contains 'RETAIL' %}
