@@ -245,7 +245,7 @@ class PurchaseOptions extends HTMLElement {
     this.prepend(titleElement);
 
     sellingPlans.forEach((sellingPlan) =>{
-      let content,newElement,sellContent,price_cotnainer,newregulralabel;
+      let content,newElement,sellContent,price_cotnainer,newregulralabel,content_subscribe_price,content_compare_price,content_regular_price;
       switch (sellingPlan.dataset.smartrrSellingPlanGroupId){
         case "6a09e170577cb57e08a9a5e44f9fbf31c342d37e":
           // for the second statement the customer loggedIn
@@ -255,6 +255,22 @@ class PurchaseOptions extends HTMLElement {
           content.firstChild.nodeValue = 'Subscribe';
           
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          setTimeout(() => {
+            //check with compar price and regular price
+            content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
+            content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
+            content_regular_price=price_cotnainer.querySelector('span[data-smartrr-regular-price]').textContent
+
+            if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
+              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            }
+            else if(content_subscribe_price==content_compare_price || content_compare_price=='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').style.display='none';
+              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            }
+          }, 2000);
+
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
@@ -348,6 +364,22 @@ class PurchaseOptions extends HTMLElement {
 
           //add reguular price
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          setTimeout(() => {
+            //check with compar price and regular price
+            content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
+            content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
+            content_regular_price=price_cotnainer.querySelector('span[data-smartrr-regular-price]').textContent
+
+            if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
+              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            }
+            else if(content_subscribe_price==content_compare_price || content_compare_price=='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').style.display='none';
+              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            }
+          }, 2000);
+
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed

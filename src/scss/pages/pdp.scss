@@ -63,8 +63,10 @@
                             color: #E93B40;
                         }
                     }
+                }     
+                span.price-regular{
+                    color:#353435 !important;
                 }
-
             }
         }
 
@@ -391,6 +393,7 @@
                 span[data-smartrr-compare-price]:not(.smartrr-widget-hide) ~ span[data-smartrr-subscribe-price] {
                     color: #E93B40;
                 }
+                
                 // span[data-smartrr-compare-price]{
                 //     color: #E93B40;
                 // }
