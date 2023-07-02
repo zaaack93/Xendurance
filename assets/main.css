@@ -742,7 +742,7 @@ navigation-drawer .panel-list__wrapper .link_item_sublevel li .link-title-contai
   border: 0.8px solid #353435;
 }
 
-cart-drawer.membership-in-cart .add-membership-cart {
+cart-drawer.membership-in-cart .add-membership-cart, cart-drawer.membership-in-cart .subscription--price.without-saving {
   display: none;
 }
 
@@ -1646,6 +1646,9 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     font-size: 18px;
     line-height: 18px;
   }
+}
+.template--product .shopify-section--main-product .accordion__content .prose * + span:not(:empty), .shopify-section--featured-product .accordion__content .prose * + span:not(:empty) {
+  display: inline;
 }
 
 @media only screen and (max-width: 699px) {

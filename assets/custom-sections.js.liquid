@@ -434,8 +434,8 @@ class customProductForm extends ProductForm {
     document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
     const formData = new FormData(this);
     formData.set("sections", sectionsToBundle.join(","));
-    formData.set("selling_plan",document.querySelector('input[name="selling_plan"]')?.value)
-    if(document.querySelector('input[name="selling_plan"]')?.value == 4549771452){
+    formData.set("selling_plan",document.querySelector('.product-info input[name="selling_plan"]')?.value)
+    if(document.querySelector('.product-info input[name="selling_plan"]')?.value == 4549771452){
       // const items = [];
       // let item = {};
       // for (const [key, value] of formData.entries()) {

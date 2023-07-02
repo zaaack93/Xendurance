@@ -670,4 +670,9 @@
             }
         }
     }
+    .accordion__content{
+        .prose * + span:not(:empty){
+            display: inline;
+        }
+    }
 }
