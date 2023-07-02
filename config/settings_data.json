@@ -35,6 +35,7 @@
     "reduce_drawer_animation": false,
     "reduce_menu_animation": false,
     "heading_apparition": "split_fade",
+    "color_swatch_config": "Deep Navy \/ Red:#2E2C38\nBlack \/ Blue:#2E2923\nBlack \/ White:#000000\nCoral \/ White:#E19987\nTeal \/ White:#60D3D3\nWhite \/ Black:#F3F0F3\nClear:#D3D3D3",
     "show_vendor": false,
     "show_quick_buy": false,
     "show_product_rating": true,
