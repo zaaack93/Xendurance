@@ -59,6 +59,7 @@
       "account-banner": {
         "type": "account-banner",
         "settings": {
+          "enable_banner": false,
           "image_size": "md",
           "text_color": "#ffffff",
           "overlay_color": "#000000",
