@@ -1,3 +1,4 @@
+{% if section.settings.enable_banner %}
 {%- if section.settings.image != blank -%}
   <style>
     #shopify-section-{{ section.id }} {
@@ -53,13 +54,19 @@
     </ul>
   </div>
 </nav>
-
+{%endif%}
 {% schema %}
 {
   "name": "Account banner",
   "class": "shopify-section--account-banner",
   "tag": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_banner",
+      "label": "Enable banner",
+      "default": true
+    },
     {
       "type": "image_picker",
       "id": "image",
