@@ -288,6 +288,74 @@
         "text_color": "#1a1a1a"
       }
     },
+    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8": {
+      "type": "feature-chart-v2",
+      "blocks": {
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "BENEFITS",
+            "heading_2": "XND",
+            "heading_3": "OTHERS"
+          }
+        },
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1": {
+          "type": "values",
+          "settings": {
+            "value": "<p>{{ product.metafields.custom.comp_chart_line_1 | metafield_tag }}<\/p>"
+          }
+        },
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2": {
+          "type": "values",
+          "settings": {
+            "value": "<p>{{ product.metafields.custom.comp_chart_line_2 | metafield_tag }}<\/p>"
+          }
+        },
+        "83dae4f6-d04e-41cf-8a73-16e29fd223cb": {
+          "type": "values",
+          "settings": {
+            "value": "<p>{{ product.metafields.custom.comp_chart_line_3 | metafield_tag }}<\/p>"
+          }
+        },
+        "1f472494-3519-4471-80df-fac33a032617": {
+          "type": "values",
+          "settings": {
+            "value": "<p>{{ product.metafields.custom.comp_chart_line_4 | metafield_tag }}<\/p>"
+          }
+        },
+        "346c4aba-459b-44bc-aa23-86ae7be08e96": {
+          "type": "values",
+          "settings": {
+            "value": "<p>{{ product.metafields.custom.comp_chart_line_5 | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0",
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1",
+        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2",
+        "83dae4f6-d04e-41cf-8a73-16e29fd223cb",
+        "1f472494-3519-4471-80df-fac33a032617",
+        "346c4aba-459b-44bc-aa23-86ae7be08e96"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "{{ product.metafields.custom.comp_chart_heading.value }}",
+        "content": "<p>{{ product.metafields.custom.comp_chart_sub_heading | metafield_tag }}<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "button_url_members": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "b5bae039-0209-417a-9002-2d5904e516f8": {
       "type": "accordion-content",
       "blocks": {
@@ -681,74 +749,6 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
-    },
-    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8": {
-      "type": "feature-chart-v2",
-      "blocks": {
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "BENEFITS",
-            "heading_2": "XND",
-            "heading_3": "OTHERS"
-          }
-        },
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_1 | metafield_tag }}<\/p>"
-          }
-        },
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_2 | metafield_tag }}<\/p>"
-          }
-        },
-        "83dae4f6-d04e-41cf-8a73-16e29fd223cb": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_3 | metafield_tag }}<\/p>"
-          }
-        },
-        "1f472494-3519-4471-80df-fac33a032617": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_4 | metafield_tag }}<\/p>"
-          }
-        },
-        "346c4aba-459b-44bc-aa23-86ae7be08e96": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_5 | metafield_tag }}<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0",
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1",
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2",
-        "83dae4f6-d04e-41cf-8a73-16e29fd223cb",
-        "1f472494-3519-4471-80df-fac33a032617",
-        "346c4aba-459b-44bc-aa23-86ae7be08e96"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Xendurance vs the Competition ",
-        "content": "<p>When it’s time to unleash your inner-Hercules and bounce back stronger than ever… Its very hard to beat the results you will feel with Extreme Endurance.<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "button_url_members": "",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -756,6 +756,7 @@
     "30d03795-8f63-485e-b581-13a9457eafe7",
     "bcaba574-df57-48cf-807f-7d37103cb89b",
     "808ce943-d064-4ee0-9d4c-5381ae09074f",
+    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8",
     "b5bae039-0209-417a-9002-2d5904e516f8",
     "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c",
     "2a0ceef1-a819-4f7d-abc3-691d2dac0a8a",
@@ -763,7 +764,6 @@
     "16868735100eb8db37",
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
     "related-products",
-    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1",
-    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8"
+    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1"
   ]
 }
