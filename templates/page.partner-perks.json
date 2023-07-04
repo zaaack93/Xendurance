@@ -146,6 +146,7 @@
         "e863fac3-4cf1-481c-bd7c-f02ecf229d22": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Friction-Labs.jpg",
             "column_size": "3",
             "title": "FrictionLabs",
             "heading_tag": "h4",
@@ -159,6 +160,7 @@
         "9b5fd554-5dc6-41c3-882b-828e3f038ec9": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Viicaya.jpg",
             "column_size": "3",
             "title": "VIICAYA",
             "heading_tag": "h4",
@@ -172,6 +174,7 @@
         "a01a3310-507f-4241-8c1f-5155bbccbed1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Silent-Mode.jpg",
             "column_size": "3",
             "title": "Silentmode",
             "heading_tag": "h4",
@@ -185,6 +188,7 @@
         "7088882f-a228-43d2-be4c-7e84559bc4ef": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Regenerative-Pastures.jpg",
             "column_size": "3",
             "title": "Regenerative Pastures",
             "heading_tag": "h4",
@@ -198,6 +202,7 @@
         "90b263ac-30f0-4d2b-add1-19b55417d8c7": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Renoun.jpg",
             "column_size": "3",
             "title": "Renoun Skis",
             "heading_tag": "h4",
@@ -211,6 +216,7 @@
         "06c6e494-3998-4202-8d9e-9b534ee978e4": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Eleiko.jpg",
             "column_size": "3",
             "title": "Eleiko",
             "heading_tag": "h4",
@@ -224,6 +230,7 @@
         "3a347a70-2431-47ff-a378-ef3046184ebf": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_PSO-Rite.jpg",
             "column_size": "3",
             "title": "PSO RITE",
             "heading_tag": "h4",

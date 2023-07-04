@@ -645,7 +645,7 @@
         "subheading": "Over 5,000+ 5 star reviews",
         "title": "Trusted By The Best",
         "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle today, you deserve the best.<\/p>",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#050505"
       }
