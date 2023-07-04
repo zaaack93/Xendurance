@@ -241,7 +241,7 @@ bubbles-container {
 
                     .prose {
                         color: #1A191C;
-                        padding: 30px 17px 47px;
+                        padding: 33px 17px;
 
                         p[data-sequence="heading"] {
                             font-family: 'Inter';
@@ -249,6 +249,7 @@ bubbles-container {
                             font-weight: 700;
                             font-size: 26px;
                             line-height: 31px;
+                            margin-top: 0px;
                         }
 
                         p[data-sequence="subheading"] {

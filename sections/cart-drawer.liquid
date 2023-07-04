@@ -48,6 +48,14 @@
         {%- endif -%}
       </div>
 
+      {% comment %} FIRESTORM CODE {% endcomment %}
+      <div id="referrerInjection"></div>              
+      <input id="referrer" type="hidden" name="attributes[Referrer]" value="{{ cart.attributes["Referrer"] }}">
+      <script>
+      displayDynamicContent('shopxnd.com', 'REFERRER_BLOCK', 'referrerInjection', 'refManFuncs');
+      </script>
+      {% comment %} END FIRESTORM CODE {% endcomment %}
+
       <div class="v-stack gap-6 sm:gap-8">
         <div class="cart-drawer__line-items">
           {%- for line_item in cart.items -%}
@@ -95,14 +103,6 @@
           </div>
         </div>      
       {%- endif -%}
-
-      {% comment %} FIRESTORM CODE {% endcomment %}
-      <div id="referrerInjection"></div>              
-      <input id="referrer" type="hidden" name="attributes[Referrer]" value="{{ cart.attributes["Referrer"] }}">
-      <script>
-      displayDynamicContent('shopxnd.com', 'REFERRER_BLOCK', 'referrerInjection', 'refManFuncs');
-      </script>              	
-      {% comment %} END FIRESTORM CODE {% endcomment %}
       
       {% render 'add-membership-cart', product:section.settings.product, image:section.settings.custom_icon,background:section.settings.background,text_color:section.settings.text_color,atc_button_background: section.settings.atc_button_background, atc_button_text_color: section.settings.atc_button_text_color %}
       <div class="v-stack gap-1 total-footer-section">
