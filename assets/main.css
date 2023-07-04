@@ -983,9 +983,16 @@ cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div
 }
 cart-drawer #referrerInjection #referrerContainer #referrerLookupSection div:first-child p,
 cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div:first-child p {
-  display: grid;
-  grid-template-columns: 120px auto;
   align-items: center;
+}
+@media only screen and (min-width: 360px) {
+  cart-drawer #referrerInjection #referrerContainer #referrerLookupSection div:first-child p,
+  cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div:first-child p {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
 }
 cart-drawer #referrerInjection #referrerContainer #referrerLookupSection div:first-child p input,
 cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div:first-child p input {
@@ -993,6 +1000,12 @@ cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div
   border: 1px solid #000;
   background: #E1E1E1;
   line-height: 25px;
+}
+@media only screen and (min-width: 360px) {
+  cart-drawer #referrerInjection #referrerContainer #referrerLookupSection div:first-child p input,
+  cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div:first-child p input {
+    width: calc(100% - 120px);
+  }
 }
 cart-drawer #referrerInjection #referrerContainer #referrerLookupSection div:first-child p:first-child,
 cart-drawer #referrerInjection #shoppingWithContainer #referrerLookupSection div:first-child p:first-child {

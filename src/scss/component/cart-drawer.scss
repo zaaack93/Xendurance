@@ -260,15 +260,21 @@ cart-drawer {
                     color: #1A191C;
 
                     p {
-                        display: grid;
-                        grid-template-columns: 120px auto;
                         align-items: center;
+                        @media only screen and (min-width: 360px) {
+                            display: flex;
+                            justify-content: space-between;
+                            column-gap: 10px;
+                        }
 
                         input {
                             border-radius: 5px;
                             border: 1px solid #000;
                             background: #E1E1E1;
                             line-height: 25px;
+                            @media only screen and (min-width: 360px) {
+                                width: calc(100% - 120px);
+                            }
                         }
 
                         &:first-child {
