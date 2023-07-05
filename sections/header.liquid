@@ -91,8 +91,8 @@ the underlying logic of the menu.
 </style>
 
 {% comment %} FIRESTORM CODE {% endcomment %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://shopxnd.com/membertoolsdotnet/externalintegration/shopify/js/FSShopify.js"></script> 
+<script src="{{ 'jquery.min.js' | asset_url }}"></script>
+<script src="{{ 'FSShopify.js' | asset_url }}"></script>
 <div id="replicatedInfo"></div>
 <script>
   displayReplicatedInfo('shopxnd.com', 'HEADER', 'replicatedInfo');

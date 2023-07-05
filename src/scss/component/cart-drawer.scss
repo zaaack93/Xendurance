@@ -200,17 +200,17 @@ cart-drawer {
                 font-size: 16px !important;
 
                 label {
-                    font-size: 16px !important;
-                    font-family: Clan Pro;
-                    font-style: italic;
-                    font-weight: 900 !important;
+                    font-size: 12px !important;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 700 !important;
                     line-height: normal;
                     text-transform: uppercase;
                     color: #1A191C;
                     display: inline-block !important;
 
                     @media only screen and (min-width: 700px) {
-                        font-size: 20px !important;
+                        font-size: 14px !important;
                     }
                 }
 
@@ -221,6 +221,13 @@ cart-drawer {
                 label[for=fsReferButtonYes] {
                     position: absolute;
                     right: 55px;
+                    @media only screen and (max-width: 699px) {
+                        right: 50px !important;
+                    }
+                    @media only screen and (max-width: 360px) {
+                        position: initial;
+                        margin-right: 6px;;
+                    }
                 }
 
                 label[class*="fsButton"] {
@@ -238,6 +245,9 @@ cart-drawer {
                     max-width: 55px;
                     width: 49px !important;
                     text-align: center;
+                    @media only screen and (max-width: 699px) {
+                        width: 44px !important;
+                    }
                 }
 
                 .fsButtonActive {
@@ -291,7 +301,7 @@ cart-drawer {
                     font-weight: 500;
                     line-height: normal;
                     color: #1A191C;
-                    display: inline-block !important;
+                    display: none !important;
                     text-align: left !important;
                     padding: 0px !important;
                 }
