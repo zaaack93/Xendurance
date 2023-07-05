@@ -1268,6 +1268,10 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .template--product .shopify-section--main-product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] span.price-regular, .shopify-section--featured-product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] span.price-regular {
   color: #353435 !important;
 }
+.template--product .shopify-section--main-product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] span.price-compare-show, .shopify-section--featured-product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] span.price-compare-show {
+  display: inline-block !important;
+  order: 0;
+}
 .template--product .shopify-section--main-product .product.product-for-member .offer,
 .template--product .shopify-section--main-product .product.product-for-member buy-buttons span[data-smartrr-compare-price], .shopify-section--featured-product .product.product-for-member .offer,
 .shopify-section--featured-product .product.product-for-member buy-buttons span[data-smartrr-compare-price] {

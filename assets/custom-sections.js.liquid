@@ -252,15 +252,15 @@ class PurchaseOptions extends HTMLElement {
           // code block
           content=sellingPlan.querySelector('.smartrr-pills-header');
           // Update the text content of the div
-          content.firstChild.nodeValue = 'Subscribe';
-          
+          content.firstChild.nodeValue = 'Subscribe & Earn';
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          {% comment %} price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
           setTimeout(() => {
             //check with compar price and regular price
             content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
             content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
             content_regular_price=price_cotnainer.querySelector('span[data-smartrr-regular-price]').textContent
-
+            debugger
             if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
               price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
               price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
@@ -269,12 +269,27 @@ class PurchaseOptions extends HTMLElement {
               price_cotnainer.querySelector('span[data-smartrr-compare-price]').style.display='none';
               price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
             }
-          }, 2000);
+            else if (content_subscribe_price!=content_compare_price && content_compare_price!='$INVALID'){
+              //for this cas to show product with their compare price
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.add('price-compare-show')
+            }
+          }, 2000); {% endcomment %}
+
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newElement.textContent = '2X REWARD POINTS';
+          newElement.className = 'smartrr-badge-item';
+
+          // Append the new element as a child to the div
+          sellingPlan.appendChild(newElement);
 
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = ' (Free U.S Shipping)';
+          newregulralabel.textContent = ' (Free US Shipping)';
           newregulralabel.className = 'data-smartrr-subscribe-price';
           price_cotnainer.prepend(newregulralabel);
 
@@ -316,7 +331,7 @@ class PurchaseOptions extends HTMLElement {
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = '(Free U.S Shipping + Rewards)';
+          newregulralabel.textContent = '(Free US Shipping + Rewards)';
           newregulralabel.className = 'data-smartrr-subscribe-price sm-max:hidden';
           price_cotnainer.prepend(newregulralabel);
 
@@ -364,7 +379,7 @@ class PurchaseOptions extends HTMLElement {
 
           //add reguular price
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
-          setTimeout(() => {
+          {% comment %} setTimeout(() => {
             //check with compar price and regular price
             content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
             content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
@@ -378,12 +393,12 @@ class PurchaseOptions extends HTMLElement {
               price_cotnainer.querySelector('span[data-smartrr-compare-price]').style.display='none';
               price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
             }
-          }, 2000);
+          }, 2000); {% endcomment %}
 
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = ' (Free U.S Shipping)';
+          newregulralabel.textContent = ' (Free US Shipping)';
           newregulralabel.className = 'data-smartrr-subscribe-price';
           price_cotnainer.prepend(newregulralabel);
           
