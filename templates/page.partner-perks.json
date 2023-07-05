@@ -45,7 +45,7 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "SAVE WITH 50+ BRANDS",
+        "text": "SAVE WITH 45+ BRANDS",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
@@ -66,7 +66,7 @@
             "column_size": "3",
             "title": "Working Against Gravity",
             "heading_tag": "h4",
-            "content": "<p>The fist comprehensive plan designed for runners.<br\/><\/p><p> Use code <strong>XND10<\/strong> at check out for 10% OFF<\/p>",
+            "content": "<p>The fist comprehensive plan designed for runners.<\/p><p> Use code <strong>XND10<\/strong> for 10% OFF!<\/p>",
             "link_url": "http:\/\/www.workingagainstgravity.com\/",
             "link_url_members": "http:\/\/www.workingagainstgravity.com\/",
             "link_text": "Shop Now",
@@ -78,9 +78,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/12_5a640350-e215-4c68-913e-fa5d335160aa.jpg",
             "column_size": "3",
-            "title": "PERFORMA SLEEP",
+            "title": "Performa Sleep",
             "heading_tag": "h4",
-            "content": "<p>The Best Sleep Recovery Mattress.<\/p><p>Use code <strong>XND20<\/strong> at check out for 20% OFF all orders over $500!<\/p>",
+            "content": "<p>The Best Sleep Recovery Mattress.<\/p><p>Use code <strong>XND20<\/strong> for 20% OFF all orders over $500!<\/p>",
             "link_url": "https:\/\/www.performasleep.com",
             "link_url_members": "https:\/\/www.performasleep.com",
             "link_text": "Shop Now",
@@ -94,7 +94,7 @@
             "column_size": "3",
             "title": "Blenders Eyewear",
             "heading_tag": "h4",
-            "content": "<p>Fresh. Vibrant. Comfortable.<\/p><p>Use code \"XENDURANCE20\" at check out for 20% OFF<\/p>",
+            "content": "<p>Fresh. Vibrant. Comfortable. <\/p><p>Use code <strong>XENDURANCE20<\/strong> for 20% OFF!<\/p>",
             "link_url": "https:\/\/www.blenderseyewear.com",
             "link_url_members": "https:\/\/www.blenderseyewear.com",
             "link_text": "Shop Now",
@@ -108,7 +108,7 @@
             "column_size": "3",
             "title": "Sole Bicycles",
             "heading_tag": "h4",
-            "content": "<p>Single Speed Fixies and Cruisers<\/p><p>Use code Xendurance25 at check out for 25% OFF plus free shipping on non-sale items<\/p>",
+            "content": "<p>Single Speed Fixies and Cruisers.<\/p><p>Use code <strong>Xendurance25<\/strong> for 25% OFF plus free shipping on non-sale items.<\/p>",
             "link_url": "https:\/\/solebicycles.com",
             "link_url_members": "https:\/\/solebicycles.com",
             "link_text": "Shop Now",
@@ -120,9 +120,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/15.jpg",
             "column_size": "3",
-            "title": "ROKA",
+            "title": "ROKA®",
             "heading_tag": "h4",
-            "content": "<p>Performance Eyewear and Apparel<\/p><p>For 25% OFF Click \"Activate ROKA Team Account\" and enter Xendurance as the team handle with Team Passcode 2443. All Discounts will apply once an item has been added to your cart<\/p>",
+            "content": "<p>Performance Eyewear and Apparel.<\/p><p>For 25% OFF Click \"Activate ROKA Team Account\" and enter <strong>Xendurance<\/strong> as the team handle with Team Passcode 2443. All Discounts will apply once an item has been added to your cart.<\/p>",
             "link_url": "https:\/\/roka.com",
             "link_url_members": "https:\/\/roka.com",
             "link_text": "Shop Now",
@@ -136,7 +136,7 @@
             "column_size": "3",
             "title": "Gravity Blankets",
             "heading_tag": "h4",
-            "content": "<p>The World’s Most Popular Weighted Blanket<br\/><br\/>Use code <strong>XENDURANCE20<\/strong> at check out for 20% OFF<\/p>",
+            "content": "<p>The World’s Most Popular Weighted Blanket.<\/p><p>Use code <strong>XENDURANCE20<\/strong> for 20% OFF!<\/p>",
             "link_url": "https:\/\/gravityblankets.com",
             "link_url_members": "https:\/\/gravityblankets.com",
             "link_text": "Shop Now",
@@ -148,9 +148,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Logo-Friction-Labs.jpg",
             "column_size": "3",
-            "title": "FrictionLabs",
+            "title": "FrictionLabs®",
             "heading_tag": "h4",
-            "content": "<p>The World's First Hygienic Chalk<\/p><p>Use Link for 40% Off once you apply to the Pro Program. Mention Team XND in the application and get free shipping along with other comprehensive benefits from working with FrictionLabs.<\/p>",
+            "content": "<p>The World's First Hygienic Chalk.<\/p><p>Use Link for <strong>40% Off<\/strong> once you apply to the Pro Program. Mention Team XND in the application and get free shipping + more!<\/p>",
             "link_url": "https:\/\/www.FrictionLabs.com\/Pro",
             "link_url_members": "https:\/\/www.FrictionLabs.com\/Pro",
             "link_text": "Shop Now",
@@ -160,11 +160,11 @@
         "9b5fd554-5dc6-41c3-882b-828e3f038ec9": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Client-Logo_Viicaya.jpg",
+            "image": "shopify:\/\/shop_images\/Client-Logo_Viicaya_ebaf88a9-5adc-4b33-bf8b-e8d15b6cdd7e.jpg",
             "column_size": "3",
             "title": "VIICAYA",
             "heading_tag": "h4",
-            "content": "<p>VIICAYA is size-inclusive, functional activewear without the gender labels.<\/p><p>Take 15% off your order with code \"<strong>TEAMXND15<\/strong>\".<\/p>",
+            "content": "<p>Size-inclusive, functional activewear without the gender labels.<\/p><p>Use code <strong>TEAMXND15<\/strong> for 15% OFF!<\/p>",
             "link_url": "https:\/\/www.viicaya.com",
             "link_url_members": "https:\/\/www.viicaya.com",
             "link_text": "Shop Now",
@@ -174,11 +174,11 @@
         "a01a3310-507f-4241-8c1f-5155bbccbed1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Client-Logo_Silent-Mode.jpg",
+            "image": "shopify:\/\/shop_images\/Client-Logo_Silent-Mode_a01ea7dc-ecc4-4b39-a803-4ea76524b6cc.jpg",
             "column_size": "3",
             "title": "Silentmode",
             "heading_tag": "h4",
-            "content": "<p>Unlock the Power Within<br\/><\/p><p>For 15% Off use code SMXend15 at checkout!<br\/><\/p>",
+            "content": "<p>Unlock the Power Within.<\/p><p>Use code <strong>SMXend15<\/strong> for 15% OFF!<\/p>",
             "link_url": "",
             "link_url_members": "http:\/\/www.silentmode.com",
             "link_text": "Shop Now",
@@ -192,7 +192,7 @@
             "column_size": "3",
             "title": "Regenerative Pastures",
             "heading_tag": "h4",
-            "content": "<p>The most nutrient dense meat on the planet.<\/p><p>Use code XND for 30% off your membership.<\/p><p><\/p>",
+            "content": "<p>The most nutrient dense meat on the planet.<\/p><p>Use code <strong>XND<\/strong> for 30% OFF your membership!<\/p>",
             "link_url": "",
             "link_url_members": "https:\/\/regenerativepastures.com",
             "link_text": "Shop Now",
@@ -206,21 +206,21 @@
             "column_size": "3",
             "title": "Renoun Skis",
             "heading_tag": "h4",
-            "content": "<p>Welcome to the future<br\/><\/p><p>For $150 OFF use code XNDRenoun at checkout.<\/p>",
+            "content": "<p>Welcome to the future.<\/p><p>Use code<strong> XNDRenoun <\/strong>for $150 OFF!<\/p>",
             "link_url": "",
             "link_url_members": "https:\/\/renoun.com",
-            "link_text": "",
+            "link_text": "Shop Now",
             "link_style": "link"
           }
         },
         "06c6e494-3998-4202-8d9e-9b534ee978e4": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Client-Logo_Eleiko.jpg",
+            "image": "shopify:\/\/shop_images\/Client-Logo_Eleiko_ba810c61-5a71-4c73-b855-895aee2f37af.jpg",
             "column_size": "3",
             "title": "Eleiko",
             "heading_tag": "h4",
-            "content": "<p>Champion Approved<br\/><\/p><p>For 10% OFF use code Xendurance10 at checkout.<\/p>",
+            "content": "<p>Champion Approved.<\/p><p>Use code <strong>Xendurance10<\/strong> for 10% OFF!<\/p>",
             "link_url": "",
             "link_url_members": "https:\/\/strengthwear.us",
             "link_text": "Shop Now",
@@ -230,13 +230,461 @@
         "3a347a70-2431-47ff-a378-ef3046184ebf": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Client-Logo_PSO-Rite.jpg",
+            "image": "shopify:\/\/shop_images\/Client-Logo_PSO-Rite_d160b18d-7e15-4f43-8f15-eb750cae6676.jpg",
             "column_size": "3",
             "title": "PSO RITE",
             "heading_tag": "h4",
-            "content": "<p>Feels Pso Rite. <br\/><\/p><p>For for 10% OFF use code XNDPSO10 at checkout!<\/p>",
+            "content": "<p>Feels Pso Rite. <\/p><p>Use code <strong>XNDPSO10<\/strong> for 10% OFF!<\/p>",
             "link_url": "https:\/\/pso-rite.com",
             "link_url_members": "https:\/\/pso-rite.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "bc433521-4e4f-4242-b873-b67545deecde": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_RomWod.jpg",
+            "column_size": "3",
+            "title": "ROMWOD",
+            "heading_tag": "h4",
+            "content": "<p>Daily Online Stretching Routines For Athletes.<\/p><p>Get your <strong>30-Day Free<\/strong> Trial today!<\/p>",
+            "link_url": "https:\/\/www.romwod.com\/xndship",
+            "link_url_members": "https:\/\/www.romwod.com\/xndship",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "01a41c51-c200-458a-a8b7-ce41236cf6ba": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_JoshBridges.jpg",
+            "column_size": "3",
+            "title": "Josh Bridges",
+            "heading_tag": "h4",
+            "content": "<p>Mental Prep + Fitness Programs.<\/p><p>Train and Prepare – The Josh Bridges Way.<\/p><p>Use code <strong>JBXND<\/strong> for $4.99 OFF monthly programs!<\/p>",
+            "link_url": "https:\/\/www.Josh-Bridges.com",
+            "link_url_members": "https:\/\/www.Josh-Bridges.com",
+            "link_text": "Show Now",
+            "link_style": "link"
+          }
+        },
+        "5aa04fd2-0bdc-45c5-a6fc-84ee8de27181": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_2Pood.jpg",
+            "column_size": "3",
+            "title": "2POOD®",
+            "heading_tag": "h4",
+            "content": "<p>Providing top performance gear for the functional fitness community.<\/p><p>Use code<strong> XNDSHIP<\/strong> for 12% OFF!<\/p>",
+            "link_url": "https:\/\/www.2pood.com",
+            "link_url_members": "https:\/\/www.2pood.com",
+            "link_text": "Show Now",
+            "link_style": "link"
+          }
+        },
+        "1249b5a1-d2e3-4279-bbb2-dbaef8f02ae7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_State-Forty-Eight_57a1bbb8-1b83-4dae-ba10-22ecf2f35af2.jpg",
+            "column_size": "3",
+            "title": "State 48",
+            "heading_tag": "h4",
+            "content": "<p>Wear it loud and wear it proud!<\/p><p>Use code <strong>SFEX <\/strong>for $20 OFF!<\/p>",
+            "link_url": "https:\/\/www.statefortyeight.com",
+            "link_url_members": "https:\/\/www.statefortyeight.com",
+            "link_text": "Show Now",
+            "link_style": "link"
+          }
+        },
+        "976392c5-b1b1-40c7-b54b-c6b2ec1f692d": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Chestee.jpg",
+            "column_size": "3",
+            "title": "Chestee",
+            "heading_tag": "h4",
+            "content": "<p>The only patented sports bra with built-in collarbone protection.<\/p><p>Use code <strong>xendurance<\/strong> for 15% OFF!<\/p>",
+            "link_url": "https:\/\/thechestee.com",
+            "link_url_members": "https:\/\/thechestee.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "353e0242-f035-44ac-a0f6-2c967990118d": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Trueform.jpg",
+            "column_size": "3",
+            "title": "TRUFORM Runner",
+            "heading_tag": "h4",
+            "content": "<p>The Best Running Tool. Ever.<\/p><p>Use code <strong>TEAMXND<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/www.trueformrunner.com",
+            "link_url_members": "https:\/\/www.trueformrunner.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "a50e461f-3f2f-4c49-bcfc-632d8234476b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Good-Dudes.jpg",
+            "column_size": "3",
+            "title": "Good Dudes Coffee",
+            "heading_tag": "h4",
+            "content": "<p>Good Dudes. Good Coffee.<\/p><p>Use code <strong>XNDCoffee15<\/strong> for 15% OFF!<\/p>",
+            "link_url": "https:\/\/www.gooddudescoffee.com",
+            "link_url_members": "https:\/\/www.gooddudescoffee.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "f9d766a5-1b06-42a3-8a9b-f0eb80f75d01": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Vitamix.jpg",
+            "column_size": "3",
+            "title": "Vitamix®",
+            "heading_tag": "h4",
+            "content": "<p>Award-winning blenders that allow anyone to create healthy, delicious food regardless of skill level.<\/p><p>Use code <strong>CORPVITAMIX <\/strong>for exclusive Vitamix savings!<\/p>",
+            "link_url": "https:\/\/www.vitamix.com\/shop",
+            "link_url_members": "https:\/\/www.vitamix.com\/shop",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "6efea191-2187-4070-a103-bce7ffc53b89": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Link-Soul.jpg",
+            "column_size": "3",
+            "title": "Linksoul",
+            "heading_tag": "h4",
+            "content": "<p>Make Par, Not War.<\/p><p>Use code <strong>LINKSOULXND20<\/strong> for 20% OFF your first order!<\/p>",
+            "link_url": "https:\/\/www.linksoul.com",
+            "link_url_members": "https:\/\/www.linksoul.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "afa6e8c3-0cc5-4c8c-be2e-1a3b2e84b84a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Junk.jpg",
+            "column_size": "3",
+            "title": "JUNK®",
+            "heading_tag": "h4",
+            "content": "<p>Custom headbands and apparel.<\/p><p>Use code <strong>xendurance10<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/www.junkbrands.com",
+            "link_url_members": "https:\/\/www.junkbrands.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "7ab8158f-5a25-451f-9545-a15d334ed96d": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Quivr.jpg",
+            "column_size": "3",
+            "title": "Quivr",
+            "heading_tag": "h4",
+            "content": "<p>Nitrogen-Infused Coffee and Tea.<br\/><\/p><p>Use code <strong>xndnitro <\/strong>for 20% OFF!<\/p>",
+            "link_url": "https:\/\/www.drinkquivr.com",
+            "link_url_members": "https:\/\/www.drinkquivr.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "840b2cad-00e6-4779-9ff4-f7c34949d54c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Saguaro.jpg",
+            "column_size": "3",
+            "title": "Saguaro Resort",
+            "heading_tag": "h4",
+            "content": "<p>Coming to AZ? Stay at the The Saguaro Scottsdale Resort.<\/p><p>Book for any other time!<\/p>",
+            "link_url": "https:\/\/www.thesaguaro.com\/xendurance",
+            "link_url_members": "https:\/\/www.thesaguaro.com\/xendurance",
+            "link_text": "Book Now",
+            "link_style": "link"
+          }
+        },
+        "10f6cb26-d095-47be-b22b-f7c6ba2928a6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Tru-Hilton.jpg",
+            "column_size": "3",
+            "title": "Tru by Hilton",
+            "heading_tag": "h4",
+            "content": "<p>A hotel experience that's vibrant, affordable, and young at heart. <\/p><p>Coming to AZ? Book your stay below.<\/p>",
+            "link_url": "https:\/\/hilton.com\/xenduranceTRU",
+            "link_url_members": "https:\/\/hilton.com\/xenduranceTRU",
+            "link_text": "Book Now",
+            "link_style": "link"
+          }
+        },
+        "189f4695-4f04-4eff-abcf-2fcd463bc5e2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Home-Suites.jpg",
+            "column_size": "3",
+            "title": "Home 2 Suites",
+            "heading_tag": "h4",
+            "content": "<p>Experience style and sustainability through Home 2 Suites by Hilton.<\/p><p>Coming to AZ? Book your stay below.<\/p>",
+            "link_url": "https:\/\/hilton.com\/xendurance",
+            "link_url_members": "https:\/\/hilton.com\/xendurance",
+            "link_text": "Book Now",
+            "link_style": "link"
+          }
+        },
+        "2044d63a-7c3d-42df-81e9-1032f114ef9f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Wild-Rye.jpg",
+            "column_size": "3",
+            "title": "Wild Rye",
+            "heading_tag": "h4",
+            "content": "<p>A new kind of baking company.<\/p><p>Use code <strong>xendurance <\/strong>for 10% OFF.<\/p>",
+            "link_url": "https:\/\/wildryebaking.com",
+            "link_url_members": "https:\/\/wildryebaking.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "b54c2d03-abdd-4c18-acad-6af51ae152e6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Phat-Scooters.jpg",
+            "column_size": "3",
+            "title": "Phat Scooters",
+            "heading_tag": "h4",
+            "content": "<p>Electrify your adventure. <\/p><p>Use code <strong>PHATX10<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/www.phatscotters.com",
+            "link_url_members": "https:\/\/www.phatscotters.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "bd57aa47-496d-4c47-927b-f413a7621a80": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Jupiter.jpg",
+            "column_size": "3",
+            "title": "Jupiter",
+            "heading_tag": "h4",
+            "content": "<p>Dermatologist-tested, clean and elevated dandruff and hair care products.<\/p><p>Use code <strong>XND10<\/strong> for 10% OFF your first order!<\/p>",
+            "link_url": "https:\/\/www.shopjupiter.com",
+            "link_url_members": "https:\/\/www.shopjupiter.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "1fb819a9-27be-4609-b8e0-9ac2f4459e85": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Ostrich.jpg",
+            "column_size": "3",
+            "title": "Ostrich Pillow",
+            "heading_tag": "h4",
+            "content": "<p>Eccentric neck and head pillows make traveling more comfortable!<\/p><p>Use code <strong>xendurance <\/strong>for 5% OFF your first order!<\/p>",
+            "link_url": "https:\/\/www.ostrichpillow.com",
+            "link_url_members": "https:\/\/www.ostrichpillow.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "40e8a693-5442-40e9-95d7-52667214a9e3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Yumble.jpg",
+            "column_size": "3",
+            "title": "Yumble",
+            "heading_tag": "h4",
+            "content": "<p>Meals Kids Love, No Cooking Required.<\/p><p>Use code <strong>XND60<\/strong> for 60% OFF!<\/p>",
+            "link_url": "https:\/\/yumblekids.com\/xendurance",
+            "link_url_members": "https:\/\/yumblekids.com\/xendurance",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "bfe01f2d-42ff-43f2-8f54-e5e2970fdb64": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_RP.jpg",
+            "column_size": "3",
+            "title": "RP Diet App",
+            "heading_tag": "h4",
+            "content": "<p>Science is Stronger.<\/p><p>Use code <strong>xendrp<\/strong> to unlock the app for $9.99\/month for the first six months. A 33% savings on the monthly subscription!<\/p>",
+            "link_url": "https:\/\/www.rpdiet.app",
+            "link_url_members": "https:\/\/www.rpdiet.app",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "7a688d79-2ca8-41e5-8980-ebe679501f8b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Stay-Classy-Meats.jpg",
+            "column_size": "3",
+            "title": "Stay Classy Meats",
+            "heading_tag": "h4",
+            "content": "<p>Small Batch Proteins Procured from Generational Ranchers.<\/p><p>Enjoy <strong>10% OFF<\/strong> your first order!<\/p>",
+            "link_url": "https:\/\/www.stayclassymeats.com",
+            "link_url_members": "https:\/\/www.stayclassymeats.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "54cd8e56-e304-4081-b855-52d897e27cfe": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Steady-MD.jpg",
+            "column_size": "3",
+            "title": "SteadyMD",
+            "heading_tag": "h4",
+            "content": "<p>Your Personal Doctor, Online.<\/p><p>Hit the link for <strong>20% OFF<\/strong> every month for the 1st year!<\/p>",
+            "link_url": "https:\/\/www.steadymd.com\/xnd20",
+            "link_url_members": "https:\/\/www.steadymd.com\/xnd20",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "e5a91f98-4643-402e-bf20-1c487cdada79": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Fro-Pro.jpg",
+            "column_size": "3",
+            "title": "FROPRO®",
+            "heading_tag": "h4",
+            "content": "<p>A a clean-food company that makes protein-rich snack bars.<\/p><p>Use code <strong>XENDURANCE20<\/strong> for 20% OFF!<\/p>",
+            "link_url": "https:\/\/www.gofropro.com",
+            "link_url_members": "https:\/\/www.gofropro.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "1d901a6d-13bd-4ea4-9f88-afdfb9fdcf04": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Mush.jpg",
+            "column_size": "3",
+            "title": "MUSH",
+            "heading_tag": "h4",
+            "content": "<p>Like Oatmeal. Unlike Any Oatmeal.<\/p><p>Use code <strong>XNDMUSH15<\/strong> for 15% OFF!<\/p>",
+            "link_url": "https:\/\/www.eatmush.com",
+            "link_url_members": "https:\/\/www.eatmush.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "c4dba934-0b3b-4d24-bfa5-aa120bae01c8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_4KOR.jpg",
+            "column_size": "3",
+            "title": "4KOR Fitness",
+            "heading_tag": "h4",
+            "content": "<p>Ultra Comfortable Fabric Resistance Bands.<\/p><p>Use code<strong> XND<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/4korfitness.com",
+            "link_url_members": "https:\/\/4korfitness.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "7f6437ff-1617-4bdd-9cb0-93da2e75f3e1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_BrainFlakes.jpg",
+            "column_size": "3",
+            "title": "BrainFlakes®",
+            "heading_tag": "h4",
+            "content": "<p>Engineering starts here.<\/p><p>Use code <strong>XND10<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/BrainFlakes.com",
+            "link_url_members": "https:\/\/BrainFlakes.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "88518935-55bf-41c3-911f-6bf23bf9c3ec": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Caldera-Lab.jpg",
+            "column_size": "3",
+            "title": "Caldera Lab",
+            "heading_tag": "h4",
+            "content": "<p>All-natural men’s skincare.<\/p><p>Use code <strong>XENDURANCE<\/strong> for 20% OFF!<\/p>",
+            "link_url": "https:\/\/calderalab.com",
+            "link_url_members": "https:\/\/calderalab.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "20a3446a-8199-4de7-9fd5-803e9f21470c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Bullit.jpg",
+            "column_size": "3",
+            "title": "Bullit USA",
+            "heading_tag": "h4",
+            "content": "<p>The best Weight Vests, Sandbags and portable training equipment.<\/p><p>Use code <strong>XND10<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/www.bullitusa.com",
+            "link_url_members": "https:\/\/www.bullitusa.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "6a3228e2-5d6d-4cfb-a5ba-c1a59a93fb1e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Hardworking-Gentlemen.jpg",
+            "column_size": "3",
+            "title": "Hardworking Gentlemen",
+            "heading_tag": "h4",
+            "content": "<p>All-natural performance men’s grooming goods.<\/p><p>Use code <strong>XND20<\/strong> for 20% OFF!<\/p>",
+            "link_url": "https:\/\/hardworkinggentlemen.com",
+            "link_url_members": "https:\/\/hardworkinggentlemen.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "9a3ccc25-bbe8-4106-8461-bbbf3a70ce81": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_TrainToHunt.jpg",
+            "column_size": "3",
+            "title": "Train To Hunt",
+            "heading_tag": "h4",
+            "content": "<p>The world’s premier Training Systems, Competitions, and Gear for the Outdoor Athlete.<\/p><p>Use code <strong>Xendurance15<\/strong> for 15% OFF!<\/p>",
+            "link_url": "https:\/\/traintohunt.com\/",
+            "link_url_members": "https:\/\/traintohunt.com\/",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "e9effcc2-a761-468d-80d6-eee7ce0efc63": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Haven.jpg",
+            "column_size": "3",
+            "title": "Haven",
+            "heading_tag": "h4",
+            "content": "<p>Organized gym bags for your best workout.<\/p><p>Use code<strong> XENDURANCE<\/strong> for $15 OFF!<\/p>",
+            "link_url": "https:\/\/havenathletic.com\/",
+            "link_url_members": "https:\/\/havenathletic.com\/",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "51d7cf0e-9742-41ab-a864-24895331a1e1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Client-Logo_Cancha.jpg",
+            "column_size": "3",
+            "title": "Cancha",
+            "heading_tag": "h4",
+            "content": "<p>Premium Sport & Travel Bags.<\/p><p>Use code <strong>XENDURANCE10<\/strong> for 10% OFF!<\/p>",
+            "link_url": "https:\/\/canchabags.com\/en-us",
+            "link_url_members": "https:\/\/canchabags.com\/en-us",
             "link_text": "Shop Now",
             "link_style": "link"
           }
@@ -255,7 +703,39 @@
         "7088882f-a228-43d2-be4c-7e84559bc4ef",
         "90b263ac-30f0-4d2b-add1-19b55417d8c7",
         "06c6e494-3998-4202-8d9e-9b534ee978e4",
-        "3a347a70-2431-47ff-a378-ef3046184ebf"
+        "3a347a70-2431-47ff-a378-ef3046184ebf",
+        "bc433521-4e4f-4242-b873-b67545deecde",
+        "01a41c51-c200-458a-a8b7-ce41236cf6ba",
+        "5aa04fd2-0bdc-45c5-a6fc-84ee8de27181",
+        "1249b5a1-d2e3-4279-bbb2-dbaef8f02ae7",
+        "976392c5-b1b1-40c7-b54b-c6b2ec1f692d",
+        "353e0242-f035-44ac-a0f6-2c967990118d",
+        "a50e461f-3f2f-4c49-bcfc-632d8234476b",
+        "f9d766a5-1b06-42a3-8a9b-f0eb80f75d01",
+        "6efea191-2187-4070-a103-bce7ffc53b89",
+        "afa6e8c3-0cc5-4c8c-be2e-1a3b2e84b84a",
+        "7ab8158f-5a25-451f-9545-a15d334ed96d",
+        "840b2cad-00e6-4779-9ff4-f7c34949d54c",
+        "10f6cb26-d095-47be-b22b-f7c6ba2928a6",
+        "189f4695-4f04-4eff-abcf-2fcd463bc5e2",
+        "2044d63a-7c3d-42df-81e9-1032f114ef9f",
+        "b54c2d03-abdd-4c18-acad-6af51ae152e6",
+        "bd57aa47-496d-4c47-927b-f413a7621a80",
+        "1fb819a9-27be-4609-b8e0-9ac2f4459e85",
+        "40e8a693-5442-40e9-95d7-52667214a9e3",
+        "bfe01f2d-42ff-43f2-8f54-e5e2970fdb64",
+        "7a688d79-2ca8-41e5-8980-ebe679501f8b",
+        "54cd8e56-e304-4081-b855-52d897e27cfe",
+        "e5a91f98-4643-402e-bf20-1c487cdada79",
+        "1d901a6d-13bd-4ea4-9f88-afdfb9fdcf04",
+        "c4dba934-0b3b-4d24-bfa5-aa120bae01c8",
+        "7f6437ff-1617-4bdd-9cb0-93da2e75f3e1",
+        "88518935-55bf-41c3-911f-6bf23bf9c3ec",
+        "20a3446a-8199-4de7-9fd5-803e9f21470c",
+        "6a3228e2-5d6d-4cfb-a5ba-c1a59a93fb1e",
+        "9a3ccc25-bbe8-4106-8461-bbbf3a70ce81",
+        "e9effcc2-a761-468d-80d6-eee7ce0efc63",
+        "51d7cf0e-9742-41ab-a864-24895331a1e1"
       ],
       "settings": {
         "full_width": true,
