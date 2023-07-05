@@ -245,35 +245,37 @@ class PurchaseOptions extends HTMLElement {
     this.prepend(titleElement);
 
     sellingPlans.forEach((sellingPlan) =>{
-      let content,newElement,sellContent,price_cotnainer,newregulralabel,content_subscribe_price,content_compare_price,content_regular_price;
+      let content,newElement,sellContent,price_cotnainer,newregulralabel,content_subscribe_price,content_compare_price,content_regular_price,original_price_from_first;
       switch (sellingPlan.dataset.smartrrSellingPlanGroupId){
         case "6a09e170577cb57e08a9a5e44f9fbf31c342d37e":
           // for the second statement the customer loggedIn
           // code block
           content=sellingPlan.querySelector('.smartrr-pills-header');
           // Update the text content of the div
-          content.firstChild.nodeValue = 'Subscribe & Earn';
+          content.firstChild.nodeValue = 'Subscribe';
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
-          {% comment %} price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
           setTimeout(() => {
             //check with compar price and regular price
             content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
             content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
             content_regular_price=price_cotnainer.querySelector('span[data-smartrr-regular-price]').textContent
-            debugger
-            if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
-              price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
-              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
-            }
-            else if(content_subscribe_price==content_compare_price || content_compare_price=='$INVALID'){
-              price_cotnainer.querySelector('span[data-smartrr-compare-price]').style.display='none';
-              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
-            }
-            else if (content_subscribe_price!=content_compare_price && content_compare_price!='$INVALID'){
-              //for this cas to show product with their compare price
+            // debugger
+            // if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
+            //   price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
+            //   price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            // }
+            if(content_subscribe_price!=content_compare_price || content_compare_price!='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.remove('smartrr-widget-hide');
               price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.add('price-compare-show')
+              price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
             }
-          }, 2000); {% endcomment %}
+            // else 
+            
+            // if (content_subscribe_price!=content_compare_price && content_compare_price!='$INVALID'){
+            //   //for this cas to show product with their compare price
+            //   price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.add('price-compare-show')
+            // }
+          }, 2000);
 
           //create new badge
           // Create a new element

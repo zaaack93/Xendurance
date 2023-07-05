@@ -1233,6 +1233,12 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   margin-bottom: initial;
 }
 
+.template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price], .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price] {
+  display: initial !important;
+}
+.template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-subscribe-price], .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-subscribe-price] {
+  color: #e93b40;
+}
 @media only screen and (max-width: 989px) {
   .template--product .shopify-section--main-product .section, .shopify-section--featured-product .section {
     padding-left: 19px;
@@ -1289,7 +1295,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 }
 .template--product .shopify-section--main-product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] span.price-compare-show, .shopify-section--featured-product .product.product-for-member custom-options div[data-smartrr-selling-plan-groups] span.price-compare-show {
   display: inline-block !important;
-  order: 0;
+  order: 1;
 }
 .template--product .shopify-section--main-product .product.product-for-member .offer,
 .template--product .shopify-section--main-product .product.product-for-member buy-buttons span[data-smartrr-compare-price], .shopify-section--featured-product .product.product-for-member .offer,
@@ -1353,6 +1359,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   border-radius: 10px;
   position: relative;
 }
+@media only screen and (max-width: 400px) {
+  .template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id], .shopify-section--featured-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] {
+    padding: 16px 5px 16px 12px;
+  }
+}
 .template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-badge-item, .shopify-section--featured-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-badge-item {
   position: absolute;
   top: 16px;
@@ -1401,6 +1412,9 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     -moz-column-gap: 12px;
          column-gap: 12px;
   }
+}
+.template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-container, .shopify-section--featured-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label .smartrr-pills-container {
+  flex: 1;
 }
 .template--product .shopify-section--main-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio], .shopify-section--featured-product .smartrr-purchase-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id] .smartrr-selling-plan-group-header .smartrr-selling-plan-group-label input[type=radio] {
   display: initial !important;

@@ -1,4 +1,15 @@
 .template--product .shopify-section--main-product,.shopify-section--featured-product {
+    //smartrr product with price add compar price
+    .product-for-member {
+        .product-price_with_rating{
+            span[data-smartrr-compare-price]{
+                display: initial !important;
+            }
+            span[data-smartrr-subscribe-price]{
+                color: #e93b40;
+            }
+        }
+    }
     @media only screen and (max-width: 989px) {
         .section {
             padding-left: 19px;
@@ -69,7 +80,7 @@
                 }
                 span.price-compare-show{
                     display: inline-block !important;
-                    order: 0;
+                    order: 1;
                 }
             }
         }
@@ -174,6 +185,9 @@
                 border: 1px solid #ADADAD;
                 border-radius: 10px;
                 position: relative;
+                @media only screen and (max-width: 400px) {
+                    padding: 16px 5px 16px 12px;
+                }
 
                 .smartrr-badge-item {
                     position: absolute;
@@ -219,6 +233,9 @@
                         flex-direction: row !important;
                         @media only screen and (max-width: 989px) {
                             column-gap: 12px;
+                        }
+                        .smartrr-pills-container{
+                            flex:1;
                         }
                         
                         input[type="radio"] {
