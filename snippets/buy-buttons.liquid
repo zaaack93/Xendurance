@@ -22,8 +22,13 @@ Supported variables
 
 {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
 
+{%- form 'product', product, is: 'product-form', id: form_id -%}
   <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
+  {%if generate_selling %}
+   <input type="hidden" name="selling_plan" value="{{ product.selling_plan_groups.first.selling_plans.first.id }}">
+  {%endif%}
+  
   {%- assign button_disabled = false -%}
   {%- assign button_size = button_size | default: 'xl' -%}
 
@@ -85,3 +90,4 @@ Supported variables
       {%- endif -%}
     </buy-buttons>
   </div>
+{%- endform -%}
