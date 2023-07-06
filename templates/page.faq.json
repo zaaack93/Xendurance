@@ -67,6 +67,7 @@
         },
         "93b9e4fb-6fce-4cd6-888e-86f15fc9a7ee": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "title": "What sets Xendurance apart from other supplement brands?",
             "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
@@ -169,7 +170,7 @@
           "type": "item",
           "settings": {
             "title": "What ingredients are used in Xendurance supplements?",
-            "content": "<p>We only use the most bioavailable, clinically researched (usually pharamaceutical grade) ingredients in all of our products<\/p>"
+            "content": "<p>We only use the most bioavailable, clinically researched (usually pharamaceutical grade) ingredients in all of our products.<\/p>"
           }
         },
         "f9dfd31b-0581-467e-8295-02cf5576561c": {
@@ -218,7 +219,7 @@
           "type": "item",
           "settings": {
             "title": "How do I properly use Xendurance supplements?",
-            "content": "<p>Please refer to the recommended dosage section on our product pages and the back of each pouch<\/p>"
+            "content": "<p>Please refer to the recommended dosage section on our product pages and the back of each pouch.<\/p>"
           }
         }
       },

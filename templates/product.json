@@ -194,6 +194,7 @@
         },
         "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "The XND X-Factor",
             "heading_tag": "h1"
@@ -201,6 +202,7 @@
         },
         "d4298b0d-8e4b-4fcc-8d79-e0d6a17898e4": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": ""
           }
@@ -687,7 +689,7 @@
             "title": "Join Team XND & Save",
             "content": "<ul><li>$100 in Immediate Rewards. <\/li><li>Free Shipping + 25% OFF On Every Order. <\/li><li>2x Loyalty Points. <\/li><li>Partner Perks + More.<\/li><\/ul>",
             "link_text": "Learn More",
-            "link_url": "shopify:\/\/products\/team-xnd-membership",
+            "link_url": "shopify:\/\/pages\/team-xnd-signup",
             "link_url_members": "",
             "background": "#353435",
             "background_gradient": "",

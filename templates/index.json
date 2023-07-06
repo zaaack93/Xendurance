@@ -14,7 +14,7 @@
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "footer_collout_badge": true,
             "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
-            "content": "<p>Unsure where to start <a href=\"\/pages\/product-finder\" title=\"Product Finder\">Take the Quiz?<\/a><\/p>",
+            "content": "<p>Unsure where to start <a href=\"\/pages\/perfect-path-quiz\" target=\"_blank\" title=\"Perfect Path Quiz\">Take the Quiz?<\/a><\/p>",
             "title": "Certified Sport and Performance Products",
             "heading_tag": "h2",
             "button_text": "Shop All Supplements",
@@ -49,8 +49,8 @@
             "title": "First Ever Skincare Tested For Banned Substances",
             "heading_tag": "h2",
             "button_text": "Shop All SKIN",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_link_members": "",
+            "button_link": "shopify:\/\/collections\/skincare",
+            "button_link_members": "shopify:\/\/collections\/skin",
             "secondary_button_text": "Shop All SKIN",
             "secondary_button_link": "",
             "secondary_button_link_members": "",
@@ -70,7 +70,7 @@
           "settings": {
             "bubble_category": "Supplements",
             "bubble_collection": "shopify:\/\/collections\/best-sellers",
-            "bubble_collection_members": "shopify:\/\/collections\/best-sellers",
+            "bubble_collection_members": "shopify:\/\/collections\/best-sellers-1",
             "bubble_color": "#e93b40",
             "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-_1.png",
             "bubble_text": "Best Sellers"
@@ -146,8 +146,8 @@
           "type": "text",
           "settings": {
             "bubble_category": "Skin",
-            "bubble_collection": "",
-            "bubble_collection_members": "",
+            "bubble_collection": "shopify:\/\/products\/day-skin",
+            "bubble_collection_members": "shopify:\/\/products\/day-skin-1",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/xendurance-day-skin-33508277256380.png",
             "bubble_text": "Day SKIN"
@@ -157,8 +157,8 @@
           "type": "text",
           "settings": {
             "bubble_category": "Skin",
-            "bubble_collection": "",
-            "bubble_collection_members": "",
+            "bubble_collection": "shopify:\/\/products\/night-skin",
+            "bubble_collection_members": "shopify:\/\/products\/night-skin",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/Night_Skin_Pack-Trio-1.png",
             "bubble_text": "Night SKIN"
@@ -895,8 +895,8 @@
             "image": "shopify:\/\/shop_images\/IMGL7680.jpg",
             "title": "Unsure Where to Start?",
             "heading_tag": "h2",
-            "link_url": "shopify:\/\/pages\/product-finder",
-            "link_url_members": "shopify:\/\/pages\/product-finder",
+            "link_url": "shopify:\/\/pages\/perfect-path-quiz",
+            "link_url_members": "shopify:\/\/pages\/perfect-path-quiz",
             "link_text": "Take Our 60 Second Quiz",
             "mobile_text_position": "place-self-start text-start",
             "desktop_column_span": 4,

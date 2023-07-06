@@ -348,7 +348,7 @@
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-9": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": false,
             "atc_button_background": "#e93b40",
             "atc_button_text_color": "",
@@ -1032,8 +1032,8 @@
         "795cb8e4-7e18-40df-83ca-31944929a21f": {
           "type": "item",
           "settings": {
-            "title": "What if i'm based outside of the USA?",
-            "content": "<p>You can still receive 25% off products but will have to pay for shipping<\/p>"
+            "title": "What if I'm based outside of the USA?",
+            "content": "<p>You can still receive 25% off products but will have to pay for shipping.<\/p>"
           }
         }
       },

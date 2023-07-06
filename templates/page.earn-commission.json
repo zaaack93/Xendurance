@@ -161,8 +161,8 @@
             "heading_tag": "h4",
             "content": "<p>25% Commissions on each retail referral, $100 Phone Stipend as you advance and weekly bonuses on our Motion Boxes & Packs!<\/p>",
             "link_url": "shopify:\/\/pages\/team-xnd-signup",
-            "link_url_members": "",
-            "link_text": "Learn More About Team XND",
+            "link_url_members": "shopify:\/\/pages\/team-xnd-signup",
+            "link_text": "Learn About Team XND",
             "link_style": "button"
           }
         },
@@ -174,9 +174,9 @@
             "title": "Victory Trip",
             "heading_tag": "h4",
             "content": "<p>By referring and helping others you can earn our next incentive trip. Check out how you can earn and past trip experiences below.<\/p>",
-            "link_url": "https:\/\/xendurance.com\/pages\/victory-trip",
-            "link_url_members": "",
-            "link_text": "Learn More About Victory Trip",
+            "link_url": "shopify:\/\/pages\/victory-trip",
+            "link_url_members": "shopify:\/\/pages\/victory-trip",
+            "link_text": "Learn About Victory Trip",
             "link_style": "button"
           }
         },
@@ -287,7 +287,7 @@
             "title": "With Team XND",
             "content": "<p>Think Amazon Prime but with big savings on Xendurance products + Membership Perks ($95 per year).<\/p><ul><li>25% off all products and apparel.<\/li><li>Free shipping on every order in the United States & military addresses.<\/li><li>Discounts on your favorite brands.<\/li><li>50+ custom Team XND specific codes.<\/li><li>Earn free credit to be used on products & apparel via Bonus Bux.<\/li><li>Earn $100 worth of product or apparel by completing 3 rounds of XND In Motion.<\/li><li>Unlock a virtual Xendurance Visa® debit card Get paid Weekly & Monthly!<\/li><\/ul>",
             "link_text": "Join Team XND",
-            "link_url": "shopify:\/\/products\/team-xnd-membership",
+            "link_url": "shopify:\/\/pages\/team-xnd-signup",
             "background": "#f5f5f5",
             "background_gradient": "",
             "text_color": "#353435",
@@ -609,6 +609,7 @@
     },
     "6ae6922e-7b13-4fd4-8a1f-5a684c04e323": {
       "type": "accordion-content",
+      "disabled": true,
       "blocks": {
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-0": {
           "type": "item",

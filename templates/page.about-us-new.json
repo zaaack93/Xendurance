@@ -290,7 +290,7 @@
             "title": "Products Built For You",
             "content": "<p>Our products are designed to maximize your health. <strong>Find the right products when you take our Quiz!<\/strong><\/p>",
             "link_text": "Take The Quiz",
-            "link_url": "shopify:\/\/pages\/product-finder",
+            "link_url": "shopify:\/\/pages\/perfect-path-quiz",
             "background": "#353435",
             "background_gradient": "",
             "text_color": "#ffffff",
