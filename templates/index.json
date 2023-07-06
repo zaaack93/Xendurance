@@ -847,6 +847,7 @@
       ],
       "settings": {
         "full_width": true,
+        "hide_for_members": true,
         "spacing": "none"
       }
     },
