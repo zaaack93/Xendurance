@@ -92,4 +92,31 @@
 
 //     // If you want to submit the form programmatically later, you can call form.submit()
 //     });
+
+// Select the <div> element
+const myDiv = document.getElementById('product-compar-price');
+
+if(myDiv!=null){
+// Create a new MutationObserver instance
+const observer = new MutationObserver((mutationsList, observer) => {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'childList') {
+      const content = mutation.target.textContent;
+      if (content !== '$INVALID') {
+        myDiv.classList.add('valid');
+        document.querySelector('span[data-smartrr-subscribe-price]').classList.add('valid');
+      } else {
+        myDiv.classList.remove('valid');
+        document.querySelector('span[data-smartrr-subscribe-price]').classList.add('not-valid');
+      }
+    }
+  }
+});
+
+// Configuration of the observer:
+const config = { childList: true };
+
+// Start observing the target node for configured mutations
+observer.observe(myDiv, config);
+}
 })();

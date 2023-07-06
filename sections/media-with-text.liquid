@@ -1,3 +1,5 @@
+{% include 'membership-check' %}
+{% unless section.settings.hide_for_members and isMember %}
 {%- render 'section-spacing-collapsing' -%}
 
 {%- comment -%}
@@ -135,7 +137,7 @@ LIQUID
     {%- endfor -%}
   </media-with-text>
 </div>
-
+{%endunless%}
 {% schema %}
 {
   "name": "Media with text",
@@ -151,6 +153,12 @@ LIQUID
       "id": "full_width",
       "label": "Full width",
       "info": "Only has effect when spacing is set to none.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_for_members",
+      "label": "Hide for members",
       "default": false
     },
     {

@@ -1233,10 +1233,10 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   margin-bottom: initial;
 }
 
-.template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price], .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price] {
+.template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {
   display: initial !important;
 }
-.template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-subscribe-price], .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-subscribe-price] {
+.template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-subscribe-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-subscribe-price].valid {
   color: #e93b40;
 }
 @media only screen and (max-width: 989px) {

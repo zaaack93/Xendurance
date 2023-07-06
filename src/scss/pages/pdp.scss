@@ -2,10 +2,10 @@
     //smartrr product with price add compar price
     .product-for-member {
         .product-price_with_rating{
-            span[data-smartrr-compare-price]{
+            span[data-smartrr-compare-price].valid{
                 display: initial !important;
             }
-            span[data-smartrr-subscribe-price]{
+            span[data-smartrr-subscribe-price].valid{
                 color: #e93b40;
             }
         }
