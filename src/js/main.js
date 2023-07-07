@@ -3,6 +3,9 @@
         try{
             let smartrrProductListCus =Object.values(smartrrProductList)[0];
             smartrrProductListCus.ui.logic.apiChangeVariant(event.detail.variant.id)
+            setTimeout(()=>{
+                smartrrProductListCus.ui.logic.apiChangeVariant(event.detail.variant.id)
+            },100)
         }
         catch(e){
             console.log(e)

@@ -15,6 +15,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     try {
       var smartrrProductListCus = Object.values(smartrrProductList)[0];
       smartrrProductListCus.ui.logic.apiChangeVariant(event.detail.variant.id);
+      setTimeout(function () {
+        smartrrProductListCus.ui.logic.apiChangeVariant(event.detail.variant.id);
+      }, 100);
     } catch (e) {
       console.log(e);
     }
