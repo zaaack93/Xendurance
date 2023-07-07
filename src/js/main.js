@@ -1,4 +1,13 @@
 (() => {
+    document.addEventListener('variant:change', function(event) {
+        try{
+            let smartrrProductListCus =Object.values(smartrrProductList)[0];
+            smartrrProductListCus.ui.logic.apiChangeVariant(event.detail.variant.id)
+        }
+        catch(e){
+            console.log(e)
+        }
+    });
 
     document.addEventListener('cart:change', function(event) {
         let cart = event.detail.cart;
