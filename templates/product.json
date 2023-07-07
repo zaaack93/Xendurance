@@ -705,6 +705,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": true,
         "spacing": "small"
       }
     },

@@ -126,6 +126,7 @@
         },
         "1089b347-d343-4e10-a5c5-ebcd5d6fbc60": {
           "type": "collection_filter",
+          "disabled": true,
           "settings": {
             "collection": "skin",
             "collection_filters": "packs,daily,energy,tranform,recovery,sleep,skin"
