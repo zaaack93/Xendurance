@@ -54,12 +54,13 @@
     }
 
     // cass for member hide 2 and 3 
+    //i keeep the first one as a nth -child becauseit always the same
     .product.product-for-member {
         custom-options {
             div[data-smartrr-selling-plan-groups] {
 
-                div[data-smartrr-selling-plan-group-id]:nth-child(3),
-                div[data-smartrr-selling-plan-group-id]:nth-child(4) {
+                div[data-smartrr-selling-plan-group-id="da1e61c01b6561e74b0298c2b931b5c94d7a4bd3"],
+                div[data-smartrr-selling-plan-group-id="ba11e52e1a6aa078dca92bf274d23a25dce62018"] {
                     display: none;
                 }
 
@@ -95,7 +96,7 @@
     .product:not(.product-for-member) {
         custom-options {
             div[data-smartrr-selling-plan-groups] {
-                div[data-smartrr-selling-plan-group-id]:nth-child(2) {
+                div[data-smartrr-selling-plan-group-id="6a09e170577cb57e08a9a5e44f9fbf31c342d37e"] {
                     display: none;
                 }
 
@@ -118,7 +119,7 @@
     .product.cart-has-membership {
         custom-options {
             div[data-smartrr-selling-plan-groups] {
-                div[data-smartrr-selling-plan-group-id]:nth-child(4) {
+                div[data-smartrr-selling-plan-group-id="ba11e52e1a6aa078dca92bf274d23a25dce62018"] {
                     display: none;
                 }
             }
