@@ -212,7 +212,7 @@
                     {%endif%}
                     {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
                       {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
-                    {%elsif collection.handle=='apparel-accessories-1' and isMember == false and product.tags contains 'RETAIL' %}
+                    {%elsif isMember == false and product.tags contains 'RETAIL' %}
                       {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
                     {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}
                       {%- render 'product-card', product: product, stacked: true, show_badges: true -%}

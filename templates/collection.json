@@ -121,7 +121,7 @@
           "type": "collection_filter",
           "settings": {
             "collection": "all-products",
-            "collection_filters": "packs,daily,energy,transform,recovery,skin,Apparel & Accessories"
+            "collection_filters": "packs,daily,energy,transform,recovery,skin"
           }
         },
         "1089b347-d343-4e10-a5c5-ebcd5d6fbc60": {

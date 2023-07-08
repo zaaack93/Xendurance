@@ -14,7 +14,7 @@
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "footer_collout_badge": true,
             "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
-            "content": "<p>Unsure where to start <a href=\"\/pages\/perfect-path-quiz\" target=\"_blank\" title=\"Perfect Path Quiz\">Take the Quiz?<\/a><\/p>",
+            "content": "<p>Unsure where to start? <a href=\"\/pages\/product-finder\" target=\"_blank\" title=\"Product Finder\">Take the Quiz<\/a><\/p>",
             "title": "Certified Sport and Performance Products",
             "heading_tag": "h2",
             "button_text": "Shop All Supplements",
@@ -179,8 +179,8 @@
           "type": "text",
           "settings": {
             "bubble_category": "Skin",
-            "bubble_collection": "",
-            "bubble_collection_members": "",
+            "bubble_collection": "shopify:\/\/pages\/product-finder",
+            "bubble_collection_members": "shopify:\/\/pages\/product-finder",
             "bubble_color": "#00a9e0",
             "bubble_image": "shopify:\/\/shop_images\/QUIZ_Logo_100x100px.jpg",
             "bubble_text": "Quiz"
@@ -644,7 +644,7 @@
         "text_alignment": "center",
         "subheading": "Over 5,000+ 5 star reviews",
         "title": "Trusted By The Best",
-        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle today, you deserve the best.<\/p>",
+        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle, you deserve the best.<\/p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#050505"
