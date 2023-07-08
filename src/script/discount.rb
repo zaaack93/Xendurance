@@ -146,6 +146,8 @@ class DiscountLoop
     line_items.each_with_index do |line_item|
       break if num_to_discount <= 0
 
+      next if line_item.variant.product.id == 7152992125116
+
       if line_item.quantity > num_to_discount
         split_line_item = line_item.split(take: num_to_discount)
         @discount_applicator.apply(split_line_item)
@@ -177,7 +179,8 @@ class BundleDiscountCampaign
       bundle_items = bundle_selector.build(cart)
 
       next if bundle_items.any? do |product_id, product_info|
-        product_info[:total_quantity] < product_info[:quantity_needed]
+        product_info[:total_quantity] < product_info[:quantity_needed] ||
+        product_id == 7152992125116
       end
 
       num_bundles = bundle_items.map do |product_id, product_info|
