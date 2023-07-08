@@ -23,18 +23,40 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     }
   });
   document.addEventListener('cart:change', function (event) {
-    var _document$querySelect, _document$querySelect2;
     var cart = event.detail.cart;
-    (_document$querySelect = document.querySelector('.product')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.classList.remove('cart-has-membership');
-    (_document$querySelect2 = document.querySelector('cart-drawer')) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.classList.remove('membership-in-cart');
-    cart === null || cart === void 0 ? void 0 : cart.items.forEach(function (item) {
-      if (item.id == 40692118094012) {
-        var _document$querySelect3, _document$querySelect4;
-        (_document$querySelect3 = document.querySelector('.product')) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.classList.add('cart-has-membership');
-        (_document$querySelect4 = document.querySelector('cart-drawer')) === null || _document$querySelect4 === void 0 ? void 0 : _document$querySelect4.classList.add('membership-in-cart');
-        return;
-      }
+    var isFound = cart === null || cart === void 0 ? void 0 : cart.items.some(function (obj) {
+      return obj.id === 40692118094012;
     });
+    if (isFound) {
+      var _document$querySelect, _document$querySelect2;
+      (_document$querySelect = document.querySelector('.product')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.classList.add('cart-has-membership');
+      (_document$querySelect2 = document.querySelector('cart-drawer')) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.classList.add('membership-in-cart');
+    } else if (!isFound && !window.themeVariables.isMember) {
+      var _document$querySelect3, _document$querySelect4;
+      (_document$querySelect3 = document.querySelector('.product')) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.classList.remove('cart-has-membership');
+      (_document$querySelect4 = document.querySelector('cart-drawer')) === null || _document$querySelect4 === void 0 ? void 0 : _document$querySelect4.classList.remove('membership-in-cart');
+      // Filter objects with a specific selling plan ID
+      var sellingPlanId = 4549771452;
+      var filteredObjects = cart === null || cart === void 0 ? void 0 : cart.items.filter(function (obj) {
+        var _obj$selling_plan_all, _obj$selling_plan_all2;
+        return ((_obj$selling_plan_all = obj.selling_plan_allocation) === null || _obj$selling_plan_all === void 0 ? void 0 : (_obj$selling_plan_all2 = _obj$selling_plan_all.selling_plan) === null || _obj$selling_plan_all2 === void 0 ? void 0 : _obj$selling_plan_all2.id) === sellingPlanId;
+      });
+
+      // Find all the "Remove" link buttons
+      var ContainerremoveButtons = document.querySelectorAll('line-item');
+
+      // Click on each "Remove" button that corresponds to an object in the filteredObjects array
+      ContainerremoveButtons.forEach(function (container) {
+        var lineItemKey = container.getAttribute('data-line-item');
+        var matchingObject = filteredObjects.find(function (obj) {
+          return obj.id.toString() + "-" + sellingPlanId.toString() === lineItemKey;
+        });
+        if (matchingObject) {
+          var _container$querySelec;
+          (_container$querySelec = container.querySelector('.line-item__actions .link')) === null || _container$querySelec === void 0 ? void 0 : _container$querySelec.click();
+        }
+      });
+    }
   });
   if (window.location.pathname.includes('/products')) {
     document.addEventListener('cart:change', function (event) {

@@ -14,15 +14,31 @@
 
     document.addEventListener('cart:change', function(event) {
         let cart = event.detail.cart;
-        document.querySelector('.product')?.classList.remove('cart-has-membership')
-        document.querySelector('cart-drawer')?.classList.remove('membership-in-cart')
-        cart?.items.forEach(item => {
-        if(item.id==40692118094012){
+        let isFound =cart?.items.some(obj => obj.id === 40692118094012)
+        if(isFound){
             document.querySelector('.product')?.classList.add('cart-has-membership');
             document.querySelector('cart-drawer')?.classList.add('membership-in-cart')
-            return;
         }
-        });
+        else if(!isFound && !window.themeVariables.isMember){
+            document.querySelector('.product')?.classList.remove('cart-has-membership');
+            document.querySelector('cart-drawer')?.classList.remove('membership-in-cart')
+            // Filter objects with a specific selling plan ID
+            const sellingPlanId = 4549771452;
+            const filteredObjects = cart?.items.filter(obj => obj.selling_plan_allocation?.selling_plan?.id === sellingPlanId);
+
+            // Find all the "Remove" link buttons
+            const ContainerremoveButtons = document.querySelectorAll('line-item');
+
+            // Click on each "Remove" button that corresponds to an object in the filteredObjects array
+            ContainerremoveButtons.forEach(container => {
+                const lineItemKey = container.getAttribute('data-line-item');
+                const matchingObject = filteredObjects.find(obj => obj.id.toString()+"-"+sellingPlanId.toString() === lineItemKey);
+                if (matchingObject) {
+                    container.querySelector('.line-item__actions .link')?.click();
+                }
+            });
+            
+        }
     });
 
 

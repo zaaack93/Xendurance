@@ -17,7 +17,7 @@ Supported variables
   {%- assign line_max_quantity = line_item.variant.inventory_quantity -%}
 {%- endif -%}
 
-<line-item class="line-item">
+<line-item class="line-item" data-line-item="{{line_item.id}}-{{line_item.selling_plan_allocation.selling_plan.id}}">
   {%- if line_item.image != blank -%}
     <div class="line-item__media-wrapper">
       {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 80px, 96px', widths: '80,96,160,192', class: 'line-item__media rounded-xs' -}}

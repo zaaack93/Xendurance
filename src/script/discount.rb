@@ -95,7 +95,7 @@ class ProductSelector
   end
 
   def subscription(line_item)
-    line_item.selling_plan_id == 4549771452
+    line_item.selling_plan_id != nil
   end
 
   def all(line_item)
