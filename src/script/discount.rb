@@ -95,7 +95,7 @@ class ProductSelector
   end
 
   def subscription(line_item)
-    !line_item.selling_plan_id.nil?
+    line_item.selling_plan_id == 4549771452
   end
 
   def all(line_item)
@@ -146,7 +146,8 @@ class DiscountLoop
     line_items.each_with_index do |line_item|
       break if num_to_discount <= 0
 
-      next if line_item.variant.product.id == 7152992125116
+      next if line_item.variant.product.id == 7152992125116 ||
+              ProductSelector.new(nil, nil, nil).subscription(line_item)  # Add this line
 
       if line_item.quantity > num_to_discount
         split_line_item = line_item.split(take: num_to_discount)
