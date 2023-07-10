@@ -46,6 +46,13 @@ Supported variables
     {%- if line_item.selling_plan_allocation -%}
       <p class="text-sm text-subdued">{{ line_item.selling_plan_allocation.selling_plan.name }}</p>
     {%- endif -%}
+    {% assign isMember = false %}
+    {% if customer and customer.tags contains "XNDSHIP" %}
+      {% assign isMember = true %}
+    {% endif %}
+    {% if isMember and line_item.product.metafields.my_fields.point_value != blank %}
+      <p class="text-sm text-subdued"><b>PV : </b>{{ line_item. product.metafields.my_fields.point_value  }}</p>
+    {%- endif -%}
 
     {%- unless line_item.properties == blank -%}
       <ul class="list-disc">
