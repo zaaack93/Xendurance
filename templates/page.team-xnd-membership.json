@@ -263,6 +263,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -297,6 +298,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -426,7 +428,7 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
+            "image": "shopify:\/\/shop_images\/Metafield_Photos_db6f4d72-2ccf-42cd-b290-9b03fdcb2b47.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -454,7 +456,7 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_8797bc42-1b1c-4f3b-81f0-a705c07edba9.jpg",
+            "image": "shopify:\/\/shop_images\/2_1676033a-6b71-48da-832d-0aa18bbd4b4f.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -482,7 +484,7 @@
         "2fa3cb45-b179-4ca6-936e-32dd64424239": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/11.jpg",
+            "image": "shopify:\/\/shop_images\/1_b2c9a54e-1fd9-4ae5-b148-17a842eed79f.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -496,7 +498,7 @@
         "0c676a14-2ca9-4a69-a721-95d80367b50e": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9_89e0ddb0-ea50-4f69-b214-5eb9677c17e7.jpg",
+            "image": "shopify:\/\/shop_images\/Metafield_Photos_fce9c768-0e72-467e-9cf0-1d5c76f23c8a.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -968,6 +970,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -1002,6 +1005,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },

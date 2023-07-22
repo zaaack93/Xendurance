@@ -466,6 +466,15 @@ class customProductForm extends ProductForm {
 
       // items.push({id: 40692118094012, quantity:1 , selling_plan: 4565696700 });
       // formData.set("items", JSON.stringify(items));
+
+      /* 
+      * Added by Smartrr
+      * If membership selling plan is selected, 
+      * remove selling plan for actual product.
+      * Membership product will have selling plan
+      */
+      formData.set("selling_plan", "");
+      
       const formDataMemberShip = new FormData();
       formDataMemberShip.append('id', 40692118094012);
       formDataMemberShip.append('quantity', 1);
