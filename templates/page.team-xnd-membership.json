@@ -104,7 +104,6 @@
     },
     "4125307b-5d63-44bc-9967-beea68306462": {
       "type": "text-with-icons",
-      "disabled": true,
       "blocks": {
         "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-0": {
           "type": "item",
@@ -151,6 +150,7 @@
         "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-1",
         "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -191,7 +191,7 @@
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_XND_2.jpg",
+            "image": "shopify:\/\/shop_images\/Essential-No_IS1200size.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -199,7 +199,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "$100 in Product Rewards",
-            "content": "<p>You read that right. Get $100 in Product Rewards upon Joining. It's that simple. <\/p>",
+            "content": "<p>You read that right. Get $100 in Product Rewards upon Joining. It's that simple. <br\/><br\/>Receive 2x $50 Product Reward Coupons to be redeemed on any purchase of $125+.<\/p>",
             "link_text": "",
             "link_url": "https:\/\/chrome-extension\/\/efaidnbmnnnibpcajpcglclefindmkaj\/https:\/\/cdn.shopify.com\/s\/files\/1\/0574\/3450\/5404\/files\/EE_Challenge-Workouts-2.pdf?v=1643835918",
             "background": "#f5f5f5",
@@ -269,7 +269,6 @@
     },
     "1782d0d6-94da-454f-a381-d65a9e20ce78": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "a9cfd66d-f1dc-49da-be4c-ed08c28022e6": {
           "type": "image",
@@ -296,6 +295,7 @@
       "block_order": [
         "a9cfd66d-f1dc-49da-be4c-ed08c28022e6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "hide_for_members": false,
@@ -563,7 +563,6 @@
     },
     "aa48095d-cf33-4d75-8a96-cf91e6c7f352": {
       "type": "text-with-icons",
-      "disabled": true,
       "blocks": {
         "62ca70ef-bd00-4813-861f-152b1b342453": {
           "type": "item",
@@ -613,6 +612,7 @@
         "57c2e7c1-02e0-4854-ac88-117a067f5683",
         "ad36cc39-c149-41ec-aba1-469cea7ef733"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -684,6 +684,145 @@
         "background": "#353435",
         "background_gradient": "",
         "text_color": "#ffffff"
+      }
+    },
+    "dbfed789-a112-4adb-be02-15dfd4f12a51": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16054074540220__dbfed789-a112-4adb-be02-15dfd4f12a51-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Focus.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "5c4be464-c670-4aa9-a23d-b433734d1906": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Collagen_Greens.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "619aae2c-5238-4cf4-89f5-cf3840cdb396": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_EE.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "9e5fb298-fbc8-4dfa-b8f0-8d0c1aa9626f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Deep_Sleep.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "b51da762-b253-482a-a733-3c5cc463a9a8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Essential.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "7fa40e0a-81b7-4fed-ab77-89f3e13f973e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Immune_Boost.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "32929d73-6256-40a6-9842-96f62c802b04": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Lean.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "f001dd3a-0296-4514-9d51-84a938b70805": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Savings_Cards_-_Shield_Protect.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16054074540220__dbfed789-a112-4adb-be02-15dfd4f12a51-item-1",
+        "5c4be464-c670-4aa9-a23d-b433734d1906",
+        "619aae2c-5238-4cf4-89f5-cf3840cdb396",
+        "9e5fb298-fbc8-4dfa-b8f0-8d0c1aa9626f",
+        "b51da762-b253-482a-a733-3c5cc463a9a8",
+        "7fa40e0a-81b7-4fed-ab77-89f3e13f973e",
+        "32929d73-6256-40a6-9842-96f62c802b04",
+        "f001dd3a-0296-4514-9d51-84a938b70805"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Serious Savings",
+        "content": "<p>Team XND Members save an average of $57 \/ month and usually breakeven on their first purchase when using their first $50 OFF Rewards coupon. <\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa": {
@@ -941,7 +1080,6 @@
     },
     "8cdcf53b-054c-4223-a644-ffa369c74591": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "6074386f-a014-4520-8739-857127e6bb96": {
           "type": "image",
@@ -968,6 +1106,7 @@
       "block_order": [
         "6074386f-a014-4520-8739-857127e6bb96"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "hide_for_members": false,
@@ -1016,7 +1155,7 @@
           "type": "item",
           "settings": {
             "title": "What happens if I change my mind?",
-            "content": "<p>No worries, we will refund you.<\/p>"
+            "content": "<p>We will gladly refund you the Team Membership cost if no more than 2 Xendurance orders have been placed under the specific Team Member Account.<\/p>"
           }
         },
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1": {
@@ -1030,7 +1169,7 @@
           "type": "item",
           "settings": {
             "title": "What if I haven't used Xendurance products before?",
-            "content": "<p>Thats okay! 90% of Team Members save more money than the cost of the membership on their first order!<\/p>"
+            "content": "<p>Thats okay! 90% of Team Members save more money on the cost of the membership on their first order!<\/p>"
           }
         },
         "795cb8e4-7e18-40df-83ca-31944929a21f": {
@@ -1120,6 +1259,7 @@
     "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac",
     "aa48095d-cf33-4d75-8a96-cf91e6c7f352",
     "28d43fc2-fdae-42c3-b17a-fdb0261601d7",
+    "dbfed789-a112-4adb-be02-15dfd4f12a51",
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa",
     "0d8800aa-9c42-40d6-b630-28e4885a4d3f",
     "a10c45f3-8f5b-4be8-93cb-3b25f23f8f59",

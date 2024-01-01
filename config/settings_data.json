@@ -96,6 +96,24 @@
           "inject_modules_loader": true,
           "inject_sdk_loader": true
         }
+      },
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#000000",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
+        }
+      },
+      "18362670158283609394": {
+        "type": "shopify:\/\/apps\/omega-twitter-pixels\/blocks\/app-embed-block\/babebd41-cc77-42a4-9431-59acdd6bc8c3",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },

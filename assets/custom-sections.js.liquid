@@ -523,6 +523,9 @@ class customProductForm extends ProductForm {
           cart: cartContent
         }
       }));
+      setTimeout(() => {
+          FGSECOMAPP.renderPromotionMessage(FGSECOMAPP.offers);
+      }, 500)
     } else {
       this.dispatchEvent(new CustomEvent("cart:error", {
         bubbles: true,

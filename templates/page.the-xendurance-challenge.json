@@ -102,6 +102,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -181,6 +182,71 @@
         "text_color": ""
       }
     },
+    "c838c62f-7458-40bd-a5d9-d1c64ff5389d": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "RUNNING WORKOUT",
+            "content": "<p>OPTION 1 <br\/>Max effort | 4 x 200 meter with 2 minute recovery between intervals |    Record interval times<br\/><br\/>OPTION 2 <br\/>Max effort | 5K time trial | Record end time<\/p>"
+          }
+        },
+        "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-2": {
+          "type": "item",
+          "settings": {
+            "title": "CROSS FUNCTIONAL WORKOUTS",
+            "content": "<p>OPTION 1 | “CINDY” Complete as many rounds as possible in 20 miniutes of   5 Pull-ups, 10 Push-ups, 15 Squats | Record total rounds completed<br\/><br\/>OPTION 2 | “KAREN” 150 Wallball shots | Record end time<\/p>"
+          }
+        },
+        "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-3": {
+          "type": "item",
+          "settings": {
+            "title": "BIKING WORKOUT",
+            "content": "<p>Ramp test | Start with 100 watts (for men) \/ 50 watts (for women) | Every 10 seconds, add 10 watts | Record time when you fail<\/p>"
+          }
+        },
+        "530979a1-5370-446e-838b-0bff762b822c": {
+          "type": "item",
+          "settings": {
+            "title": "ROWING WORKOUT",
+            "content": "<p>4 x 1 minute (max effort) | 2 minute recovery between intervals | Record Calories and Watts for each interval<\/p>"
+          }
+        },
+        "5722aebb-efd6-43ea-9886-d00cd1a2ac20": {
+          "type": "item",
+          "settings": {
+            "title": "BODYBUILDING WORKOUT",
+            "content": "<p>Body Weight Bench to burnout | 3 minute rest | Dips to burnout |    Record total reps for Bench and Dips<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-1",
+        "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-2",
+        "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-3",
+        "530979a1-5370-446e-838b-0bff762b822c",
+        "5722aebb-efd6-43ea-9886-d00cd1a2ac20"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Extreme Endurance Challenge Workouts",
+        "content": "<p>You will find workouts for a variety of training styles to complete below. Feel free to come up with your own workout - try to create something repeatable that induces lactic acid and is measurable.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa": {
       "type": "testimonials",
       "blocks": {
@@ -251,7 +317,7 @@
         "full_width": true,
         "stack_testimonials": false,
         "subheading": "Don't take our word for it",
-        "title": "OVER 500+ REVIEWS FROM ATHLETES LIKE YOU",
+        "title": "OVER 1,000+ REVIEWS FROM ATHLETES LIKE YOU",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -292,7 +358,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "",
-            "content": "<p>Certified by Informed-Choice & Informed-Sport**<\/p>"
+            "content": "<p>Certified by Informed-Sport*<\/p>"
           }
         },
         "template--16053542715580__f12c65b4-479f-4d49-98f5-cede8e305199-1687416772d0eb0563-2": {
@@ -329,7 +395,6 @@
     },
     "21fd67c5-5442-419a-9ca3-099fd99c3989": {
       "type": "video",
-      "disabled": true,
       "blocks": {
         "template--16053483208892__21fd67c5-5442-419a-9ca3-099fd99c3989-1687318094e9cddd66-0": {
           "type": "play",
@@ -355,6 +420,7 @@
         "template--16053483208892__21fd67c5-5442-419a-9ca3-099fd99c3989-1687318094e9cddd66-1",
         "a0c9f8eb-eac0-49bb-8806-62c520818004"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -459,7 +525,6 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "extreme-endurance",
         "product_list": [
           "extreme-endurance",
           "extreme-endurance-1"
@@ -557,6 +622,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -641,6 +707,7 @@
     "101ee25b-89f4-4386-82b3-fe92ae53ba66",
     "1284832e-4ff2-46b3-8365-2765229b44f4",
     "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac",
+    "c838c62f-7458-40bd-a5d9-d1c64ff5389d",
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa",
     "f12c65b4-479f-4d49-98f5-cede8e305199",
     "21fd67c5-5442-419a-9ca3-099fd99c3989",

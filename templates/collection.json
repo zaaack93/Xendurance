@@ -24,7 +24,6 @@
     },
     "9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e": {
       "type": "image-link-blocks",
-      "disabled": true,
       "blocks": {
         "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-0": {
           "type": "item",
@@ -82,6 +81,7 @@
         "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-2",
         "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "block_size": "medium",

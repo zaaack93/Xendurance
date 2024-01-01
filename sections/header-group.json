@@ -8,20 +8,29 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "TRUSTED BY 300,000+ PEAK PERFORMERS",
+            "text": "TRUSTED BY 350,000+ PEAK PERFORMERS",
             "url": "shopify:\/\/collections\/all",
+            "url_members": ""
+          }
+        },
+        "ea77fc2e-03f6-4309-9219-2407b80e65a6": {
+          "type": "message",
+          "settings": {
+            "text": "LOGIN FOR TEAM XND MEMBER DISCOUNTS",
+            "url": "",
             "url_members": ""
           }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "ea77fc2e-03f6-4309-9219-2407b80e65a6"
       ],
       "settings": {
         "enable_sticky": false,
         "text_size": "text-xs",
-        "navigation_mode": "arrows",
-        "scrolling_speed": 10,
+        "navigation_mode": "scrolling",
+        "scrolling_speed": 14,
         "background": "#1a1a1a",
         "background_gradient": "",
         "text_color": "#ffffff"

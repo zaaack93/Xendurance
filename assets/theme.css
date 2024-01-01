@@ -1230,7 +1230,7 @@ scroll-carousel {
 .drawer::part(body) {
   padding: var(--drawer-body-padding);
   overscroll-behavior-y: contain;
-  flex: auto;
+  /* flex: auto; */
   align-items: start;
   display: grid;
   overflow-y: auto;

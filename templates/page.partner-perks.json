@@ -339,20 +339,6 @@
             "link_style": "link"
           }
         },
-        "f9d766a5-1b06-42a3-8a9b-f0eb80f75d01": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Client-Logo_Vitamix.jpg",
-            "column_size": "3",
-            "title": "Vitamix®",
-            "heading_tag": "h4",
-            "content": "<p>Award-winning blenders that allow anyone to create healthy, delicious food regardless of skill level.<\/p><p>Use code <strong>CORPVITAMIX <\/strong>for exclusive Vitamix savings!<\/p>",
-            "link_url": "https:\/\/www.vitamix.com\/shop",
-            "link_url_members": "https:\/\/www.vitamix.com\/shop",
-            "link_text": "Shop Now",
-            "link_style": "link"
-          }
-        },
         "6efea191-2187-4070-a103-bce7ffc53b89": {
           "type": "item",
           "settings": {
@@ -475,6 +461,20 @@
             "content": "<p>Dermatologist-tested, clean and elevated dandruff and hair care products.<\/p><p>Use code <strong>XND10<\/strong> for 10% OFF your first order!<\/p>",
             "link_url": "https:\/\/www.shopjupiter.com",
             "link_url_members": "https:\/\/www.shopjupiter.com",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "aa92cc4b-c87d-40e9-b412-b6e72f69902e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BBBF_Back.png",
+            "column_size": "3",
+            "title": "Brute Force",
+            "heading_tag": "h4",
+            "content": "<p>- Brute Force is the original 8-handled sandbag company<br\/>- 100% made in the USA in Arvada, CO<br\/>- We offer functional training gear and training plans to keep you ready for anything, at any time, under any circumstances.<\/p><p> Code: MO15<\/p>",
+            "link_url": "http:\/\/www.workingagainstgravity.com\/",
+            "link_url_members": "http:\/\/www.workingagainstgravity.com\/",
             "link_text": "Shop Now",
             "link_style": "link"
           }
@@ -688,6 +688,20 @@
             "link_text": "Shop Now",
             "link_style": "link"
           }
+        },
+        "d5a89c85-b828-464f-830d-33a351437ae3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-10-17_at_9.58.17_AM.png",
+            "column_size": "3",
+            "title": "Go Pro",
+            "heading_tag": "h4",
+            "content": "<p>Leadership Training & Programs<\/p><p>Use code <strong>XENDURANCE<\/strong> for $100 OFF!<\/p>",
+            "link_url": "https:\/\/canchabags.com\/en-us",
+            "link_url_members": "https:\/\/goproacademy.com\/overview",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -711,7 +725,6 @@
         "976392c5-b1b1-40c7-b54b-c6b2ec1f692d",
         "353e0242-f035-44ac-a0f6-2c967990118d",
         "a50e461f-3f2f-4c49-bcfc-632d8234476b",
-        "f9d766a5-1b06-42a3-8a9b-f0eb80f75d01",
         "6efea191-2187-4070-a103-bce7ffc53b89",
         "afa6e8c3-0cc5-4c8c-be2e-1a3b2e84b84a",
         "7ab8158f-5a25-451f-9545-a15d334ed96d",
@@ -721,6 +734,7 @@
         "2044d63a-7c3d-42df-81e9-1032f114ef9f",
         "b54c2d03-abdd-4c18-acad-6af51ae152e6",
         "bd57aa47-496d-4c47-927b-f413a7621a80",
+        "aa92cc4b-c87d-40e9-b412-b6e72f69902e",
         "1fb819a9-27be-4609-b8e0-9ac2f4459e85",
         "40e8a693-5442-40e9-95d7-52667214a9e3",
         "bfe01f2d-42ff-43f2-8f54-e5e2970fdb64",
@@ -735,7 +749,8 @@
         "6a3228e2-5d6d-4cfb-a5ba-c1a59a93fb1e",
         "9a3ccc25-bbe8-4106-8461-bbbf3a70ce81",
         "e9effcc2-a761-468d-80d6-eee7ce0efc63",
-        "51d7cf0e-9742-41ab-a864-24895331a1e1"
+        "51d7cf0e-9742-41ab-a864-24895331a1e1",
+        "d5a89c85-b828-464f-830d-33a351437ae3"
       ],
       "settings": {
         "full_width": true,
@@ -752,7 +767,6 @@
     },
     "4872f2ee-ee86-402b-a966-8c23b0f7ae3c": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-0": {
           "type": "subheading",
@@ -781,6 +795,7 @@
         "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-1",
         "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "large",
@@ -799,7 +814,6 @@
     },
     "4125307b-5d63-44bc-9967-beea68306462": {
       "type": "text-with-icons",
-      "disabled": true,
       "blocks": {
         "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-0": {
           "type": "item",
@@ -846,6 +860,7 @@
         "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-1",
         "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -860,7 +875,6 @@
     },
     "101ee25b-89f4-4386-82b3-fe92ae53ba66": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
           "type": "image",
@@ -957,14 +971,15 @@
         "fa984ecd-b779-444a-8dac-de7dfeefa851",
         "cfadcff4-8a13-420a-86b6-171b6ebbe2fd"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
     "1782d0d6-94da-454f-a381-d65a9e20ce78": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "a9cfd66d-f1dc-49da-be4c-ed08c28022e6": {
           "type": "image",
@@ -991,14 +1006,15 @@
       "block_order": [
         "a9cfd66d-f1dc-49da-be4c-ed08c28022e6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
     "d9b602df-1d20-4bf3-bdc9-a5d7bca636ed": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-0": {
           "type": "vendor",
@@ -1097,6 +1113,7 @@
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-8",
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-10"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "product_list": [
@@ -1119,7 +1136,6 @@
     },
     "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
           "type": "item",
@@ -1244,6 +1260,7 @@
         "72239445-43b1-423f-a512-76a40b6cf24a",
         "ceeee60d-b7ed-45c5-9ef3-a7e6edcad6e5"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -1259,7 +1276,6 @@
     },
     "aa48095d-cf33-4d75-8a96-cf91e6c7f352": {
       "type": "text-with-icons",
-      "disabled": true,
       "blocks": {
         "62ca70ef-bd00-4813-861f-152b1b342453": {
           "type": "item",
@@ -1309,6 +1325,7 @@
         "57c2e7c1-02e0-4854-ac88-117a067f5683",
         "ad36cc39-c149-41ec-aba1-469cea7ef733"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -1323,7 +1340,6 @@
     },
     "28d43fc2-fdae-42c3-b17a-fdb0261601d7": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "template--16054074540220__28d43fc2-fdae-42c3-b17a-fdb0261601d7-1687493202314db7cf-0": {
           "type": "item",
@@ -1370,6 +1386,7 @@
         "template--16054074540220__28d43fc2-fdae-42c3-b17a-fdb0261601d7-1687493202314db7cf-1",
         "template--16054074540220__28d43fc2-fdae-42c3-b17a-fdb0261601d7-1687493202314db7cf-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
@@ -1385,7 +1402,6 @@
     },
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "49fa5568-b5ae-4907-b067-6864b2b70d75": {
           "type": "testimonial",
@@ -1462,6 +1478,7 @@
         "277f2a3e-0f01-4c22-a7c4-5b5340cc6984",
         "4678c02f-7a9f-49b5-bbce-1431e04eac74"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_testimonials": false,
@@ -1497,7 +1514,6 @@
     },
     "a10c45f3-8f5b-4be8-93cb-3b25f23f8f59": {
       "type": "logo-list",
-      "disabled": true,
       "blocks": {
         "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-0": {
           "type": "logo",
@@ -1622,6 +1638,7 @@
         "d78a43ef-e267-465f-a1eb-b6f6c7612317",
         "d8de0672-111f-40f9-b8eb-911a666a10a4"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_mobile": false,
@@ -1640,7 +1657,6 @@
     },
     "8cdcf53b-054c-4223-a644-ffa369c74591": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "6074386f-a014-4520-8739-857127e6bb96": {
           "type": "image",
@@ -1667,14 +1683,15 @@
       "block_order": [
         "6074386f-a014-4520-8739-857127e6bb96"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
     "d1042f19-fd3d-47ac-a873-e39a0adf613d": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "7e68ab9d-9712-446f-b8f8-7eb1818a43a0": {
           "type": "image",
@@ -1702,14 +1719,15 @@
       "block_order": [
         "7e68ab9d-9712-446f-b8f8-7eb1818a43a0"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
     "6ae6922e-7b13-4fd4-8a1f-5a684c04e323": {
       "type": "accordion-content",
-      "disabled": true,
       "blocks": {
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-0": {
           "type": "item",
@@ -1746,6 +1764,7 @@
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2",
         "795cb8e4-7e18-40df-83ca-31944929a21f"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",

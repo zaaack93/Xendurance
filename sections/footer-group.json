@@ -84,7 +84,7 @@
           "type": "text",
           "settings": {
             "title": "Xendurance",
-            "content": "<p>Proudly owned, manufactured and shipped in the USA, since 1998.<\/p><p>Get in touch: <a href=\"mailto:info@xendurance.com\">info@xendurance.com<\/a><\/p>",
+            "content": "<p>Proudly owned, manufactured and shipped in the USA, since 1998.<\/p><p>Get in touch: <a href=\"mailto:info@xendurance.com\">info@xendurance.com<\/a><br\/><br\/>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.<\/p>",
             "enable_follow_on_shop": false
           }
         },

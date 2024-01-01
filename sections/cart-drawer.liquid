@@ -10,17 +10,16 @@
   {% endif %}
 {% endfor %}
 <cart-drawer {% if request.design_mode %}handle-section-events{% endif %} class="cart-drawer drawer drawer--lg {% if productInCart %} membership-in-cart {%endif%} {%if isMember%} cart-for-members {%endif%}" id="cart-drawer">
+  <div class="sca-promotion-message-layout"></div>
   {%- if cart.item_count == 0 -%}
     <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
       {%- render 'icon' with 'close' -%}
     </button>
-
     <div class="empty-state align-self-center">
       <div class="empty-state__icon-wrapper">
         {%- render 'icon' with 'cart', width: 32, height: 32, stroke_width: 1 -%}
         <span class="count-bubble count-bubble--lg">0</span>
       </div>
-
       <div class="prose">
         <p class="h5">{{ 'cart.general.empty' | t }}</p>
 

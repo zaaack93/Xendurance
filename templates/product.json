@@ -116,7 +116,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Key Benefits",
-            "content": "<p>{{ product.metafields.custom.key_benefits | metafield_tag }}<\/p>"
+            "content": "{{ product.metafields.custom.key_benefits | metafield_tag }}"
           }
         },
         "b833a344-c331-427c-9113-de7b76a2738c": {
@@ -161,7 +161,7 @@
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": false,
-        "max_image_zoom_level": 3,
+        "max_image_zoom_level": 4,
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -409,6 +409,55 @@
             "title": "{{ product.metafields.custom.pdp_question_7.value }}",
             "content": "{{ product.metafields.custom.pdp_answer_7 | metafield_tag }}"
           }
+        },
+        "b66c9b64-f8c2-4179-b17d-dde18afa7a66": {
+          "type": "item",
+          "settings": {
+            "title": "Item",
+            "content": ""
+          }
+        },
+        "3b3beb34-2429-459a-a249-685af8254ad7": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "a2c2a9da-4378-4487-ad6c-1291eada3680": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p><p><\/p>"
+          }
+        },
+        "dfe30912-86b1-4a5d-99f8-855dcbeb2f16": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_8.value }}",
+            "content": "<p>{{ product.metafields.custom.pdp_answer_8.value }}<\/p><p><\/p>"
+          }
+        },
+        "19023f2d-3d86-4e7b-af97-997f3c6af771": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_9.value }}",
+            "content": "<p>{{ product.metafields.custom.pdp_answer_9.value }}<\/p>"
+          }
+        },
+        "9084a326-97b3-4f11-8762-04e772ad30a5": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_10.value }}",
+            "content": "<p>{{ product.metafields.custom.pdp_answer_10.value }}<\/p>"
+          }
+        },
+        "efb2e2c4-ef0f-42da-918c-f18d47b70000": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_question_11.value }}",
+            "content": "<p>{{ product.metafields.custom.pdp_answer_11.value }}<\/p>"
+          }
         }
       },
       "block_order": [
@@ -418,7 +467,14 @@
         "3a055e44-0985-4287-b5ba-d30a703ed0da",
         "2645c719-7e83-405b-b7ae-02ffb2430c11",
         "88211187-4dd7-4ab2-b0e2-78f4d5dce849",
-        "fc772d0c-cea9-4e65-9955-933fd6d64b0f"
+        "fc772d0c-cea9-4e65-9955-933fd6d64b0f",
+        "b66c9b64-f8c2-4179-b17d-dde18afa7a66",
+        "3b3beb34-2429-459a-a249-685af8254ad7",
+        "a2c2a9da-4378-4487-ad6c-1291eada3680",
+        "dfe30912-86b1-4a5d-99f8-855dcbeb2f16",
+        "19023f2d-3d86-4e7b-af97-997f3c6af771",
+        "9084a326-97b3-4f11-8762-04e772ad30a5",
+        "efb2e2c4-ef0f-42da-918c-f18d47b70000"
       ],
       "settings": {
         "full_width": true,
@@ -441,7 +497,6 @@
     },
     "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--16030540726460__c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c-16868891644e92fc9b-1": {
           "type": "heading",
@@ -456,6 +511,7 @@
       "block_order": [
         "template--16030540726460__c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c-16868891644e92fc9b-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",
@@ -467,7 +523,6 @@
     },
     "2a0ceef1-a819-4f7d-abc3-691d2dac0a8a": {
       "type": "media-grid",
-      "disabled": true,
       "blocks": {
         "template--16030540726460__2a0ceef1-a819-4f7d-abc3-691d2dac0a8a-16868887419509b226-2": {
           "type": "image",
@@ -518,6 +573,7 @@
         "template--16030540726460__2a0ceef1-a819-4f7d-abc3-691d2dac0a8a-16868887419509b226-2",
         "85823df1-6ee8-48e0-b6f7-b4eb181a009e"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -529,7 +585,6 @@
     },
     "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d": {
       "type": "feature-chart",
-      "disabled": true,
       "blocks": {
         "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-0": {
           "type": "headings",
@@ -618,6 +673,7 @@
         "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-1",
         "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -752,6 +808,18 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "591e9849-8775-4917-ba33-b4992916f8fc": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}\/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}\/cart\/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n<\/script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -767,6 +835,7 @@
     "16868735100eb8db37",
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
     "related-products",
-    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1"
+    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1",
+    "591e9849-8775-4917-ba33-b4992916f8fc"
   ]
 }
