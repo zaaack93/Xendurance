@@ -2,7 +2,7 @@
     //multi column scroll on mobile
     .multi-column{
         @media only screen and (max-width: 699px){
-            --multi-column-grid: auto / auto-flow 80vw;
+            --multi-column-grid: auto / auto-flow 78vw;
         }
         @media screen and (min-width: 1000px){
             display: flex;
@@ -50,18 +50,29 @@
     .swiper-pagination {
         margin-top: 25px;
         position: relative;
+        // .swiper-pagination-bullet:not(.swiper-pagination-bullet-active-main){
+        //     display: none;
+        // }
         .swiper-pagination-bullet{
             height: 12px;
             width: 12px;
             aspect-ratio: 1;
             border-color: #353434;
+            margin-inline: 10px;
             border: 1px solid;
             opacity: 1;
             background-color: transparent;
+            transform: scale(1);
             &.swiper-pagination-bullet-active{
                 background-color: #353434;
                 border-color: #353434;
             }
+        }
+        .swiper-pagination-bullet-active-next-next,.swiper-pagination-bullet-active-prev-prev,.swiper-pagination-bullet-active-prev,.swiper-pagination-bullet-active-next{
+            opacity: 0;
+        }
+        @media screen and (max-width: 999px){
+            display: none;
         }
     }
     .swiper-navigation__button{
@@ -70,6 +81,9 @@
         height: 47px;
         top: 55%;
         &::after{
+            display: none;
+        }
+        @media screen and (max-width: 999px){
             display: none;
         }
     }

@@ -753,6 +753,9 @@ class SwiperComponent extends HTMLElement {
 
   connectedCallback() {
     this.initSwiper();
+    
+    // Listen for window resize events
+    window.addEventListener('resize', () => this.handleResize());
   }
 
   initSwiper() {
@@ -763,6 +766,8 @@ class SwiperComponent extends HTMLElement {
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 5
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -770,7 +775,24 @@ class SwiperComponent extends HTMLElement {
       },
     };
 
-    const mySwiper = new Swiper(this, swiperOptions);
+    // Check screen width and initialize Swiper accordingly
+    this.mySwiper = window.innerWidth > 1000 ? new Swiper(this, swiperOptions) : null;
+  }
+
+  handleResize() {
+    // Check screen width and initialize/destroy Swiper accordingly
+    if (window.innerWidth > 1000 && !this.mySwiper) {
+      this.initSwiper();
+    } else if (window.innerWidth <= 1000 && this.mySwiper) {
+      this.destroySwiper();
+    }
+  }
+
+  destroySwiper() {
+    if (this.mySwiper) {
+      this.mySwiper.destroy();
+      this.mySwiper = null;
+    }
   }
 }
 
