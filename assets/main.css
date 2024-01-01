@@ -1277,6 +1277,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   color: #FFF;
 }
 .shopify-section--multi-column-v2 .swiper-pagination {
+  display: none;
   margin-top: 25px;
   position: relative;
 }
@@ -1295,9 +1296,6 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   background-color: #353434;
   border-color: #353434;
 }
-.shopify-section--multi-column-v2 .swiper-pagination .swiper-pagination-bullet-active-next-next, .shopify-section--multi-column-v2 .swiper-pagination .swiper-pagination-bullet-active-prev-prev, .shopify-section--multi-column-v2 .swiper-pagination .swiper-pagination-bullet-active-prev, .shopify-section--multi-column-v2 .swiper-pagination .swiper-pagination-bullet-active-next {
-  opacity: 0;
-}
 @media screen and (max-width: 999px) {
   .shopify-section--multi-column-v2 .swiper-pagination {
     display: none;
@@ -1307,7 +1305,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   z-index: 1;
   width: 47px;
   height: 47px;
-  top: 55%;
+  top: 61%;
 }
 .shopify-section--multi-column-v2 .swiper-navigation__button::after {
   display: none;

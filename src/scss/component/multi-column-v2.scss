@@ -48,6 +48,7 @@
 
     //working on swiper pagination
     .swiper-pagination {
+        display: none;
         margin-top: 25px;
         position: relative;
         // .swiper-pagination-bullet:not(.swiper-pagination-bullet-active-main){
@@ -68,9 +69,9 @@
                 border-color: #353434;
             }
         }
-        .swiper-pagination-bullet-active-next-next,.swiper-pagination-bullet-active-prev-prev,.swiper-pagination-bullet-active-prev,.swiper-pagination-bullet-active-next{
-            opacity: 0;
-        }
+        // .swiper-pagination-bullet-active-next-next,.swiper-pagination-bullet-active-prev-prev,.swiper-pagination-bullet-active-prev,.swiper-pagination-bullet-active-next{
+        //     opacity: 0;
+        // }
         @media screen and (max-width: 999px){
             display: none;
         }
@@ -79,7 +80,7 @@
         z-index: 1;
         width: 47px;
         height: 47px;
-        top: 55%;
+        top: 61%;
         &::after{
             display: none;
         }
