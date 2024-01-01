@@ -2,7 +2,7 @@
     //multi column scroll on mobile
     .multi-column{
         @media only screen and (max-width: 699px){
-            --multi-column-grid: auto / auto-flow 78vw;
+            --multi-column-grid: auto / auto-flow 75vw;
         }
         @media screen and (min-width: 1000px){
             display: flex;
