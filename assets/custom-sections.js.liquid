@@ -744,3 +744,34 @@ function setActiveBulletBasedOnScroll(table, firstBullet, secondBullet) {
   }
 }
 customElements.define('feature-chart-customized', FeaturedChartCustomized);
+
+
+class SwiperComponent extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.initSwiper();
+  }
+
+  initSwiper() {
+    // Configure Swiper with the retrieved options
+    const swiperOptions = {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    };
+
+    const mySwiper = new Swiper(this, swiperOptions);
+  }
+}
+
+customElements.define("swiper-component", SwiperComponent);

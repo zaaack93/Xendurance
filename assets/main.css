@@ -1238,6 +1238,13 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     --multi-column-grid: auto / auto-flow 80vw;
   }
 }
+@media screen and (min-width: 1000px) {
+  .shopify-section--multi-column-v2 .multi-column {
+    display: flex;
+    overflow: visible;
+    gap: 30px;
+  }
+}
 .shopify-section--multi-column-v2 .multi-column__item {
   padding-inline: 22px;
   -webkit-padding-before: 20px;
@@ -1247,6 +1254,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   border-radius: 20px;
   border: 1px solid #000;
   background: #353434;
+}
+@media screen and (min-width: 1000px) {
+  .shopify-section--multi-column-v2 .multi-column__item {
+    margin-right: 0px !important;
+  }
 }
 @media screen and (min-width: 1000px) {
   .shopify-section--multi-column-v2 .multi-column__item {
@@ -1263,6 +1275,41 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 }
 .shopify-section--multi-column-v2 .multi-column__item .v-stack.gap-4 .prose p {
   color: #FFF;
+}
+.shopify-section--multi-column-v2 .swiper-pagination {
+  margin-top: 25px;
+  position: relative;
+}
+.shopify-section--multi-column-v2 .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  aspect-ratio: 1;
+  border-color: #353434;
+  border: 1px solid;
+  opacity: 1;
+  background-color: transparent;
+}
+.shopify-section--multi-column-v2 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #353434;
+  border-color: #353434;
+}
+.shopify-section--multi-column-v2 .swiper-navigation__button {
+  z-index: 1;
+  width: 47px;
+  height: 47px;
+  top: 55%;
+}
+.shopify-section--multi-column-v2 .swiper-navigation__button::after {
+  display: none;
+}
+.shopify-section--multi-column-v2 .swiper-button-next {
+  right: -24px;
+}
+.shopify-section--multi-column-v2 .swiper-button-prev {
+  left: -24px;
+}
+.shopify-section--multi-column-v2 .swipper__inner {
+  position: relative;
 }
 
 .template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {

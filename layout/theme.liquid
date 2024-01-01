@@ -82,9 +82,10 @@ jumbleberry("init", "w4D-eDjD2ilwxpyI27sIvkBSNd359sWzfKz_0g011TFet3o6qtceUzp1n8R
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
     <script type="module" src="{{ 'sections.js' | asset_url }}"></script>
     <script type="module" src="{{ 'custom-sections.js' | asset_url }}"></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
 
     {{ content_for_header }}
-
+    {{- 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'main.css' | asset_url | stylesheet_tag: preload: true -}}
     <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/HfO1FZufKIcewMR-B0ElSQ" async></script>
@@ -121,7 +122,7 @@ jumbleberry("init", "w4D-eDjD2ilwxpyI27sIvkBSNd359sWzfKz_0g011TFet3o6qtceUzp1n8R
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
-
+    
     <script src="{{ 'main.js' | asset_url }}" defer></script>
     {% render 'freegifts-snippet' %}
   </body>

@@ -21,59 +21,66 @@
   </style>
 
   <div {% render 'section-properties' %}>
-    <div class="section-stack">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
-
-      <div class="multi-column scroll-area bleed md:unbleed">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'item' -%}
-              <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}>
-                {%- if block.settings.video != blank -%}
-                  <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
-                    {{ block.settings.video | video_tag: playsinline: true, muted: true, loop: true, preload: 'metadata', class: 'rounded' }}
-                  </video-media>
-                {%- elsif block.settings.image != blank -%}
-                  {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
-                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
-                {%- endif -%}
-
-                {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
-                  <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
-                    {%- if block.settings.title != blank -%}
-                      <p class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
+    <div class="swipper__inner">
+        <swiper-component class="section-stack swiper">
+        {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
+            
+        <div class="multi-column scroll-area bleed md:unbleed swiper-wrapper">
+            {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'item' -%}
+                <div class="multi-column__item swiper-slide justify-{{ section.settings.text_alignment }} snap-start" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.video != blank -%}
+                    <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
+                        {{ block.settings.video | video_tag: playsinline: true, muted: true, loop: true, preload: 'metadata', class: 'rounded' }}
+                    </video-media>
+                    {%- elsif block.settings.image != blank -%}
+                    {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+                    {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
                     {%- endif -%}
 
-                    {%- if block.settings.content != blank or block.settings.link_text != blank -%}
-                      <div class="prose">
-                        {{- block.settings.content -}}
-
-                        {%- if block.settings.link_text != blank -%}
-                          <div>
-                            {% include 'membership-check' %}
-                            {% if isMember %}
-                              {%- assign link_url = block.settings.link_url_members -%}
-                            {%else%}
-                              {%- assign link_url = block.settings.link_url -%}
-                            {%endif%}
-                            {%- if block.settings.link_style == 'link' -%}
-                              <a href="{{ link_url }}" class="link">{{ block.settings.link_text | escape }}</a>
-                            {%- else -%}
-                              {%- render 'button', href: link_url, content: block.settings.link_text, size: 'lg' -%}
-                            {%- endif -%}
-                          </div>
+                    {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
+                    <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
+                        {%- if block.settings.title != blank -%}
+                        <p class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
                         {%- endif -%}
-                      </div>
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
-              </div>
 
-            {%- when 'spacer' -%}
-              <div class="multi-column__item hidden md:block" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}></div>
-          {%- endcase -%}
-        {%- endfor -%}
-      </div>
+                        {%- if block.settings.content != blank or block.settings.link_text != blank -%}
+                        <div class="prose">
+                            {{- block.settings.content -}}
+
+                            {%- if block.settings.link_text != blank -%}
+                            <div>
+                                {% include 'membership-check' %}
+                                {% if isMember %}
+                                {%- assign link_url = block.settings.link_url_members -%}
+                                {%else%}
+                                {%- assign link_url = block.settings.link_url -%}
+                                {%endif%}
+                                {%- if block.settings.link_style == 'link' -%}
+                                <a href="{{ link_url }}" class="link">{{ block.settings.link_text | escape }}</a>
+                                {%- else -%}
+                                {%- render 'button', href: link_url, content: block.settings.link_text, size: 'lg' -%}
+                                {%- endif -%}
+                            </div>
+                            {%- endif -%}
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    {%- endif -%}
+                </div>
+
+                {%- when 'spacer' -%}
+                <div class="multi-column__item hidden md:block" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}></div>
+            {%- endcase -%}
+            {%- endfor -%}
+        </div>
+        <div class="swiper-pagination"></div>
+        </swiper-component>
+
+        
+        <div class="swiper-button-next swiper-navigation__button">{% render 'arrow-right' %}</div>
+        <div class="swiper-button-prev swiper-navigation__button">{% render 'arrow-left' %}</div>
     </div>
   </div>
 {%- endif -%}
