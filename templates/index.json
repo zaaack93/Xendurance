@@ -216,7 +216,6 @@
     },
     "slideshow": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "slide-1": {
           "type": "image",
@@ -268,6 +267,7 @@
         "slide-1",
         "slide-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
@@ -371,7 +371,6 @@
     },
     "press": {
       "type": "press",
-      "disabled": true,
       "blocks": {
         "16644243327ba53d2a-1": {
           "type": "quote",
@@ -412,6 +411,7 @@
         "16644243327ba53d2a-0",
         "2a1666f6-89ef-470f-90b6-2ebdb6efca55"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "content_size": "small",
@@ -426,7 +426,6 @@
     },
     "8cf929de-0fb4-4e67-b62b-298ae59259c5": {
       "type": "logo-list",
-      "disabled": true,
       "blocks": {
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-3": {
           "type": "logo",
@@ -481,6 +480,7 @@
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-1",
         "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-4"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "stack_mobile": true,
@@ -499,7 +499,6 @@
     },
     "5afc2aff-aa85-4f6a-967b-b41e048eb60e": {
       "type": "multiple-images-with-text",
-      "disabled": true,
       "blocks": {
         "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-0": {
           "type": "item",
@@ -530,6 +529,7 @@
         "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-0",
         "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "images_layout": "stacked",
@@ -541,8 +541,118 @@
         "button_text_color": ""
       }
     },
+    "cddddfd9-22c1-45b8-b5d5-1e80f2e898a5": {
+      "type": "multi-column-v2",
+      "blocks": {
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_fe85927a-820b-4227-a111-e38b904f4fcb.png",
+            "column_size": "3",
+            "title": "Josh Bridges",
+            "heading_tag": "h4",
+            "content": "<p><em>Former Navy Seal and 6x CrossFit Games Athlete<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_3a645ed1-666c-4714-9f2e-e116bbbfed7e.png",
+            "column_size": "3",
+            "title": "Danielle Brandon",
+            "heading_tag": "h4",
+            "content": "<p><em>5x Crossfit Games Athlete<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "65dafed1-b5f9-49c7-9939-0ceb44d0c567": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Metafield_Photos_d784417a-8d5d-4621-827a-a44f9b84a99a.png",
+            "column_size": "3",
+            "title": "Matt Centrowitz",
+            "heading_tag": "h4",
+            "content": "<p><em>1500 Olympic Gold Medalist<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "edcf3f90-9b2a-4a23-a9ba-e107992868ed": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.15.10_PM.png",
+            "column_size": "3",
+            "title": "Amanda Barnhart",
+            "heading_tag": "h4",
+            "content": "<p><em>6x Crossfit Games Athlete<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
+            "column_size": "3",
+            "title": "Donavan Brazier",
+            "heading_tag": "h4",
+            "content": "<p><em>800m American Record Holder<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
+            "column_size": "3",
+            "title": "Craig Engels",
+            "heading_tag": "h4",
+            "content": "<p><em>Your Mothers Favorite Runner<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0",
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1",
+        "65dafed1-b5f9-49c7-9939-0ceb44d0c567",
+        "edcf3f90-9b2a-4a23-a9ba-e107992868ed",
+        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3",
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "Over 5,000+ 5 star reviews",
+        "title": "Trusted By The Best",
+        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle, you deserve the best.<\/p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#050505"
+      }
+    },
     "1582572d-a585-4638-8805-afdc08308763": {
       "type": "multi-column",
+      "disabled": true,
       "blocks": {
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0": {
           "type": "item",
@@ -698,7 +808,6 @@
     },
     "impact-text": {
       "type": "impact-text",
-      "disabled": true,
       "blocks": {
         "1664424181b38582d5-0": {
           "type": "item",
@@ -717,6 +826,7 @@
       "block_order": [
         "1664424181b38582d5-0"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_mobile": true,
@@ -1049,7 +1159,6 @@
     },
     "faq": {
       "type": "faq",
-      "disabled": true,
       "blocks": {
         "166442457738b23caf-0": {
           "type": "item",
@@ -1078,6 +1187,7 @@
         "166442457738b23caf-1",
         "166442457738b23caf-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "subheading": "",
@@ -1145,6 +1255,7 @@
     "press",
     "8cf929de-0fb4-4e67-b62b-298ae59259c5",
     "5afc2aff-aa85-4f6a-967b-b41e048eb60e",
+    "cddddfd9-22c1-45b8-b5d5-1e80f2e898a5",
     "1582572d-a585-4638-8805-afdc08308763",
     "62dd1bf9-cd1d-41b3-abb2-cccc26614f18",
     "abbcca1b-618a-431c-94d4-c4888a3324c4",

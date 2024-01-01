@@ -1,0 +1,40 @@
+.shopify-section--multi-column-v2{
+    //multi column scroll on mobile
+    .multi-column{
+        @media only screen and (max-width: 699px){
+            --multi-column-grid: auto / auto-flow 80vw;
+        }
+    }
+
+    //desing the new colmun items
+    .multi-column__item{
+        padding-inline: 22px;
+        padding-block-start:20px;
+        padding-block-end: 22px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: #353434;
+        
+        
+
+        @media screen and (min-width: 1000px){
+            row-gap: 41px;
+            padding-inline: 29px;
+            padding-block-start:27px;
+            padding-block-end: 38px;
+        }
+        .v-stack.gap-4{
+            //row-gap: 23px;
+            p.h4{
+                color: #FFF;
+                // font-size: 32px;
+                // font-weight: 700;
+            }
+            .prose{
+                p{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

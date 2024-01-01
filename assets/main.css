@@ -1233,6 +1233,38 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   margin-bottom: initial;
 }
 
+@media only screen and (max-width: 699px) {
+  .shopify-section--multi-column-v2 .multi-column {
+    --multi-column-grid: auto / auto-flow 80vw;
+  }
+}
+.shopify-section--multi-column-v2 .multi-column__item {
+  padding-inline: 22px;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  -webkit-padding-after: 22px;
+          padding-block-end: 22px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #353434;
+}
+@media screen and (min-width: 1000px) {
+  .shopify-section--multi-column-v2 .multi-column__item {
+    row-gap: 41px;
+    padding-inline: 29px;
+    -webkit-padding-before: 27px;
+            padding-block-start: 27px;
+    -webkit-padding-after: 38px;
+            padding-block-end: 38px;
+  }
+}
+.shopify-section--multi-column-v2 .multi-column__item .v-stack.gap-4 p.h4 {
+  color: #FFF;
+}
+.shopify-section--multi-column-v2 .multi-column__item .v-stack.gap-4 .prose p {
+  color: #FFF;
+}
+
 .template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {
   display: initial !important;
 }
