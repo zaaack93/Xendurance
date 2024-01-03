@@ -1255,6 +1255,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   border: 1px solid #000;
   background: #353434;
 }
+@media only screen and (max-width: 999px) {
+  .shopify-section--multi-column-v2 .multi-column__item {
+    margin-left: 5px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .shopify-section--multi-column-v2 .multi-column__item {
     margin-right: 0px !important;
