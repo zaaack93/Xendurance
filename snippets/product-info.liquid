@@ -18,6 +18,17 @@
         {%- endif -%}
 
       {%- when 'title' -%}
+        {% if product.metafields.custom.product_callouts != blank %}
+          <ul class="product-info__callouts">
+            {% for callout in product.metafields.custom.product_callouts.value %}
+              <li class="product-info__callout">{{ callout }}</li>
+              {% unless forloop.last %}
+                <span class="shape-circle shape--md"></span>
+              {% endunless %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+
         {%- if request.page_type == 'product' -%}
           <h1 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ product.title }}</h1>
         {%- else -%}
@@ -26,6 +37,9 @@
           </h2>
           
         {%- endif -%}
+        <div class="judgeme_widgets__container">
+          {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+        </div>
 
       {%- when 'badges' -%}
         {%- render 'product-badges', product: product, types: 'custom', form_id: product_form_id, class: 'product-info__badge-list', block: block -%}
@@ -258,7 +272,7 @@
 
       {%- when 'text' -%}
         {%- if block.settings.text != blank -%}
-          <div class="product-info__text" {{ block.shopify_attributes }}>
+          <div class="product-info__text" {{ block.shopify_attributes }} id="block-item-{{ block.id }}">
             <div class="prose">
               {{- block.settings.text -}}
             </div>
@@ -268,7 +282,7 @@
       {%- when 'collapsible_text' -%}
         {%- if block.settings.title != blank and block.settings.content != blank -%}
           {%- capture accordion_content -%}<div class="prose">{{ block.settings.content }}</div>{%- endcapture -%}
-          {%- render 'accordion', title: block.settings.title, content: accordion_content, class: 'product-info__accordion', block: block -%}
+          {%- render 'accordion', title: block.settings.title, content: accordion_content, class: 'product-info__accordion', block: block,open:block.settings.expaded -%}
         {%- endif -%}
 
       {%- when 'image' -%}

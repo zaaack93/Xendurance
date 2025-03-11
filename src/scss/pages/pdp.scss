@@ -385,9 +385,15 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #000000;
+            margin-block: 0px 0px;
+            line-height: normal;
             @media only screen and (max-width: 989px) {
-                font-size: 34px;
-                line-height: 43px;
+                font-size: 43.892px;
+                font-style: italic;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 1.317px;
+                text-transform: uppercase;
             }
         }
 
@@ -435,15 +441,34 @@
             font-size: 17px;
             margin: 0px;
 
+            p{
+                line-height: 22.118px;
+                @media only screen and (max-width: 989px) {
+                    line-height: 20px;
+                }
+            }
+
             .metafield-rich_text_field {
                 margin-top: 20px !important;
 
                 ul {
                     margin-top: 17px;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 19.906px;
+                    gap: 14.377px;
+                    @media only screen and (max-width: 989px) {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 18px;
+                        gap: 13px;
+                    }
 
                     li {
                         display: block;
-                        line-height: 18px;
+                        line-height: inherit;
                         background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260');
                         background-size: 17px;
                         /* Adjust to match the size of your SVG icon */
@@ -453,6 +478,12 @@
                         background-repeat: no-repeat;
                     }
                 }
+            }
+        }
+
+        #block-item-8d21c681-30df-4742-8a3a-4317b834ba98{
+            .metafield-rich_text_field{
+                margin-top: 0px !important;
             }
         }
 
@@ -695,6 +726,65 @@
     .accordion__content{
         .prose * + span:not(:empty){
             display: inline;
+        }
+
+        ul li {
+            list-style: none;
+            &::before {
+                content: '✓';
+                color: #000;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+
+.template--product{
+    .product-info__callouts{
+        margin-bottom: 7.45px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        @media screen and (max-width: 989px){
+            gap: 10px;
+        }
+        .product-info__callout{
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            @media screen and (max-width: 989px){
+                font-size: 14px;
+            }
+        }
+    }
+    .judgeme_widgets__container {
+        margin: 0px;
+        .jdgm-prev-badge{
+            --data-average-rating: attr(data-average-rating);
+            --data-number-of-reviews: attr(data-number-of-reviews);
+            font-size: 15.483px;
+            font-style: normal;
+            font-weight: 500;
+            @media screen and (max-width: 989px){
+                font-size: 14px;
+            }
+            .jdgm-prev-badge__stars::after {
+                content: var(--data-average-rating) ' Stars • ' var(--data-number-of-reviews) ' Reviews ';
+            }
+            &::after{
+                content: "(Read All)";
+                text-decoration: underline;
+            }
+            .jdgm-prev-badge__text{
+                display: none;
+            }
         }
     }
 }
