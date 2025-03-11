@@ -2,6 +2,9 @@
     .section{
         padding-block-start: var(--calculated-section-spacing-block-end);
         padding-block-end: calc(var(--calculated-section-spacing-block-end) * 2);
+        @media screen and (max-width: 390px){
+            padding-inline: 20px;
+        }
         @media screen and (max-width: 768px){
             padding-block-start: 51px;
             padding-block-end: 129px;
@@ -42,6 +45,9 @@
             grid-template-columns: repeat(3, 1fr);
             width: 100%;
             margin: 0px;
+            @media screen and (max-width: 390px){
+                gap: 10px;
+            }
             @media screen and (max-width: 768px){
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -55,6 +61,7 @@
                 height: 100%;
                 @media screen and (max-width: 768px){
                     padding: 31px 5px 32px;
+                    gap: 12px;
                 }
                 .text-with-icons__text-wrapper{
                     margin-top: auto;

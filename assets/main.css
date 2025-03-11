@@ -1337,6 +1337,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   -webkit-padding-after: calc(var(--calculated-section-spacing-block-end) * 2);
           padding-block-end: calc(var(--calculated-section-spacing-block-end) * 2);
 }
+@media screen and (max-width: 390px) {
+  .landing_key_benefits .section {
+    padding-inline: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .landing_key_benefits .section {
     -webkit-padding-before: 51px;
@@ -1381,6 +1386,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   width: 100%;
   margin: 0px;
 }
+@media screen and (max-width: 390px) {
+  .landing_key_benefits .section .text-with-icons__list {
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .landing_key_benefits .section .text-with-icons__list {
     grid-template-columns: repeat(2, 1fr);
@@ -1398,6 +1408,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 @media screen and (max-width: 768px) {
   .landing_key_benefits .section .text-with-icons__list .text-with-icons__item {
     padding: 31px 5px 32px;
+    gap: 12px;
   }
 }
 .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper {
