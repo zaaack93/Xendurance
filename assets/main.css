@@ -337,8 +337,30 @@ product-list {
   row-gap: 16px !important;
 }
 
+@media only screen and (max-width: 699px) {
+  product-card {
+    display: flex !important;
+    flex-direction: column;
+  }
+  product-card .product-card__info {
+    flex: 1;
+  }
+}
 product-card .product-card__info {
   padding: 18px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (max-width: 699px) {
+  product-card .product-card__info {
+    gap: 15px;
+  }
+}
+product-card .product-card__info .button {
+  --button-background-primary: 30 30 30;
+  margin-top: auto;
 }
 @media only screen and (max-width: 699px) {
   product-card .product-card__info {

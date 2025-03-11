@@ -67,8 +67,27 @@ product-list{
     row-gap: 16px !important;
 }
 product-card{
+    @media only screen and (max-width: 699px){
+        display: flex !important;
+        flex-direction: column;
+        .product-card__info {
+          flex: 1;  
+        }
+    }
     .product-card__info {
         padding: 18px;
+
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media only screen and (max-width: 699px){
+            gap: 15px;
+        }
+        .button {
+            --button-background-primary: 30 30 30;
+            margin-top: auto;
+        }
         @media only screen and (max-width: 699px){
             padding: 15px 9px 12px;
         }
