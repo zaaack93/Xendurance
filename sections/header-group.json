@@ -162,7 +162,12 @@
         "footer_button_text_color": "#ffffff",
         "footer_login_button_background": "#000000",
         "footer_login_button_text_color": "#ffffff",
-        "footer_collout_badge": true
+        "footer_collout_badge": true,
+        "enable_promo_bar": true,
+        "heading": "Join Team XND & Save 25%",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://collections/all",
+        "additional_image": "shopify://shop_images/Team_XND_1_1.png"
       }
     }
   },

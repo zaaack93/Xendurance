@@ -174,7 +174,13 @@ Supported variables
             {%- endif -%}
           {%- endfor -%}
         </ul>
-        <div class="separator-content"></div>
+        {% comment %} <div class="separator-content"></div> {% endcomment %}
+         {% comment %} Promo banner {% endcomment %}
+          {%- if section.settings.enable_promo_bar -%}
+            <div class="drawer__promo-banner">
+              {%- render 'promo-banner', section: section -%}
+            </div>
+          {%- endif -%}
         {%- if secondary_menu != blank -%}
           <ul class="v-stack gap-5 secondary-items-list">
             {%- for link in secondary_menu.links -%}

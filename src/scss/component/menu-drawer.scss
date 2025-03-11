@@ -88,4 +88,57 @@ navigation-drawer{
     }
    
     }
+
+
+    .drawer__promo-banner{
+        margin-bottom: 20px;
+        .promo-banner{
+            height: auto;
+            aspect-ratio: 1.58;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #cacaca;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            .promo-banner__content{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                height: 100%;
+                .promo-banner__subheading{
+                    color: #FFF;
+                    font-family: var(--FONT-STACK-BODY);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    margin-bottom: 0px;
+                }
+                .promo-banner__heading{
+                    color: #FFF;
+                    font-size: 25.134px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 100%; /* 26.134px */
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                    max-width: 220px;
+                }
+                .promo-banner__button{
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-decoration-line: underline;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
