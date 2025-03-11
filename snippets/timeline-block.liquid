@@ -1,0 +1,111 @@
+
+<div class="timeline-container">
+  {%- if block.settings.heading_1 != blank or block.settings.content_1 != blank -%}
+    <div class="timeline-item">
+        {%- if block.settings.image_1 != blank -%}
+            {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+            {{- block.settings.image_1 | image_url: width: block.settings.image_1.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+          {%- endif -%}
+        
+     <div class="timeline-item-container">
+      {%- if block.settings.heading_1 != blank -%}
+        <p class="heading">{{ block.settings.heading_1 | escape }}</p>
+      {%- endif -%}
+
+      {%- if block.settings.content_1 != blank -%}
+        <div class="prose content">
+          {{- block.settings.content_1 -}}
+        </div>
+      {%- endif -%}
+    </div> 
+
+    </div>
+  {%- endif -%}
+
+
+
+  {%- if block.settings.heading_2 != blank or block.settings.content_2 != blank -%}
+    <div class="timeline-item">
+        {%- if block.settings.image_2 != blank -%}
+            {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+            {{- block.settings.image_2 | image_url: width: block.settings.image_2.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+          {%- endif -%}
+    <div class="timeline-item-container">
+      {%- if block.settings.heading_2 != blank -%}
+        <p class="heading">{{ block.settings.heading_2 | escape }}</p>
+      {%- endif -%}
+
+      {%- if block.settings.content_2 != blank -%}
+        <div class="prose content">
+          {{- block.settings.content_2 -}}
+        </div>
+      {%- endif -%}
+    </div>  
+    </div>
+  {%- endif -%}
+    
+
+
+    {%- if block.settings.heading_3 != blank or block.settings.content_3 != blank -%}
+      <div class="timeline-item">
+        {%- if block.settings.image_3 != blank -%}
+            {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+            {{- block.settings.image_3 | image_url: width: block.settings.image_3.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+          {%- endif -%}
+
+          <div class="timeline-item-container">
+        {%- if block.settings.heading_3 != blank -%}
+          <p class="heading">{{ block.settings.heading_3 | escape }}</p>
+        {%- endif -%}
+
+        {%- if block.settings.content_3 != blank -%}
+          <div class="prose content">
+            {{- block.settings.content_3 -}}
+          </div>
+        {%- endif -%}
+    </div>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.heading_4 != blank or block.settings.content_4 != blank -%}
+      <div class="timeline-item">
+        
+    {%- if block.settings.image_4 != blank -%}
+        {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+        {{- block.settings.image_4 | image_url: width: block.settings.image_4.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+      {%- endif -%}
+      
+      <div class="timeline-item-container">
+        {%-
+          if block.settings.heading_4 != blank -%}
+          <p class="heading">{{ block.settings.heading_4 | escape }}</p>
+        {%- endif -%}
+
+        {%- if block.settings.content_4 != blank -%}
+          <div class="prose content">
+            {{- block.settings.content_4 -}}
+          </div>
+        {%- endif -%}
+    </div>
+    </div>
+  {%- endif -%}
+
+{%- if block.settings.heading_5 != blank or block.settings.content_5 != blank -%}
+    <div class="timeline-item">
+        {%- if block.settings.image_5 != blank -%}
+            {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+            {{- block.settings.image_5 | image_url: width: block.settings.image_5.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+        {%- endif -%}
+        <div class="timeline-item-container">
+        {%- if block.settings.heading_5 != blank -%}
+            <p class="heading">{{ block.settings.heading_5 | escape }}</p>
+        {%- endif -%}
+        {%- if block.settings.content_5 != blank -%}
+            <div class="prose content">
+                {{- block.settings.content_5 -}}
+            </div>
+        {%- endif -%}
+    </div>
+    </div>
+{%- endif -%}
+</div>

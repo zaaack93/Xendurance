@@ -1,0 +1,88 @@
+.timeline-container{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    position: relative;
+    @media screen and (max-width: 768px){
+        gap: 69px;
+        margin-top: 32px;
+    }
+    .timeline-item{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 768px){
+            gap: 30px;
+        }
+        img{
+            flex:0 0 110px;
+            max-width: 110px;
+            z-index: 9;
+            @media screen and (max-width: 768px){
+                flex:0 0 80px;
+                max-width: 80px;
+            }
+
+        }
+        .heading{
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 9px;
+            @media screen and (max-width: 768px){
+                font-size: 24px;
+                margin-bottom: 9px;
+            }
+        }
+        .content{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @media screen and (max-width: 768px){
+                font-size: 17px;
+            }
+        }
+    }
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: calc(110px / 2);
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #EF3740; // Adjust the color as needed
+        transform: translateX(-50%);
+        @media screen and (max-width: 768px){
+            left: calc(80px / 2);
+        }
+    }
+}
+
+.section_timeline_container{
+    .multi-column {
+        @media screen and (max-width: 768px){
+            gap: 22px;
+        }
+    }
+    
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        .button{
+            padding-inline: 130px;
+        }
+        @media screen and (max-width: 768px){
+            padding-top: 20px;
+            gap: 20px;
+            .button{
+                padding-inline: 50px;
+                width: 80%;
+                max-width: 360px;
+            }
+        }
+    }
+}

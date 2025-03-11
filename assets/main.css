@@ -1443,6 +1443,105 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   }
 }
 
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .timeline-container {
+    gap: 69px;
+    margin-top: 32px;
+  }
+}
+.timeline-container .timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .timeline-container .timeline-item {
+    gap: 30px;
+  }
+}
+.timeline-container .timeline-item img {
+  flex: 0 0 110px;
+  max-width: 110px;
+  z-index: 9;
+}
+@media screen and (max-width: 768px) {
+  .timeline-container .timeline-item img {
+    flex: 0 0 80px;
+    max-width: 80px;
+  }
+}
+.timeline-container .timeline-item .heading {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  .timeline-container .timeline-item .heading {
+    font-size: 24px;
+    margin-bottom: 9px;
+  }
+}
+.timeline-container .timeline-item .content {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  .timeline-container .timeline-item .content {
+    font-size: 17px;
+  }
+}
+.timeline-container .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 55px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #EF3740;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .timeline-container .timeline-item::before {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_timeline_container .multi-column {
+    gap: 22px;
+  }
+}
+.section_timeline_container .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.section_timeline_container .footer-content .button {
+  padding-inline: 130px;
+}
+@media screen and (max-width: 768px) {
+  .section_timeline_container .footer-content {
+    padding-top: 20px;
+    gap: 20px;
+  }
+  .section_timeline_container .footer-content .button {
+    padding-inline: 50px;
+    width: 80%;
+    max-width: 360px;
+  }
+}
+
 .template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {
   display: initial !important;
 }
