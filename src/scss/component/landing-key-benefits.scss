@@ -1,0 +1,89 @@
+.landing_key_benefits{
+    .section{
+        padding-block-start: var(--calculated-section-spacing-block-end);
+        padding-block-end: calc(var(--calculated-section-spacing-block-end) * 2);
+        @media screen and (max-width: 768px){
+            padding-block-start: 51px;
+            padding-block-end: 129px;
+            padding-inline: 44px;
+        }
+        .section-stack{
+            @media screen and (max-width: 768px){
+                gap: 36px;
+            }
+        }
+
+        .hubheading{
+            text-align: center;
+            color: #ADADAD;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 20px;
+            @media screen and (max-width: 768px){
+                font-size: 17px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .heading{
+            @media screen and (max-width: 768px){
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        .text-with-icons__list{
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            margin: 0px;
+            @media screen and (max-width: 768px){
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .text-with-icons__item{
+                padding: 28px 31px 43px;
+                max-width: 314px;
+                gap: 20px;
+                border-radius: 15px;
+                border: 2px solid #000;
+                background: #FFF;
+                height: 100%;
+                @media screen and (max-width: 768px){
+                    padding: 31px 5px 32px;
+                }
+                .text-with-icons__text-wrapper{
+                    margin-top: auto;
+                    p.h5{
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        color: #000;
+                        @media screen and (max-width: 768px){
+                            font-size: 16px;
+                        }
+                    }
+                    p:not(.h5){
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 110%;
+                        margin-top: 12px;
+                        color: #000;
+                        @media screen and (max-width: 768px){
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

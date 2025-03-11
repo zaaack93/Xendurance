@@ -7,6 +7,24 @@
       --text-with-icons-justify: center;
       --text-with-icons-text-align: center;
       --text-with-icons-gap: {% if section.settings.icon_spacing == 'small' %}var(--spacing-5){% elsif section.settings.icon_spacing == 'medium' %}var(--spacing-6){% else %}var(--spacing-7){% endif %};
+
+    }
+
+    #shopify-section-{{ section.id }} .section{
+      {% if section.settings.bg_image != blank and section.settings.custom_class == "landing_key_benefits"  %}
+        background-image: url(/cdn/shop/files/XND_TABLETS_5ce381ff-6aa7-4a4f-9d38-a62b9c6068ee.png?v=1741701713);
+        background-size: 684px auto;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+      {% endif %}
+    }
+
+    @media screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .section{
+        {% if section.settings.bg_image != blank and section.settings.custom_class == "landing_key_benefits"  %}
+          background-size: 93% auto;
+        {% endif %}
+      }
     }
 
     {%- if section.settings.stack_on_mobile -%}
@@ -44,9 +62,15 @@
 <div class="{{ section.settings.custom_class }} section_icon_text_stack">
   <div {% render 'section-properties' %}>
     <div class="section-stack">
+      
+
+
       {%- if section.settings.title != blank -%}
         <div class="justify-self-center">
-          <h2 class="h3">{{ section.settings.title | escape }}</h2>
+          {%- if section.settings.subheading != blank -%}
+            <p class="hubheading">{{ section.settings.subheading | escape }}</p>
+          {%- endif -%}
+          <h2 class="h3 heading">{{ section.settings.title | escape }}</h2>
         </div>
       {%- endif -%}
 
@@ -81,6 +105,7 @@
 
               <div class="text-with-icons__text-wrapper">
                 <div class="prose">
+
                   {%- if block.settings.title != blank -%}
                     <p class="{{ section.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
                   {%- endif -%}
@@ -114,7 +139,7 @@
   "disabled_on": {
     "groups": ["header", "custom.overlay"]
   },
-  "max_blocks": 5,
+  "max_blocks": 10,
   "blocks": [
     {
       "type": "item",
@@ -475,6 +500,11 @@
     },
     {
       "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
       "id": "title",
       "label": "Heading"
     },
@@ -559,6 +589,11 @@
       "type": "color",
       "id": "background",
       "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
     },
     {
       "type": "color_background",

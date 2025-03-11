@@ -1331,6 +1331,107 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   position: relative;
 }
 
+.landing_key_benefits .section {
+  -webkit-padding-before: var(--calculated-section-spacing-block-end);
+          padding-block-start: var(--calculated-section-spacing-block-end);
+  -webkit-padding-after: calc(var(--calculated-section-spacing-block-end) * 2);
+          padding-block-end: calc(var(--calculated-section-spacing-block-end) * 2);
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section {
+    -webkit-padding-before: 51px;
+            padding-block-start: 51px;
+    -webkit-padding-after: 129px;
+            padding-block-end: 129px;
+    padding-inline: 44px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .section-stack {
+    gap: 36px;
+  }
+}
+.landing_key_benefits .section .hubheading {
+  text-align: center;
+  color: #ADADAD;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .hubheading {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.landing_key_benefits .section .text-with-icons__list {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .text-with-icons__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.landing_key_benefits .section .text-with-icons__list .text-with-icons__item {
+  padding: 28px 31px 43px;
+  max-width: 314px;
+  gap: 20px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  background: #FFF;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .text-with-icons__list .text-with-icons__item {
+    padding: 31px 5px 32px;
+  }
+}
+.landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper {
+  margin-top: auto;
+}
+.landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper p.h5 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper p.h5 {
+    font-size: 16px;
+  }
+}
+.landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper p:not(.h5) {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin-top: 12px;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper p:not(.h5) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
 .template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {
   display: initial !important;
 }

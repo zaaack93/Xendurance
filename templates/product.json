@@ -95,7 +95,6 @@
         },
         "payment_terms": {
           "type": "payment_terms",
-          "disabled": true,
           "settings": {}
         },
         "separator": {
@@ -107,8 +106,8 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Why You’ll Love It",
-            "expaded": true,
-            "content": "{{ product.metafields.custom.why_you_ll_love_it | metafield_tag }}<p>Don’t believe the hype? Here’s the proof.</p>"
+            "content": "{{ product.metafields.custom.why_you_ll_love_it | metafield_tag }}",
+            "expaded": true
           }
         },
         "description": {
@@ -121,21 +120,24 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Key Benefits",
-            "content": "{{ product.metafields.custom.key_benefits | metafield_tag }}"
+            "content": "{{ product.metafields.custom.key_benefits | metafield_tag }}",
+            "expaded": false
           }
         },
         "b833a344-c331-427c-9113-de7b76a2738c": {
           "type": "collapsible_text",
           "settings": {
             "title": "What's Inside",
-            "content": "{{ product.metafields.custom.key_ingredients | metafield_tag }}"
+            "content": "{{ product.metafields.custom.key_ingredients | metafield_tag }}",
+            "expaded": false
           }
         },
         "ebb6b23d-4582-4ee7-b484-aa7711332c3f": {
           "type": "collapsible_text",
           "settings": {
             "title": "Usage",
-            "content": "{{ product.metafields.custom.consumption | metafield_tag }}"
+            "content": "{{ product.metafields.custom.consumption | metafield_tag }}",
+            "expaded": false
           }
         },
         "cd6ba36a-48e1-40f2-a783-9541c8adc725": {
@@ -843,6 +845,117 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "text_with_icons_L4xPbn": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_MGUX4L": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Layer_1_2_95dc02e6-7cd7-4603-b70f-1cd21104d4db.svg",
+            "mobile_icon_width": 24,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Recover Faster",
+            "content": "<p>Fights Free Radical Damage & supports crucial cellular functions.</p>"
+          }
+        },
+        "item_xmL8RD": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Group_5086_e997a1e3-7634-4520-99dd-c837b3b0878a.svg",
+            "mobile_icon_width": 24,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Stamina Increase",
+            "content": "<p>Push your limits to go the distance, fight fatigue and set PRs.</p>"
+          }
+        },
+        "item_amJkBF": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Layer_1_3_23ba5d84-0067-42ff-8970-9a8725b300a5.svg",
+            "mobile_icon_width": 24,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "rgba(0,0,0,0)",
+            "title": "Increase Power",
+            "content": "<p>Increase power output by 10-25% with a similar heart rate.</p>"
+          }
+        },
+        "item_Ng6b67": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Layer_1_3_23ba5d84-0067-42ff-8970-9a8725b300a5.svg",
+            "mobile_icon_width": 24,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Deeper Breaths",
+            "content": "<p>Increase VO2 Max & Aerobic Threshold. Perform better for longer.</p>"
+          }
+        },
+        "item_Diw3rg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Layer_1_5.svg",
+            "mobile_icon_width": 24,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Reduce Lactic",
+            "content": "<p>Extreme Endurance reduces lactic build up after intense workouts.</p>"
+          }
+        },
+        "item_NWLfaE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Va17xA_tif.svg",
+            "mobile_icon_width": 24,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Age Slower",
+            "content": "<p>Promotes anti-aging by reducing damaging oxidative stress.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MGUX4L",
+        "item_xmL8RD",
+        "item_amJkBF",
+        "item_Ng6b67",
+        "item_Diw3rg",
+        "item_NWLfaE"
+      ],
+      "settings": {
+        "custom_class": "landing_key_benefits",
+        "full_width": true,
+        "stack_on_mobile": true,
+        "subheading": "Tried. Tested. Loved.",
+        "title": "World’s #1 Endurance Supplement",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#141313",
+        "bg_image": "shopify://shop_images/XND_TABLETS_5ce381ff-6aa7-4a4f-9d38-a62b9c6068ee.png",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -859,6 +972,7 @@
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
     "related-products",
     "cf8b928d-f9b0-4c53-bcbb-2f59458566b1",
-    "591e9849-8775-4917-ba33-b4992916f8fc"
+    "591e9849-8775-4917-ba33-b4992916f8fc",
+    "text_with_icons_L4xPbn"
   ]
 }
