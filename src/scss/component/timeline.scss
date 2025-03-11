@@ -86,3 +86,34 @@
         }
     }
 }
+
+.section_timeline_container{
+    .section-header{
+        gap:20px;
+        .subheading{
+            font-size: 20px;
+            color: #ADADAD;
+            @media screen and (max-width: 768px){
+                font-size: 17px;
+            }
+        }
+        .heading{
+            margin-top: 20px;
+            @media screen and (max-width: 768px){
+                margin-top: 16px;
+            }
+        }
+        .content{
+            margin-top: 0px;
+            p{
+                margin-top: 20px;
+                font-size: 20px;
+                @media screen and (max-width: 768px){
+                    font-size: 17px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+}

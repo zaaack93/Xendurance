@@ -1542,6 +1542,40 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   }
 }
 
+.section_timeline_container .section-header {
+  gap: 20px;
+}
+.section_timeline_container .section-header .subheading {
+  font-size: 20px;
+  color: #ADADAD;
+}
+@media screen and (max-width: 768px) {
+  .section_timeline_container .section-header .subheading {
+    font-size: 17px;
+  }
+}
+.section_timeline_container .section-header .heading {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .section_timeline_container .section-header .heading {
+    margin-top: 16px;
+  }
+}
+.section_timeline_container .section-header .content {
+  margin-top: 0px;
+}
+.section_timeline_container .section-header .content p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .section_timeline_container .section-header .content p {
+    font-size: 17px;
+    margin-top: 16px;
+  }
+}
+
 .template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {
   display: initial !important;
 }

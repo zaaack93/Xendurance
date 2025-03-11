@@ -24,16 +24,17 @@ Supported variables
     {%- if subheading != blank or heading != blank or content != blank -%}
       <div class="prose">
         {%- if subheading != blank -%}
-          <p class="bold">{{- subheading | escape -}}</p>
+          <p class="bold subheading">{{- subheading | escape -}}</p>
         {%- endif -%}
 
         {%- if heading != blank -%}
-          <h2 class="h2" {% if settings.heading_apparition != 'none' %}reveal-on-scroll="true"{% endif %}>
+          <h2 class="h2 heading" {% if settings.heading_apparition != 'none' %}reveal-on-scroll="true"{% endif %}>
             {%- render 'styled-text', content: heading, text_color: heading_color, gradient: heading_gradient, apparition_effect: true -%}
           </h2>
         {%- endif -%}
-
-        {{- content -}}
+        <div class="content">
+          {{- content -}}
+        </div>
       </div>
     {%- endif -%}
 
