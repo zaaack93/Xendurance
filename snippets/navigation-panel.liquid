@@ -226,6 +226,12 @@ Supported variables
             {%- if settings.footer_button_text != blank -%}
               {% render 'button', content: settings.footer_button_text, href: button_footer, size: 'xl', background: settings.footer_button_background, text_color: settings.footer_button_text_color %}
             {%- endif -%}
+
+            {%- if shop.customer_accounts_enabled -%}
+              {%- assign login_btn_content = 'header.general.account_new' | t  -%}
+              {% render 'button', content: login_btn_content, href: routes.account_url, button_footer, size: 'xl', background: settings.footer_login_button_background, text_color: settings.footer_login_button_text_color %}
+            {%- endif -%}
+
             {%comment%}Judgme widget{%endcomment%}
             {% if settings.footer_collout_badge %}
               <div class="judge_me_widget_container">
@@ -233,7 +239,7 @@ Supported variables
               </div>
             {%endif%}
 
-            {%- if country_selector or locale_selector or shop.customer_accounts_enabled -%}
+            {%- if country_selector or locale_selector -%}
               <div class="panel-footer__localization-wrapper h-stack gap-6 border-t md:hidden">
                 {%- if country_selector -%}
                   {%- render 'localization-selector', type: 'country', show_country_name: show_country_name, show_country_flag: show_country_flag -%}
@@ -243,9 +249,6 @@ Supported variables
                   {%- render 'localization-selector', type: 'locale' -%}
                 {%- endif -%}
 
-                {%- if shop.customer_accounts_enabled -%}
-                  <a href="{{ routes.account_url }}" class="panel-footer__account-link bold text-sm">{{- 'header.general.account_new' | t -}}</a>
-                {%- endif -%}
               </div>
             {%- endif -%}
           </div>

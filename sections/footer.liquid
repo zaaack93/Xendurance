@@ -30,27 +30,22 @@
 </style>
 {%- endif -%}
 
-<div class="footer">
+<div class="footer footer_block_section">
+  <div class="footer_newsletter_block">
   <div class="container">
-    <div class="footer__wrapper">
-      {%- comment -%}
-      ------------------------------------------------------------------------------------------------------------------
-      BLOCK AREA
-      ------------------------------------------------------------------------------------------------------------------
-      {%- endcomment -%}
-
-      {%- if section.blocks.size > 0 -%}
-        <div class="footer__block-list empty:hidden">
-          {%- for block in section.blocks -%}
+    <div class="footer__block-list empty:hidden">
+ {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when 'text' -%}
+
+{%- when 'text' -%}
                     {%- capture logo_content -%}
                       {%- if section.settings.logo -%}
                         {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
                         {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
                         <span class="sr-only">{{ shop.name }}</span>
-                        {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
-                      {%- else -%}
+                        {% comment %}{{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}} {% endcomment %}
+                      <img class="header__logo-image" src="{{ section.settings.logo | img_url: 'master' }}">
+                        {%- else -%}
                         {%- if block.settings.title != blank -%}
                           <p class="bold">{{ block.settings.title | escape }}</p>
                         {%- endif -%}
@@ -74,24 +69,8 @@
                   </div>
                 {%- endif -%}
 
-              {%- when 'links' -%}
-                {%- if block.settings.menu != blank -%}
-                  <div class="footer__block footer__block--menu" {{ block.shopify_attributes }}>
-                    {%- if block.settings.show_menu_title -%}
-                      <p class="bold">{{ block.settings.menu.title }}</p>
-                    {%- endif -%}
 
-                    <ul class="v-stack gap-3" role="list">
-                      {%- for link in block.settings.menu.links -%}
-                        <li>
-                          <a href="{{ link.url }}" class="inline-block link-faded break-all">{{ link.title }}</a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                {%- endif -%}
-
-              {%- when 'newsletter' -%}
+{%- when 'newsletter' -%}
                 <div class="footer__block footer__block--newsletter" {{ block.shopify_attributes }}>
                   {%- if block.settings.image != blank -%}
                     {%- capture sizes -%}{{ block.settings.image_width }}px{%- endcapture -%}
@@ -150,11 +129,68 @@
                     {%- endform -%} {% endcomment %}
                   </div>
                 </div>
+
+
+              
+    {%- endcase -%}
+          {%- endfor -%}
+     </div></div>
+  </div>
+    
+    <div class="footer__wrapper">
+      <div class="container">
+      {%- comment -%}
+      ------------------------------------------------------------------------------------------------------------------
+      BLOCK AREA
+      ------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="footer__block_list_menu footer__block-list empty:hidden">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              
+
+              {%- when 'links' -%}
+                {%- if block.settings.menu != blank -%}
+                  <div class="footer__block--menu_{{ forloop.index }} footer__block footer__block--menu" {{ block.shopify_attributes }}>
+                    {%- if block.settings.show_menu_title -%}
+                      <p class="accordian-heading bold">{{ block.settings.title }} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <g clip-path="url(#clip0_119_632)">
+    <path d="M7 10L12 15L17 10H7Z" fill="#E93B40"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_119_632">
+      <rect width="24" height="24" fill="white"/>
+    </clipPath>
+  </defs>
+</svg></p>
+                    {%- endif -%}
+
+                    <ul class="accordian-description-inner v-stack gap-3" role="list">
+                      {%- for link in block.settings.menu.links -%}
+                        <li>
+                          <a href="{{ link.url }}" class="inline-block link-faded break-all">{{ link.title }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+                 {%- when 'social_icon' -%}
+              {%- if section.settings.show_social_media -%}
+          {%- capture social_media -%}{%- render 'footer-social-media' -%}{%- endcapture -%}
+        {%- endif -%}
+{%- if section.settings.show_social_media -%}
+          <div class="footer__block footer__block--social" {{ block.shopify_attributes }}>
+          {{- social_media -}}
+          
+          </div>
+              {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
         </div>
       {%- endif -%}
-
+</div></div>
       {%- comment -%}
       ------------------------------------------------------------------------------------------------------------------
       SECONDARY AREA
@@ -181,7 +217,7 @@
         {%- endif -%}
 
         {%- if social_media != blank or country_selector or locale_selector -%}
-          <div class="footer__aside-top">
+          <div style="display:none;" class="footer__aside-top">
             {{- social_media -}}
 
             {%- if country_selector or locale_selector -%}
@@ -210,28 +246,60 @@
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
 
+        <div class="footer_bottom_aside_section">
+        <div class="container">
         <div class="footer__aside-bottom">
+          
           {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
             <div class="footer__payment-icons h-stack wrap gap-2">
+              {% comment %}
               {%- for type in shop.enabled_payment_types -%}
                 {{- type | payment_type_svg_tag -}}
               {%- endfor -%}
+              {% endcomment %}
+              {% render 'payment-icons' %}
             </div>
           {%- endif -%}
 
-          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. <a target="_blank" rel="nofollow" href="http://yonder-studio.com">Site Design by Yonder Studio.</a></p>
+          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {% comment %}<a target="_blank" rel="nofollow" href="http://yonder-studio.com">Site Design by Yonder Studio.</a>{% endcomment %}</p>
         </div>
+        </div>
+          </div>
+        
       </div>
-    </div>
-  </div>
+    
+ 
 </div>
+
+<script>
+$(document).ready(function() {
+  $('.accordian-heading').click(function() {
+    $('.accordian-heading').removeClass('active-heading');
+    $('.accordian-description-inner').slideUp('normal');
+    if($(this).next().is(':hidden') == true) {
+      $(this).addClass('active-heading');
+      $(this).next().slideDown('normal');
+    } 
+  });
+  $('.accordian-description-inner').hide();
+
+});
+  
+</script>
+
+
+
+
+
+
+
 
 {% schema %}
 {
   "name": "Footer",
   "class": "shopify-section--footer",
   "tag": "footer",
-  "max_blocks": 5,
+  "max_blocks": 8,
   "settings": [
     {
       "type": "checkbox",
@@ -342,6 +410,11 @@
       "name": "Links",
       "settings": [
         {
+          "type": "text",
+          "id": "title",
+          "label": "Menu Title"
+        },
+        {
           "type": "link_list",
           "id": "menu",
           "label": "Menu",
@@ -354,6 +427,12 @@
           "label": "Show menu title",
           "default": true
         }
+      ]
+    },
+     {
+      "type": "social_icon",
+      "name": "Social Icon",
+      "settings": [
       ]
     },
     {

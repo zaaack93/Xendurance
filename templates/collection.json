@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -6,16 +15,16 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": true,
-        "show_collection_title": true,
+        "show_collection_title": false,
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "collection_title_size": "h2",
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/XND_1.jpg",
+        "image": "shopify://shop_images/Untitled_design_5.png",
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
-        "featured_product": "lean",
-        "featured_product_members": "lean-3",
+        "featured_product": "plant-protein-greens",
+        "featured_product_members": "plant-protein-greens-1",
         "featured_product_heading": "Featured product",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
@@ -28,7 +37,7 @@
         "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8.jpg",
+            "image": "shopify://shop_images/8.jpg",
             "stretch_image": true,
             "link_text": "Skin",
             "link_url": "",
@@ -105,22 +114,22 @@
           "settings": {
             "position": 4,
             "column_span": "1",
-            "image": "shopify:\/\/shop_images\/Extreme_Endurance_4.jpg",
-            "title": "JOIN TEAM XND & SAVE",
+            "image": "shopify://shop_images/20240717_Xendurance_Emily-35_3aff2af0-f47b-4e5c-a7d7-1b745b8d13e2.jpg",
+            "title": "Join Team XND",
             "content": "",
-            "link_url": "shopify:\/\/pages\/team-xnd-signup",
+            "link_url": "shopify://pages/team-xnd-sign-up",
             "link_text": "Learn More",
-            "heading_tag": "h3",
+            "heading_tag": "h1",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 10
+            "overlay_opacity": 0
           }
         },
         "f1543895-1b75-4769-bbaf-6c1f1f11725a": {
           "type": "collection_filter",
           "settings": {
-            "collection": "all-products",
+            "collection": "products",
             "collection_filters": "packs,daily,energy,transform,recovery,skin"
           }
         },

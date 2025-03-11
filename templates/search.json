@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -106,7 +115,7 @@
         "206b8501-333c-4977-85d7-2903add27554": {
           "type": "video",
           "settings": {
-            "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "show_video_controls": false,
             "title": "Promote your products",
             "heading_tag": "h4",

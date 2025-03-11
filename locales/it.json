@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "404": {
     "general": {
@@ -42,7 +51,7 @@
       "subscribed_successfully": "Ti sei iscritto alla nostra newsletter."
     },
     "localization": {
-      "country": "Paese\/Area geografica",
+      "country": "Paese/Area geografica",
       "language": "Lingua"
     },
     "privacy_bar": {
@@ -90,7 +99,7 @@
       "view_in_space": "Visualizza nel tuo spazio",
       "taxes_included": "Tasse incluse.",
       "taxes_excluded": "Tasse escluse.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Spedizione calcolata<\/a> al checkout",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Spedizione calcolata</a> al checkout",
       "size_chart": "Tabella taglie",
       "available_colors_count": {
         "one": "{{ count }} colore disponibile",
@@ -307,9 +316,9 @@
       "weight": "Peso",
       "subtotal": "Subtotale",
       "total": "Totale",
-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\" class=\"link\">spese di spedizione<\/a> calcolate al momento del check-out",
+      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\" class=\"link\">spese di spedizione</a> calcolate al momento del check-out",
       "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del check-out",
-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\" class=\"link\">Spese di spedizione<\/a> calcolate al check-out.",
+      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\" class=\"link\">Spese di spedizione</a> calcolate al check-out.",
       "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del check-out",
       "add_order_note": "Aggiungi una nota all'ordine",
       "edit_order_note": "Modifica nota dell'ordine",

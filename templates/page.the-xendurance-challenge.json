@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0": {
@@ -6,7 +15,7 @@
         "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/A451A6FB-31EC-4BBE-9FB7-16D40E0B14F9_Large_08e096d7-8a20-4182-a0ea-43cce7a23631.jpg",
+            "image": "shopify://shop_images/A451A6FB-31EC-4BBE-9FB7-16D40E0B14F9_Large_08e096d7-8a20-4182-a0ea-43cce7a23631.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -54,7 +63,7 @@
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
+            "image": "shopify://shop_images/EE_Challenge_1.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -62,7 +71,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Goodbye Soreness. Hello Extreme Endurance.",
-            "content": "<p>Learn how world-class athletes like Josh Bridges are lasting <strong>longer<\/strong>, going <strong>harder<\/strong>, and recovering <strong>faster <\/strong>with this elite supplement. <\/p><p>Take the one week challenge with a 30 day money back guarantee!<\/p>",
+            "content": "<p>Learn how world-class athletes like Josh Bridges are lasting <strong>longer</strong>, going <strong>harder</strong>, and recovering <strong>faster </strong>with this elite supplement. </p><p>Take the one week challenge with a 30 day money back guarantee!</p>",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -76,7 +85,7 @@
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/workout_1.jpg",
+            "image": "shopify://shop_images/workout_1.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -84,9 +93,9 @@
             "icon_width": 48,
             "subheading": "",
             "title": "How It Works?",
-            "content": "<p>This is a one-week long, self guided challenge. Simply purchase Extreme Endurance, follow our recommended workouts and reap the benefits. <\/p><p>Track your progress and share your results online with our community.<\/p>",
+            "content": "<p>This is a one-week long, self guided challenge. Simply purchase Extreme Endurance, follow our recommended workouts and reap the benefits. </p><p>Track your progress and share your results online with our community.</p>",
             "link_text": "",
-            "link_url": "https:\/\/chrome-extension\/\/efaidnbmnnnibpcajpcglclefindmkaj\/https:\/\/cdn.shopify.com\/s\/files\/1\/0574\/3450\/5404\/files\/EE_Challenge-Workouts-2.pdf?v=1643835918",
+            "link_url": "https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://cdn.shopify.com/s/files/1/0574/3450/5404/files/EE_Challenge-Workouts-2.pdf?v=1643835918",
             "background": "#f5f5f5",
             "background_gradient": "",
             "text_color": "#353435",
@@ -130,7 +139,7 @@
             "column_size": "3",
             "title": "Day 1",
             "heading_tag": "h4",
-            "content": "<p>Complete baseline workout of your choice from the Recommend Workouts below. Make sure to record your results based on the workout chosen. We recommend also recording how you feel during and after the workout.<\/p>",
+            "content": "<p>Complete baseline workout of your choice from the Recommend Workouts below. Make sure to record your results based on the workout chosen. We recommend also recording how you feel during and after the workout.</p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -143,7 +152,7 @@
             "column_size": "3",
             "title": "Day 2 - 7",
             "heading_tag": "h4",
-            "content": "<p>Start taking Extreme Endurance; 3 tablets in the morning and 3 tablets at night. Do not skip days! Even if you are not working on that day, it is important to continue taking Extreme Endurance to see the benefits.<\/p>",
+            "content": "<p>Start taking Extreme Endurance; 3 tablets in the morning and 3 tablets at night. Do not skip days! Even if you are not working on that day, it is important to continue taking Extreme Endurance to see the benefits.</p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -156,7 +165,7 @@
             "column_size": "3",
             "title": "Day 8",
             "heading_tag": "h4",
-            "content": "<p>Retest the same workout done on Day 1 of the challenge. Make sure to record your results based on the workout chosen. We recommend also recording how you feel during and after the workout.<\/p>",
+            "content": "<p>Retest the same workout done on Day 1 of the challenge. Make sure to record your results based on the workout chosen. We recommend also recording how you feel during and after the workout.</p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -189,35 +198,35 @@
           "type": "item",
           "settings": {
             "title": "RUNNING WORKOUT",
-            "content": "<p>OPTION 1 <br\/>Max effort | 4 x 200 meter with 2 minute recovery between intervals |    Record interval times<br\/><br\/>OPTION 2 <br\/>Max effort | 5K time trial | Record end time<\/p>"
+            "content": "<p>OPTION 1 <br/>Max effort | 4 x 200 meter with 2 minute recovery between intervals |    Record interval times<br/><br/>OPTION 2 <br/>Max effort | 5K time trial | Record end time</p>"
           }
         },
         "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-2": {
           "type": "item",
           "settings": {
             "title": "CROSS FUNCTIONAL WORKOUTS",
-            "content": "<p>OPTION 1 | “CINDY” Complete as many rounds as possible in 20 miniutes of   5 Pull-ups, 10 Push-ups, 15 Squats | Record total rounds completed<br\/><br\/>OPTION 2 | “KAREN” 150 Wallball shots | Record end time<\/p>"
+            "content": "<p>OPTION 1 | “CINDY” Complete as many rounds as possible in 20 miniutes of   5 Pull-ups, 10 Push-ups, 15 Squats | Record total rounds completed<br/><br/>OPTION 2 | “KAREN” 150 Wallball shots | Record end time</p>"
           }
         },
         "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-3": {
           "type": "item",
           "settings": {
             "title": "BIKING WORKOUT",
-            "content": "<p>Ramp test | Start with 100 watts (for men) \/ 50 watts (for women) | Every 10 seconds, add 10 watts | Record time when you fail<\/p>"
+            "content": "<p>Ramp test | Start with 100 watts (for men) / 50 watts (for women) | Every 10 seconds, add 10 watts | Record time when you fail</p>"
           }
         },
         "530979a1-5370-446e-838b-0bff762b822c": {
           "type": "item",
           "settings": {
             "title": "ROWING WORKOUT",
-            "content": "<p>4 x 1 minute (max effort) | 2 minute recovery between intervals | Record Calories and Watts for each interval<\/p>"
+            "content": "<p>4 x 1 minute (max effort) | 2 minute recovery between intervals | Record Calories and Watts for each interval</p>"
           }
         },
         "5722aebb-efd6-43ea-9886-d00cd1a2ac20": {
           "type": "item",
           "settings": {
             "title": "BODYBUILDING WORKOUT",
-            "content": "<p>Body Weight Bench to burnout | 3 minute rest | Dips to burnout |    Record total reps for Bench and Dips<\/p>"
+            "content": "<p>Body Weight Bench to burnout | 3 minute rest | Dips to burnout |    Record total reps for Bench and Dips</p>"
           }
         }
       },
@@ -232,7 +241,7 @@
         "full_width": true,
         "subheading": "",
         "title": "Extreme Endurance Challenge Workouts",
-        "content": "<p>You will find workouts for a variety of training styles to complete below. Feel free to come up with your own workout - try to create something repeatable that induces lactic acid and is measurable.<\/p>",
+        "content": "<p>You will find workouts for a variety of training styles to complete below. Feel free to come up with your own workout - try to create something repeatable that induces lactic acid and is measurable.</p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
@@ -258,7 +267,7 @@
             "rating": 5,
             "author": "James S.",
             "title": "",
-            "content": "<p>\"I love it. In just a short amount of time I am noticing that my recovery is so much quicker. Definitely recommend!!\"<\/p>"
+            "content": "<p>\"I love it. In just a short amount of time I am noticing that my recovery is so much quicker. Definitely recommend!!\"</p>"
           }
         },
         "template--16053542715580__cb4a7b1c-7967-43fb-b974-04c6ded12caa-168732655306d7ea20-1": {
@@ -269,7 +278,7 @@
             "rating": 5,
             "author": "Molly J.",
             "title": "",
-            "content": "<p>\"Soreness gets better and better every day! Loving this and am a believer\".<\/p>"
+            "content": "<p>\"Soreness gets better and better every day! Loving this and am a believer\".</p>"
           }
         },
         "template--16053542715580__cb4a7b1c-7967-43fb-b974-04c6ded12caa-168732655306d7ea20-2": {
@@ -280,7 +289,7 @@
             "rating": 5,
             "author": "Lucretia S.",
             "title": "",
-            "content": "<p>\"Love this product. It's one you'll love and reorder! It really makes a difference\".<\/p>"
+            "content": "<p>\"Love this product. It's one you'll love and reorder! It really makes a difference\".</p>"
           }
         },
         "277f2a3e-0f01-4c22-a7c4-5b5340cc6984": {
@@ -291,7 +300,7 @@
             "rating": 5,
             "author": "Ericka C.",
             "title": "",
-            "content": "<p>I feel this product is effective in helping me exceed in training and in races.<\/p>"
+            "content": "<p>I feel this product is effective in helping me exceed in training and in races.</p>"
           }
         },
         "4678c02f-7a9f-49b5-bbce-1431e04eac74": {
@@ -302,7 +311,7 @@
             "rating": 5,
             "author": "Ericka C.",
             "title": "",
-            "content": "<p>I feel this product is effective in helping me exceed in training and in races.<\/p>"
+            "content": "<p>I feel this product is effective in helping me exceed in training and in races.</p>"
           }
         }
       },
@@ -337,42 +346,42 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/1-1643686487072.png",
+            "custom_icon": "shopify://shop_images/1-1643686487072.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
             "title": "",
-            "content": "<p>Trusted by world-class athletes since 2008<\/p>"
+            "content": "<p>Trusted by world-class athletes since 2008</p>"
           }
         },
         "template--16053542715580__f12c65b4-479f-4d49-98f5-cede8e305199-1687416772d0eb0563-1": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/2-1643686487074_Large_6871f92a-e3fd-4d14-acfc-7e8942840bca.png",
+            "custom_icon": "shopify://shop_images/2-1643686487074_Large_6871f92a-e3fd-4d14-acfc-7e8942840bca.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
             "title": "",
-            "content": "<p>Certified by Informed-Sport*<\/p>"
+            "content": "<p>Certified by Informed-Sport*</p>"
           }
         },
         "template--16053542715580__f12c65b4-479f-4d49-98f5-cede8e305199-1687416772d0eb0563-2": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/3-1643686487076_Large_445ce96f-663a-466c-90ea-35bd35ae836c.png",
+            "custom_icon": "shopify://shop_images/3-1643686487076_Large_445ce96f-663a-466c-90ea-35bd35ae836c.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
             "title": "",
-            "content": "<p>Supported by rigorous scientific research<\/p>"
+            "content": "<p>Supported by rigorous scientific research</p>"
           }
         }
       },
@@ -398,8 +407,7 @@
       "blocks": {
         "template--16053483208892__21fd67c5-5442-419a-9ca3-099fd99c3989-1687318094e9cddd66-0": {
           "type": "play",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--16053483208892__21fd67c5-5442-419a-9ca3-099fd99c3989-1687318094e9cddd66-1": {
           "type": "heading",
@@ -427,7 +435,7 @@
         "autoplay": false,
         "video_size": "auto",
         "external_video_url_metafield": "",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
@@ -439,8 +447,7 @@
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-0": {
           "type": "vendor",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-1": {
           "type": "title",
@@ -451,8 +458,7 @@
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-2": {
           "type": "badges",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-3": {
           "type": "price",
@@ -462,8 +468,7 @@
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-8": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-9": {
           "type": "buy_buttons",
@@ -485,8 +490,7 @@
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-5": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-6": {
           "type": "description",
@@ -506,8 +510,7 @@
         },
         "template--16053542715580__1e177313-5d14-4e72-a7e9-0a844add9467-16873269843a24d3b9-10": {
           "type": "pickup_availability",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -550,7 +553,7 @@
         "d7aed1a7-488b-4ef6-8793-3cdc6ca783f0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EE_challenge_3.jpg",
+            "image": "shopify://shop_images/EE_challenge_3.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -558,7 +561,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Reduce Lactic ACID",
-            "content": "<p>Extreme Endurance is proven to reduce lactic acid is the body which causes muscle soreness, increase anaerobic threshold, in other words, improve stamina, and reduce oxidative stress caused by free radical damage. Oxidative stress is the leading cause of many degenerative diseases, such as heart disease. we are exposed to oxidative stress from air pollution, environmental changes, stress, and even working out! Oxidative stress simply put - ages all of us!<\/p>",
+            "content": "<p>Extreme Endurance is proven to reduce lactic acid is the body which causes muscle soreness, increase anaerobic threshold, in other words, improve stamina, and reduce oxidative stress caused by free radical damage. Oxidative stress is the leading cause of many degenerative diseases, such as heart disease. we are exposed to oxidative stress from air pollution, environmental changes, stress, and even working out! Oxidative stress simply put - ages all of us!</p>",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -572,7 +575,7 @@
         "43ef2c1f-4b71-4c82-be56-249e62222fca": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
+            "image": "shopify://shop_images/Xendurance-Sign.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -580,7 +583,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "The Gold Standard",
-            "content": "<p>Find out more about all of our studies which include 2 published, Gold Standard, double-blind, placebo controlled clinical studies. <\/p><p>The Extreme Endurance proprietary formula has a blend of essential, natural ingredients including: Papain which is a protease enzyme derived from Papaya, a powerful anti-inflammatory that helps repair and rebuild muscle tissue while relieving muscle soreness. Catechins are added and are one of the most powerful antioxidants to help fight oxidative stress. Electrolytes complete this revolutionary formula to assist with the ability to quickly rehydrate, recover, & restore balance and maintain the competitive edge.*<\/p>",
+            "content": "<p>Find out more about all of our studies which include 2 published, Gold Standard, double-blind, placebo controlled clinical studies. </p><p>The Extreme Endurance proprietary formula has a blend of essential, natural ingredients including: Papain which is a protease enzyme derived from Papaya, a powerful anti-inflammatory that helps repair and rebuild muscle tissue while relieving muscle soreness. Catechins are added and are one of the most powerful antioxidants to help fight oxidative stress. Electrolytes complete this revolutionary formula to assist with the ability to quickly rehydrate, recover, & restore balance and maintain the competitive edge.*</p>",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -595,7 +598,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Xendurance-Sign.jpg",
+            "image": "shopify://shop_images/Xendurance-Sign.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -603,9 +606,9 @@
             "icon_width": 48,
             "subheading": "",
             "title": "The Workouts",
-            "content": "<p>Congratulations on taking the next step to increase your overall health and performance with the Extreme Endurance Challenge! You will find workouts for a variety of training styles to complete below. If you have questions, get back with the person that shared this challenge with you.<\/p>",
+            "content": "<p>Congratulations on taking the next step to increase your overall health and performance with the Extreme Endurance Challenge! You will find workouts for a variety of training styles to complete below. If you have questions, get back with the person that shared this challenge with you.</p>",
             "link_text": "View The Workouts",
-            "link_url": "shopify:\/\/pages\/team-xnd-big-friday",
+            "link_url": "shopify://pages/team-xnd-big-friday",
             "background": "#f5f5f5",
             "background_gradient": "",
             "text_color": "#353435",
@@ -633,28 +636,28 @@
           "type": "item",
           "settings": {
             "title": "How long does it take to work?",
-            "content": "<p>Extreme Endurance will be in your system and working within 48-72 hours. We can confirm this from 10 years of clinical testing.<\/p>"
+            "content": "<p>Extreme Endurance will be in your system and working within 48-72 hours. We can confirm this from 10 years of clinical testing.</p>"
           }
         },
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1": {
           "type": "item",
           "settings": {
             "title": "How should I take this product?",
-            "content": "<p>Extreme Endurance is recommended to be taken twice a day, 3 tablets in the morning and 3 tablets in the evening. Since this product is broken down in the small intestine rather than the stomach it does not need to be taken with food! If you are getting ready for a strenuous race or competition we recommend increasing the dosage to 4 tablets in the morning and 4 in the evening for one full week leading up to the competition\/event.<\/p>"
+            "content": "<p>Extreme Endurance is recommended to be taken twice a day, 3 tablets in the morning and 3 tablets in the evening. Since this product is broken down in the small intestine rather than the stomach it does not need to be taken with food! If you are getting ready for a strenuous race or competition we recommend increasing the dosage to 4 tablets in the morning and 4 in the evening for one full week leading up to the competition/event.</p>"
           }
         },
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2": {
           "type": "item",
           "settings": {
             "title": "Is this a pre-work out post-workout product?",
-            "content": "<p>Neither! This product is a daily routine that should be treated like you would your multi-vitamin. Never miss a day.<\/p>"
+            "content": "<p>Neither! This product is a daily routine that should be treated like you would your multi-vitamin. Never miss a day.</p>"
           }
         },
         "795cb8e4-7e18-40df-83ca-31944929a21f": {
           "type": "item",
           "settings": {
             "title": "Is this a product safe to take if I get drug tested?",
-            "content": "<p>Xendurance was the first US company to use LGC for testing their global products. Xendurance has been testing since 2008 when LGC, formerly known as HFL, was in charge of testing for the London Olympics. Xendurance chose LGC when they realized the in depth measures used by LGC were superior with some of the most stringent standards possible.<br\/><br\/> All Xendurance performance products are tested by LGC through their Informed Sport and Informed Choice programs. To ensure product has been tested by Informed-Choice & Informed-Sport, <a href=\"http:\/\/informed-choice.org\/\">click here<\/a> to search your lot number to confirm certification. If you do not see the lot# of the product on the LGC, Informed Sport certification pages, Xendurance does not guarantee that the product has been certified free of banned substances.<\/p>"
+            "content": "<p>Xendurance was the first US company to use LGC for testing their global products. Xendurance has been testing since 2008 when LGC, formerly known as HFL, was in charge of testing for the London Olympics. Xendurance chose LGC when they realized the in depth measures used by LGC were superior with some of the most stringent standards possible.<br/><br/> All Xendurance performance products are tested by LGC through their Informed Sport and Informed Choice programs. To ensure product has been tested by Informed-Choice & Informed-Sport, <a href=\"http://informed-choice.org/\">click here</a> to search your lot number to confirm certification. If you do not see the lot# of the product on the LGC, Informed Sport certification pages, Xendurance does not guarantee that the product has been certified free of banned substances.</p>"
           }
         }
       },
@@ -687,10 +690,10 @@
       "type": "newsletter",
       "settings": {
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "image": "shopify://shop_images/Newsletter.jpg",
         "show_icon": false,
         "title": "Get The Latest From Xendurance",
-        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
+        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. </p>",
         "button_text": "Subscribe",
         "subtext": "",
         "background": "#353435",

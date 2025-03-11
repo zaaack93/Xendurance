@@ -1,0 +1,206 @@
+<div style="background-color:{{ section.settings.bg_color }};color:{{ section.settings.text_color }};" class="section home_testimonials_section">
+<div class="testimonials__title-container">
+<h2 style="color:{{ section.settings.text_color }};" class="testimonials__title">{% render 'marker-text', heading: section.settings.title %}</h2>
+</div>
+
+<div data-testimonials-swiper class="swiper testimonials-slider testimonials_review_slider swiper-container">
+<div class="testimonials-slider__wrapper swiper-wrapper">
+{% for block in section.blocks %}
+<div class="swiper-slide testimonial-slide">
+{% if block.settings.image != blank %}<img class="testimonial-slide__image" src="{{ block.settings.image | img_url: 'master' }}" />{% endif %}
+<div class="testimonial-slide__content">
+  <div class="testimonial_text_top"> 
+<div class="stars-red-container">
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="16" viewBox="0 0 81 16" fill="none">
+<path d="M7.71805 0L9.45086 5.52786H15.0583L10.5218 8.94427L12.2546 14.4721L7.71805 11.0557L3.18149 14.4721L4.9143 8.94427L0.377748 5.52786H5.98524L7.71805 0Z" fill="#EB1000"></path>
+<path d="M24.096 0L25.8288 5.52786H31.4363L26.8997 8.94427L28.6325 14.4721L24.096 11.0557L19.5594 14.4721L21.2922 8.94427L16.7557 5.52786H22.3632L24.096 0Z" fill="#EB1000"></path>
+<path d="M40.4746 0L42.2074 5.52786H47.8149L43.2784 8.94427L45.0112 14.4721L40.4746 11.0557L35.9381 14.4721L37.6709 8.94427L33.1343 5.52786H38.7418L40.4746 0Z" fill="#EB1000"></path>
+<path d="M56.8529 0L58.5857 5.52786H64.1932L59.6567 8.94427L61.3895 14.4721L56.8529 11.0557L52.3164 14.4721L54.0492 8.94427L49.5126 5.52786H55.1201L56.8529 0Z" fill="#EB1000"></path>
+<path d="M73.2317 0L74.9645 5.52786H80.572L76.0355 8.94427L77.7683 14.4721L73.2317 11.0557L68.6952 14.4721L70.428 8.94427L65.8914 5.52786H71.4989L73.2317 0Z" fill="#EB1000"></path>
+</svg>
+</div>
+{% if block.settings.text != blank %}<div class="testimonial-slide__text">{{ block.settings.text }}</div>{% endif %}
+  </div>
+<div class="testimonial_text_bottom">  
+{% if block.settings.author_name != blank %}<h3 class="testimonial-slide__name">{{ block.settings.author_name }}</h3>{% endif %}
+{% if block.settings.author_name_text != blank %}<p class="testimonial-slide__role">{{ block.settings.author_name_text }}</p>{% endif %}
+</div>
+</div>
+</div>
+{% endfor %}
+</div>
+<div class="testimonials-slider__navigation">
+<div class="swiper_btn swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+  <g clip-path="url(#clip0_34_532)">
+    <rect y="0.511047" width="32" height="32" rx="16" fill="#E93B40"/>
+    <path d="M20.5465 22.1421L14.4398 16.0221L20.5465 9.90209L18.6665 8.02209L10.6665 16.0221L18.6665 24.0221L20.5465 22.1421Z" fill="white"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_34_532">
+      <rect y="0.511047" width="32" height="32" rx="16" fill="white"/>
+    </clipPath>
+  </defs>
+</svg></div>
+        <div class="swiper_btn swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+  <g clip-path="url(#clip0_34_535)">
+    <rect y="0.511047" width="32" height="32" rx="16" fill="#E93B40"/>
+    <path d="M11.4531 22.1421L17.5598 16.0221L11.4531 9.90209L13.3331 8.02209L21.3331 16.0221L13.3331 24.0221L11.4531 22.1421Z" fill="white"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_34_535">
+      <rect y="0.511047" width="32" height="32" rx="16" fill="white"/>
+    </clipPath>
+  </defs>
+</svg></div>
+
+</div> 
+</div>
+
+
+
+
+
+<div data-testimonials-thumbs-swiper class="testimonials-thumbs-slider swiper swiper-container">
+
+<div class="swiper-wrapper testimonials-thumbs-slider__wrapper">
+{% for block in section.blocks %}
+<div class="swiper-slide testimonials-thumbs-slide">
+{% if block.settings.image != blank %}<img src="{{ block.settings.image | img_url: 'master' }}" />{% endif %}
+</div>
+  {% endfor %}
+
+</div>
+<div class="testimonials-thumbs-slider__pagination swiper-pagination"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+        
+</div>
+
+
+<script>
+$(document).ready(function() {
+// Configuration for the thumbnails Swiper
+    const thumbsConfig = {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
+      pagination: {
+        el: '[data-testimonials-thumbs-swiper] .swiper-pagination',
+        clickable: true,
+      },
+    };
+
+    // Configuration for the main testimonials Swiper
+    const createConfig = (thumb) => ({
+      slidesPerView: 'auto',
+      loop: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '[data-testimonials-swiper] .swiper-button-next',
+        prevEl: '[data-testimonials-swiper] .swiper-button-prev',
+      },
+      pagination: {
+        el: '[data-testimonials-thumbs-swiper] .swiper-pagination',
+        clickable: true,
+      },
+      thumbs: {
+        swiper: thumb,
+      },
+    });
+
+    // Initialize the Swipers
+    const initTestimonials = () => {
+      const thumb = new Swiper("[data-testimonials-thumbs-swiper]", thumbsConfig);
+      const mySwiper = new Swiper("[data-testimonials-swiper]", createConfig(thumb));
+
+      // Optional: Adding click event on each slide
+      mySwiper.slides.forEach((slide, index) => {
+        slide.addEventListener('click', function (event) {
+          if (!event.currentTarget.classList.contains('swiper-slide-active')) {
+            mySwiper.slideTo(index, 0.3, false);
+          }
+        });
+      });
+    };
+
+    // Call the function to initialize the testimonials slider
+    initTestimonials();
+
+  
+});
+
+  
+</script>
+
+
+
+
+{% schema %}
+  {
+    "name": "Testimonial Reviews",
+    "settings": [
+   {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+    {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color"
+      }
+
+      
+    ],
+    "blocks": [
+    {
+      "name": "testimonail",
+      "type": "Testimonail",
+      "settings": [
+     {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+        {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+        {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name"
+    },
+        {
+      "type": "text",
+      "id": "author_name_text",
+      "label": "Author Info"
+    }
+        
+       
+      ]
+    }
+  ],
+    "presets": [
+    {
+      "name": "Testimonial Reviews"
+    }
+  ]
+  }
+{% endschema %}

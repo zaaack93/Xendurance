@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "custom.overlay",
   "name": "Overlay group",
@@ -20,7 +29,7 @@
       "disabled": true,
       "settings": {
         "privacy_bar_title": "Cookie policy",
-        "privacy_bar_content": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.<\/p>"
+        "privacy_bar_content": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
       }
     },
     "cart-drawer": {
@@ -31,13 +40,11 @@
         "show_view_cart_button": false,
         "show_checkout_button": true,
         "recommendations_title": "Often bought with",
-        "products": [
-
-        ],
+        "products": [],
         "product_card_background": "#ffffff",
         "product_card_text_color": "",
         "product": "team-xnd-membership",
-        "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
+        "custom_icon": "shopify://shop_images/TEAM_XND_Logo_100x100px.jpg",
         "background": "#353435",
         "text_color": "#ffffff",
         "atc_button_background": "#e83c41",
@@ -46,6 +53,7 @@
     },
     "search-drawer": {
       "type": "search-drawer",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "show_article_category": true,

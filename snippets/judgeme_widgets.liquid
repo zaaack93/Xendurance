@@ -22,7 +22,7 @@
     {% if widget_type == 'judgeme_all_reviews_text' %}
     <div class='jdgm-widget jdgm-all-reviews-text' data-from-snippet='{% if concierge_install != nil  %}{{ concierge_install }}{% else %}true{% endif %}' >
       <a href="javascript:void(0)">
-        <span class='jdgm-all-reviews-text__text' data-score="{{ shop.metafields.judgeme.all_reviews_rating }}" data-number-of-reviews="{{ shop.metafields.judgeme.all_reviews_count }}" data-locale="en">
+        <span class='jdgm-all-reviews-text__text2' data-score="{{ shop.metafields.judgeme.all_reviews_rating }}" data-number-of-reviews="{{ shop.metafields.judgeme.all_reviews_count }}" data-locale="en">
           {% render 'judgme-ratings' %}<span>{{ shop.metafields.judgeme.all_reviews_rating | round: 1 }} / 5</span>{% render 'rating-callout-separator' %}<span>{{ shop.metafields.judgeme.all_reviews_count }}</span> Reviews
         </span>
       </a>

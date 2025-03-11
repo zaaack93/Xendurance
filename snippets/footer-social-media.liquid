@@ -1,0 +1,187 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SOCIAL MEDIA
+----------------------------------------------------------------------------------------------------------------------
+
+Output a list of social media icons based on the social URL settings.
+
+********************************************
+Supported variables
+********************************************
+
+* size: can be "sm" or nothing. When setting is set to "sm", this only impacts the mobile (desktop uses the same size)
+{%- endcomment -%}
+
+{%- capture social_media -%}
+   {%- if settings.social_youtube != blank or shop.brand.metafields.social_links.youtube != blank -%}
+    <li>
+      <a href="{{ settings.social_youtube | default: shop.brand.metafields.social_links.youtube }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'YouTube' }}">
+        
+     <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M16.3257 5.33334C17.0377 5.33734 18.819 5.35468 20.7123 5.43068L21.3843 5.46001C23.2897 5.54934 25.1937 5.70401 26.139 5.96668C27.399 6.32134 28.3883 7.35334 28.723 8.66268C29.2563 10.7427 29.323 14.7987 29.331 15.7813L29.3323 15.984V16.216C29.323 17.1987 29.2563 21.256 28.723 23.3347C28.3843 24.648 27.3937 25.6813 26.139 26.0307C25.1937 26.2933 23.2897 26.448 21.3843 26.5373L20.7123 26.568C18.819 26.6427 17.0377 26.6613 16.3257 26.664L16.0123 26.6653H15.6723C14.1657 26.656 7.86433 26.588 5.85899 26.0307C4.60033 25.676 3.60966 24.644 3.27499 23.3347C2.74166 21.2547 2.67499 17.1987 2.66699 16.216V15.7813C2.67499 14.7987 2.74166 10.7413 3.27499 8.66268C3.61366 7.34934 4.60433 6.31601 5.86033 5.96801C7.86433 5.40934 14.167 5.34134 15.6737 5.33334H16.3257ZM13.3323 11.3333V20.6667L21.3323 16L13.3323 11.3333Z" fill="white"/>
+</svg>Youtube</span>
+     
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 12H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 7.49999V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </a>
+    </li>
+  {%- endif -%}
+    
+  {%- if settings.social_instagram != blank or shop.brand.metafields.social_links.instagram != blank -%}
+    <li>
+      <a href="{{ settings.social_instagram | default: shop.brand.metafields.social_links.instagram }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Instagram' }}">
+        
+<span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M17.1314 5C18.3689 5.0033 18.997 5.0099 19.5393 5.0253L19.7527 5.033C19.9991 5.0418 20.2422 5.0528 20.5359 5.066C21.7063 5.121 22.5049 5.3058 23.2056 5.5775C23.9316 5.8569 24.5432 6.2353 25.1548 6.8458C25.7143 7.3955 26.1472 8.06071 26.4231 8.79499C26.6948 9.49569 26.8796 10.2943 26.9346 11.4658C26.9478 11.7584 26.9588 12.0015 26.9676 12.249L26.9742 12.4624C26.9907 13.0036 26.9973 13.6317 26.9995 14.8692L27.0006 15.6898V17.1308C27.0033 17.9331 26.9948 18.7355 26.9753 19.5376L26.9687 19.751C26.9599 19.9985 26.9489 20.2416 26.9357 20.5342C26.8807 21.7057 26.6937 22.5032 26.4231 23.205C26.1472 23.9392 25.7143 24.6045 25.1548 25.1542C24.6051 25.7137 23.9399 26.1466 23.2056 26.4225C22.5049 26.6942 21.7063 26.879 20.5359 26.934L19.7527 26.9669L19.5393 26.9736C18.997 26.989 18.3689 26.9967 17.1314 26.9989L16.3108 27H14.8709C14.0682 27.0028 13.2655 26.9943 12.463 26.9746L12.2496 26.9681C11.9885 26.9582 11.7274 26.9468 11.4664 26.934C10.296 26.879 9.49742 26.6942 8.79562 26.4225C8.06173 26.1464 7.39691 25.7136 6.84752 25.1542C6.28756 24.6046 5.85434 23.9393 5.57812 23.205C5.30643 22.5043 5.12163 21.7057 5.06663 20.5342L5.03363 19.751L5.02813 19.5376C5.00785 18.7355 4.99868 17.9331 5.00063 17.1308V14.8692C4.99758 14.0668 5.00565 13.2645 5.02483 12.4624L5.03253 12.249C5.04133 12.0015 5.05233 11.7584 5.06553 11.4658C5.12053 10.2943 5.30532 9.49679 5.57702 8.79499C5.85389 8.06041 6.28787 7.39517 6.84862 6.8458C7.39769 6.2865 8.06213 5.85368 8.79562 5.5775C9.49742 5.3058 10.2949 5.121 11.4664 5.066C11.759 5.0528 12.0032 5.0418 12.2496 5.033L12.463 5.0264C13.2651 5.00686 14.0675 4.99842 14.8698 5.0011L17.1314 5ZM16.0006 10.5C14.5419 10.5 13.143 11.0794 12.1115 12.1109C11.0801 13.1423 10.5006 14.5413 10.5006 16C10.5006 17.4587 11.0801 18.8576 12.1115 19.8891C13.143 20.9205 14.5419 21.5 16.0006 21.5C17.4593 21.5 18.8582 20.9205 19.8897 19.8891C20.9211 18.8576 21.5006 17.4587 21.5006 16C21.5006 14.5413 20.9211 13.1423 19.8897 12.1109C18.8582 11.0794 17.4593 10.5 16.0006 10.5ZM16.0006 12.7C16.434 12.6999 16.8631 12.7852 17.2635 12.951C17.6639 13.1167 18.0277 13.3598 18.3342 13.6661C18.6407 13.9725 18.8838 14.3363 19.0497 14.7366C19.2156 15.137 19.3011 15.5661 19.3011 15.9994C19.3012 16.4328 19.2159 16.8619 19.0502 17.2623C18.8844 17.6627 18.6414 18.0266 18.335 18.333C18.0286 18.6395 17.6649 18.8827 17.2645 19.0486C16.8642 19.2145 16.4351 19.2999 16.0017 19.3C15.1265 19.3 14.2871 18.9523 13.6683 18.3334C13.0494 17.7146 12.7017 16.8752 12.7017 16C12.7017 15.1248 13.0494 14.2854 13.6683 13.6665C14.2871 13.0477 15.1265 12.7 16.0017 12.7M21.7767 8.84999C21.412 8.84999 21.0623 8.99486 20.8044 9.25272C20.5466 9.51058 20.4017 9.86032 20.4017 10.225C20.4017 10.5897 20.5466 10.9394 20.8044 11.1973C21.0623 11.4551 21.412 11.6 21.7767 11.6C22.1414 11.6 22.4911 11.4551 22.749 11.1973C23.0068 10.9394 23.1517 10.5897 23.1517 10.225C23.1517 9.86032 23.0068 9.51058 22.749 9.25272C22.4911 8.99486 22.1414 8.84999 21.7767 8.84999Z" fill="white"/>
+</svg>instagram</span>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 12H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 7.49999V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_facebook != blank or shop.brand.metafields.social_links.facebook != blank -%}
+    <li>
+      <a href="{{ settings.social_facebook | default: shop.brand.metafields.social_links.facebook }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Facebook' }}">
+        
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M27.0021 16.0025C27.0021 9.92912 22.073 5 15.9996 5C9.92619 5 4.99707 9.92912 4.99707 16.0025C4.99707 21.3277 8.78193 25.7617 13.7991 26.785V19.3033H11.5986V16.0025H13.7991V13.2519C13.7991 11.1284 15.5265 9.401 17.65 9.401H20.4006V12.7018H18.2001C17.5949 12.7018 17.0998 13.1969 17.0998 13.802V16.0025H20.4006V19.3033H17.0998V26.95C22.6561 26.3999 27.0021 21.7128 27.0021 16.0025Z" fill="white"/>
+</svg>facebook</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 12H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 7.49999V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_twitter != blank or shop.brand.metafields.social_links.twitter != blank -%}
+    <li>
+      <a href="{{ settings.social_twitter | default: shop.brand.metafields.social_links.twitter }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Twitter' }}">
+       
+    <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M9.71429 7C8.21719 7 7 8.21719 7 9.71429V23.2857C7 24.7828 8.21719 26 9.71429 26H23.2857C24.7828 26 26 24.7828 26 23.2857V9.71429C26 8.21719 24.7828 7 23.2857 7H9.71429ZM22.3145 10.5625L17.9123 15.5924L23.0906 22.4375H19.0362L15.8638 18.2855L12.2292 22.4375H10.2147L14.9223 17.0556L9.95603 10.5625H14.1123L16.9835 14.3583L20.3 10.5625H22.3145ZM20.7114 21.233L13.5058 11.7033H12.3056L19.5917 21.233H20.7071H20.7114Z" fill="white"/>
+</svg>x</span>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 12H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 7.49999V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </a>
+    </li>
+  {%- endif -%}
+
+
+  {%- if settings.social_pinterest != blank or shop.brand.metafields.social_links.pinterest != blank -%}
+    <li>
+      <a href="{{ settings.social_pinterest | default: shop.brand.metafields.social_links.pinterest }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Pinterest' }}">
+        {%- render 'icon' with 'pinterest' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+ 
+
+  {%- if settings.social_tiktok != blank or shop.brand.metafields.social_links.tiktok != blank -%}
+    <li>
+      <a href="{{ settings.social_tiktok | default: shop.brand.metafields.social_links.tiktok }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'TikTok' }}">
+        {%- render 'icon' with 'tiktok' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_vimeo != blank or shop.brand.metafields.social_links.vimeo != blank -%}
+    <li>
+      <a href="{{ settings.social_vimeo | default: shop.brand.metafields.social_links.vimeo }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Vimeo' }}">
+        {%- render 'icon' with 'vimeo' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_linkedin != blank -%}
+    <li>
+      <a href="{{ settings.social_linkedin }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'LinkedIn' }}">
+        {%- render 'icon' with 'linkedin' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_snapchat != blank or shop.brand.metafields.social_links.snapchat != blank -%}
+    <li>
+      <a href="{{ settings.social_snapchat | default: shop.brand.metafields.social_links.snapchat }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Snapchat' }}">
+        {%- render 'icon' with 'snapchat' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_tumblr != blank or shop.brand.metafields.social_links.tumblr != blank -%}
+    <li>
+      <a href="{{ settings.social_tumblr | default: shop.brand.metafields.social_links.tumblr }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Tumblr' }}">
+        {%- render 'icon' with 'tumblr' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_fancy != blank -%}
+    <li>
+      <a href="{{ settings.social_fancy }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Fancy' }}">
+        {%- render 'icon' with 'fancy' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_wechat != blank -%}
+    <li>
+      <a href="{{ settings.social_wechat }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'WeChat' }}">
+        {%- render 'icon' with 'wechat' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_reddit != blank -%}
+    <li>
+      <a href="{{ settings.social_reddit }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Reddit' }}">
+        {%- render 'icon' with 'reddit' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_line != blank -%}
+    <li>
+      <a href="{{ settings.social_line }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'LINE' }}">
+        {%- render 'icon' with 'line' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_spotify != blank -%}
+    <li>
+      <a href="{{ settings.social_spotify }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Spotify' }}">
+        {%- render 'icon' with 'spotify' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_21buttons != blank -%}
+    <li>
+      <a href="{{ settings.social_21buttons }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: '21 Buttons' }}">
+        {%- render 'icon' with '21buttons' -%}
+      </a>
+    </li>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if social_media != blank -%}
+  <ul class="social-media {% if size == 'sm' %}social-media--sm{% endif %}" role="list">
+    {{- social_media -}}
+  </ul>
+{%- endif -%}

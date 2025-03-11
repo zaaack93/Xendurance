@@ -1,3 +1,11 @@
+<script>
+window._Sendlane = window._Sendlane || [];
+_Sendlane.push({
+    event_id: 'vJGbrTUG955Om'
+});
+</script>
+<script src="https://sendlane.com/scripts/pusher.js" async></script>
+
 {%- comment -%}
 IMPLEMENTATION NOTE: Impact header with all the menu is an extremely complex piece of code. Due to requirements from design
 team, we had to cover over hundred of potential combinations. As a consequence, this part (and all the menu snippets) are
@@ -115,7 +123,7 @@ the underlying logic of the menu.
             {%- render 'icon' with 'hamburger' -%}
           </button>
 
-          <a href="{{ routes.search_url }}" class="tap-area sm:hidden" aria-controls="search-drawer">
+          <a href="{{ routes.search_url }}" class="tap-area hidden sm:hidden" aria-controls="search-drawer">
             <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
             {%- render 'icon' with 'search' -%}
           </a>
@@ -296,7 +304,7 @@ the underlying logic of the menu.
           </a>
           
           {%- if shop.customer_accounts_enabled -%}
-            <a href="{{ routes.account_url }}" class="hidden tap-area sm:block">
+            <a href="{{ routes.account_url }}" class="tap-area sm:block">
               <span class="sr-only">{{ 'header.general.open_account' | t }}</span>
               {%- render 'icon' with 'account' -%}
             </a>
@@ -631,6 +639,18 @@ the underlying logic of the menu.
       "id": "footer_button_text_color",
       "label": "Footer Button text",
       "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "footer_login_button_background",
+      "label": "Footer Login Button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "footer_login_button_text_color",
+      "label": "Footer Login Button text",
+      "default": "#ffffff"
     },
     {
       "type": "checkbox",

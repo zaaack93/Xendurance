@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "404": {
     "general": {
@@ -90,7 +99,7 @@
       "view_in_space": "Se den i dit område",
       "taxes_included": "Inkl. moms.",
       "taxes_excluded": "Ekskl. moms.",
-      "shipping_policy_html": "Moms og <a href=\"{{ link }}\" class=\"link\">levering beregnes<\/a> ved kassen",
+      "shipping_policy_html": "Moms og <a href=\"{{ link }}\" class=\"link\">levering beregnes</a> ved kassen",
       "size_chart": "Størrelsesoversigt",
       "available_colors_count": {
         "one": "{{ count }} farve tilgængelig",
@@ -314,9 +323,9 @@
       "view_cart": "Vis indkøbskurv",
       "checkout": "Gå til kasse",
       "we_accept": "Vi accepterer",
-      "taxes_and_shipping_policy_at_checkout_html": "Moms og <a href=\"{{ link }}\" class=\"link\">levering<\/a> beregnes ved kassen",
+      "taxes_and_shipping_policy_at_checkout_html": "Moms og <a href=\"{{ link }}\" class=\"link\">levering</a> beregnes ved kassen",
       "taxes_included_but_shipping_at_checkout": "Inkl. moms og levering beregnes ved kassen",
-      "taxes_included_and_shipping_policy_html": "Moms inkluderet. <a href=\"{{ link }}\" class=\"link\">Levering<\/a> beregnes ved kassen.",
+      "taxes_included_and_shipping_policy_html": "Moms inkluderet. <a href=\"{{ link }}\" class=\"link\">Levering</a> beregnes ved kassen.",
       "taxes_and_shipping_at_checkout": "Moms og levering beregnes ved kassen"
     },
     "order": {

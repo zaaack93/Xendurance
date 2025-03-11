@@ -41,7 +41,7 @@
       }
     {%- endif -%}
   </style>
-
+<div class="{{ section.settings.custom_class }} section_icon_text_stack">
   <div {% render 'section-properties' %}>
     <div class="section-stack">
       {%- if section.settings.title != blank -%}
@@ -103,7 +103,7 @@
         {%- endif -%}
       </div>
     </div>
-  </div>
+  </div></div>
 {%- endif -%}
 
 {% schema %}
@@ -456,6 +456,11 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
     {
       "type": "checkbox",
       "id": "full_width",

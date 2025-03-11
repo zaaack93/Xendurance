@@ -4289,3 +4289,31 @@ export {
   throttle,
   waitForEvent
 };
+
+
+/* JCI - Not the best place but putting this script here as there seems to be something on the store that prevents inline scripts from running */
+/* Iphone Safari breaks on our CSS, lets just disable this for iphone users isntead */
+if (navigator.userAgent.match(/iPhone/i)) {
+    document.body.classList.add('is-iphone');
+} else {
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const headerSidebarMenu = document.getElementById("header-sidebar-menu");
+    const targetNode = headerSidebarMenu.querySelector('.panel-list__wrapper .panel:first-child');
+    const config = { attributes: true, childList: false, subtree: false };
+    const callback = (mutationList, observer) => {
+      for (const mutation of mutationList) {
+        if (mutation.type === "attributes") {
+          const style = window.getComputedStyle(targetNode);
+          if (style.visibility === 'visible') {
+            headerSidebarMenu.style.height = 'max-content';
+          } else {
+            headerSidebarMenu.style.height = '';
+          }
+        }
+      }
+    };
+    const observer = new MutationObserver(callback);
+    observer.observe(targetNode, config);
+    headerSidebarMenu.style.height = 'max-content';
+  });
+}

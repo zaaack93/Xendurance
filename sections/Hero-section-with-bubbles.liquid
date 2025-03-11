@@ -106,7 +106,7 @@ CSS
   
   {%- assign slideshow_id = 'slideshow-' | append: section.id -%}
   
-  <x-slideshow swipeable="false" class="slideshow hero-section-wtih-bubble {% unless section.settings.full_width %}slideshow--boxed{% endunless %} {% if section.blocks.size > 1 %}slideshow--multiple-slides{% endif %}" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
+  <x-slideshow swipeable="false" class="hero_slideshow_section_block slideshow hero-section-wtih-bubble {% unless section.settings.full_width %}slideshow--boxed{% endunless %} {% if section.blocks.size > 1 %}slideshow--multiple-slides{% endif %}" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
     {%- unless section.settings.full_width -%}
       <span class="slideshow__slide-background"></span>
     {%- endunless -%}
@@ -128,6 +128,55 @@ CSS
         {% if block.type == "image" %}
         {%- capture slide -%}
           <div class="content-over-media content-over-media--{{ section.settings.image_size }} {% unless section.settings.full_width %}rounded{% endunless %}" data-category="{{ block.settings.bubble_category }}" style="--content-over-media-content-max-width: {{ block.settings.content_max_width }}px; --content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
+            
+
+             {% if block.settings.show_video != blank %}
+
+
+{%- capture poster -%}
+      {%- assign poster_image = block.settings.poster | default: block.settings.video.preview_image -%}
+
+      {%- if block.settings.autoplay == false and poster_image != blank -%}
+        {%- capture sizes -%}{% if block.settings.full_width %}100vw{% else %}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min({{ settings.page_width }}px, 100vw - 96px){% endif %}{%- endcapture -%}
+        {{- poster_image | image_url: width: poster_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+      {%- endif -%}
+    {%- endcapture -%}
+
+    {%- if block.settings.video -%}
+      <video-media {% if block.settings.autoplay %}autoplay{% endif %}>
+        {%- assign show_controls = block.settings.show_controls -%}
+
+        {{- block.settings.video | video_tag: playsinline: true, preload: 'metadata', muted: block.settings.autoplay, loop: block.settings.autoplay, controls: show_controls, image_size: '800x' -}}
+        {{- poster -}}
+      </video-media>
+    {%- elsif block.settings.external_video_url_metafield!=blank -%}
+    {% assign video_id = block.settings.external_video_url_metafield | split: "watch?v=" %}
+      <video-media host="youtube" {% if block.settings.autoplay %}autoplay class="pointer-events-none"{% endif %}>
+        {{- poster -}}
+
+        <template>
+            <iframe src="https://www.youtube.com/embed/{{video_id.last}}?playsinline=1&{% if block.settings.autoplay %}autoplay=1&controls=1&mute=1&loop=1&{% endif %}playlist={{video_id.last}}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+        </template>
+      </video-media>
+
+    {%- else -%}
+      <video-media host="{{ block.settings.external_video_url.type }}" {% if block.settings.autoplay %}autoplay class="pointer-events-none"{% endif %}>
+        {{- poster -}}
+
+        <template>
+          {%- if block.settings.external_video_url.type == 'youtube' -%}
+            <iframe src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&{% if block.settings.autoplay %}autoplay=1&controls=1&mute=1&loop=1&{% endif %}playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+          {%- elsif block.settings.external_video_url.type == 'vimeo' -%}
+            <iframe src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autopause=1&{% if block.settings.autoplay %}background=1&autoplay=1&loop=1&muted=1&{% endif %}transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
+          {%- endif -%}
+        </template>
+      </video-media>
+    {%- endif -%}
+
+               
+
+            {% else %}
+            
             {%- comment -%}---------------- MEDIA ----------------{%- endcomment -%}
             {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
   
@@ -145,7 +194,13 @@ CSS
               {%- capture placeholder_image -%}{% cycle 'placeholder': 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
               {{- placeholder_image | placeholder_svg_tag: 'placeholder' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
             {%- endif -%}
-  
+
+{% endif %}
+
+
+
+
+               
             {%- comment -%}---------------- CONTENT ----------------{%- endcomment -%}
             {%- capture content_class -%}{{ block.settings.mobile_text_position }} {{ block.settings.desktop_text_position }} container-containt-bottom {%- endcapture -%}
   
@@ -192,6 +247,11 @@ CSS
                   </div>
                 {%- endif -%}
               </div>
+{%comment%}Judgme widget{%endcomment%}
+              <div class="judge_me_widget_container judge_review_desktop">
+                {% render 'judgeme_widgets', widget_type: 'judgeme_all_reviews_text', concierge_install: false%}
+              </div>
+              
             </div>
           </div>
         {%- endcapture -%}
@@ -431,7 +491,7 @@ CSS
             "id": "bubble_category",
             "label": "Category",
             "default": "Categorie"
-        },
+          },
           {
             "type": "image_picker",
             "id": "image",
@@ -443,6 +503,54 @@ CSS
             "id": "mobile_image",
             "label": "Mobile image",
             "info": "1200 x 1600px .jpg recommended"
+          },
+          {
+            "type": "header",
+            "content": "Video"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_video",
+            "label": "Enable Video",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Autoplay",
+            "info": "Video are muted to allow autoplay. For best results, do not add any content on top of the video when autoplay is enabled.",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_controls",
+            "label": "Show controls",
+            "default": true, 
+          },
+          {
+            "type": "video",
+            "id": "video",
+            "label": "Video",
+            "info": "Replaces external video if both are set."
+          },
+          {
+            "type": "url",
+            "id": "external_video_url_metafield",
+            "label": "Video URL",
+            "info": "Use this option if you want to set the video through metafield"
+          },
+          {
+            "type": "video_url",
+            "id": "external_video_url",
+            "accept": ["vimeo", "youtube"],
+            "label": "Video URL",
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "image_picker",
+            "id": "poster",
+            "label": "Poster image",
+            "info": "3200 x 1600px .jpg recommended. Poster is not visible when autoplay is enabled."
           },
           {
             "type": "header",

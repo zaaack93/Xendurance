@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "db387067-1395-44ce-8b90-da3484c2ea9f": {
@@ -6,62 +15,38 @@
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-1": {
           "type": "image",
           "settings": {
-            "bubble_category": "Supplements",
-            "image": "shopify:\/\/shop_images\/Hero_Desktop_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Metafield_Photos_4b48a259-5b23-41a9-a867-5d68f9147131.jpg",
+            "bubble_category": "",
+            "image": "shopify://shop_images/20240717_Xendurance_Emily-35_3aff2af0-f47b-4e5c-a7d7-1b745b8d13e2.jpg",
+            "mobile_image": "shopify://shop_images/20240717_Xendurance_Emily-35_3aff2af0-f47b-4e5c-a7d7-1b745b8d13e2.jpg",
+            "show_video": true,
+            "autoplay": true,
+            "show_controls": false,
+            "video": "shopify://files/videos/250205_Home page video.mp4",
+            "external_video_url_metafield": "",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "poster": "shopify://shop_images/20240717_Xendurance_Emily-35_3aff2af0-f47b-4e5c-a7d7-1b745b8d13e2.jpg",
             "content_max_width": 680,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "footer_collout_badge": true,
-            "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
-            "content": "<p>Unsure where to start? <a href=\"\/pages\/product-finder\" target=\"_blank\" title=\"Product Finder\">Take the Quiz<\/a><\/p>",
-            "title": "Certified Sport and Performance Products",
-            "heading_tag": "h2",
-            "button_text": "Shop All Supplements",
-            "button_link": "shopify:\/\/collections\/all-products",
-            "button_link_members": "shopify:\/\/collections\/team-xnd-products",
-            "secondary_button_text": "Shop All Skin",
-            "secondary_button_link": "shopify:\/\/collections\/skincare",
-            "secondary_button_link_members": "shopify:\/\/collections\/skin",
+            "subheading": "Clinically proven supplements to improve endurance, energy, strength and lean body mass.",
+            "content": "<p>Unsure where to start? <a href=\"/pages/product-finder\" target=\"_blank\" title=\"Product Finder\">Take the Quiz</a></p>",
+            "title": "Certified Sport + Performance Products",
+            "heading_tag": "h1",
+            "button_text": "Shop All Products",
+            "button_link": "shopify://collections/products",
+            "button_link_members": "shopify://collections/team-xnd-products",
+            "secondary_button_text": "",
+            "secondary_button_link": "shopify://collections/skincare",
+            "secondary_button_link_members": "shopify://collections/skin",
             "text_color": "#ffffff",
             "button_background": "#e93a3f",
             "button_text_color": "#ffffff",
             "secondary_button_background": "#00a9e0",
             "secondary_button_text_color": "#ffffff",
-            "overlay_color": "#000000",
+            "overlay_color": "#ffffff",
             "overlay_opacity": 0,
             "background": "#ffffff",
-            "background_gradient": ""
-          }
-        },
-        "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0": {
-          "type": "image",
-          "settings": {
-            "bubble_category": "Skin",
-            "image": "shopify:\/\/shop_images\/XND_-_Hero.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/skin.webp",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "footer_collout_badge": true,
-            "subheading": "Effective skincare you can actually trust. Informed Sport Certified.",
-            "content": "<p>Unsure where to start? <a href=\"\/pages\/perfect-path-quiz\" title=\"Perfect Path Quiz\">Take the Quiz<\/a><\/p>",
-            "title": "First Ever Skincare Tested For Banned Substances",
-            "heading_tag": "h2",
-            "button_text": "Shop All SKIN",
-            "button_link": "shopify:\/\/collections\/skincare",
-            "button_link_members": "shopify:\/\/collections\/skin",
-            "secondary_button_text": "Shop All SKIN",
-            "secondary_button_link": "",
-            "secondary_button_link_members": "",
-            "text_color": "#ffffff",
-            "button_background": "#00a9e0",
-            "button_text_color": "#ffffff",
-            "secondary_button_background": "#f83a3a",
-            "secondary_button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "#ecedee",
             "background_gradient": ""
           }
         },
@@ -69,10 +54,10 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/best-sellers",
-            "bubble_collection_members": "shopify:\/\/collections\/best-sellers-1",
+            "bubble_collection": "shopify://collections/best-sellers",
+            "bubble_collection_members": "shopify://collections/best-sellers-1",
             "bubble_color": "#e93b40",
-            "bubble_image": "shopify:\/\/shop_images\/Extreme_Endurance-_1.png",
+            "bubble_image": "shopify://shop_images/EE_Test_Collagen.jpg",
             "bubble_text": "Best Sellers"
           }
         },
@@ -80,10 +65,10 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/energy",
-            "bubble_collection_members": "shopify:\/\/collections\/energy-1",
+            "bubble_collection": "shopify://collections/energy",
+            "bubble_collection_members": "shopify://collections/energy-1",
             "bubble_color": "#e93b40",
-            "bubble_image": "shopify:\/\/shop_images\/image_25.jpg",
+            "bubble_image": "shopify://shop_images/Focus_Quatro-Pouches_Sticks_7aaebc4b-d2c2-47a9-8bd1-c2e00038367f.png",
             "bubble_text": "Energy"
           }
         },
@@ -91,10 +76,10 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/daily-2",
-            "bubble_collection_members": "shopify:\/\/collections\/daily-1",
+            "bubble_collection": "shopify://collections/daily-2",
+            "bubble_collection_members": "shopify://collections/daily-1",
             "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Daily_Foundation-Stand_df40e207-78e5-4b61-a6d3-5fa281ca06d9.png",
+            "bubble_image": "shopify://shop_images/Daily_Foundation-Stand_df40e207-78e5-4b61-a6d3-5fa281ca06d9.png",
             "bubble_text": "Daily"
           }
         },
@@ -102,10 +87,10 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/recovery",
-            "bubble_collection_members": "shopify:\/\/collections\/recovery-1",
+            "bubble_collection": "shopify://collections/recovery",
+            "bubble_collection_members": "shopify://collections/recovery-1",
             "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/menu-link-all-supplements.jpg",
+            "bubble_image": "shopify://shop_images/menu-link-all-supplements.jpg",
             "bubble_text": "Recovery"
           }
         },
@@ -113,10 +98,10 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/transform",
-            "bubble_collection_members": "shopify:\/\/collections\/transform-1",
+            "bubble_collection": "shopify://collections/transform",
+            "bubble_collection_members": "shopify://collections/transform-1",
             "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Weight_Management_Pack-Stand_d77fc303-694b-473d-b080-ea27d105140c.png",
+            "bubble_image": "shopify://shop_images/Weight_Management_Pack-Stand_1_5d7ec6c4-efbb-4701-b92d-f4d8fe2feb2f.png",
             "bubble_text": "Transform"
           }
         },
@@ -124,88 +109,32 @@
           "type": "text",
           "settings": {
             "bubble_category": "Supplements",
-            "bubble_collection": "shopify:\/\/collections\/packs-1",
-            "bubble_collection_members": "shopify:\/\/collections\/packs",
+            "bubble_collection": "shopify://collections/packs-1",
+            "bubble_collection_members": "shopify://collections/packs",
             "bubble_color": "#f83a3a",
-            "bubble_image": "shopify:\/\/shop_images\/Victory_Pack-Float_1024x1024_9f1ac1e0-edce-4e17-b528-ddcebd1fa311.webp",
+            "bubble_image": "shopify://shop_images/Victory_Pack-Stand_90b9f1df-62b0-40a7-883a-fcb0a10ae106.png",
             "bubble_text": "Packs"
-          }
-        },
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/collections\/skincare",
-            "bubble_collection_members": "shopify:\/\/collections\/skin",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/Xnd-Sups_6_Complete_Skin_Pack-1-Night_Moisture_2_1_Small_69a367b3-fba2-4e92-9c48-9e8d7244eae5.jpg",
-            "bubble_text": "All SKIN"
-          }
-        },
-        "fd2b915b-f73c-45fc-99be-44394c218002": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/products\/day-skin",
-            "bubble_collection_members": "shopify:\/\/products\/day-skin-1",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/xendurance-day-skin-33508277256380.png",
-            "bubble_text": "Day SKIN"
-          }
-        },
-        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/products\/night-skin",
-            "bubble_collection_members": "shopify:\/\/products\/night-skin",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/Night_Skin_Pack-Trio-1.png",
-            "bubble_text": "Night SKIN"
-          }
-        },
-        "8c296aac-2089-4f5a-aa10-15dab5e4fbea": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/pages\/team-xnd-signup",
-            "bubble_collection_members": "shopify:\/\/pages\/team-xnd-signup",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
-            "bubble_text": "Membership"
-          }
-        },
-        "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/pages\/product-finder",
-            "bubble_collection_members": "shopify:\/\/pages\/product-finder",
-            "bubble_color": "#00a9e0",
-            "bubble_image": "shopify:\/\/shop_images\/QUIZ_Logo_100x100px.jpg",
-            "bubble_text": "Quiz"
           }
         }
       },
       "block_order": [
         "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-1",
-        "template--16030540497084__db387067-1395-44ce-8b90-da3484c2ea9f-16841651697584f189-0",
         "875832ff-ea4f-469d-9149-27254d87110c",
         "058688b9-1ab6-4706-8af8-256285b23670",
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c",
         "f4122a0f-70e0-4220-adf0-3f2f634c9c85",
         "c2b11881-c704-447d-8eaa-4f0ec9f01ad8",
-        "491f5be4-58a1-4565-94f6-a805099fda8e",
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
-        "fd2b915b-f73c-45fc-99be-44394c218002",
-        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d",
-        "8c296aac-2089-4f5a-aa10-15dab5e4fbea",
-        "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac"
+        "491f5be4-58a1-4565-94f6-a805099fda8e"
+      ],
+      "custom_css": [
+        ".jdgm-all-reviews-text__text2 {justify-content: right;}",
+        "@media (max-width: 699px) {video-media {width: 100vw; height: 100%; } .hero-section-wtih-bubble slideshow-carousel .content-over-media .container-containt-bottom {grid-area: 5/1 / auto/span 3; max-width: unset; } .jdgm-all-reviews-text__text2 {justify-content: center; }}",
+        "@media (min-width: 700px) {.hero_slideshow_section_block .judge_review_desktop .jdgm-all-reviews-text > a {display: none; } .hero-callout-badge {margin-bottom: -22px; }}"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
-        "image_size": "auto",
+        "image_size": "fill",
         "controls_type": "none",
         "transition_type": "fade_with_text",
         "autoplay": false,
@@ -214,103 +143,178 @@
         "background_gradient": ""
       }
     },
-    "slideshow": {
-      "type": "slideshow",
+    "home_featured_collection_4inUcX": {
+      "type": "home-featured-collection",
       "blocks": {
-        "slide-1": {
-          "type": "image",
+        "collection_AHPt6z": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XND_-_Hero.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Extreme_Endurance_3.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "collection": "best-sellers",
+            "collection_members": "best-sellers-1",
+            "image": "shopify://shop_images/EE_Test_Collagen.jpg",
             "subheading": "",
-            "title": "Certified Sport and Performance Formulas",
+            "title": "Best Sellers",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
             "heading_tag": "h2",
-            "button_text": "Shop All Supplements",
-            "button_link": "shopify:\/\/collections\/all-products",
-            "button_link_members": "",
-            "text_color": "#ffffff",
-            "button_background": "#e93b40",
-            "button_text_color": "#ffffff",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "#1a1a1a",
+            "button_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
             "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
+            "overlay_opacity": 0
           }
         },
-        "slide-2": {
-          "type": "image",
-          "disabled": true,
+        "collection_CmcPQX": {
+          "type": "collection",
           "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "button_link_members": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
+            "collection": "energy",
+            "collection_members": "energy-1",
+            "image": "shopify://shop_images/Focus_Quatro-Pouches_Sticks_7aaebc4b-d2c2-47a9-8bd1-c2e00038367f.png",
+            "subheading": "",
+            "title": "Energy",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "#1a1a1a",
+            "button_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
+            "overlay_opacity": 0
+          }
+        },
+        "collection_mxFLYT": {
+          "type": "collection",
+          "settings": {
+            "collection": "daily-2",
+            "collection_members": "daily-1",
+            "image": "shopify://shop_images/Daily_Foundation-Stand-New_Informed_Sport_Logo.png",
+            "subheading": "",
+            "title": "Daily",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "#1a1a1a",
+            "button_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_HKbzLt": {
+          "type": "collection",
+          "settings": {
+            "collection": "recovery",
+            "collection_members": "recovery-1",
+            "image": "shopify://shop_images/Performance_Pack-Float-New_Informed_Sport_Logo.png",
+            "subheading": "",
+            "title": "Recovery",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "#1a1a1a",
+            "button_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_D3QJVJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "transform",
+            "collection_members": "transform-1",
+            "image": "shopify://shop_images/Weight_Management_Pack-New_Informed_Sport_Logo.png",
+            "subheading": "",
+            "title": "Transform",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "#1a1a1a",
+            "button_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_q3437M": {
+          "type": "collection",
+          "settings": {
+            "collection": "packs-1",
+            "collection_members": "packs",
+            "image": "shopify://shop_images/Victory_Pack-Stand_90b9f1df-62b0-40a7-883a-fcb0a10ae106.png",
+            "subheading": "",
+            "title": "Packs",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "#1a1a1a",
+            "button_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_XnQNg7": {
+          "type": "collection",
+          "settings": {
+            "collection": "skincare",
+            "collection_members": "skin",
+            "image": "shopify://shop_images/menu-link-all-skin.jpg",
+            "subheading": "",
+            "title": "SKIN",
+            "link_text": "shop",
+            "btn_link": "",
+            "url": "",
+            "url_members": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-end-start text-start",
+            "button_background": "",
+            "button_text_color": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2"
+        "collection_AHPt6z",
+        "collection_CmcPQX",
+        "collection_mxFLYT",
+        "collection_HKbzLt",
+        "collection_D3QJVJ",
+        "collection_q3437M",
+        "collection_XnQNg7"
       ],
-      "disabled": true,
       "settings": {
+        "custom-class": "",
         "full_width": true,
-        "allow_transparent_header": true,
-        "image_size": "lg",
-        "controls_type": "numbers",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "best-sellers",
-        "collection_members": "best-sellers-1",
-        "products": [
-
-        ],
-        "products_members": [
-
-        ],
-        "full_width": true,
-        "stack_products": true,
+        "stack_collections": false,
+        "collections_per_row": 5,
         "show_progress_bar": false,
-        "products_count": 8,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_url_members": "",
-        "link_text": "View all",
-        "background": "",
+        "title": "Shop Your |Goal|",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "heading_gradient": ""
       }
     },
     "17338140-d4f4-4fdf-92a0-bc9aad196adb": {
@@ -352,7 +356,7 @@
         "products_per_row_desktop": 4,
         "subheading": "",
         "title": "Our |Most Trusted| Products |Best Sellers|",
-        "content": "<p>Every product is built with the most bioavailable and effective ingredients at research dosage levels. Third party tested by Informed Sport.<\/p>",
+        "content": "<p>Every product is built with the most bioavailable and effective ingredients at research dosage levels. Third party tested by Informed Sport.</p>",
         "link_url": "",
         "link_text": "View all",
         "background": "#f5f5f5",
@@ -363,293 +367,37 @@
         "product_card_background": "",
         "product_card_text_color": "",
         "footer_text_paragraphe": "Proudly American Made",
-        "footer_image_paragraph": "shopify:\/\/shop_images\/image_49.png",
+        "footer_image_paragraph": "shopify://shop_images/image_49.png",
         "footer_button_text": "Shop All Supplements",
-        "footer_button_url": "shopify:\/\/collections\/all-products",
-        "members_footer_button_url": "shopify:\/\/collections\/team-xnd-products"
-      }
-    },
-    "press": {
-      "type": "press",
-      "blocks": {
-        "16644243327ba53d2a-1": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Josh.png",
-            "logo_width": 100,
-            "author": "Josh Bridges - Coach\/Athlete",
-            "content": "As a former Navy SEAL and 6x CrossFit Games Athlete, I know the importance of fueling the body with only the best. That is why I have chosen Xendurance for over a decade.",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "16644243327ba53d2a-0": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Hayley.png",
-            "logo_width": 100,
-            "author": "Hayley Manners - College Athlete",
-            "content": "Fuelling my body with clean ingredients is incredibly important. That's why I choose Xendurance products, because I'm confident they will keep me energized and give me the strength I need to be successful!",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "2a1666f6-89ef-470f-90b6-2ebdb6efca55": {
-          "type": "quote",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Ivet.png",
-            "logo_width": 100,
-            "author": "Ivet Dahl - Coach\/Athlete",
-            "content": "As an athlete, coach, wife and mom of 3 boys, Xendurance products keep me fueled and ready to tackle the day!",
-            "show_rating": true,
-            "rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "16644243327ba53d2a-1",
-        "16644243327ba53d2a-0",
-        "2a1666f6-89ef-470f-90b6-2ebdb6efca55"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "content_size": "small",
-        "background": "#353435",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "heading_color": "#f0f0f0",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
-    "8cf929de-0fb4-4e67-b62b-298ae59259c5": {
-      "type": "logo-list",
-      "blocks": {
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-3": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Mens-Health-logo_1_Medium_eea0f5fb-fa28-49bb-9ebe-f82f828957c8.png",
-            "logo_width": 180,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-0": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/JRE.webp",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-2": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Ironman_Triathlon__logo__svg.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-1": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/bikelogo-1643683619278.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-4": {
-          "type": "logo",
-          "disabled": true,
-          "settings": {
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-3",
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-0",
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-2",
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-1",
-        "template--16030540497084__8cf929de-0fb4-4e67-b62b-298ae59259c5-1686895395829b8e27-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "stack_mobile": true,
-        "title": "",
-        "content": "<p>As Seen In<\/p>",
-        "text_alignment": "center",
-        "items_per_row": 4,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "#ffffff",
-        "logo_item_border": ""
-      }
-    },
-    "5afc2aff-aa85-4f6a-967b-b41e048eb60e": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-0": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_url": "",
-            "button_url_members": "",
-            "button_text": ""
-          }
-        },
-        "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-1": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_url": "",
-            "button_url_members": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-0",
-        "template--16030540497084__5afc2aff-aa85-4f6a-967b-b41e048eb60e-1687411013e8a89d2c-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "footer_button_url": "shopify://collections/products",
+        "members_footer_button_url": "shopify://collections/team-xnd-products"
       }
     },
     "cddddfd9-22c1-45b8-b5d5-1e80f2e898a5": {
       "type": "multi-column-v2",
       "blocks": {
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_fe85927a-820b-4227-a111-e38b904f4fcb.png",
-            "column_size": "3",
-            "title": "Josh Bridges",
-            "heading_tag": "h4",
-            "content": "<p><em>Former Navy Seal and 6x CrossFit Games Athlete<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_3a645ed1-666c-4714-9f2e-e116bbbfed7e.png",
-            "column_size": "3",
+            "image": "shopify://shop_images/4E482E5E-BF69-43ED-AAA8-47C0CDC4F486_1_201_a.jpg",
+            "column_size": "4",
             "title": "Danielle Brandon",
             "heading_tag": "h4",
-            "content": "<p><em>5x Crossfit Games Athlete<\/em><\/p>",
+            "content": "<p><em>5x Crossfit Games Athlete</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "65dafed1-b5f9-49c7-9939-0ceb44d0c567": {
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Metafield_Photos_d784417a-8d5d-4621-827a-a44f9b84a99a.png",
+            "image": "shopify://shop_images/Untitled_design_fe85927a-820b-4227-a111-e38b904f4fcb.png",
             "column_size": "3",
-            "title": "Matt Centrowitz",
+            "title": "Josh Bridges",
             "heading_tag": "h4",
-            "content": "<p><em>1500 Olympic Gold Medalist<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "edcf3f90-9b2a-4a23-a9ba-e107992868ed": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.15.10_PM.png",
-            "column_size": "3",
-            "title": "Amanda Barnhart",
-            "heading_tag": "h4",
-            "content": "<p><em>6x Crossfit Games Athlete<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
-            "column_size": "3",
-            "title": "Donavan Brazier",
-            "heading_tag": "h4",
-            "content": "<p><em>800m American Record Holder<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
-            "column_size": "3",
-            "title": "Craig Engels",
-            "heading_tag": "h4",
-            "content": "<p><em>Your Mothers Favorite Runner<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "9bf71942-37d1-4962-a0dc-ec56943f81aa": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
-            "column_size": "3",
-            "title": "Craig Engels",
-            "heading_tag": "h4",
-            "content": "<p><em>Your Mothers Favorite Runner<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
-            "column_size": "3",
-            "title": "Craig Engels",
-            "heading_tag": "h4",
-            "content": "<p><em>Your Mothers Favorite Runner<\/em><\/p>",
+            "content": "<p><em>Former Navy Seal and 6x CrossFit Games Athlete</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -659,97 +407,11 @@
         "1136af69-8f7d-4d65-811c-10ebc80a634d": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-07-30_at_1.56.08_PM_98412f33-5b86-4849-a8ec-cbad4816d27b.png",
             "column_size": "3",
-            "title": "Donavan Brazier",
+            "title": "Allie Wilson",
             "heading_tag": "h4",
-            "content": "<p><em>800m American Record Holder<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "56999561-94be-451e-aaf7-079f2273c6b8": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
-            "column_size": "3",
-            "title": "Donavan Brazier",
-            "heading_tag": "h4",
-            "content": "<p><em>800m American Record Holder<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "363d397d-53b9-4a4f-ad66-23da0026e29e": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
-            "column_size": "3",
-            "title": "Donavan Brazier",
-            "heading_tag": "h4",
-            "content": "<p><em>800m American Record Holder<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0",
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1",
-        "65dafed1-b5f9-49c7-9939-0ceb44d0c567",
-        "edcf3f90-9b2a-4a23-a9ba-e107992868ed",
-        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3",
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2",
-        "9bf71942-37d1-4962-a0dc-ec56943f81aa",
-        "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c",
-        "1136af69-8f7d-4d65-811c-10ebc80a634d",
-        "56999561-94be-451e-aaf7-079f2273c6b8",
-        "363d397d-53b9-4a4f-ad66-23da0026e29e"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "small",
-        "text_alignment": "center",
-        "subheading": "Over 5,000+ 5 star reviews",
-        "title": "Trusted By The Best",
-        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle, you deserve the best.<\/p>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#050505"
-      }
-    },
-    "1582572d-a585-4638-8805-afdc08308763": {
-      "type": "multi-column",
-      "blocks": {
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_fe85927a-820b-4227-a111-e38b904f4fcb.png",
-            "column_size": "3",
-            "title": "Josh Bridges",
-            "heading_tag": "h4",
-            "content": "<p><em>Former Navy Seal and 6x CrossFit Games Athlete<\/em><\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4_3a645ed1-666c-4714-9f2e-e116bbbfed7e.png",
-            "column_size": "3",
-            "title": "Danielle Brandon",
-            "heading_tag": "h4",
-            "content": "<p><em>5x Crossfit Games Athlete<\/em><\/p>",
+            "content": "<p><em>800m Olympian</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -759,11 +421,11 @@
         "65dafed1-b5f9-49c7-9939-0ceb44d0c567": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Metafield_Photos_d784417a-8d5d-4621-827a-a44f9b84a99a.png",
+            "image": "shopify://shop_images/Metafield_Photos_d784417a-8d5d-4621-827a-a44f9b84a99a.png",
             "column_size": "3",
             "title": "Matt Centrowitz",
             "heading_tag": "h4",
-            "content": "<p><em>1500 Olympic Gold Medalist<\/em><\/p>",
+            "content": "<p><em>1500m Olympic Gold Medalist</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -773,25 +435,25 @@
         "edcf3f90-9b2a-4a23-a9ba-e107992868ed": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.15.10_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2023-06-25_at_1.15.10_PM.png",
             "column_size": "3",
             "title": "Amanda Barnhart",
             "heading_tag": "h4",
-            "content": "<p><em>6x Crossfit Games Athlete<\/em><\/p>",
+            "content": "<p><em>6x Crossfit Games Athlete</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3": {
+        "item_dW6wQN": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-25_at_1.07.35_PM.png",
+            "image": "shopify://shop_images/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
             "column_size": "3",
-            "title": "Donavan Brazier",
+            "title": "Craig Engels",
             "heading_tag": "h4",
-            "content": "<p><em>800m American Record Holder<\/em><\/p>",
+            "content": "<p><em>Your Mothers Favorite Runner</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -801,11 +463,95 @@
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
+            "image": "shopify://shop_images/1S8A90783_c0c1486a-5cd5-47d4-bca4-d31d976f0965.jpg",
             "column_size": "3",
-            "title": "Craig Engels",
+            "title": "Jess McClain",
             "heading_tag": "h4",
-            "content": "<p><em>Your Mothers Favorite Runner<\/em><\/p>",
+            "content": "<p><em>Marathoner</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6JyxXV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_6.png",
+            "column_size": "3",
+            "title": "David Winne",
+            "heading_tag": "h4",
+            "content": "<p><em>US ARMY Hybrid Athlete</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "7de29ffd-f61e-4d08-8234-ddc529d2d5a3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/20240717_Xendurance_Emily-2.jpg",
+            "column_size": "3",
+            "title": "Emily Loogman",
+            "heading_tag": "h4",
+            "content": "<p><em>Crossfit Games Athlete</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "9bf71942-37d1-4962-a0dc-ec56943f81aa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_156a0481-3a33-4856-8988-9f0493daabf9.png",
+            "column_size": "3",
+            "title": "Clayton Murphy",
+            "heading_tag": "h4",
+            "content": "<p><em>800m Bronze Medalist</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4827.jpg",
+            "column_size": "3",
+            "title": "Trista Smith",
+            "heading_tag": "h4",
+            "content": "<p><em>Crossfit Games Athlete</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "363d397d-53b9-4a4f-ad66-23da0026e29e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Sinclairi0.heic",
+            "column_size": "3",
+            "title": "Sinclair Johnson",
+            "heading_tag": "h4",
+            "content": "<p><em>US Middle Distance Runner</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qMTLnK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/DB236D8D-197F-41DC-9B5D-DA2136C29436.png",
+            "column_size": "3",
+            "title": "John Gaset",
+            "heading_tag": "h4",
+            "content": "<p><em>Strength, Mobility, & Endurance coach</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -814,129 +560,82 @@
         }
       },
       "block_order": [
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0",
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1",
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0",
+        "1136af69-8f7d-4d65-811c-10ebc80a634d",
         "65dafed1-b5f9-49c7-9939-0ceb44d0c567",
         "edcf3f90-9b2a-4a23-a9ba-e107992868ed",
+        "item_dW6wQN",
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2",
+        "item_6JyxXV",
         "7de29ffd-f61e-4d08-8234-ddc529d2d5a3",
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2"
+        "9bf71942-37d1-4962-a0dc-ec56943f81aa",
+        "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c",
+        "363d397d-53b9-4a4f-ad66-23da0026e29e",
+        "item_qMTLnK"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "small",
-        "text_alignment": "center",
-        "subheading": "Over 5,000+ 5 star reviews",
+        "text_alignment": "start",
+        "subheading": "",
         "title": "Trusted By The Best",
-        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle, you deserve the best.<\/p>",
+        "content": "<p>World-class performers trust our products every day. Whether you are going for the podium or just winning your own battle, you deserve the best.</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#050505"
       }
     },
-    "62dd1bf9-cd1d-41b3-abb2-cccc26614f18": {
-      "type": "video",
+    "video_take_look_section_bTjdET": {
+      "type": "video-take-look-section",
       "blocks": {
-        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-0": {
+        "play_899Uzx": {
           "type": "play",
-          "settings": {
-          }
+          "settings": {}
         },
-        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-1": {
-          "type": "heading",
-          "disabled": true,
+        "icon_with_text_bH7pyD": {
+          "type": "icon_with_text",
           "settings": {
-            "text": "The Secret is Out",
-            "heading_tag": "h1"
+            "image": "shopify://shop_images/svgexport-1_4.svg",
+            "title": "Informed Sport Certified",
+            "content": "<p>First US company to use trusted global testing method</p>",
+            "image1": "shopify://shop_images/svgexport-1_4.svg",
+            "title1": "Gluten Free Preservative Free",
+            "content1": "<p>Safe for celiacs and no bad fillers.</p>",
+            "image2": "shopify://shop_images/svgexport-1_4.svg",
+            "title2": "Rigorous Testing",
+            "content2": "<p>Xendurance products are validated through third party testing</p>",
+            "image3": "shopify://shop_images/svgexport-1_4.svg",
+            "title3": "Made in the USA",
+            "content3": "<p>Proudly made and owned in the USA.</p>"
           }
         }
       },
       "block_order": [
-        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-0",
-        "template--16030540497084__62dd1bf9-cd1d-41b3-abb2-cccc26614f18-1686874698486797f9-1"
+        "play_899Uzx",
+        "icon_with_text_bH7pyD"
       ],
       "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "autoplay": true,
-        "video_size": "auto",
-        "video": "shopify:\/\/files\/videos\/221029_Joe_Rogan_Mashup_YOUTUBE_LANDSCAPE_LOW_RES.mp4",
-        "external_video_url_metafield": "",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 6
-      }
-    },
-    "abbcca1b-618a-431c-94d4-c4888a3324c4": {
-      "type": "revealed-image-on-scroll",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
-        "subheading": "",
-        "title": "Loved by over 300,000 fitness fanatics",
-        "background": "#f0f0f0",
-        "text_color_inside": "#ffffff",
-        "text_color_outside": "#000000"
-      }
-    },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
-          "settings": {
-            "title": "300,000+",
-            "subheading": "American fitness fanatics helped",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_url_members": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "1664424181b38582d5-0"
-      ],
-      "disabled": true,
-      "settings": {
+        "title": "",
+        "content": "<p>Xendurance Products:</p>",
         "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "heading_text_color": "#f83a3a",
-        "heading_gradient": "",
-        "text_color": "#353435",
-        "button_background": "",
-        "button_text_color": ""
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "shopify://files/videos/240718_Trusted By The Worlds Best_1x1.mp4",
+        "external_video_url_metafield": "",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "bg_color": "#1c1a18",
+        "text_color": "#ffffff",
+        "bg_image": "shopify://shop_images/XND_TABLETS_3c338dec-9f8d-489b-a44b-8647b96dc2c9.png",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "186f92c2-0690-45aa-9588-d5e9e8c9a7f0": {
       "type": "featured-collection-list",
       "blocks": {
-        "92233384-9e94-42c9-9e63-94bb4cf341e6": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "best-sellers",
-            "collection_member": "best-sellers-1"
-          }
-        },
-        "89547347-8598-453a-9da8-4ef090988200": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "daily-2",
-            "collection_member": "daily-1"
-          }
-        },
         "3c064647-51c1-4fcc-9bcb-ab2826af8f3b": {
           "type": "collection",
           "settings": {
@@ -946,8 +645,6 @@
         }
       },
       "block_order": [
-        "92233384-9e94-42c9-9e63-94bb4cf341e6",
-        "89547347-8598-453a-9da8-4ef090988200",
         "3c064647-51c1-4fcc-9bcb-ab2826af8f3b"
       ],
       "settings": {
@@ -958,8 +655,8 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Energy For Your Day, |Every Day|",
-        "content": "<p>Products designed to fuel your lifestyle. All Natural, clean & certified free of banned substances.<\/p>",
+        "title": "|Fuel| What Matters",
+        "content": "<p>Energy & performance products designed to fuel your lifestyle. All Natural, clean & certified free of banned substances.</p>",
         "link_url": "",
         "link_text": "View all",
         "background": "#f5f5f5",
@@ -971,69 +668,153 @@
         "product_card_text_color": "",
         "footer_text_paragraphe": "",
         "footer_button_text": "Shop All Energy",
-        "footer_button_url": "shopify:\/\/collections\/energy",
-        "members_footer_button_url": "shopify:\/\/collections\/energy-1"
+        "footer_button_url": "shopify://collections/energy",
+        "members_footer_button_url": "shopify://collections/energy-1"
       }
     },
     "9c337f61-5b66-4c80-a95f-8e2a71eca744": {
       "type": "media-with-text",
       "blocks": {
-        "template--16030540497084__9c337f61-5b66-4c80-a95f-8e2a71eca744-1684993689706e73f7-0": {
+        "image_BHzXHE": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "f5eeeeff-9d5e-4186-8966-ef60ad4412a3": {
-          "type": "video",
-          "settings": {
-            "external_video_url": "https:\/\/www.youtube.com\/watch?v=VKhd6m_axdE&t=59s",
-            "poster_image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-06_at_11.06.57_am.png",
-            "autoplay": true,
+            "image": "shopify://shop_images/MY_TEAM_16-9_D.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Join Team XND & Save",
-            "content": "<p>☑️  <strong>$100 In Immediate Product Rewards<\/strong><\/p><p>☑️  <strong>Free Shipping + 25% OFF<\/strong><\/p><p>☑️  <strong>2x Loyalty Reward Points<\/strong><\/p><p>☑️  <strong>Partner Perks + More!<\/strong><\/p>",
-            "link_text": "Learn more",
-            "link_url": "shopify:\/\/pages\/team-xnd-signup",
-            "link_url_members": "shopify:\/\/pages\/team-xnd-signup",
-            "background": "#e93b40",
+            "title": "Join Team XND & |Save|",
+            "content": "",
+            "custom_content": "25% OFF Every Order",
+            "custom_content1": "2 x $50 Product Reward Credits",
+            "custom_content2": "FREE Shipping",
+            "custom_content3": "2x Loyalty Reward Points",
+            "custom_content4": "Race & Competition Sponsorships (NEW)",
+            "custom_content5": "Partner Perks + More!",
+            "link_text": "Learn More",
+            "link_url": "shopify://pages/team-xnd-sign-up",
+            "background": "#353435",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
-            "button_background": "#353435",
-            "button_text_color": ""
+            "button_background": "#e93b40",
+            "button_text_color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "template--16030540497084__9c337f61-5b66-4c80-a95f-8e2a71eca744-1684993689706e73f7-0",
-        "f5eeeeff-9d5e-4186-8966-ef60ad4412a3"
+        "image_BHzXHE"
+      ],
+      "settings": {
+        "custom-class": "home_join_section_block",
+        "full_width": true,
+        "hide_for_members": true,
+        "spacing": "none",
+        "bg_color": "#353435",
+        "text_color": ""
+      }
+    },
+    "home_review_section_block_jqmK6d": {
+      "type": "home-review-section-block",
+      "blocks": {
+        "testimonail_nLk4Ud": {
+          "type": "Testimonail",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2024-07-30_at_11.48.35_AM.png",
+            "text": "<p>This supplement has been crucial for recovery (especially putting in 60+ miles and 3-4 strength workouts a week) It used to take multiple days to recover from a hardcore speed workout. Now I’m recovered same day or at least by my run the next morning. Incredible.</p>",
+            "author_name": "Cameron A",
+            "author_name_text": "Runner"
+          }
+        },
+        "testimonail_AwhF9i": {
+          "type": "Testimonail",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2024-07-30_at_11.49.34_AM.png",
+            "text": "<p>I was hesitant at first but gave Extreme Endurance a try. I took it consistantly and started see a shift upwards in FTP in about 3 weeks. It has also helped greatly with recovery. I'm a believer and a happy customer!</p>",
+            "author_name": "Brandy Y",
+            "author_name_text": "Cyclist"
+          }
+        },
+        "testimonail_ACckNf": {
+          "type": "Testimonail",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2024-07-30_at_11.53.01_AM.png",
+            "text": "<p>I love the extra boost I felt after just a few days on this. My body recovers faster after each workout. And, on the water, I can go farther without running out of air, strength, and drive. Solid product with solid results.</p>",
+            "author_name": "Mark R",
+            "author_name_text": "Kayak"
+          }
+        },
+        "testimonail_eCHGmn": {
+          "type": "Testimonail",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2024-07-30_at_11.54.41_AM.png",
+            "text": "<p>I have been taking this creatine for over a month now and am seeing results! I feel stronger and I'm not sore day to day. It tastes good and I am seeing no negative side effects like I have on some other brands of creatine.</p>",
+            "author_name": "M.S.",
+            "author_name_text": "Gym"
+          }
+        },
+        "testimonail_tU9X7P": {
+          "type": "Testimonail",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2024-07-30_at_11.55.57_AM.png",
+            "text": "<p>I’ve never really know what to look for in terms of results for a protein power and pre workout, but when I started using Xendurance I knew exactly what I’d been missing. Powders are so finely cute, they don’t clump up when mixed with water and pre workout doesn’t make me feel like I’m about to have a heart attack</p>",
+            "author_name": "Jennifer C.",
+            "author_name_text": "Athlete"
+          }
+        }
+      },
+      "block_order": [
+        "testimonail_nLk4Ud",
+        "testimonail_AwhF9i",
+        "testimonail_ACckNf",
+        "testimonail_eCHGmn",
+        "testimonail_tU9X7P"
+      ],
+      "settings": {
+        "title": "Fueled |350,000+| Peak Performers",
+        "bg_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    },
+    "45161d55-8e32-4d11-89f6-e54c9473e74f": {
+      "type": "featured-collection-list",
+      "blocks": {
+        "template--16030540497084__45161d55-8e32-4d11-89f6-e54c9473e74f-1687234640cffb79a7-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "daily-2",
+            "collection_member": "recovery-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540497084__45161d55-8e32-4d11-89f6-e54c9473e74f-1687234640cffb79a7-0"
       ],
       "settings": {
         "full_width": true,
-        "hide_for_members": true,
-        "spacing": "none"
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Nutrition for Your Day,|Every Day|",
+        "content": "<p>Essential nutrients formulated at research level dosages. Informed Sport certified free of contaminates. </p>",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "footer_text_paragraphe": "",
+        "footer_button_text": "Shop All DAILY",
+        "footer_button_url": "shopify://collections/daily-2",
+        "members_footer_button_url": "shopify://collections/daily-1"
       }
     },
     "698a8604-5b1e-491b-af0f-b958f03c9333": {
@@ -1060,9 +841,9 @@
         "show_comments_count": false,
         "show_category": false,
         "subheading": "",
-        "title": "Featured Content",
-        "content": "<p>Our take on the latest in fitness and health trends<\/p>",
-        "link_url": "shopify:\/\/blogs\/blog",
+        "title": "FAST 5",
+        "content": "<p><strong>Featured content on the latest in fitness and health trends</strong></p>",
+        "link_url": "shopify://blogs/blog",
         "link_text": "View All Posts",
         "background": "",
         "background_gradient": "",
@@ -1078,11 +859,11 @@
         "item-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMGL7680.jpg",
+            "image": "shopify://shop_images/IMGL7680.jpg",
             "title": "Unsure Where to Start?",
             "heading_tag": "h2",
-            "link_url": "shopify:\/\/pages\/perfect-path-quiz",
-            "link_url_members": "shopify:\/\/pages\/perfect-path-quiz",
+            "link_url": "shopify://pages/perfect-path-quiz",
+            "link_url_members": "shopify://pages/perfect-path-quiz",
             "link_text": "Take Our 60 Second Quiz",
             "mobile_text_position": "place-self-start text-start",
             "desktop_column_span": 4,
@@ -1097,83 +878,10 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "item-2": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Extreme_Endurance_3_c928c64d-8128-4d05-a984-42eb58b87ebf.jpg",
-            "title": "Join Team XND and Save",
-            "heading_tag": "h2",
-            "link_url": "shopify:\/\/pages\/team-xnd-signup",
-            "link_url_members": "",
-            "link_text": "Learn More",
-            "mobile_text_position": "place-self-end-start text-start",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#dd1d1d",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-3": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "29246d34-c6e0-4373-84f6-b15e57736a00": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "29246d34-c6e0-4373-84f6-b15e57736a00"
+        "item-1"
       ],
       "settings": {
         "full_width": true,
@@ -1184,164 +892,98 @@
         "background_gradient": ""
       }
     },
-    "45161d55-8e32-4d11-89f6-e54c9473e74f": {
-      "type": "featured-collection-list",
+    "text_with_icons_qUwCWB": {
+      "type": "text-with-icons",
       "blocks": {
-        "template--16030540497084__45161d55-8e32-4d11-89f6-e54c9473e74f-1687234640cffb79a7-0": {
-          "type": "collection",
+        "item_fktKHM": {
+          "type": "item",
           "settings": {
-            "collection": "skincare",
-            "collection_member": "skin"
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Free_Shipping_2.svg",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free Shipping",
+            "content": "<p>Join Team XND membership & receive free shipping (& much more)</p>"
           }
         },
-        "template--16030540497084__45161d55-8e32-4d11-89f6-e54c9473e74f-1687234640cffb79a7-1": {
-          "type": "collection",
-          "disabled": true,
+        "item_86yULW": {
+          "type": "item",
           "settings": {
-            "collection": "",
-            "collection_member": ""
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/5000_Reviews_1.svg",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Over 7000 Reviews",
+            "content": "<p>Put to the test by America's peak performers and passed with flying colours.</p>"
+          }
+        },
+        "item_3mf9Lx": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Money_Back_Guarantee_1.svg",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "60 day Money Back Guarantee",
+            "content": "<p>All Xendurance products come with a 60-Day Money Back Guarantee.</p>"
+          }
+        },
+        "item_qbnYDY": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/American_Made_1.svg",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "American Made",
+            "content": "<p>Proudly manufactured and shipped in the USA, since 1998.</p>"
           }
         }
       },
       "block_order": [
-        "template--16030540497084__45161d55-8e32-4d11-89f6-e54c9473e74f-1687234640cffb79a7-0",
-        "template--16030540497084__45161d55-8e32-4d11-89f6-e54c9473e74f-1687234640cffb79a7-1"
+        "item_fktKHM",
+        "item_86yULW",
+        "item_3mf9Lx",
+        "item_qbnYDY"
       ],
       "settings": {
+        "custom_class": "home_icon_text_usp_block",
         "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_count": 4,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Protect What Matters, Shop |SKIN|",
-        "content": "<p>The first ever skincare line tested for banned substances by Informed Sport. Dermatologist formulated to protect what matters.<\/p>",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": "",
-        "footer_text_paragraphe": "",
-        "footer_button_text": "Shop All SKIN",
-        "footer_button_url": "shopify:\/\/collections\/skincare",
-        "members_footer_button_url": "shopify:\/\/collections\/skin"
-      }
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "166442457738b23caf-0": {
-          "type": "item",
-          "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
-          }
-        },
-        "166442457738b23caf-1": {
-          "type": "item",
-          "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
-        "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
-        "button_text": "",
-        "button_url": "",
-        "button_url_members": "",
-        "text_position": "start",
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
-    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
-        "show_icon": false,
-        "title": "Get The Latest From Xendurance",
-        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
-        "button_text": "Subscribe",
-        "subtext": "",
-        "background": "#353435",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "0a056584-5b9c-4c1e-917c-55e0edfec204": {
-      "type": "newsletter-v2",
-      "settings": {
-        "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter_c00d0991-3371-43a8-8c60-8e4239e0bc1c.jpg",
-        "show_icon": false,
-        "title": "Get The Latest From Xendurance",
-        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
-        "button_text": "Subscribe",
-        "subtext": "",
-        "background": "#353435",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "button_background": "",
-        "button_text_color": ""
+        "text_color": "#ffffff"
       }
     }
   },
   "order": [
     "db387067-1395-44ce-8b90-da3484c2ea9f",
-    "slideshow",
-    "featured-collection",
+    "home_featured_collection_4inUcX",
     "17338140-d4f4-4fdf-92a0-bc9aad196adb",
-    "press",
-    "8cf929de-0fb4-4e67-b62b-298ae59259c5",
-    "5afc2aff-aa85-4f6a-967b-b41e048eb60e",
     "cddddfd9-22c1-45b8-b5d5-1e80f2e898a5",
-    "1582572d-a585-4638-8805-afdc08308763",
-    "62dd1bf9-cd1d-41b3-abb2-cccc26614f18",
-    "abbcca1b-618a-431c-94d4-c4888a3324c4",
-    "impact-text",
+    "video_take_look_section_bTjdET",
     "186f92c2-0690-45aa-9588-d5e9e8c9a7f0",
     "9c337f61-5b66-4c80-a95f-8e2a71eca744",
+    "home_review_section_block_jqmK6d",
+    "45161d55-8e32-4d11-89f6-e54c9473e74f",
     "698a8604-5b1e-491b-af0f-b958f03c9333",
     "media-grid",
-    "45161d55-8e32-4d11-89f6-e54c9473e74f",
-    "faq",
-    "f590c992-488f-4ce3-bfe1-63e2cb55d4ad",
-    "0a056584-5b9c-4c1e-917c-55e0edfec204"
+    "text_with_icons_qUwCWB"
   ]
 }

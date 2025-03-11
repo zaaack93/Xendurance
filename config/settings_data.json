@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "page_width": 1600,
@@ -31,27 +40,27 @@
     "text_font_size_mobile": 16,
     "text_font_size_desktop": 16,
     "text_font_letter_spacing": 1,
-    "show_page_transition": true,
+    "show_page_transition": false,
     "reduce_drawer_animation": false,
     "reduce_menu_animation": false,
     "heading_apparition": "split_fade",
-    "color_swatch_config": "Deep Navy \/ Red:#2E2C38\nBlack \/ Blue:#2E2923\nBlack \/ White:#000000\nCoral \/ White:#E19987\nTeal \/ White:#60D3D3\nWhite \/ Black:#F3F0F3\nClear:#D3D3D3",
+    "color_swatch_config": "Deep Navy / Red:#2E2C38\nBlack / Blue:#2E2923\nBlack / White:#000000\nCoral / White:#E19987\nTeal / White:#60D3D3\nWhite / Black:#F3F0F3\nClear:#D3D3D3",
     "show_vendor": false,
     "show_quick_buy": false,
     "show_product_rating": true,
     "product_color_display": "swatch",
     "product_info_alignment": "start",
     "cart_type": "drawer",
-    "cart_empty_button_link": "shopify:\/\/collections\/best-sellers",
+    "cart_empty_button_link": "shopify://collections/best-sellers",
     "cart_show_free_shipping_threshold": false,
-    "social_facebook": "https:\/\/www.facebook.com\/XENDURANCE1",
-    "social_twitter": "https:\/\/twitter.com\/Xendurance",
-    "social_pinterest": "https:\/\/www.pinterest.com\/xendurance",
-    "social_instagram": "https:\/\/www.instagram.com\/xendurance",
-    "social_youtube": "https:\/\/www.youtube.com\/c\/Xendurance",
-    "social_tiktok": "https:\/\/www.tiktok.com\/@xendurance",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo_name-dark.png",
+    "social_facebook": "https://www.facebook.com/XENDURANCE1",
+    "social_twitter": "https://twitter.com/Xendurance",
+    "social_pinterest": "https://www.pinterest.com/xendurance",
+    "social_instagram": "https://www.instagram.com/xendurance",
+    "social_youtube": "https://www.youtube.com/c/Xendurance",
+    "social_tiktok": "https://www.tiktok.com/@xendurance",
+    "favicon": "shopify://shop_images/favicon.png",
+    "checkout_logo_image": "shopify://shop_images/logo_name-dark.png",
     "checkout_accent_color": "#353435",
     "checkout_button_color": "#e93b40",
     "checkout_error_color": "#ffb74a",
@@ -67,38 +76,10 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "10312807297210203588": {
-        "type": "shopify:\/\/apps\/aftersell-post-purchase-upsell\/blocks\/utm-triggers\/509ec35d-0632-4dfc-a105-fa799cd9d149",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "8962992520437913685": {
-        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
-        "disabled": false,
-        "settings": {
-          "inject_modules_loader": true,
-          "inject_sdk_loader": true
-        }
-      },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
         "settings": {
           "button_color": "#000000",
@@ -109,11 +90,52 @@
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
       },
-      "18362670158283609394": {
-        "type": "shopify:\/\/apps\/omega-twitter-pixels\/blocks\/app-embed-block\/babebd41-cc77-42a4-9431-59acdd6bc8c3",
-        "disabled": false,
+      "12120936241911852800": {
+        "type": "shopify://apps/judge-me-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
         "settings": {
+          "position": "right"
         }
+      },
+      "15181020662106344915": {
+        "type": "shopify://apps/judge-me-reviews/blocks/popup_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "10312807297210203588": {
+        "type": "shopify://apps/aftersell/blocks/utm-triggers/509ec35d-0632-4dfc-a105-fa799cd9d149",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "18362670158283609394": {
+        "type": "shopify://apps/omega-multi-twitter-pixels/blocks/app-embed-block/babebd41-cc77-42a4-9431-59acdd6bc8c3",
+        "disabled": false,
+        "settings": {}
+      },
+      "17174303574952363282": {
+        "type": "shopify://apps/fondue-cashback-promotions/blocks/caseback-embed/dcfd972d-99c5-4526-b55b-2d76e990dec8",
+        "disabled": false,
+        "settings": {}
+      },
+      "11560147490181472608": {
+        "type": "shopify://apps/rivo-loyalty-rewards-referrals/blocks/app-embed/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
+        "disabled": false,
+        "settings": {}
+      },
+      "9323109295802554384": {
+        "type": "shopify://apps/upstackified-universal-pixel/blocks/adtScript/2ef9f833-e251-4eed-af16-8dca98b27a2f",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
