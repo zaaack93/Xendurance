@@ -84,6 +84,11 @@ product-card{
         @media only screen and (max-width: 699px){
             gap: 15px;
         }
+        @media only screen and (min-width: 700px){
+            .button{
+                font-size: 15px;
+            }
+        }
         .button {
             --button-background-primary: 30 30 30;
             margin-top: auto;

@@ -13,6 +13,7 @@
         gap: 40px;
         @media screen and (max-width: 768px){
             gap: 30px;
+            align-items: flex-start;
         }
         img{
             flex:0 0 110px;
@@ -51,6 +52,7 @@
         left: calc(110px / 2);
         top: 0;
         bottom: 0;
+        height: 90%;
         width: 3px;
         background-color: #EF3740; // Adjust the color as needed
         transform: translateX(-50%);
@@ -88,6 +90,11 @@
 }
 
 .section_timeline_container{
+    .multi-column__item{
+        img{
+            overflow: visible;
+        }
+    }
     .section-header{
         gap:20px;
         .subheading{

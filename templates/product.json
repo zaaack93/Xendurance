@@ -486,8 +486,8 @@
         "background_gradient": "",
         "text_color": "",
         "footer_button_text": "TRY XND TODAY",
-        "footer_button_url": "",
-        "members_footer_button_url": "",
+        "footer_button_url": "#shopify-section-template--17978977222844__main",
+        "members_footer_button_url": "#shopify-section-template--17978977222844__main",
         "button_background": "#090909",
         "button_text_color": ""
       }

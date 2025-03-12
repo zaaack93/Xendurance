@@ -11,9 +11,9 @@ class BubblesContainer extends HTMLElement {
     render() {
       const categoryBubbles = Array.from(this.querySelectorAll('.bubble'));
       const groupedBlocks = groupBlocksByCategory(categoryBubbles);
-      if (groupedBlocks.length <= 1) {
-        return;
-      }
+      // if (groupedBlocks.length <= 1) {
+      //   return;
+      // }
   
       const tabHeader = document.createElement('div');
       tabHeader.classList.add('tab-header');

@@ -391,9 +391,10 @@
                 font-size: 43.892px;
                 font-style: italic;
                 font-weight: 900;
-                line-height: normal;
+                line-height: 1;
                 letter-spacing: 1.317px;
                 text-transform: uppercase;
+                margin-bottom: 10px;
             }
         }
 
@@ -481,11 +482,6 @@
             }
         }
 
-        #block-item-8d21c681-30df-4742-8a3a-4317b834ba98{
-            .metafield-rich_text_field{
-                margin-top: 0px !important;
-            }
-        }
 
         //quantty selector with buy button
         .buy_button_container {
@@ -571,8 +567,8 @@
         display: flex;
         flex-flow: row wrap;
         margin-top: 16px;
-        margin-bottom: 16px;
-
+        margin-bottom: 30px;
+        
         .product__icon__container:nth-child(1) {
             column-gap: 8px;
             @media only screen and (max-width: 989px) {
@@ -752,6 +748,7 @@
         gap: 15px;
         @media screen and (max-width: 989px){
             gap: 10px;
+            margin-bottom: 20px;
         }
         .product-info__callout{
             font-size: 16px;
@@ -766,6 +763,16 @@
     }
     .judgeme_widgets__container {
         margin: 0px;
+        .jdgm-widget {
+            font-size: 15.483px;
+            font-style: normal;
+            font-weight: 500;
+            @media screen and (max-width: 989px){
+                font-size: 14px;
+            }
+            display: flex;
+            align-items: center;
+        }
         .jdgm-prev-badge{
             --data-average-rating: attr(data-average-rating);
             --data-number-of-reviews: attr(data-number-of-reviews);
@@ -775,13 +782,13 @@
             @media screen and (max-width: 989px){
                 font-size: 14px;
             }
-            .jdgm-prev-badge__stars::after {
-                content: var(--data-average-rating) ' Stars • ' var(--data-number-of-reviews) ' Reviews ';
+            &::after {
+                content: attr(data-average-rating) ' Stars • ' attr(data-number-of-reviews) ' Reviews ';
             }
-            &::after{
-                content: "(Read All)";
-                text-decoration: underline;
-            }
+            // &::after{
+            //     content: "(Read All)";
+            //     text-decoration: underline;
+            // }
             .jdgm-prev-badge__text{
                 display: none;
             }
