@@ -64,6 +64,11 @@
                     padding: 26px 12px 26px;
                     gap: 12px;
                 }
+                .image-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
                 .text-with-icons__text-wrapper{
                     margin-top: auto;
                     p.h5{

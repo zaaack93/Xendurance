@@ -255,6 +255,7 @@
       "blocks": {
         "item_MGUX4L": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/Layer_1_2_95dc02e6-7cd7-4603-b70f-1cd21104d4db.svg",
@@ -269,6 +270,7 @@
         },
         "item_xmL8RD": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/Group_5086_e997a1e3-7634-4520-99dd-c837b3b0878a.svg",
@@ -283,6 +285,7 @@
         },
         "item_amJkBF": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/Layer_1_3_23ba5d84-0067-42ff-8970-9a8725b300a5.svg",
@@ -297,6 +300,7 @@
         },
         "item_Ng6b67": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/Layer_1_3_23ba5d84-0067-42ff-8970-9a8725b300a5.svg",
@@ -311,6 +315,7 @@
         },
         "item_Diw3rg": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/Layer_1_5.svg",
@@ -325,6 +330,7 @@
         },
         "item_NWLfaE": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/Va17xA_tif.svg",
@@ -336,6 +342,21 @@
             "title": "Age Slower",
             "content": "<p>Promotes anti-aging by reducing damaging oxidative stress.</p>"
           }
+        },
+        "item_BxkRd8": {
+          "type": "item",
+          "repeater": "{{ product.metafields.custom.section_benefits_list_items.value }}",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "{{ block.repeater.icon.value }}",
+            "mobile_icon_width": 44,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ block.repeater.heading.value }}",
+            "content": "{{ block.repeater.content | metafield_tag }}"
+          }
         }
       },
       "block_order": [
@@ -344,19 +365,20 @@
         "item_amJkBF",
         "item_Ng6b67",
         "item_Diw3rg",
-        "item_NWLfaE"
+        "item_NWLfaE",
+        "item_BxkRd8"
       ],
       "settings": {
         "custom_class": "landing_key_benefits",
         "full_width": true,
         "stack_on_mobile": true,
-        "subheading": "Tried. Tested. Loved.",
-        "title": "World’s #1 Endurance Supplement",
+        "subheading": "{{ product.metafields.custom.section_benefits_subheading.value }}",
+        "title": "{{ product.metafields.custom.section_benefits_heading.value }}",
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "medium",
-        "background": "#141313",
-        "bg_image": "shopify://shop_images/XND_TABLETS_5ce381ff-6aa7-4a4f-9d38-a62b9c6068ee.png",
+        "background": "{{ product.metafields.custom.section_benefits_background_color.value }}",
+        "bg_image": "{{ product.metafields.custom.section_benefits_background_image.value }}",
         "background_gradient": "",
         "text_color": "#ffffff"
       }

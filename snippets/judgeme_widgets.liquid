@@ -69,7 +69,9 @@
     data-template='{% if concierge_install == true or concierge_install == nil %}{{ template }}{% else %}manual-installation{% endif %}'
     data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false{% endif %}'>
       {{ product.metafields.judgeme.badge }}
-      <span> &nbsp;(<u>Read All</u>)</span>
+      {% if for_pdp %}
+        <span> &nbsp;(<u>Read All</u>)</span>
+      {% endif %}
     </div>
     {% endif %}
     

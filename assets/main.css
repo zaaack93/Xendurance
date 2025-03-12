@@ -1490,6 +1490,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     gap: 12px;
   }
 }
+.landing_key_benefits .section .text-with-icons__list .text-with-icons__item .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper {
   margin-top: auto;
 }
