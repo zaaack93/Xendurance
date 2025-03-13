@@ -1665,6 +1665,34 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   }
 }
 
+@media (min-width: 769px) {
+  .section_clinically_tested .section-stack__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .section_clinically_tested .section-stack__main .section-stack__images {
+    display: none;
+  }
+}
+.section_clinically_tested .section-stack__main .section-stack__image {
+  display: none;
+  transition: display 0.5s ease-in-out;
+}
+.section_clinically_tested .section-stack__main .section-stack__image[data-active=true] {
+  display: block;
+}
+.section_clinically_tested .section-stack__main .accordion__content {
+  padding-right: 0px;
+}
+@media (min-width: 769px) {
+  .section_clinically_tested .section-stack__main .accordion__content img {
+    display: none;
+  }
+}
+
 .template--product .shopify-section--main-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid, .shopify-section--featured-product .product-for-member .product-price_with_rating span[data-smartrr-compare-price].valid {
   display: initial !important;
 }

@@ -171,6 +171,28 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     observer.observe(myDiv, config);
   }
 })();
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[image-handler]').forEach(function (element) {
+    element.addEventListener('click', function () {
+      console.log(element);
+      var imageHandler = element.getAttribute('image-handler');
+      // Add your image handling logic here using the imageHandler variable
+      console.log('Image handler:', imageHandler);
+      // Your custom logic on click event
+
+      element.closest('.section_clinically_tested').querySelectorAll('.section-stack__image').forEach(function (img) {
+        img.removeAttribute('data-active');
+      });
+      if (element.hasAttribute('open')) {
+        var targetImage = element.closest('.section_clinically_tested').querySelector(".section-stack__image[data-block-id=\"".concat(imageHandler, "\"]"));
+        if (targetImage) {
+          targetImage.setAttribute('data-active', 'true');
+        }
+        console.log('Element has the "open" attribute');
+      }
+    });
+  });
+});
 
 /***/ }),
 

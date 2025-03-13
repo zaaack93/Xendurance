@@ -701,6 +701,7 @@
         "efb2e2c4-ef0f-42da-918c-f18d47b70000"
       ],
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "subheading": "{{ product.metafields.custom.faq_subtitle.value }}",
         "title": "{{ product.metafields.custom.faq_title.value }}",
@@ -1054,28 +1055,32 @@
           "type": "item",
           "settings": {
             "title": "Lactic Acid Reduction of 26%",
-            "content": "<p>This second study follows the published clinical study conducted in Germany in 2010, which showed the average lactic acid reduction was 15% in 22 elite athletes with an increase in aerobic threshold by double digits in a short, ten-day period. </p>"
+            "content": "<p>This second study follows the published clinical study conducted in Germany in 2010, which showed the average lactic acid reduction was 15% in 22 elite athletes with an increase in aerobic threshold by double digits in a short, ten-day period. </p>",
+            "image": "shopify://shop_images/xendurance.com_en-au_pages_extreme-endurance-intro-offer.png"
           }
         },
         "item_fNmfBY": {
           "type": "item",
           "settings": {
             "title": "Muscle Damage Decrease by 6X",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "image": "shopify://shop_images/Plant_Protein_Greens_Nutritional_facts.jpg"
           }
         },
         "item_9mw4ea": {
           "type": "item",
           "settings": {
             "title": "V02 Max Increase by 15%",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "image": "shopify://shop_images/Fuel-5__Nutritional_facts.jpg"
           }
         },
         "item_B9mEM6": {
           "type": "item",
           "settings": {
             "title": "Reduce Oxidative Stress by 39%",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "image": "shopify://shop_images/Lean__Nutritional_facts.jpg"
           }
         }
       },
@@ -1086,6 +1091,7 @@
         "item_B9mEM6"
       ],
       "settings": {
+        "custom_class": "section_clinically_tested",
         "full_width": true,
         "subheading": "",
         "title": "Clinically Tested in 12 Studies",
