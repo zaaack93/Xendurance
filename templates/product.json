@@ -1046,6 +1046,63 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "accordion_content_z4BV3x": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_pBneBt": {
+          "type": "item",
+          "settings": {
+            "title": "Lactic Acid Reduction of 26%",
+            "content": "<p>This second study follows the published clinical study conducted in Germany in 2010, which showed the average lactic acid reduction was 15% in 22 elite athletes with an increase in aerobic threshold by double digits in a short, ten-day period. </p>"
+          }
+        },
+        "item_fNmfBY": {
+          "type": "item",
+          "settings": {
+            "title": "Muscle Damage Decrease by 6X",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_9mw4ea": {
+          "type": "item",
+          "settings": {
+            "title": "V02 Max Increase by 15%",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_B9mEM6": {
+          "type": "item",
+          "settings": {
+            "title": "Reduce Oxidative Stress by 39%",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_pBneBt",
+        "item_fNmfBY",
+        "item_9mw4ea",
+        "item_B9mEM6"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Clinically Tested in 12 Studies",
+        "content": "<p>Extreme Endurance has been proven effective under rigorous clinical trials. See the results below. </p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#f5f5f5",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -1064,6 +1121,7 @@
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
     "related-products",
     "cf8b928d-f9b0-4c53-bcbb-2f59458566b1",
-    "591e9849-8775-4917-ba33-b4992916f8fc"
+    "591e9849-8775-4917-ba33-b4992916f8fc",
+    "accordion_content_z4BV3x"
   ]
 }
