@@ -1992,7 +1992,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     line-height: 1;
     letter-spacing: 1.317px;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 }
 .template--product .shopify-section--main-product .product-info .product-price_with_rating, .shopify-section--featured-product .product-info .product-price_with_rating {
@@ -2364,6 +2364,8 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   font-size: 15.483px;
   font-style: normal;
   font-weight: 500;
+  flex-wrap: wrap;
+  gap: 2px;
   display: flex;
   align-items: center;
 }
