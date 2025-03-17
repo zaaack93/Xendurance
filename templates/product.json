@@ -514,6 +514,68 @@
         "button_text_color": ""
       }
     },
+    "accordion_content_z4BV3x": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_pBneBt": {
+          "type": "item",
+          "settings": {
+            "title": "Lactic Acid Reduction of 26%",
+            "content": "<p>This second study follows the published clinical study conducted in Germany in 2010, which showed the average lactic acid reduction was 15% in 22 elite athletes with an increase in aerobic threshold by double digits in a short, ten-day period. </p>",
+            "image": "shopify://shop_images/xendurance.com_en-au_pages_extreme-endurance-intro-offer.png"
+          }
+        },
+        "item_fNmfBY": {
+          "type": "item",
+          "settings": {
+            "title": "Muscle Damage Decrease by 6X",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "image": "shopify://shop_images/Plant_Protein_Greens_Nutritional_facts.jpg"
+          }
+        },
+        "item_9mw4ea": {
+          "type": "item",
+          "settings": {
+            "title": "V02 Max Increase by 15%",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "image": "shopify://shop_images/Fuel-5__Nutritional_facts.jpg"
+          }
+        },
+        "item_B9mEM6": {
+          "type": "item",
+          "settings": {
+            "title": "Reduce Oxidative Stress by 39%",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "image": "shopify://shop_images/Lean__Nutritional_facts.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_pBneBt",
+        "item_fNmfBY",
+        "item_9mw4ea",
+        "item_B9mEM6"
+      ],
+      "settings": {
+        "custom_class": "section_clinically_tested",
+        "full_width": true,
+        "subheading": "",
+        "title": "Clinically Tested in 12 Studies",
+        "content": "<p>Extreme Endurance has been proven effective under rigorous clinical trials. See the results below. </p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#f5f5f5",
+        "accordion_text_color": ""
+      }
+    },
     "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8": {
       "type": "feature-chart-v2",
       "blocks": {
@@ -1047,68 +1109,6 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "accordion_content_z4BV3x": {
-      "type": "accordion-content",
-      "blocks": {
-        "item_pBneBt": {
-          "type": "item",
-          "settings": {
-            "title": "Lactic Acid Reduction of 26%",
-            "content": "<p>This second study follows the published clinical study conducted in Germany in 2010, which showed the average lactic acid reduction was 15% in 22 elite athletes with an increase in aerobic threshold by double digits in a short, ten-day period. </p>",
-            "image": "shopify://shop_images/xendurance.com_en-au_pages_extreme-endurance-intro-offer.png"
-          }
-        },
-        "item_fNmfBY": {
-          "type": "item",
-          "settings": {
-            "title": "Muscle Damage Decrease by 6X",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
-            "image": "shopify://shop_images/Plant_Protein_Greens_Nutritional_facts.jpg"
-          }
-        },
-        "item_9mw4ea": {
-          "type": "item",
-          "settings": {
-            "title": "V02 Max Increase by 15%",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
-            "image": "shopify://shop_images/Fuel-5__Nutritional_facts.jpg"
-          }
-        },
-        "item_B9mEM6": {
-          "type": "item",
-          "settings": {
-            "title": "Reduce Oxidative Stress by 39%",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
-            "image": "shopify://shop_images/Lean__Nutritional_facts.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "item_pBneBt",
-        "item_fNmfBY",
-        "item_9mw4ea",
-        "item_B9mEM6"
-      ],
-      "settings": {
-        "custom_class": "section_clinically_tested",
-        "full_width": true,
-        "subheading": "",
-        "title": "Clinically Tested in 12 Studies",
-        "content": "<p>Extreme Endurance has been proven effective under rigorous clinical trials. See the results below. </p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "#f5f5f5",
-        "accordion_text_color": ""
-      }
     }
   },
   "order": [
@@ -1118,6 +1118,7 @@
     "text_with_icons_L4xPbn",
     "808ce943-d064-4ee0-9d4c-5381ae09074f",
     "multi_column_FdE49a",
+    "accordion_content_z4BV3x",
     "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8",
     "b5bae039-0209-417a-9002-2d5904e516f8",
     "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c",
@@ -1127,7 +1128,6 @@
     "0a1f82a6-b53d-4501-9a94-2860da5741ce",
     "related-products",
     "cf8b928d-f9b0-4c53-bcbb-2f59458566b1",
-    "591e9849-8775-4917-ba33-b4992916f8fc",
-    "accordion_content_z4BV3x"
+    "591e9849-8775-4917-ba33-b4992916f8fc"
   ]
 }
