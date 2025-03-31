@@ -196,6 +196,7 @@
     },
     "30d03795-8f63-485e-b581-13a9457eafe7": {
       "type": "scrolling-text",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "text": "{{ product.metafields.custom.scrolling_text_product_tagline.value }}",
@@ -253,96 +254,6 @@
     "text_with_icons_L4xPbn": {
       "type": "text-with-icons",
       "blocks": {
-        "item_MGUX4L": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/Layer_1_2_95dc02e6-7cd7-4603-b70f-1cd21104d4db.svg",
-            "mobile_icon_width": 44,
-            "icon_width": 56,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Recover Faster",
-            "content": "<p>Fights Free Radical Damage & supports crucial cellular functions.</p>"
-          }
-        },
-        "item_xmL8RD": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/Group_5086_e997a1e3-7634-4520-99dd-c837b3b0878a.svg",
-            "mobile_icon_width": 44,
-            "icon_width": 56,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Stamina Increase",
-            "content": "<p>Push your limits to go the distance, fight fatigue and set PRs.</p>"
-          }
-        },
-        "item_amJkBF": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/Layer_1_3_23ba5d84-0067-42ff-8970-9a8725b300a5.svg",
-            "mobile_icon_width": 44,
-            "icon_width": 56,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "rgba(0,0,0,0)",
-            "title": "Increase Power",
-            "content": "<p>Increase power output by 10-25% with a similar heart rate.</p>"
-          }
-        },
-        "item_Ng6b67": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/Layer_1_3_23ba5d84-0067-42ff-8970-9a8725b300a5.svg",
-            "mobile_icon_width": 44,
-            "icon_width": 56,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Deeper Breaths",
-            "content": "<p>Increase VO2 Max & Aerobic Threshold. Perform better for longer.</p>"
-          }
-        },
-        "item_Diw3rg": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/Layer_1_5.svg",
-            "mobile_icon_width": 48,
-            "icon_width": 56,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Reduce Lactic",
-            "content": "<p>Extreme Endurance reduces lactic build up after intense workouts.</p>"
-          }
-        },
-        "item_NWLfaE": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/Va17xA_tif.svg",
-            "mobile_icon_width": 48,
-            "icon_width": 64,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Age Slower",
-            "content": "<p>Promotes anti-aging by reducing damaging oxidative stress.</p>"
-          }
-        },
         "item_BxkRd8": {
           "type": "item",
           "repeater": "{{ product.metafields.custom.section_benefits_list_items.value }}",
@@ -360,12 +271,6 @@
         }
       },
       "block_order": [
-        "item_MGUX4L",
-        "item_xmL8RD",
-        "item_amJkBF",
-        "item_Ng6b67",
-        "item_Diw3rg",
-        "item_NWLfaE",
         "item_BxkRd8"
       ],
       "settings": {
@@ -458,8 +363,9 @@
       "blocks": {
         "item_AhXG3R": {
           "type": "item",
+          "source": "{{ product.metafields.custom.timeline_section_content.value }}",
           "settings": {
-            "image": "shopify://shop_images/EE-Should_This_Be_Illegal-10-4b_8ebeb706-b263-483a-a186-7a31a8198e1a.png",
+            "image": "{{ product.metafields.custom.timeline_section_content.value.section_image.value }}",
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
@@ -472,20 +378,18 @@
         },
         "timeline_XRbaV4": {
           "type": "timeline",
+          "repeater": "{{ product.metafields.custom.timeline_items.value }}",
           "settings": {
             "column_size": "2",
-            "heading_1": "Day 1",
-            "content_1": "<p>Record a workout before taking Extreme Endurance.</p>",
-            "image_1": "shopify://shop_images/Group_5126.svg",
-            "heading_2": "Day 2-7",
-            "content_2": "<p>Start taking Extreme Endurance and don’t skip any days. </p>",
-            "image_2": "shopify://shop_images/Group_5125.svg",
-            "heading_3": "Day 8",
-            "content_3": "<p>Retest workout from Day 1 and see your performance increase. </p>",
-            "image_3": "shopify://shop_images/Group_5124.svg",
-            "heading_4": "Day 8+",
-            "content_4": "<p>Maintain daily dosage for compounding benefits.</p>",
-            "image_4": "shopify://shop_images/Group_5123.svg",
+            "heading_1": "{{ block.repeater.heading.value }}",
+            "content_1": "{{ block.repeater.content | metafield_tag }}",
+            "image_1": "{{ block.repeater.icon.value }}",
+            "heading_2": "",
+            "content_2": "",
+            "heading_3": "",
+            "content_3": "",
+            "heading_4": "",
+            "content_4": "",
             "heading_5": "",
             "content_5": ""
           }
@@ -501,9 +405,9 @@
         "stack_on_mobile": true,
         "gap": "large",
         "text_alignment": "center",
-        "subheading": "Push Your Limits",
-        "title": "One Week Challange",
-        "content": "<p>See proven results in 7 days</p>",
+        "subheading": "",
+        "title": "{{ product.metafields.custom.timeline_section_content.value.section_heading.value }}",
+        "content": "<p>{{ product.metafields.custom.timeline_section_content.value.section_subheading | metafield_tag }}</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -519,49 +423,23 @@
       "blocks": {
         "item_pBneBt": {
           "type": "item",
+          "repeater": "{{ product.metafields.custom.accordion_items.value }}",
           "settings": {
-            "title": "Lactic Acid Reduction of 26%",
-            "content": "<p>This second study follows the published clinical study conducted in Germany in 2010, which showed the average lactic acid reduction was 15% in 22 elite athletes with an increase in aerobic threshold by double digits in a short, ten-day period. </p>",
-            "image": "shopify://shop_images/xendurance.com_en-au_pages_extreme-endurance-intro-offer.png"
-          }
-        },
-        "item_fNmfBY": {
-          "type": "item",
-          "settings": {
-            "title": "Muscle Damage Decrease by 6X",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
-            "image": "shopify://shop_images/Plant_Protein_Greens_Nutritional_facts.jpg"
-          }
-        },
-        "item_9mw4ea": {
-          "type": "item",
-          "settings": {
-            "title": "V02 Max Increase by 15%",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
-            "image": "shopify://shop_images/Fuel-5__Nutritional_facts.jpg"
-          }
-        },
-        "item_B9mEM6": {
-          "type": "item",
-          "settings": {
-            "title": "Reduce Oxidative Stress by 39%",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
-            "image": "shopify://shop_images/Lean__Nutritional_facts.jpg"
+            "title": "{{ block.repeater.accordion_heading.value }}",
+            "content": "{{ block.repeater.accordion_paragraph | metafield_tag }}",
+            "image": "{{ block.repeater.accordion_image.value }}"
           }
         }
       },
       "block_order": [
-        "item_pBneBt",
-        "item_fNmfBY",
-        "item_9mw4ea",
-        "item_B9mEM6"
+        "item_pBneBt"
       ],
       "settings": {
         "custom_class": "section_clinically_tested",
         "full_width": true,
         "subheading": "",
-        "title": "Clinically Tested in 12 Studies",
-        "content": "<p>Extreme Endurance has been proven effective under rigorous clinical trials. See the results below. </p>",
+        "title": "{{ product.metafields.custom.accordion_section_heading.value }}",
+        "content": "<p>{{ product.metafields.custom.accordion_section_subheading | metafield_tag }}</p>",
         "button_text": "",
         "button_url": "",
         "text_position": "center",
