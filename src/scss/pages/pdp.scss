@@ -114,6 +114,9 @@
     .shopify-app-block {
         margin-top: 28px;
         margin-bottom: 28px;
+        @media screen and (max-width: 989px) {
+            margin-top: 38px;
+        }
     }
 
     .product.cart-has-membership {
@@ -394,7 +397,7 @@
                 line-height: 1;
                 letter-spacing: 1.317px;
                 text-transform: uppercase;
-                margin-bottom: 8px;
+                margin-bottom: 19px;
             }
         }
 

@@ -1487,6 +1487,8 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   .landing_key_benefits .section .text-with-icons__list .text-with-icons__item {
     padding: 26px 12px 26px;
     gap: 12px;
+    display: flex;
+    flex-direction: column;
   }
 }
 .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .image-container {
@@ -1494,8 +1496,22 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .image-container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .image-container img {
+    aspect-ratio: 1;
+  }
+}
 .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper {
   margin-top: auto;
+}
+@media screen and (max-width: 768px) {
+  .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper {
+    margin-top: 0px;
+  }
 }
 .landing_key_benefits .section .text-with-icons__list .text-with-icons__item .text-with-icons__text-wrapper p.h5 {
   font-size: 24px;
@@ -1771,6 +1787,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   margin-top: 28px;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 989px) {
+  .template--product .shopify-section--main-product .shopify-app-block, .shopify-section--featured-product .shopify-app-block {
+    margin-top: 38px;
+  }
+}
 .template--product .shopify-section--main-product .product.cart-has-membership custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id=ba11e52e1a6aa078dca92bf274d23a25dce62018], .shopify-section--featured-product .product.cart-has-membership custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id=ba11e52e1a6aa078dca92bf274d23a25dce62018] {
   display: none;
 }
@@ -2019,7 +2040,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     line-height: 1;
     letter-spacing: 1.317px;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 19px;
   }
 }
 .template--product .shopify-section--main-product .product-info .product-price_with_rating, .shopify-section--featured-product .product-info .product-price_with_rating {

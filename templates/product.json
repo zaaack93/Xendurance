@@ -504,6 +504,9 @@
         "1f472494-3519-4471-80df-fac33a032617",
         "346c4aba-459b-44bc-aa23-86ae7be08e96"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 989px) {.section-blends {padding-top: var(--calculated-section-spacing-block-start); }}"
+      ],
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -639,6 +642,9 @@
         "19023f2d-3d86-4e7b-af97-997f3c6af771",
         "9084a326-97b3-4f11-8762-04e772ad30a5",
         "efb2e2c4-ef0f-42da-918c-f18d47b70000"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 989px) {.section-blends {padding-top: var(--calculated-section-spacing-block-start);}}"
       ],
       "settings": {
         "custom_class": "",

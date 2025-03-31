@@ -63,14 +63,26 @@
                 @media screen and (max-width: 768px){
                     padding: 26px 12px 26px;
                     gap: 12px;
+                    display: flex;
+                    flex-direction: column;
                 }
                 .image-container{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @media screen and (max-width: 768px){
+                        height: fit-content;
+                        img{
+                            aspect-ratio: 1;
+                        }
+                    }
+
                 }
                 .text-with-icons__text-wrapper{
                     margin-top: auto;
+                    @media screen and (max-width: 768px){
+                        margin-top: 0px;
+                    }
                     p.h5{
                         font-size: 24px;
                         font-style: normal;
