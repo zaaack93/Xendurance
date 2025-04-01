@@ -378,18 +378,20 @@
         },
         "timeline_XRbaV4": {
           "type": "timeline",
-          "repeater": "{{ product.metafields.custom.timeline_items.value }}",
           "settings": {
             "column_size": "2",
-            "heading_1": "{{ block.repeater.heading.value }}",
-            "content_1": "{{ block.repeater.content | metafield_tag }}",
-            "image_1": "{{ block.repeater.icon.value }}",
-            "heading_2": "",
-            "content_2": "",
-            "heading_3": "",
-            "content_3": "",
-            "heading_4": "",
-            "content_4": "",
+            "heading_1": "{{ product.metafields.custom.timeline_heading_1.value }}",
+            "content_1": "<p>{{ product.metafields.custom.timeline_subheading_1 | metafield_tag }}</p>",
+            "image_1": "{{ product.metafields.custom.timeline_image_1.value }}",
+            "heading_2": "{{ product.metafields.custom.timeline_heading_2.value }}",
+            "content_2": "<p>{{ product.metafields.custom.timeline_subheading_2 | metafield_tag }}</p>",
+            "image_2": "{{ product.metafields.custom.timeline_image_2.value }}",
+            "heading_3": "{{ product.metafields.custom.timeline_heading_3.value }}",
+            "content_3": "{{ product.metafields.custom.timeline_subheading_3 | metafield_tag }}",
+            "image_3": "{{ product.metafields.custom.timeline_image_3.value }}",
+            "heading_4": "{{ product.metafields.custom.timeline_heading_4.value }}",
+            "content_4": "{{ product.metafields.custom.timeline_subheading_4 | metafield_tag }}",
+            "image_4": "{{ product.metafields.custom.timeline_image_4.value }}",
             "heading_5": "",
             "content_5": ""
           }
@@ -644,7 +646,7 @@
         "efb2e2c4-ef0f-42da-918c-f18d47b70000"
       ],
       "custom_css": [
-        "@media screen and (max-width: 989px) {.section-blends {padding-top: var(--calculated-section-spacing-block-start);}}"
+        "@media screen and (max-width: 989px) {.section-blends {padding-top: var(--calculated-section-spacing-block-start); }}"
       ],
       "settings": {
         "custom_class": "",
