@@ -1550,13 +1550,13 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 }
 @media screen and (max-width: 768px) {
   .timeline-container {
-    gap: 69px;
+    gap: 50px;
     margin-top: 32px;
   }
 }
 .timeline-container .timeline-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
 }
 @media screen and (max-width: 768px) {
@@ -1604,7 +1604,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   content: "";
   position: absolute;
   left: 55px;
-  top: 0;
+  top: 10px;
   bottom: 0;
   height: 90%;
   width: 3px;
@@ -2439,6 +2439,49 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 }
 .template--product .judgeme_widgets__container .jdgm-prev-badge .jdgm-prev-badge__text {
   display: none;
+}
+
+product-quick-add {
+  transition: transform 0.2s ease-in-out;
+}
+product-quick-add button {
+  font-family: "United Sans SemiCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px !important;
+  line-height: 24px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  height: 57px;
+}
+@media only screen and (max-width: 989px) {
+  product-quick-add button {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+}
+product-quick-add button span[data-smartrr-compare-price] {
+  display: none;
+}
+@media screen and (pointer: fine) {
+  product-quick-add .button:not([disabled]):hover, product-quick-add .btn:not([disabled]):hover, product-quick-add .shopify-payment-button__button--unbranded:not([disabled]):hover {
+    --button-background-opacity: 0.95;
+  }
+}
+product-quick-add.is-visible {
+  transform: translateY(0);
+}
+product-quick-add:not(.is-visible) {
+  transform: translateY(100%);
+}
+@media screen and (min-width: 769px) {
+  product-quick-add {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 699px) {

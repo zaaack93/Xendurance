@@ -95,6 +95,14 @@ Supported variables
     </div>
   {%- else -%}
     {{- content -}}
+    {% if show_price %}
+      &nbsp;&nbsp;|&nbsp;
+      <span  data-smartrr-product-id="{{ product.id }}" data-smartrr-price-style="overwrite-compare" data-use-quantity="true">
+        <span data-smartrr-compare-price></span>
+        <span data-smartrr-regular-price></span>
+        <span smartrr-top-price data-smartrr-subscribe-price></span>
+      </span>
+    {% endif %}
   {%- endif -%}
 {%- endcapture -%}
 

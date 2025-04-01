@@ -381,10 +381,10 @@
           "settings": {
             "column_size": "2",
             "heading_1": "{{ product.metafields.custom.timeline_heading_1.value }}",
-            "content_1": "<p>{{ product.metafields.custom.timeline_subheading_1 | metafield_tag }}</p>",
+            "content_1": "{{ product.metafields.custom.timeline_subheading_1 | metafield_tag }}",
             "image_1": "{{ product.metafields.custom.timeline_image_1.value }}",
             "heading_2": "{{ product.metafields.custom.timeline_heading_2.value }}",
-            "content_2": "<p>{{ product.metafields.custom.timeline_subheading_2 | metafield_tag }}</p>",
+            "content_2": "{{ product.metafields.custom.timeline_subheading_2 | metafield_tag }}",
             "image_2": "{{ product.metafields.custom.timeline_image_2.value }}",
             "heading_3": "{{ product.metafields.custom.timeline_heading_3.value }}",
             "content_3": "{{ product.metafields.custom.timeline_subheading_3 | metafield_tag }}",

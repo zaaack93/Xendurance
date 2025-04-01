@@ -800,3 +800,45 @@
         }
     }
 }
+
+product-quick-add{
+    button {
+
+        font-family: 'United Sans SemiCond';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px !important;
+        line-height: 24px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        height: 57px;
+        @media only screen and (max-width: 989px) {
+            font-size: 20px !important;
+            line-height: 20px !important;
+        }
+        span[data-smartrr-compare-price]{
+            display: none;
+        }
+    }
+    @media screen and (pointer: fine) {
+        .button:not([disabled]):hover, .btn:not([disabled]):hover, .shopify-payment-button__button--unbranded:not([disabled]):hover {
+            --button-background-opacity: 0.95;
+        }
+    }
+
+    transition: transform 0.2s ease-in-out;
+    &.is-visible {
+        transform: translateY(0);
+    }
+    &:not(.is-visible) {
+        transform: translateY(100%);
+    }
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+}
