@@ -111,7 +111,18 @@ Supported variables
     {{- button_content -}}
   </a>
 {%- else -%}
-  <button type="{{ type | default: 'button' }}" {{ attributes }} {{ block.shopify_attributes }}>
+  <button type="{{ type | default: 'button' }}" {{ attributes }} {{ block.shopify_attributes }}
+    {% if redirect_to_top %}
+      onclick="
+      var customOptions = document.querySelector(&quot;.product-info custom-options&quot;);
+      if (customOptions) {
+        customOptions.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        document.querySelector(&quot;.product-info button[type='submit']&quot;).scrollIntoView({ behavior: 'smooth' });
+      }
+      "
+    {% endif %}
+  >
     {{- button_content -}}
   </button>
 {%- endif -%}

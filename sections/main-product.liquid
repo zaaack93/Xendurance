@@ -60,7 +60,7 @@
     {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
 
     <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" force-secondary-button class="sm:hidden">
-      {%- render 'button', type: 'submit', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color , stretch: true, size: 'lg',show_price:true,product:product -%}
+      {%- render 'button', type: 'button', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color , stretch: true, size: 'lg',redirect_to_top:true -%}
     </buy-buttons>
 
     {%- assign image = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}

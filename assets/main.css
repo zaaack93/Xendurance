@@ -627,7 +627,6 @@ navigation-drawer .drawer__promo-banner {
 navigation-drawer .drawer__promo-banner .promo-banner {
   height: auto;
   aspect-ratio: 1.58;
-  border-radius: 5px;
   padding: 20px;
   background-color: #cacaca;
   background-size: cover;
@@ -1568,7 +1567,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .timeline-container .timeline-item img {
   flex: 0 0 110px;
   max-width: 110px;
-  z-index: 9;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .timeline-container .timeline-item img {

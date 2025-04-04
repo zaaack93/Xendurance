@@ -1,5 +1,5 @@
 <a href="{{ section.settings.button_link | default: '/' }}" class="promo-banner__link">
-    <div class="promo-banner" {% if section.settings.additional_image %}style="background-image: url('{{ section.settings.additional_image | img_url: 'master' }}');"{% endif %}>
+    <div class="promo-banner rounded" {% if section.settings.additional_image %}style="background-image: url('{{ section.settings.additional_image | img_url: 'master' }}');"{% endif %}>
         <div class="promo-banner__content">
             {% if section.settings.subheading != blank %}
                 <h2 class="promo-banner__subheading">{{ section.settings.subheading  }}</h2>
