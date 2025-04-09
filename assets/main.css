@@ -1,7 +1,10 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Clan Pro";
-  src: url("ClanPro-CondBlackItalic.otf") format("opentype");
+  src: url("ClanPro-CondBlackItalic.woff2") format("woff2"), url("ClanPro-CondBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "United Sans SemiCond";
