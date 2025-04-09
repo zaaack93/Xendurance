@@ -502,20 +502,6 @@
             "link_style": "link"
           }
         },
-        "9bf71942-37d1-4962-a0dc-ec56943f81aa": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_156a0481-3a33-4856-8988-9f0493daabf9.png",
-            "column_size": "3",
-            "title": "Clayton Murphy",
-            "heading_tag": "h4",
-            "content": "<p><em>800m Bronze Medalist</em></p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c": {
           "type": "item",
           "settings": {
@@ -569,7 +555,6 @@
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2",
         "item_6JyxXV",
         "7de29ffd-f61e-4d08-8234-ddc529d2d5a3",
-        "9bf71942-37d1-4962-a0dc-ec56943f81aa",
         "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c",
         "363d397d-53b9-4a4f-ad66-23da0026e29e",
         "item_qMTLnK"
@@ -688,11 +673,11 @@
             "title": "Join Team XND & |Save|",
             "content": "",
             "custom_content": "25% OFF Every Order",
-            "custom_content1": "2 x $50 Product Reward Credits",
+            "custom_content1": "2 x $50 Reward Credits",
             "custom_content2": "FREE Shipping",
-            "custom_content3": "2x Loyalty Reward Points",
+            "custom_content3": "2x Shopping Reward Points",
             "custom_content4": "Race & Competition Sponsorships (NEW)",
-            "custom_content5": "Partner Perks + More!",
+            "custom_content5": "Energy Gels, Partner Perks + More!",
             "link_text": "Learn More",
             "link_url": "shopify://pages/team-xnd-sign-up",
             "background": "#353435",
