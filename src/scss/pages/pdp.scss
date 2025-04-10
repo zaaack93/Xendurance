@@ -399,6 +399,12 @@
                 text-transform: uppercase;
                 margin-bottom: 19px;
             }
+            @media only screen and (max-width: 390px) {
+                font-size: 38px;
+                line-height: 1;
+                letter-spacing: 1.317px;
+                margin-bottom: 14px;
+            }
         }
 
         //product price with rating
@@ -729,15 +735,15 @@
 
         ul li {
             list-style: none;
-            &::before {
-                content: '✓';
-                color: #000;
-                font-family: Inter;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 20px;
-            }
+            // &::before {
+            //     content: '✓';
+            //     color: #000;
+            //     font-family: Inter;
+            //     font-size: 16px;
+            //     font-style: normal;
+            //     font-weight: 600;
+            //     line-height: 20px;
+            // }
         }
     }
 }
@@ -775,6 +781,9 @@
             @media screen and (max-width: 989px){
                 font-size: 14px;
             }
+            @media only screen and (max-width: 390px) {
+                font-size: 13px;
+            }
             display: flex;
             align-items: center;
         }
@@ -786,6 +795,9 @@
             font-weight: 500;
             @media screen and (max-width: 989px){
                 font-size: 14px;
+            }
+            @media only screen and (max-width: 390px) {
+                font-size: 13px;
             }
             &::after {
                 content: attr(data-average-rating) ' Stars • ' attr(data-number-of-reviews) ' Reviews ';

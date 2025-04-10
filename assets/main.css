@@ -2045,6 +2045,14 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     margin-bottom: 19px;
   }
 }
+@media only screen and (max-width: 390px) {
+  .template--product .shopify-section--main-product .product-info .product-info__title, .shopify-section--featured-product .product-info .product-info__title {
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: 1.317px;
+    margin-bottom: 14px;
+  }
+}
 .template--product .shopify-section--main-product .product-info .product-price_with_rating, .shopify-section--featured-product .product-info .product-price_with_rating {
   margin-top: 13px;
   margin-bottom: 21px;
@@ -2373,15 +2381,6 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .template--product .shopify-section--main-product .accordion__content ul li, .shopify-section--featured-product .accordion__content ul li {
   list-style: none;
 }
-.template--product .shopify-section--main-product .accordion__content ul li::before, .shopify-section--featured-product .accordion__content ul li::before {
-  content: "✓";
-  color: #000;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-}
 
 .template--product .product-info__callouts {
   margin-bottom: 7.45px;
@@ -2424,6 +2423,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 390px) {
+  .template--product .judgeme_widgets__container .jdgm-widget {
+    font-size: 13px;
+  }
+}
 .template--product .judgeme_widgets__container .jdgm-prev-badge {
   --data-average-rating: attr(data-average-rating);
   --data-number-of-reviews: attr(data-number-of-reviews);
@@ -2434,6 +2438,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 @media screen and (max-width: 989px) {
   .template--product .judgeme_widgets__container .jdgm-prev-badge {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .template--product .judgeme_widgets__container .jdgm-prev-badge {
+    font-size: 13px;
   }
 }
 .template--product .judgeme_widgets__container .jdgm-prev-badge::after {
