@@ -106,6 +106,7 @@
                     display: inline-block !important;
                     order: 1;
                 }
+
             }
         }
 
@@ -115,6 +116,11 @@
         }
     }
 
+
+    //update selling plan to set once time 
+    div[data-smartrr-selling-plan-group-id=""] {
+        order:4;
+    }
     // cass for member hide 1
     .product:not(.product-for-member) {
         custom-options {

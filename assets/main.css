@@ -1800,6 +1800,9 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .shopify-section--featured-product .product.product-for-member buy-buttons span[data-smartrr-compare-price] {
   display: none;
 }
+.template--product .shopify-section--main-product div[data-smartrr-selling-plan-group-id=""], .shopify-section--featured-product div[data-smartrr-selling-plan-group-id=""] {
+  order: 4;
+}
 .template--product .shopify-section--main-product .product:not(.product-for-member) custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id="6a09e170577cb57e08a9a5e44f9fbf31c342d37e"], .shopify-section--featured-product .product:not(.product-for-member) custom-options div[data-smartrr-selling-plan-groups] div[data-smartrr-selling-plan-group-id="6a09e170577cb57e08a9a5e44f9fbf31c342d37e"] {
   display: none;
 }
