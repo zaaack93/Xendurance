@@ -2467,11 +2467,7 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   align-items: center;
   flex: 1;
   width: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .template--product product-recommendations .horizontal-product-list-carousel .horizontal-product .horizontal-product__info .product-main-info {
-    margin-bottom: -5px;
-  }
+  margin-bottom: -5px;
 }
 @media only screen and (max-width: 768px) {
   .template--product product-recommendations .horizontal-product-list-carousel .horizontal-product .horizontal-product__info .product-main-info a {
