@@ -827,6 +827,15 @@
 
         ul li {
             list-style: none;
+            background-image: url(https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260);
+            background-size: 17px;
+            background-position: left 5px;
+            padding-left: 30px;
+            background-repeat: no-repeat;
+            @media only screen and (max-width: 768px) {
+                background-size: 15.5px;
+                padding-left: 22.5px;
+            }
             // &::before {
             //     content: '✓';
             //     color: #000;

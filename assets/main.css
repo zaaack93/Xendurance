@@ -2422,6 +2422,17 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 }
 .template--product .shopify-section--main-product .accordion__content ul li, .shopify-section--featured-product .accordion__content ul li {
   list-style: none;
+  background-image: url(https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260);
+  background-size: 17px;
+  background-position: left 5px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px) {
+  .template--product .shopify-section--main-product .accordion__content ul li, .shopify-section--featured-product .accordion__content ul li {
+    background-size: 15.5px;
+    padding-left: 22.5px;
+  }
 }
 
 .template--product .product-info__callouts {
