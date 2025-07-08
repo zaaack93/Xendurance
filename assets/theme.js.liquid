@@ -2047,6 +2047,94 @@ if (!window.customElements.get("line-item-quantity")) {
   window.customElements.define("line-item-quantity", LineItemQuantity);
 }
 
+// js/common/cart/line-item-subscription.js
+var LineItemSubscription = class extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener("change", this._onSubscriptionChanged);
+  }
+  _onSubscriptionChanged(event) {
+    if (!event.target.hasAttribute("data-line-key") || !event.target.hasAttribute("data-selling-plan")) {
+      return;
+    }
+    const lineKey = event.target.getAttribute("data-line-key");
+    const sellingPlanId = event.target.getAttribute("data-selling-plan");
+    const isChecked = event.target.checked;
+    
+    // Disable the checkbox to prevent multiple clicks
+    event.target.disabled = true;
+    
+    this._changeLineItemSubscription(lineKey, isChecked ? sellingPlanId : null).finally(() => {
+      event.target.disabled = false;
+    });
+  }
+  async _changeLineItemSubscription(lineKey, sellingPlanId) {
+    try {
+      if (window.themeVariables.settings.pageType === "cart") {
+        const params = new URLSearchParams({
+          id: lineKey,
+          selling_plan: sellingPlanId || ''
+        });
+        window.location.href = `${Shopify.routes.root}cart/change?${params.toString()}`;
+      } else {
+        const lineItem = this.closest("line-item");
+        lineItem?.dispatchEvent(new CustomEvent("line-item:will-change", { bubbles: true, detail: { sellingPlanId } }));
+        let sectionsToBundle = [];
+        document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
+        
+        const requestBody = {
+          id: lineKey,
+          sections: sectionsToBundle
+        };
+        
+        if (sellingPlanId) {
+          requestBody.selling_plan = sellingPlanId;
+        }
+        
+        const response = await fetch(`${Shopify.routes.root}cart/change.js`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(requestBody)
+        });
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const cartContent = await response.json();
+        
+        const lineItemAfterChange = cartContent["items"].filter((lineItem2) => lineItem2["key"] === lineKey);
+        lineItem?.dispatchEvent(new CustomEvent("line-item:change", {
+          bubbles: true,
+          detail: {
+            sellingPlanId: lineItemAfterChange.length > 0 ? lineItemAfterChange[0]["selling_plan_allocation"]?.selling_plan?.id : null,
+            cart: cartContent
+          }
+        }));
+        document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+          bubbles: true,
+          detail: {
+            baseEvent: "line-item:change",
+            cart: cartContent
+          }
+        }));
+      }
+    } catch (error) {
+      console.error("Error changing line item subscription:", error);
+      // Revert checkbox state on error
+      const checkbox = this.querySelector('input[type="checkbox"]');
+      if (checkbox) {
+        checkbox.checked = !checkbox.checked;
+      }
+    }
+  }
+};
+if (!window.customElements.get("line-item-subscription")) {
+  window.customElements.define("line-item-subscription", LineItemSubscription);
+}
+
 // js/common/cart/shipping-estimator.js
 var ShippingEstimator = class extends HTMLElement {
   constructor() {

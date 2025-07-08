@@ -47,6 +47,7 @@ cart-drawer {
         padding-bottom: 18px;
         margin-bottom: 0px;
         border-bottom: 1px solid transparent;
+        position: relative;
 
         p {
             font-family: 'United Sans SemiCond';
@@ -333,9 +334,9 @@ cart-drawer {
             content: "";
             position: absolute;
             height: 60px;
-            width: 100%;
-            top: 0px;
-            left: 0px;
+            width: calc(100% + 33px);
+            top: -18px;
+            left: -14px;
             background-color: #F0F0F0;
             border-bottom: 1px solid #D6D6D6;
         }
@@ -350,7 +351,7 @@ cart-drawer {
             }
             .line-item__info{
                 width: 100%;
-                row-gap: 8px;
+                row-gap: 10px;
                 .v-stack{
                     width: 100%;
                 }
@@ -362,6 +363,62 @@ cart-drawer {
                 width: 100%;
                 .price-list{
                     margin-top: 9px;
+                }
+            }
+
+            .subscribe-and-save-container{
+                color: #000;
+                font-family: Inter;
+                font-size: 11.742px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .toggle {
+                    position: relative;
+                    display: inline-block;
+                    width: 33.418px;
+                    height: 18px;
+                }
+                
+                /* Hide the checkbox input */
+                .toggle input {
+                    display: none;
+                }
+                
+                /* Describe slider's look and position. */
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #C4C4C4;
+                    transition: .4s;
+                    border-radius: 34px;
+                }
+                
+                /* Describe the white ball's location 
+                    and appearance in the slider. */
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    width: 13.548px;
+                    height: 14px;
+                    left: 2px;
+                    background-color: white;
+                    transition: .4s;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                /* When the checkbox is checked, shift the 
+                    white ball towards the right within the slider. */
+                input:checked+.slider:before {
+                    transform: translateY(-50%) translateX(15px);
                 }
             }
         }
