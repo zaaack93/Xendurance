@@ -31,4 +31,36 @@
         {%endif%}
     </div>
     {%endif%}
+    {%if block.settings.image3 != blank or block.settings.title13 != blank %}
+    <div class="product__icon__container">
+        {%if block.settings.image3 != blank  %}
+        <div class="image_row_container">
+            {%- capture sizes -%}{{ block.settings.icon_size3 }}px{%- endcapture -%}
+            {%- capture widths -%}{{ block.settings.icon_size3 }}, {{ block.settings.icon_size3 | times: 2 | at_most: block.settings.image3.width }}{%- endcapture -%}
+            {{- block.settings.image3 | image_url: width: block.settings.image3.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, width: block.settings.icon_size3 -}}
+        </div>
+        {%endif%}
+        {%if block.settings.title13 != blank  %}
+        <div class="product__icon__text">
+            <p>{{ block.settings.title13 }}</p>
+        </div>
+        {%endif%}
+        </div>
+    {%endif%}
+    {%if block.settings.image4 != blank or block.settings.title14 != blank %}
+    <div class="product__icon__container">
+        {%if block.settings.image4 != blank  %}
+        <div class="image_row_container">
+            {%- capture sizes -%}{{ block.settings.icon_size4 }}px{%- endcapture -%}
+            {%- capture widths -%}{{ block.settings.icon_size4 }}, {{ block.settings.icon_size4 | times: 2 | at_most: block.settings.image4.width }}{%- endcapture -%}
+            {{- block.settings.image4 | image_url: width: block.settings.image4.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, width: block.settings.icon_size4 -}}
+        </div>
+        {%endif%}
+        {%if block.settings.title14 != blank  %}
+        <div class="product__icon__text">
+            <p>{{ block.settings.title14 }}</p>
+        </div>
+        {%endif%}
+    </div>
+    {%endif%}
 </div>
