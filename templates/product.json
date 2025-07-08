@@ -153,6 +153,16 @@
             "expaded": false
           }
         },
+        "associated_products_7dUmCK": {
+          "type": "associated_products",
+          "settings": {
+            "title": "For Best Results, Pair With:",
+            "stack_products": false,
+            "products_count": 4,
+            "background": "#ffffff",
+            "text_color": "#000000"
+          }
+        },
         "cd6ba36a-48e1-40f2-a783-9541c8adc725": {
           "type": "product_offer",
           "settings": {
@@ -187,6 +197,7 @@
         "9a72e9ef-1e05-4816-9035-41a075bdf809",
         "b833a344-c331-427c-9113-de7b76a2738c",
         "ebb6b23d-4582-4ee7-b484-aa7711332c3f",
+        "associated_products_7dUmCK",
         "cd6ba36a-48e1-40f2-a783-9541c8adc725"
       ],
       "settings": {

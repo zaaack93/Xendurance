@@ -23,7 +23,7 @@ Supported variables
   {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 64px, 80px', widths: '64,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
 
   <div class="horizontal-product__info">
-    <div class="v-stack gap-0.5">
+    <div class="v-stack gap-0.5 product-main-info">
       {%- if output_link == false -%}
         <span class="text-sm bold">{{ product.title }}</span>
       {%- else -%}
@@ -70,5 +70,19 @@ Supported variables
         {%- endif -%}
       </div>
     {%- endif -%}
+
+    {% if show_short_description and product.metafields.custom.card_product_short_description != blank %}
+      <div class="horizontal-product__short-description">
+        <p class="text-sm text-subdued">{{ product.metafields.custom.card_product_short_description }}</p>
+      </div>
+    {% endif %}
+
+    {% if show_shop_now %}
+      <div class="horizontal-product__shop-now">
+        <a href="{{ product.url }}" class="button button--secondary button--sm" data-instant>
+          SHOP NOW
+        </a>
+      </div>
+    {% endif %}
   </div>
 </div>

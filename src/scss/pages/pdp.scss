@@ -851,6 +851,79 @@
 
 
 .template--product{
+    //product complimentary
+    product-recommendations{
+        .h-stack p{
+            font-size: 15.26px;
+            font-weight: 600;
+            line-height: 17.953px;
+        }
+        .horizontal-product-list-carousel{
+            column-gap: 20px;
+            .horizontal-product  {
+                --horizontal-product-image-size:106px;
+                    padding: 12.5px 11.5px;
+                    gap: 19px;
+                    .horizontal-product__info{
+                            flex: 1;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            @media only screen and (min-width: 769px) {
+                                gap: 10px;
+                            }
+                        .product-main-info{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex: 1;
+                            width: 100%;
+                            a{
+                                @media only screen and (max-width: 768px) {
+                                    font-size: 13.465px;
+                                    line-height: 17.953px;
+                                }
+                            }
+                            p.text-subdued{
+                                @media only screen and (max-width: 768px) {
+                                    font-size: 13.465px;
+                                    line-height: 17.953px;
+                                }
+                            }
+                        }
+                    }
+
+                    .horizontal-product__short-description p{
+                        @media only screen and (max-width: 768px) {
+                            font-size: 13.465px;
+                            font-weight: 400;
+                            line-height: 17.953px;
+                        }
+                    }
+
+                    .horizontal-product__shop-now{
+                        a{
+                            --button-background:232, 232, 232;
+                            --button-text-color:0, 0, 0;
+                            @media only screen and (max-width: 768px) {
+                                padding: 7px 20px;
+                                font-size: 11.67px;
+                                line-height: 17.953px;
+                            }
+                            padding: 7px 30px;
+                        }
+                    }
+                }
+        }
+        @media only screen and (max-width: 768px) {
+            .horizontal-product-list-carousel > .horizontal-product-list{
+                grid: auto / auto-flow 100%;
+                column-gap: 20px;
+                
+            }
+        }
+    }
     .product-info__callouts{
         margin-bottom: 7.45px;
         display: flex;

@@ -350,7 +350,7 @@
 
               {%- capture horizontal_products -%}
                 {%- for associated_product in recommendations.products -%}
-                  {%- render 'horizontal-product', product: associated_product, show_add_to_cart: true, background: block.settings.background, text_color: block.settings.text_color -%}
+                  {%- render 'horizontal-product', product: associated_product, show_add_to_cart: false, background: block.settings.background, text_color: block.settings.text_color, show_shop_now:true, show_short_description:true -%}
                 {%- endfor -%}
               {%- endcapture -%}
 
