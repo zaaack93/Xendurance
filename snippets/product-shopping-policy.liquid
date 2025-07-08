@@ -10,7 +10,7 @@
         {%endif%}
         {%if block.settings.title1 != blank  %}
         <div class="product__icon__text">
-            <p>{{ block.settings.title1 }}</p>
+            <p>{{ block.settings.title1 | newline_to_br }}</p>
         </div>
         {%endif%}
     </div>
@@ -26,7 +26,7 @@
         {%endif%}
         {%if block.settings.title12 != blank  %}
         <div class="product__icon__text">
-            <p>{{ block.settings.title12 }}</p>
+            <p>{{ block.settings.title12 | newline_to_br }}</p>
         </div>
         {%endif%}
     </div>
@@ -40,9 +40,9 @@
             {{- block.settings.image3 | image_url: width: block.settings.image3.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, width: block.settings.icon_size3 -}}
         </div>
         {%endif%}
-        {%if block.settings.title13 != blank  %}
+        {%if block.settings.title3 != blank  %}
         <div class="product__icon__text">
-            <p>{{ block.settings.title13 }}</p>
+            <p>{{ block.settings.title3 | newline_to_br }}</p>
         </div>
         {%endif%}
         </div>
@@ -56,9 +56,9 @@
             {{- block.settings.image4 | image_url: width: block.settings.image4.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, width: block.settings.icon_size4 -}}
         </div>
         {%endif%}
-        {%if block.settings.title14 != blank  %}
+        {%if block.settings.title4 != blank  %}
         <div class="product__icon__text">
-            <p>{{ block.settings.title14 }}</p>
+            <p>{{ block.settings.title4 | newline_to_br }}</p>
         </div>
         {%endif%}
     </div>
