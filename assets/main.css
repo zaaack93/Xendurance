@@ -2074,6 +2074,54 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
     margin-bottom: 14px;
   }
 }
+.template--product .shopify-section--main-product .product-info .product-info__benefits-list, .shopify-section--featured-product .product-info .product-info__benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media only screen and (max-width: 989px) {
+  .template--product .shopify-section--main-product .product-info .product-info__benefits-list, .shopify-section--featured-product .product-info .product-info__benefits-list {
+    row-gap: 24px;
+  }
+}
+.template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon {
+  width: 35px;
+  height: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon img, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text {
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text {
+    font-size: 13.465px;
+  }
+}
+.template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text br, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text br {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text br, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text br {
+    display: initial;
+  }
+}
 .template--product .shopify-section--main-product .product-info .product-price_with_rating, .shopify-section--featured-product .product-info .product-price_with_rating {
   margin-top: 13px;
   margin-bottom: 21px;

@@ -33,8 +33,13 @@
             "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}</p>"
           }
         },
+        "product_benefits_QC7qUL": {
+          "type": "product-benefits",
+          "settings": {}
+        },
         "8d21c681-30df-4742-8a3a-4317b834ba98": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.product_key_benefit | metafield_tag }}"
           }
@@ -163,6 +168,7 @@
         "e00585ce-7192-4586-9567-a2c4bafdd045",
         "separator_CAQYe4",
         "3780c535-8911-4fe4-8d1f-605124beb58c",
+        "product_benefits_QC7qUL",
         "8d21c681-30df-4742-8a3a-4317b834ba98",
         "variant_picker",
         "607f9e51-9129-4c62-b3f5-158106b03c22",

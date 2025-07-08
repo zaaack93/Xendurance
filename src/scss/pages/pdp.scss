@@ -430,6 +430,47 @@
             }
         }
 
+        //product benefits list
+        .product-info__benefits-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            @media only screen and (max-width: 989px) {
+                row-gap: 24px;
+            }
+            .product-info__benefit{
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                .product-info__benefit-icon{
+                    width: 35px;
+                    height: 35px;
+                    @media only screen and (max-width: 768px) {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .product-info__benefit-text{
+                    font-weight: 500;
+                    line-height: normal;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 13.465px;
+                    }
+                    br{
+                        display: none;
+                        @media only screen and (max-width: 768px) {
+                            display: initial;
+                        }
+                    }
+                }
+            }
+        }
+
         //product price with rating
         .product-price_with_rating {
             margin-top: 13px;

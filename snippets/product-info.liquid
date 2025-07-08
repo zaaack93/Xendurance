@@ -284,7 +284,14 @@
           <div class="product-info__benefits" {{ block.shopify_attributes }} id="block-item-{{ block.id }}">
             <div class="product-info__benefits-list">
               {%- for benefit in product.metafields.custom.pdp_benefits_1.value -%}
-                dazdaz
+                <div class="product-info__benefit">
+                    <div class="product-info__benefit-icon">
+                      {{- benefit.icon | image_url: width: 35 | image_tag: loading: 'lazy' -}}
+                    </div>
+                  <div class="product-info__benefit-text">
+                    {{- benefit.title | newline_to_br -}}
+                  </div>
+                </div>
               {%- endfor -%}
             </div>
           </div>
