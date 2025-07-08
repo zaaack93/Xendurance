@@ -1241,9 +1241,13 @@ scroll-carousel {
 
 .drawer::part(footer) {
   padding: var(--drawer-footer-padding);
+  padding-inline: 14px 19px;
   border-block-start: 1px solid rgb(var(--border-color));
   margin-block-start: auto;
   position: relative;
+  background: #F6F6F6;
+  padding-top: 0px;
+  border-top: none;
 }
 
 .drawer > [is="close-button"] {

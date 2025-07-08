@@ -65,7 +65,8 @@ Supported variables
     LINE ITEM CASE (used on cart, order page...)
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
-    <sale-price class="{% if line_item.original_line_price > line_item.final_line_price %}{{ on_sale_price_classes }}{% else %}{{ regular_price_classes }}{% endif %}">
+    {% assign sellling_plan_price = line_item.selling_plan_allocation.compare_at_price | times: line_item.quantity %}
+    <sale-price class="{% if line_item.original_line_price > line_item.final_line_price %}{{ on_sale_price_classes }} {% elsif  sellling_plan_price > line_item.final_line_price %}{{on_sale_price_classes}}{% else %}{{ regular_price_classes }}{% endif %}">
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
@@ -83,6 +84,16 @@ Supported variables
           {{- line_item.original_line_price | money_with_currency -}}
         {%- else -%}
           {{- line_item.original_line_price | money -}}
+        {%- endif -%}
+      </compare-at-price>
+    {%- elsif sellling_plan_price > line_item.final_line_price -%}
+      <compare-at-price class="{{ compare_at_price_classes }}">
+        <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
+
+        {%- if settings.currency_code_enabled -%}
+          {{- sellling_plan_price | money_with_currency -}}
+        {%- else -%}
+          {{- sellling_plan_price | money -}}
         {%- endif -%}
       </compare-at-price>
     {%- endif -%}

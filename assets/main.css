@@ -562,6 +562,9 @@ navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list li
 navigation-drawer .panel-list__wrapper .panel__scroller .secondary-items-list li a img:invalid {
   display: none;
 }
+navigation-drawer .panel-list__wrapper .panel-footer {
+  background-color: transparent;
+}
 navigation-drawer .panel-list__wrapper .panel-footer .judge_me_widget_container {
   background-color: transparent;
   color: black;
@@ -827,10 +830,6 @@ cart-drawer.membership-in-cart .add-membership-cart,
 cart-drawer.membership-in-cart .subscription--price.without-saving {
   display: none;
 }
-cart-drawer.membership-in-cart .total-footer-section {
-  padding-top: 0px;
-  border-top: none;
-}
 
 cart-drawer.cart-for-members .add-membership-cart,
 cart-drawer.cart-for-members .subscription--price.without-saving {
@@ -845,6 +844,18 @@ cart-drawer.cart-for-members .total-footer-section {
           border-block-start: none !important;
 }
 
+cart-drawer .drawer::part(footer) {
+  padding: var(--drawer-footer-padding);
+  padding-inline: 14px 19px;
+  -webkit-border-before: 1px solid rgb(var(--border-color));
+          border-block-start: 1px solid rgb(var(--border-color));
+  -webkit-margin-before: auto;
+          margin-block-start: auto;
+  position: relative;
+  background: #F6F6F6;
+  padding-top: 0px;
+  border-top: none;
+}
 @media only screen and (max-width: 700px) {
   cart-drawer {
     padding: 0px !important;
@@ -896,70 +907,70 @@ cart-drawer .total-footer-section {
   border-top: 1px solid #D6D6D6;
 }
 cart-drawer .add-membership-cart {
-  margin-left: -3px;
-  margin-right: -3px;
+  position: relative;
 }
-@media only screen and (max-width: 700px) {
-  cart-drawer .add-membership-cart {
-    margin-bottom: 7px;
-  }
+cart-drawer .add-membership-cart::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 33px);
+  height: calc(100% + 16px);
+  background-color: #fff;
+  top: 0;
+  left: -14px;
 }
-@media only screen and (max-width: 699px) {
-  cart-drawer .add-membership-cart .horizontal-product {
-    padding: 14px;
-    -moz-column-gap: 13px;
-         column-gap: 13px;
-  }
+cart-drawer .add-membership-cart .horizontal-product {
+  z-index: 9;
+  position: relative;
+  padding-inline: 16px 12px;
+  padding-block: 16px 13px;
+  border-radius: 8.931px;
+  border: 0.893px solid #D6D6D6;
+  background: #F6F6F6;
+  flex-wrap: wrap;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  row-gap: 14px;
 }
-@media only screen and (min-width: 700px) {
-  cart-drawer .add-membership-cart .horizontal-product {
-    padding: 10px 15px 10px 17px;
-    -moz-column-gap: 31px;
-         column-gap: 31px;
-  }
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__image {
+  --horizontal-product-image-size: 90px;
 }
-@media only screen and (max-width: 700px) {
-  cart-drawer .add-membership-cart .horizontal-product .horizontal-product__image {
-    width: 54px;
-    flex: 0 0 54px;
-  }
-}
-cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info {
-  display: flex;
-  align-self: center;
-}
-cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
-  letter-spacing: 0px;
-}
-@media only screen and (min-width: 700px) {
-  cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .specialize-price {
-  color: #FF6266;
-  font-style: italic;
-}
-cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .text-membership-with-price .second-line-text {
-  display: block;
-}
-cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__cta {
-  display: flex;
-  align-items: center;
-  margin-right: 0px;
-}
-cart-drawer .add-membership-cart .horizontal-product .horizontal-product__info .horizontal-product__cta button {
-  width: 72.97px;
-  height: 37px;
+cart-drawer .add-membership-cart .horizontal-product .heading-box {
+  color: #000;
+  font-size: 19.649px;
+  font-family: "United Sans SemiCond";
+  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 4px;
+  line-height: normal;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+}
+cart-drawer .add-membership-cart .horizontal-product ul li {
+  color: #000;
+  font-size: 13.397px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.007px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576);
+  background-size: 13px;
+  background-position: left center;
+  padding-left: 22px;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__cta {
+  width: 100%;
+  margin-left: 0px;
+}
+cart-drawer .add-membership-cart .horizontal-product .horizontal-product__cta button[type=submit] {
+  width: 100%;
+  font-size: 15.183px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.304px;
+  padding-block: 14px;
+  border-radius: 8.931px;
+  background: var(--Xendurance-Midnight, #1A191C);
 }
 cart-drawer #referrerInjection {
   padding-bottom: var(--spacing-6);
@@ -1233,6 +1244,24 @@ cart-drawer .cart-drawer__line-items line-item .subscribe-and-save-container .sl
 }
 cart-drawer .cart-drawer__line-items line-item .subscribe-and-save-container input:checked + .slider:before {
   transform: translateY(-50%) translateX(15px);
+}
+cart-drawer button[type=submit] {
+  border-radius: 9.032px;
+}
+cart-drawer .buy-buttons--compact {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 0px;
+}
+cart-drawer .cart-note-footer {
+  margin-top: 12px;
+  color: #454545;
+  font-size: 10.838px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.217px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @media only screen and (min-width: 700px) {
