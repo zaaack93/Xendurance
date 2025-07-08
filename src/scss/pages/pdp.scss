@@ -23,6 +23,17 @@
 
     product-gallery {
 
+        .page-dots--blurred{
+            background-color: transparent;
+            & > *{
+                background: #E93B40;
+            }
+            button[aria-current="false"]{
+                background: #EDECEB;
+                opacity: 1;
+            }
+        }
+
         .product-gallery__pdp-badge{
             position: absolute;
             right:18px;
