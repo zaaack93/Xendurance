@@ -48,11 +48,11 @@
       </div>
 
       {% comment %} FIRESTORM CODE {% endcomment %}
-      <div id="referrerInjection"></div>              
+      {% comment %} <div id="referrerInjection"></div>              
       <input id="referrer" type="hidden" name="attributes[Referrer]" value="{{ cart.attributes["Referrer"] }}">
       <script>
       displayDynamicContent('shopxnd.com', 'REFERRER_BLOCK', 'referrerInjection', 'refManFuncs');
-      </script>
+      </script> {% endcomment %}
       {% comment %} END FIRESTORM CODE {% endcomment %}
 
       <div class="v-stack gap-6 sm:gap-8">

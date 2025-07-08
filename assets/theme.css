@@ -1216,7 +1216,7 @@ scroll-carousel {
 .drawer::part(content) {
   height: 100%;
   max-height: var(--drawer-content-max-height);
-  background: rgb(var(--dialog-background));
+  background: #fff;
   color: rgb(var(--text-color));
   border-radius: 8px;
   flex-direction: column;
@@ -1230,6 +1230,8 @@ scroll-carousel {
 
 .drawer::part(body) {
   padding: var(--drawer-body-padding);
+  padding-top: 18px;
+  padding-inline: 14px 19px;
   overscroll-behavior-y: contain;
   /* flex: auto; */
   align-items: start;
