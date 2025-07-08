@@ -1727,8 +1727,10 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 }
 .template--product .shopify-section--main-product product-gallery .page-dots--blurred, .shopify-section--featured-product product-gallery .page-dots--blurred {
   background-color: transparent;
+  -webkit-backdrop-filter: initial;
+          backdrop-filter: initial;
 }
-.template--product .shopify-section--main-product product-gallery .page-dots--blurred > *, .shopify-section--featured-product product-gallery .page-dots--blurred > * {
+.template--product .shopify-section--main-product product-gallery .page-dots--blurred button[aria-current=true], .shopify-section--featured-product product-gallery .page-dots--blurred button[aria-current=true] {
   background: #E93B40;
 }
 .template--product .shopify-section--main-product product-gallery .page-dots--blurred button[aria-current=false], .shopify-section--featured-product product-gallery .page-dots--blurred button[aria-current=false] {

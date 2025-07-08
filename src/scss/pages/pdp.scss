@@ -25,7 +25,8 @@
 
         .page-dots--blurred{
             background-color: transparent;
-            & > *{
+            backdrop-filter: initial;
+            button[aria-current="true"]{
                 background: #E93B40;
             }
             button[aria-current="false"]{
