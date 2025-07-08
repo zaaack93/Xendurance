@@ -83,6 +83,12 @@ only way to do it on Shopify right now.
             {%- endif -%}
             {% if forloop.first %}
               {%- render 'product-badges', product: product, class: 'product-card__badge-list' -%}
+
+              {% if product.metafields.custom.pdp_badge != blank %}
+                <div class="product-gallery__pdp-badge">
+                  <img src="{{ product.metafields.custom.pdp_badge | image_url }}" alt="{{ 'product.gallery.pdp_badge' | t }}" class="object-contain" loading="lazy">
+                </div>
+              {% endif %}
             {% endif %}
             {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
 

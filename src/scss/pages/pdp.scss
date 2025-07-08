@@ -22,6 +22,17 @@
     }
 
     product-gallery {
+
+        .product-gallery__pdp-badge{
+            position: absolute;
+            right:18px;
+            top: 18px;
+            width: 61.042px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
         @media only screen and (min-width: 990px) {
             position: sticky;
             top: 109px;

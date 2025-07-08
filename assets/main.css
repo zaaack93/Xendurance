@@ -96,7 +96,6 @@ bubbles-container .bubbles-inner .bubble h3 {
   margin-top: 7px;
   display: block;
   text-align: center;
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1725,6 +1724,16 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   .template--product .shopify-section--main-product .section .product, .shopify-section--featured-product .section .product {
     row-gap: 19px;
   }
+}
+.template--product .shopify-section--main-product product-gallery .product-gallery__pdp-badge, .shopify-section--featured-product product-gallery .product-gallery__pdp-badge {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 61.042px;
+}
+.template--product .shopify-section--main-product product-gallery .product-gallery__pdp-badge img, .shopify-section--featured-product product-gallery .product-gallery__pdp-badge img {
+  width: 100%;
+  height: auto;
 }
 @media only screen and (min-width: 990px) {
   .template--product .shopify-section--main-product product-gallery, .shopify-section--featured-product product-gallery {
