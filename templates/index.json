@@ -21,7 +21,7 @@
             "show_video": true,
             "autoplay": true,
             "show_controls": false,
-            "video": "shopify://files/videos/250205_Home page video.mp4",
+            "video": "shopify://files/videos/75%_Updated_Home_page_Video_169_v5.mov",
             "external_video_url_metafield": "",
             "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "poster": "shopify://shop_images/20240717_Xendurance_Emily-35_3aff2af0-f47b-4e5c-a7d7-1b745b8d13e2.jpg",
@@ -29,7 +29,7 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "footer_collout_badge": true,
-            "subheading": "Clinically proven supplements to improve endurance, energy, strength and lean body mass.",
+            "subheading": "Clinically proven supplements to improve endurance, energy, and lean body mass",
             "content": "<p>Unsure where to start? <a href=\"/pages/product-finder\" target=\"_blank\" title=\"Product Finder\">Take the Quiz</a></p>",
             "title": "Certified Sport + Performance Products",
             "heading_tag": "h1",
@@ -379,6 +379,34 @@
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/IMG_3992_2.jpg",
+            "column_size": "4",
+            "title": "Justin Medeiros",
+            "heading_tag": "h4",
+            "content": "<p><em>2x Crossfit Games Champion</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "65dafed1-b5f9-49c7-9939-0ceb44d0c567": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Metafield_Photos_d784417a-8d5d-4621-827a-a44f9b84a99a.png",
+            "column_size": "3",
+            "title": "Matt Centrowitz",
+            "heading_tag": "h4",
+            "content": "<p><em>1500m Olympic Gold Medalist</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jkatk6": {
+          "type": "item",
+          "settings": {
             "image": "shopify://shop_images/4E482E5E-BF69-43ED-AAA8-47C0CDC4F486_1_201_a.jpg",
             "column_size": "4",
             "title": "Danielle Brandon",
@@ -418,14 +446,28 @@
             "link_style": "link"
           }
         },
-        "65dafed1-b5f9-49c7-9939-0ceb44d0c567": {
+        "item_PbehBJ": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Metafield_Photos_d784417a-8d5d-4621-827a-a44f9b84a99a.png",
+            "image": "shopify://shop_images/1_a9e4ed27-6aa7-4092-8b28-ffd3fde1a0b7.png",
             "column_size": "3",
-            "title": "Matt Centrowitz",
+            "title": "Jacob Heppner",
             "heading_tag": "h4",
-            "content": "<p><em>1500m Olympic Gold Medalist</em></p>",
+            "content": "<p><em>Crossfit Games Athlete & Tactical Games National Champion</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/1S8A90783_c0c1486a-5cd5-47d4-bca4-d31d976f0965.jpg",
+            "column_size": "3",
+            "title": "Jess McClain",
+            "heading_tag": "h4",
+            "content": "<p><em>Marathoner, Boston US Fastest Women's Finisher</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -446,42 +488,56 @@
             "link_style": "link"
           }
         },
-        "item_dW6wQN": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Metafield_Photos_b3642a7b-e836-42eb-a731-356361e8a2d7.png",
-            "column_size": "3",
-            "title": "Craig Engels",
-            "heading_tag": "h4",
-            "content": "<p><em>Your Mothers Favorite Runner</em></p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/1S8A90783_c0c1486a-5cd5-47d4-bca4-d31d976f0965.jpg",
-            "column_size": "3",
-            "title": "Jess McClain",
-            "heading_tag": "h4",
-            "content": "<p><em>Marathoner</em></p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "item_6JyxXV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_0397b8a4-cd05-4430-b91f-4f1f076eee66.png",
+            "column_size": "3",
+            "title": "Allie Gibbons",
+            "heading_tag": "h4",
+            "content": "<p><em>Long Distance Runner</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_bJkLfQ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/DD7AA1C0-6A8F-44FC-BDED-80751535AC27.jpg",
+            "column_size": "3",
+            "title": "John Gaset",
+            "heading_tag": "h4",
+            "content": "<p><em>Running, Strength, & Endurance Coach</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ErqTU9": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Untitled_design_6.png",
             "column_size": "3",
             "title": "David Winne",
             "heading_tag": "h4",
-            "content": "<p><em>US ARMY Hybrid Athlete</em></p>",
+            "content": "<p><em>Hybrid Athlete</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qMTLnK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/3_0d9e39a4-b730-4ecc-8d40-ad4c0a3264dd.png",
+            "column_size": "3",
+            "title": "Abbie Domit",
+            "heading_tag": "h4",
+            "content": "<p><em>Crossfit Games Athlete</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -494,6 +550,20 @@
             "image": "shopify://shop_images/20240717_Xendurance_Emily-2.jpg",
             "column_size": "3",
             "title": "Emily Loogman",
+            "heading_tag": "h4",
+            "content": "<p><em>Crossfit Games Athlete</em></p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Fwj8iW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4_cc437bd5-7c93-4425-94e2-ac5cc045068a.png",
+            "column_size": "3",
+            "title": "Austin Hatfield",
             "heading_tag": "h4",
             "content": "<p><em>Crossfit Games Athlete</em></p>",
             "link_url": "",
@@ -516,28 +586,28 @@
             "link_style": "link"
           }
         },
-        "363d397d-53b9-4a4f-ad66-23da0026e29e": {
+        "item_frqzXq": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Sinclairi0.heic",
+            "image": "shopify://shop_images/2_921564fa-2e7d-4931-896f-65a0a5a8ae46.png",
             "column_size": "3",
-            "title": "Sinclair Johnson",
+            "title": "Bailey Cook",
             "heading_tag": "h4",
-            "content": "<p><em>US Middle Distance Runner</em></p>",
+            "content": "<p><em>Hybrid & Hyrox Athlete</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_qMTLnK": {
+        "item_a4KxjQ": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/DB236D8D-197F-41DC-9B5D-DA2136C29436.png",
+            "image": "shopify://shop_images/5_64174c7e-cba9-4692-97b2-174b109a8f22.png",
             "column_size": "3",
-            "title": "John Gaset",
+            "title": "Jordan Arcila",
             "heading_tag": "h4",
-            "content": "<p><em>Strength, Mobility, & Endurance coach</em></p>",
+            "content": "<p><em>Fitness Coach</em></p>",
             "link_url": "",
             "link_url_members": "",
             "link_text": "",
@@ -547,20 +617,25 @@
       },
       "block_order": [
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-1",
+        "65dafed1-b5f9-49c7-9939-0ceb44d0c567",
+        "item_jkatk6",
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-0",
         "1136af69-8f7d-4d65-811c-10ebc80a634d",
-        "65dafed1-b5f9-49c7-9939-0ceb44d0c567",
-        "edcf3f90-9b2a-4a23-a9ba-e107992868ed",
-        "item_dW6wQN",
+        "item_PbehBJ",
         "template--16030540497084__1582572d-a585-4638-8805-afdc08308763-16874110413d87d47b-2",
+        "edcf3f90-9b2a-4a23-a9ba-e107992868ed",
         "item_6JyxXV",
+        "item_bJkLfQ",
+        "item_ErqTU9",
+        "item_qMTLnK",
         "7de29ffd-f61e-4d08-8234-ddc529d2d5a3",
+        "item_Fwj8iW",
         "f8992b6d-51d6-4a5f-ad2f-da8cb8fb597c",
-        "363d397d-53b9-4a4f-ad66-23da0026e29e",
-        "item_qMTLnK"
+        "item_frqzXq",
+        "item_a4KxjQ"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": true,
         "gap": "small",
         "text_alignment": "start",
@@ -663,7 +738,7 @@
         "image_BHzXHE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/MY_TEAM_16-9_D.jpg",
+            "image": "shopify://shop_images/Hyrox_Home_Page_1080x880_8275011a-c8d0-4bae-bb0c-7a4b6aacd43b.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",

@@ -71,6 +71,62 @@
         "item_QnG3BD": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Runna_logo.jpg",
+            "column_size": "3",
+            "title": "Runna",
+            "heading_tag": "h4",
+            "content": "<p>Runna is your personal running coach with tailored plans to achieve your goals, whether you’re aiming for a faster 5k or your first marathon.<br/><br/>Use code <strong>XENDURANCE</strong> for a 2-week free trial!</p>",
+            "link_url": "https://web.runna.com/redeem?code=XENDURANCE",
+            "link_url_members": "https://web.runna.com/redeem?code=XENDURANCE",
+            "link_text": "Sign up Now",
+            "link_style": "link"
+          }
+        },
+        "item_XbWbB9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/ESC_2.jpg",
+            "column_size": "3",
+            "title": "ESC Sounds",
+            "heading_tag": "h4",
+            "content": "<p>ESC Sounds was founded from a desire to create the perfect pair of earbuds that will stay securely in place through the dynamic movements associated with functional training.<br/><br/>Use <strong>Xendurance15</strong> for 15% OFF sitewide!</p>",
+            "link_url": "https://escsounds.com/discount/Xendurance15",
+            "link_url_members": "https://escsounds.com/discount/Xendurance15",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "item_FhHz4j": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Nolah.jpg",
+            "column_size": "3",
+            "title": "Nolah Mattresses",
+            "heading_tag": "h4",
+            "content": "<p>Expertly engineered mattresses to balance cushioning and support, aligning the spine while cradling a side sleeper's most sensitive joints.<br/><br/>Use <strong>XND30</strong> for $30 OFF sitewide!</p>",
+            "link_url": "https://nolahsleep.com/",
+            "link_url_members": "https://nolahsleep.com/",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "item_yWbtnq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/frog.jpg",
+            "column_size": "3",
+            "title": "Frog Grips",
+            "heading_tag": "h4",
+            "content": "<p>Reliable grips and accessories!<br/><br/>Use <strong>Xendurance15</strong> for 15% OFF sitewide!</p>",
+            "link_url": "https://froggrips.com.au",
+            "link_url_members": "https://froggrips.com.au",
+            "link_text": "Shop Now",
+            "link_style": "link"
+          }
+        },
+        "item_6wwTn9": {
+          "type": "item",
+          "settings": {
             "image": "shopify://shop_images/ReGen_Square_Logo_1080p.jpg",
             "column_size": "3",
             "title": "Regen Total Wellness",
@@ -519,6 +575,10 @@
       },
       "block_order": [
         "item_QnG3BD",
+        "item_XbWbB9",
+        "item_FhHz4j",
+        "item_yWbtnq",
+        "item_6wwTn9",
         "item_B7LXLY",
         "template--16056680939708__015e4bda-cd69-41bb-9cbc-27c54ecc8228-1687926139fb45407c-0",
         "template--16056680939708__015e4bda-cd69-41bb-9cbc-27c54ecc8228-1687926139fb45407c-1",
@@ -553,6 +613,7 @@
       ],
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
@@ -561,7 +622,12 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "4872f2ee-ee86-402b-a966-8c23b0f7ae3c": {
@@ -664,6 +730,7 @@
         "custom_class": "",
         "full_width": true,
         "stack_on_mobile": false,
+        "subheading": "",
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
@@ -1092,6 +1159,7 @@
       "disabled": true,
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -1100,7 +1168,12 @@
         "content": "<p>Time to become part of the A-Team. </p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "aa48095d-cf33-4d75-8a96-cf91e6c7f352": {
@@ -1159,6 +1232,7 @@
         "custom_class": "",
         "full_width": true,
         "stack_on_mobile": false,
+        "subheading": "",
         "title": "Meet Extreme Endurance",
         "heading_tag": "h5",
         "text_alignment": "center",
@@ -1219,6 +1293,7 @@
       "disabled": true,
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
@@ -1227,7 +1302,12 @@
         "content": "",
         "background": "#353435",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa": {
@@ -1614,6 +1694,7 @@
       ],
       "disabled": true,
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "subheading": "",
         "title": "Still not sure?",

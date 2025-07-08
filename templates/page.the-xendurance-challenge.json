@@ -72,6 +72,12 @@
             "subheading": "",
             "title": "Goodbye Soreness. Hello Extreme Endurance.",
             "content": "<p>Learn how world-class athletes like Josh Bridges are lasting <strong>longer</strong>, going <strong>harder</strong>, and recovering <strong>faster </strong>with this elite supplement. </p><p>Take the one week challenge with a 30 day money back guarantee!</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -94,6 +100,12 @@
             "subheading": "",
             "title": "How It Works?",
             "content": "<p>This is a one-week long, self guided challenge. Simply purchase Extreme Endurance, follow our recommended workouts and reap the benefits. </p><p>Track your progress and share your results online with our community.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://cdn.shopify.com/s/files/1/0574/3450/5404/files/EE_Challenge-Workouts-2.pdf?v=1643835918",
             "background": "#f5f5f5",
@@ -110,9 +122,12 @@
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "1284832e-4ff2-46b3-8365-2765229b44f4": {
@@ -180,6 +195,7 @@
       ],
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -188,7 +204,12 @@
         "content": "",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "c838c62f-7458-40bd-a5d9-d1c64ff5389d": {
@@ -211,7 +232,7 @@
         "template--16053542715580__c838c62f-7458-40bd-a5d9-d1c64ff5389d-item-3": {
           "type": "item",
           "settings": {
-            "title": "BIKING WORKOUT",
+            "title": "CYCLING WORKOUT",
             "content": "<p>Ramp test | Start with 100 watts (for men) / 50 watts (for women) | Every 10 seconds, add 10 watts | Record time when you fail</p>"
           }
         },
@@ -238,6 +259,7 @@
         "5722aebb-efd6-43ea-9886-d00cd1a2ac20"
       ],
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "subheading": "",
         "title": "Extreme Endurance Challenge Workouts",
@@ -391,8 +413,10 @@
         "template--16053542715580__f12c65b4-479f-4d49-98f5-cede8e305199-1687416772d0eb0563-2"
       ],
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "stack_on_mobile": false,
+        "subheading": "",
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
@@ -562,6 +586,12 @@
             "subheading": "",
             "title": "Reduce Lactic ACID",
             "content": "<p>Extreme Endurance is proven to reduce lactic acid is the body which causes muscle soreness, increase anaerobic threshold, in other words, improve stamina, and reduce oxidative stress caused by free radical damage. Oxidative stress is the leading cause of many degenerative diseases, such as heart disease. we are exposed to oxidative stress from air pollution, environmental changes, stress, and even working out! Oxidative stress simply put - ages all of us!</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -584,6 +614,12 @@
             "subheading": "",
             "title": "The Gold Standard",
             "content": "<p>Find out more about all of our studies which include 2 published, Gold Standard, double-blind, placebo controlled clinical studies. </p><p>The Extreme Endurance proprietary formula has a blend of essential, natural ingredients including: Papain which is a protease enzyme derived from Papaya, a powerful anti-inflammatory that helps repair and rebuild muscle tissue while relieving muscle soreness. Catechins are added and are one of the most powerful antioxidants to help fight oxidative stress. Electrolytes complete this revolutionary formula to assist with the ability to quickly rehydrate, recover, & restore balance and maintain the competitive edge.*</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -607,6 +643,12 @@
             "subheading": "",
             "title": "The Workouts",
             "content": "<p>Congratulations on taking the next step to increase your overall health and performance with the Extreme Endurance Challenge! You will find workouts for a variety of training styles to complete below. If you have questions, get back with the person that shared this challenge with you.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "View The Workouts",
             "link_url": "shopify://pages/team-xnd-big-friday",
             "background": "#f5f5f5",
@@ -624,9 +666,12 @@
         "a9cfd66d-f1dc-49da-be4c-ed08c28022e6"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "6ae6922e-7b13-4fd4-8a1f-5a684c04e323": {
@@ -668,6 +713,7 @@
         "795cb8e4-7e18-40df-83ca-31944929a21f"
       ],
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "subheading": "",
         "title": "Your Questions Answered",

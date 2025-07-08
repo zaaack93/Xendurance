@@ -162,8 +162,10 @@
       ],
       "disabled": true,
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "stack_on_mobile": false,
+        "subheading": "",
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
@@ -188,6 +190,12 @@
             "subheading": "",
             "title": "25% Site Discount",
             "content": "<p>Sign up and receive 25% off all products, apparel and accessories on all orders at all times!</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -210,6 +218,12 @@
             "subheading": "",
             "title": "$100 in Product Rewards",
             "content": "<p>You read that right. Get $100 in Product Rewards upon Joining. It's that simple. <br/><br/>Receive 2x $50 Product Reward Coupons to be redeemed on any purchase of $125+.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://cdn.shopify.com/s/files/1/0574/3450/5404/files/EE_Challenge-Workouts-2.pdf?v=1643835918",
             "background": "#f5f5f5",
@@ -232,30 +246,14 @@
             "subheading": "",
             "title": "Free Shipping",
             "content": "<p>Receive free shipping anywhere in the US and Military APOs. $15 flat rate for Team XND Canada.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://cdn.shopify.com/s/files/1/0574/3450/5404/files/EE_Challenge-Workouts-2.pdf?v=1643835918",
-            "background": "#f5f5f5",
-            "background_gradient": "",
-            "text_color": "#353435",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "cfadcff4-8a13-420a-86b6-171b6ebbe2fd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Team_XND_3.jpg",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center-start text-start",
-            "icon": "picto-gift",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Partner Perks",
-            "content": "<p>50+ best in class partners who have offered exclusive discounts and offerings.</p>",
-            "link_text": "",
-            "link_url": "",
             "background": "#f5f5f5",
             "background_gradient": "",
             "text_color": "#353435",
@@ -276,6 +274,12 @@
             "subheading": "",
             "title": "Hyrox Sponsorship",
             "content": "<p>Xendurance will select submissions from THREE \"Doubles\" teams for each North American Hyrox Race and provide support worth over $1,200 per event (Race fees, Performance Packs, RAD Shoes, Xendurance Apparel).</p><p>Sign up for a Hyrox event and register below to be considered for a Team XND Doubles sponsorship.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "APPLY",
             "link_url": "https://form.typeform.com/to/B0E5IbKW",
             "background": "#f5f5f5",
@@ -291,13 +295,15 @@
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2",
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0",
         "fa984ecd-b779-444a-8dac-de7dfeefa851",
-        "cfadcff4-8a13-420a-86b6-171b6ebbe2fd",
         "image_8LGpV3"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "1782d0d6-94da-454f-a381-d65a9e20ce78": {
@@ -314,6 +320,12 @@
             "subheading": "",
             "title": "Join Now For Only $95 Per Year",
             "content": "<p>Join team XND and receive <strong>$100 in product rewards today. </strong>Redeem your two $50 reward credits on orders of $125+ at checkout.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "Buy Now - $95",
             "link_url": "shopify://products/team-xnd-membership",
             "background": "#353435",
@@ -330,9 +342,12 @@
       ],
       "disabled": true,
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "d9b602df-1d20-4bf3-bdc9-a5d7bca636ed": {
@@ -578,6 +593,7 @@
       ],
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -586,7 +602,12 @@
         "content": "<p>Time to become part of the A-Team. </p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "aa48095d-cf33-4d75-8a96-cf91e6c7f352": {
@@ -642,8 +663,10 @@
       ],
       "disabled": true,
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "stack_on_mobile": false,
+        "subheading": "",
         "title": "Meet Extreme Endurance",
         "heading_tag": "h5",
         "text_alignment": "center",
@@ -703,6 +726,7 @@
       ],
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
@@ -711,7 +735,12 @@
         "content": "",
         "background": "#353435",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "dbfed789-a112-4adb-be02-15dfd4f12a51": {
@@ -745,52 +774,10 @@
             "link_style": "link"
           }
         },
-        "9e5fb298-fbc8-4dfa-b8f0-8d0c1aa9626f": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Savings_Cards_-_Deep_Sleep.jpg",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "7fa40e0a-81b7-4fed-ab77-89f3e13f973e": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Savings_Cards_-_Immune_Boost.jpg",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "32929d73-6256-40a6-9842-96f62c802b04": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Savings_Cards_-_Lean.jpg",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "f001dd3a-0296-4514-9d51-84a938b70805": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Savings_Cards_-_Shield_Protect.jpg",
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
@@ -805,13 +792,11 @@
       "block_order": [
         "template--16054074540220__dbfed789-a112-4adb-be02-15dfd4f12a51-item-1",
         "5c4be464-c670-4aa9-a23d-b433734d1906",
-        "9e5fb298-fbc8-4dfa-b8f0-8d0c1aa9626f",
-        "7fa40e0a-81b7-4fed-ab77-89f3e13f973e",
-        "32929d73-6256-40a6-9842-96f62c802b04",
-        "f001dd3a-0296-4514-9d51-84a938b70805"
+        "7fa40e0a-81b7-4fed-ab77-89f3e13f973e"
       ],
       "settings": {
         "full_width": true,
+        "custom_class": "",
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -820,7 +805,12 @@
         "content": "<p>Team XND Members save an average of $57 / month and usually breakeven on their first purchase when using their first $50 OFF Rewards coupon. </p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "footer_button_text": "",
+        "footer_button_url": "",
+        "members_footer_button_url": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa": {
@@ -934,148 +924,6 @@
         "text_gradient": ""
       }
     },
-    "a10c45f3-8f5b-4be8-93cb-3b25f23f8f59": {
-      "type": "logo-list",
-      "blocks": {
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-0": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/classpass.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-2": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/rp.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-1": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/thrive_market.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-3": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/vitamix.png",
-            "logo_width": 100,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-4": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/mightymacros.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "17da93ec-ffd0-446a-8d75-3d37bfcc5a55": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/performa_sleep.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "fd90e55d-09ed-4986-866f-9a99d275e762": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/gravity.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "1d988a68-2081-4b01-b5cb-ec9c37a8c5dc": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/hyperice.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "e03f404c-72da-4043-8f7f-6f9139f3582c": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/blenders.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "292ba46d-8e1d-4b93-8ab7-5f3da656e52e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/powerdot.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "d78a43ef-e267-465f-a1eb-b6f6c7612317": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/whoop.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        },
-        "d8de0672-111f-40f9-b8eb-911a666a10a4": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/atoms.png",
-            "logo_width": 120,
-            "link": "",
-            "link_members": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-0",
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-2",
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-1",
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-3",
-        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-4",
-        "17da93ec-ffd0-446a-8d75-3d37bfcc5a55",
-        "fd90e55d-09ed-4986-866f-9a99d275e762",
-        "1d988a68-2081-4b01-b5cb-ec9c37a8c5dc",
-        "e03f404c-72da-4043-8f7f-6f9139f3582c",
-        "292ba46d-8e1d-4b93-8ab7-5f3da656e52e",
-        "d78a43ef-e267-465f-a1eb-b6f6c7612317",
-        "d8de0672-111f-40f9-b8eb-911a666a10a4"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": false,
-        "title": "Our Partners",
-        "content": "<p>50+ best in class partners who have offered exclusive discounts and offerings to Team XND members that are found in your private customer portal!</p>",
-        "text_alignment": "start",
-        "items_per_row": 5,
-        "background": "#f0f0f0",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
     "8cdcf53b-054c-4223-a644-ffa369c74591": {
       "type": "media-with-text",
       "blocks": {
@@ -1090,6 +938,12 @@
             "subheading": "",
             "title": "Join Now For Only $95 Per Year",
             "content": "<p>Join team XND and receive <strong>$100 in product rewards today. </strong>Redeem your two $50 reward credits on orders of $125+ at checkout.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "Sign Up Here",
             "link_url": "",
             "background": "#f5f5f5",
@@ -1106,9 +960,12 @@
       ],
       "disabled": true,
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "d1042f19-fd3d-47ac-a873-e39a0adf613d": {
@@ -1126,6 +983,12 @@
             "subheading": "",
             "title": "Join Team XND & Become A Rewards Member",
             "content": "<p>With each qualifying order receive additional reward points to be used on the Xendurance website!</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "Learn More About Rewards",
             "link_url": "https://xendurance.com/pages/rewards",
             "background": "#f5f5f5",
@@ -1141,9 +1004,12 @@
         "7e68ab9d-9712-446f-b8f8-7eb1818a43a0"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "6ae6922e-7b13-4fd4-8a1f-5a684c04e323": {
@@ -1153,7 +1019,7 @@
           "type": "item",
           "settings": {
             "title": "What happens if I change my mind?",
-            "content": "<p>We will gladly refund you the Team Membership cost if no more than 2 Xendurance orders have been placed under the specific Team Member Account.</p>"
+            "content": "<p>We will refund you the Team Membership cost if no more than 2 Xendurance orders have been placed and have not used either of the $50 Product Credits.</p>"
           }
         },
         "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1": {
@@ -1185,6 +1051,7 @@
         "795cb8e4-7e18-40df-83ca-31944929a21f"
       ],
       "settings": {
+        "custom_class": "",
         "full_width": true,
         "subheading": "",
         "title": "Still not sure?",
@@ -1260,7 +1127,6 @@
     "dbfed789-a112-4adb-be02-15dfd4f12a51",
     "cb4a7b1c-7967-43fb-b974-04c6ded12caa",
     "0d8800aa-9c42-40d6-b630-28e4885a4d3f",
-    "a10c45f3-8f5b-4be8-93cb-3b25f23f8f59",
     "8cdcf53b-054c-4223-a644-ffa369c74591",
     "d1042f19-fd3d-47ac-a873-e39a0adf613d",
     "6ae6922e-7b13-4fd4-8a1f-5a684c04e323",

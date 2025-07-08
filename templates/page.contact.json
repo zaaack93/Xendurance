@@ -86,7 +86,7 @@
         "template--16030540562620__7e97da11-e4fd-4914-bfe3-6c4f3711b54d-16878681235929d6a4-0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_154cd3a6-cde1-433e-91ab-04aef726743c.png",
+            "image": "shopify://shop_images/Contact_Us.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -95,6 +95,12 @@
             "subheading": "Got a simple question?",
             "title": "Check out our Frequently Asked Questions",
             "content": "<p>We cover topics like product questions, team XND membership, shipping and returns, and more. </p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "Read All FAQs",
             "link_url": "shopify://pages/faqs",
             "background": "#353435",
@@ -110,9 +116,12 @@
         "template--16030540562620__7e97da11-e4fd-4914-bfe3-6c4f3711b54d-16878681235929d6a4-0"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
         "hide_for_members": false,
-        "spacing": "small"
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "19dc86f4-f4c1-47c1-800c-7d384c5ee349": {
@@ -136,7 +145,7 @@
         "template--16030540562620__19dc86f4-f4c1-47c1-800c-7d384c5ee349-1687868778e8b27ea1-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Contact our dedicated customer service team below and we will get back to you as soon as possible. </p><p>Get in touch by emailing our team at <a href=\"mailto:info@xendurance.com\">info@xendurance.com</a></p>"
+            "content": "<p>Contact our committed support specialists below, and we’ll address your needs promptly!</p><p>Get in touch by emailing our team at <a href=\"mailto:info@xendurance.com\">info@xendurance.com</a></p>"
           }
         }
       },

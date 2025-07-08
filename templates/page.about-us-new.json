@@ -87,7 +87,13 @@
             "icon_width": 48,
             "subheading": "",
             "title": "About XND",
-            "content": "<p><strong>Xendurance </strong>was founded in 1998 with the ambitious goal of transforming the sports nutrition and wellness landscape. Armed with decades of experience, both as athletes and health and wellness professionals, the founders focus on three traits to execute the Xendurance vision for both the athlete and active person of any age.</p><p>Xendurance has also added <strong>dermatologist formulated skincare </strong>that has been tested and proven that when used as a skin care regimen is beneficial to improve the health of your skin.</p><p>What you put on your skin is as important as what you put in your body.</p>",
+            "content": "<p>Founded over 25 years ago, Xendurance set out to revolutionize sports nutrition and wellness with a commitment to exceptional performance and uncompromising product quality. In 2008, it became the <strong>first company to achieve Informed Sport certification</strong> for its flagship product, Extreme Endurance, marking a milestone in its pursuit of excellence. </p><p>Driven by the founders’ extensive experience as athletes and health professionals, Xendurance continues to empower athletes and active individuals of all ages through innovation, integrity, and a relentless focus on optimal performance.*</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -110,6 +116,12 @@
             "subheading": "",
             "title": "Scientific Efficacy",
             "content": "<p>In a world of noise and misinformation, Xendurance chooses to support only those compounds backed by rigorous scientific research.</p><p>From the decade of independent research and clinically proven ingredients behind Extreme Endurance to the extensively researched Creapure® used in Creatine-JB, only those substances with proven efficacy have a place in our product line. Rather than make unsubstantiated claims, we continually ask third parties to test product performance with invariably positive results.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -126,8 +138,12 @@
         "23f5141a-b6f2-472c-a781-edc2e3d0b6af"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
-        "spacing": "small"
+        "hide_for_members": false,
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "c9cc259c-76dc-442f-af45-4b259df34acb": {
@@ -152,7 +168,7 @@
         "template--16053483208892__c9cc259c-76dc-442f-af45-4b259df34acb-16874124330a1fefc2-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Our promise<strong> </strong>is to continue to make an impact on the wellness of every active person along with providing trust that you can use Xendurance products as the foundation for living a longer, healthier life.</p>"
+            "content": "<p>Our commitment is to fuel every athlete and active individual with Xendurance products, delivering peak performance and trusted quality to support a stronger, healthier, and more enduring athletic and wellness journey.</p>"
           }
         }
       },
@@ -184,7 +200,13 @@
             "icon_width": 48,
             "subheading": "",
             "title": "State-of-the-Art Manufacturing",
-            "content": "<p>Inconsistent manufacturing standards have plagued much of the supplement industry with products relying on proprietary blends that don’t contain effective dosing or tainted with foreign substances. </p><p>Our products are produced in controlled environments, only in Good Manufacturing Practice (GMP) certified and/or equivalent facilities. Dedication to these NSF/ANSI standards, ensure the product you receive contains exactly the ingredients listed and nothing it shouldn’t. Xendurance partners with LGC, the largest independent sports drug laboratory in the world, to certify their supplements and skincare are free of banned substances with the <strong>Informed Sport </strong>certification.</p>",
+            "content": "<p>The supplement industry often grapples with unreliable manufacturing, with products hiding behind proprietary blends that skimp on effective doses or contain harmful contaminants. </p><p>At Xendurance, we formulate our supplements in strictly controlled, Good Manufacturing Practice (GMP)-certified facilities, adhering to rigorous NSF/ANSI standards to guarantee pure, accurately labeled ingredients—nothing more, nothing less. </p><p>Partnering with Informed Sport, the world’s leading independent sports drug testing lab, we proudly carry Informed Sport certification on many of our products, ensuring our products are free of banned substances and trusted by athletes who depend on them, worldwide.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -206,7 +228,13 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Xendurance Ecosystem Of Health",
-            "content": "<p>We believe that living a longer, healthier life is all encompassing. The Xendurance Ecosystem of health is made of 5 pillars of health: eating whole foods, movement, quality supplementation & skincare, sleep & recovery and prioritizing mental health. This integrated approach provides a foundation for life span; the total years of your life in combination with health span; the number of years you are active and healthy without debilitating disease or limitations.</p><p>Xendurance strives to provide clean, proven and performance driven products to support the Ecosystem of Health.</p>",
+            "content": "<p>At Xendurance, we champion a vibrant, enduring life through our Ecosystem of Health, built on five core pillars: nourishing whole foods, dynamic movement, premium supplementation, restorative sleep and recovery, and resilient mental health. This holistic framework fuels both your lifespan—the total years you live—and your healthspan, the years you thrive, free from debilitating disease or limitations. With clean, scientifically backed, performance-driven products, Xendurance empowers athletes and active individuals to excel in every facet of health.</p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "",
             "link_url": "",
             "background": "#f5f5f5",
@@ -223,13 +251,16 @@
         "43ef2c1f-4b71-4c82-be56-249e62222fca"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
-        "spacing": "small"
+        "hide_for_members": false,
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "21fd67c5-5442-419a-9ca3-099fd99c3989": {
       "type": "video",
-      "disabled": true,
       "blocks": {
         "template--16053483208892__21fd67c5-5442-419a-9ca3-099fd99c3989-1687318094e9cddd66-0": {
           "type": "play",
@@ -254,6 +285,7 @@
         "template--16053483208892__21fd67c5-5442-419a-9ca3-099fd99c3989-1687318094e9cddd66-1",
         "a0c9f8eb-eac0-49bb-8806-62c520818004"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -297,6 +329,12 @@
             "subheading": "",
             "title": "Products Built For You",
             "content": "<p>Our products are designed to maximize your health. <strong>Find the right products when you take our Quiz!</strong></p>",
+            "custom_content": "",
+            "custom_content1": "",
+            "custom_content2": "",
+            "custom_content3": "",
+            "custom_content4": "",
+            "custom_content5": "",
             "link_text": "Take The Quiz",
             "link_url": "shopify://pages/perfect-path-quiz",
             "background": "#353435",
@@ -312,8 +350,12 @@
         "99c4c99d-ad0c-437b-ada1-8a45e053e80b"
       ],
       "settings": {
+        "custom-class": "",
         "full_width": false,
-        "spacing": "small"
+        "hide_for_members": false,
+        "spacing": "small",
+        "bg_color": "",
+        "text_color": ""
       }
     },
     "main": {

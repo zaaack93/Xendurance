@@ -52,6 +52,7 @@
         "607f9e51-9129-4c62-b3f5-158106b03c22": {
           "type": "shopify://apps/smartrr/blocks/app-block/feefa72b-d730-4320-ae1b-95af6a0c861e",
           "settings": {
+            "custom_product_form": "",
             "group_select": "pills",
             "group_border": 1,
             "group_border_radius": 10,
@@ -59,7 +60,7 @@
             "group_primary_text_color": "#1a1a1a",
             "group_border_color": "#e93b40",
             "show_otp": true,
-            "otp_default": true,
+            "otp_default": false,
             "show_prices": true,
             "plan_select": "pills",
             "plan_border": 1,

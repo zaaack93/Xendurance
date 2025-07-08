@@ -82,6 +82,7 @@
         "custom_class": "home_icon_text_usp_block",
         "full_width": true,
         "stack_on_mobile": true,
+        "subheading": "",
         "title": "",
         "heading_tag": "h6",
         "text_alignment": "center",
@@ -98,7 +99,7 @@
           "type": "text",
           "settings": {
             "title": "Xendurance",
-            "content": "<h6><strong>Proudly owned & manufactured in the USA since 1998<br/></strong></h6><h6>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</h6>",
+            "content": "<h6>Proudly manufactured in the US using US and globally sourced ingredients*<strong><br/></strong></h6><h6></h6><p>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>",
             "enable_follow_on_shop": false
           }
         },

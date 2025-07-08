@@ -7,58 +7,7 @@ if (!window.smartrr) {
   window.smartrr = {};
 }
 window.smartrr.theme = {
-  "overrideCSS": ".smartrr-portal-heading-2 {\n  font-size: 17px;\n   padding-bottom: 0px;\n}\n\n.smartrr-portal-heading-3 {\n  font-size: 20px;\n  padding-bottom: 0px;\n}\n\n\n.smartrr-portal-heading-1 {\n  font-size: 20px;\n  padding-bottom: 0px;\n}\n\n.smartrr-portal-heading-4 {\n   font-size: 20px;\n  padding-bottom: 0px;\n}\n\n.smartrr-portal-manage-settings-text {\n   font-size: 17px;\n}\n\n.smartrr-portal-edit-subscription-apply-discount {\n  width: 50%;\n}\n\n.smartrr-portal-select option {\n  color: #000;\n}\n\n.smartrr-portal-delivery-group-item-header {\n  padding: 1rem;\n}\n",
-  "primaryColor": "#e93b40",
-  "secondaryColor": "#ffffff",
-  "mainContentBackgroundColor": "#ffffff",
-  "mainContentBorderRadius": 0,
-  "mainContentBorderColor": "#000000",
-  "mainContentBorderWidth": 2,
-  "bodyBackgroundColor": "#ffffff",
-  "bodyTextFontFamily": "Montserrat",
-  "bodyTextFontWeight": "bold",
-  "bodyTextColor": "#202223",
-  "bodyTextFontSize": 14,
-  "accentTextColor": "#313943",
-  "accentTextFontFamily": "Arial",
-  "accentTextFontWeight": "bold",
-  "accentTextFontSize": 14,
-  "heading1TextFontFamily": "Arial",
-  "heading1TextFontSize": 22,
-  "heading1FontWeight": "bolder",
-  "heading1TextColor": "#202223",
-  "heading2TextFontFamily": "Montserrat",
-  "heading2TextFontSize": 13,
-  "heading2FontWeight": "normal",
-  "heading2TextColor": "#202223",
-  "heading3TextFontFamily": "Montserrat",
-  "heading3TextFontSize": 16,
-  "heading3FontWeight": "normal",
-  "heading3TextColor": "#202223",
-  "heading4TextFontFamily": "Arial",
-  "heading4TextFontSize": 14,
-  "heading4FontWeight": "normal",
-  "heading4TextColor": "#000000",
-  "buttonBackgroundColor": "#000000",
-  "buttonFontFamily": "Helvetica",
-  "buttonFontSize": 14,
-  "buttonFontWeight": "bold",
-  "buttonTextColor": "#FFFFFF",
-  "buttonBorderRadius": 0,
-  "buttonBorderColor": "#000000",
-  "buttonBorderWidth": 1,
-  "dropdownBackgroundColor": "#000000",
-  "dropdownTextColor": "#ffffff",
-  "dropdownBorderRadius": 0,
-  "dropdownBorderColor": "#000000",
-  "dropdownBorderWidth": 1,
-  "dropdownFontFamily": "Helvetica",
-  "dropdownFontSize": 14,
-  "dropdownFontWeight": "normal",
-  "smallProductImageBorderRadius": 14,
-  "mediumProductImageBorderRadius": 16,
-  "largeProductImageBorderRadius": 18,
-  "largestProductImageBorderRadius": 20,
+  "overrideCSS": ".smartrr-portal-heading-2 {\n  font-size: 17px;\n   padding-bottom: 0px;\n}\n\n.smartrr-portal-heading-3 {\n  font-size: 20px;\n  padding-bottom: 0px;\n}\n\n\n.smartrr-portal-heading-1 {\n  font-size: 20px;\n  padding-bottom: 0px;\n}\n\n.smartrr-portal-heading-4 {\n   font-size: 20px;\n  padding-bottom: 0px;\n}\n\n.smartrr-portal-manage-settings-text {\n   font-size: 17px;\n}\n\n.smartrr-portal-edit-subscription-apply-discount {\n  width: 50%;\n}\n\n.smartrr-portal-select option {\n  color: #000;\n}\n\n.smartrr-portal-delivery-group-item-header {\n  padding: 1rem;\n}",
   "themeName": "modern",
   "modernPageBackground": "#ffffff",
   "modernCardBackground": "#FFFFFF",
@@ -89,7 +38,8 @@ window.smartrr.theme = {
       "subscriptions": {
         "display": true,
         "addOns": true,
-        "deleted": false
+        "deleted": false,
+        "altView1": false
       },
       "orderHistory": {
         "display": true,
@@ -112,17 +62,25 @@ window.smartrr.theme = {
         "deleted": false
       },
       "trending": {
-        "display": false
+        "display": false,
+        "heading": "",
+        "caption": "",
+        "showHeart": false,
+        "imgUrl": "",
+        "sortMethod": "manual"
       },
       "instagram": {
         "display": false
+      },
+      "quickBuy": {
+        "deleted": false,
+        "display": true
       }
     },
     "sectionsOrder": [
       "SUBSCRIPTION",
       "ORDERHISTORY",
       "SETTINGS",
-      "REWARDS",
       "TRENDING",
       "INSTAGRAM",
       "LOYALTY"
@@ -135,20 +93,22 @@ window.smartrr.theme = {
     },
     "nextOrderActions": {
       "sendNow": true,
-      "skip": true,
+      "skip": false,
       "gift": false,
       "swap": true,
-      "delay": true,
+      "delay": false,
       "editAddress": true
     },
     "subscriptionActions": {
       "editFrequency": true,
-      "setNextOrderDate": true,
+      "setNextOrderDate": false,
       "editAddress": true,
       "editPayment": true,
       "pause": false,
       "showVariantName": true,
-      "swap": true
+      "swap": true,
+      "editSubscriptionAddress": true,
+      "subscriptionSwap": true
     },
     "showHide": {
       "showVariantName": true,
@@ -157,7 +117,9 @@ window.smartrr.theme = {
       "showDiscountCodeInput": true,
       "showSectionTitles": true,
       "showAddItemAsSub": true
-    }
+    },
+    "productScrollType": "horizontal",
+    "fontSizingType": "static"
   },
   "isPasswordless": false,
   "passwordlessStrategy": "magic-link",
@@ -165,7 +127,8 @@ window.smartrr.theme = {
     "activeLanguage": "en",
     "en": {},
     "fr": {},
-    "es": {}
+    "es": {},
+    "pt": {}
   },
   "modernActiveBadgeColor": "#E8FFDA",
   "modernPausedBadgeColor": "#FFF5DA",
@@ -224,14 +187,13 @@ window.smartrr.theme = {
   "modernCaptionFontLineHeight": 16,
   "modernCaptionFontLetterSpacing": 0,
   "modernCaptionFontColor": "#202223",
-  "lastSavedThemeId": "132199776444",
-  "purchasableThemes": []
+  "lastSavedThemeId": "142868480188"
 }
 </script>
 
 <style>
 body {
-  background-color: #ffffff;
+  background-color: initial;
   transition: background-color .15s ease-in-out;
 }
 
@@ -240,11 +202,10 @@ body {
 #smartrr_toast_container {
   box-sizing: border-box;
 
-  color: #202223;
-  font-family: Montserrat;
-  font-weight: bold;
-  background-color: #ffffff;
-  font-size: 14;
+  color: #000;
+  font-weight: normal;
+  background-color: initial;
+  font-size: inherit;
   transition: background-color .15s ease-in-out, color .15s ease-in-out;
 }
 
@@ -270,63 +231,6 @@ body {
 
 .hide-in-customer-portal {
   display: none;
-}
-
-#smartrr_account,
-#smartrr_slide_panel,
-#smartrr_toast_container {
-  
---smartrr-primaryColor: #e93b40;
---smartrr-secondaryColor: #ffffff;
---smartrr-mainContentBackgroundColor: #ffffff;
---smartrr-mainContentBorderRadius: 0px;
---smartrr-mainContentBorderColor: #000000;
---smartrr-mainContentBorderWidth: 2px;
---smartrr-bodyBackgroundColor: #ffffff;
---smartrr-bodyTextFontFamily: Montserrat;
---smartrr-bodyTextFontWeight: bold;
---smartrr-bodyTextColor: #202223;
---smartrr-bodyTextFontSize: 14;
---smartrr-accentTextFontFamily: Arial;
---smartrr-accentTextFontWeight: bold;
---smartrr-accentTextColor: #313943;
---smartrr-accentTextFontSize: 14;
---smartrr-heading1TextFontFamily: Arial;
---smartrr-heading1TextFontSize: 22px;
---smartrr-heading1FontWeight: bolder;
---smartrr-heading1TextColor: #e93b40;
---smartrr-heading2TextFontFamily: Montserrat;
---smartrr-heading2TextFontSize: 13px;
---smartrr-heading2FontWeight: normal;
---smartrr-heading2TextColor: #202223;
---smartrr-heading3TextFontFamily: Montserrat;
---smartrr-heading3TextFontSize: 16px;
---smartrr-heading3FontWeight: normal;
---smartrr-heading3TextColor: #202223;
---smartrr-heading4TextFontFamily: Arial;
---smartrr-heading4TextFontSize: 14px;
---smartrr-heading4FontWeight: normal;
---smartrr-heading4TextColor: #000000;
---smartrr-buttonBackgroundColor: #000000;
---smartrr-buttonTextColor: #FFFFFF;
---smartrr-buttonFontFamily: Helvetica;
---smartrr-buttonFontSize: 14px;
---smartrr-buttonFontWeight: bold;
---smartrr-buttonBorderRadius: 0px;
---smartrr-dropdownBackgroundColor: #000000;
---smartrr-dropdownTextColor: #ffffff;
---smartrr-dropdownFontFamily: Helvetica;
---smartrr-dropdownFontSize: 14px;
---smartrr-dropdownFontWeight: normal;
---smartrr-dropdownBorderRadius: 0px;
---smartrr-buttonBorderColor: #000000;
---smartrr-buttonBorderWidth: 1px;
---smartrr-dropdownBorderColor: #000000;
---smartrr-dropdownBorderWidth: 1px;
---smartrr-smallProductImageBorderRadius: 14px;
---smartrr-mediumProductImageBorderRadius: 16px;
---smartrr-largeProductImageBorderRadius: 18px;
---smartrr-largestProductImageBorderRadius: 20px;
 }
 
 </style>
