@@ -946,10 +946,10 @@ cart-drawer .add-membership-cart .horizontal-product .heading-box {
 }
 cart-drawer .add-membership-cart .horizontal-product ul li {
   color: #000;
-  font-size: 13.397px;
+  font-size: 16px;
+  line-height: 28.5px;
   font-style: normal;
   font-weight: 500;
-  line-height: 25.007px;
   background-image: url(https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576);
   background-size: 13px;
   background-position: left center;
@@ -1196,7 +1196,7 @@ cart-drawer .cart-drawer__line-items line-item .price-with-quantity-container .p
 cart-drawer .cart-drawer__line-items line-item .subscribe-and-save-container {
   color: #000;
   font-family: Inter;
-  font-size: 11.742px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -1254,14 +1254,14 @@ cart-drawer .buy-buttons--compact {
 }
 cart-drawer .cart-note-footer {
   margin-top: 12px;
-  color: #454545;
-  font-size: 10.838px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.217px;
   text-transform: uppercase;
   text-align: center;
+  color: #454545;
+  font-size: 15.007px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.3px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -2222,13 +2222,13 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
   gap: 11px;
 }
 .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 @media only screen and (max-width: 768px) {
   .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
   }
 }
 .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon img, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-icon img {
@@ -2240,10 +2240,11 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text {
   font-weight: 500;
   line-height: normal;
+  font-size: 15px;
 }
 @media only screen and (max-width: 768px) {
   .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text {
-    font-size: 13.465px;
+    font-size: 15px;
   }
 }
 .template--product .shopify-section--main-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text br, .shopify-section--featured-product .product-info .product-info__benefits-list .product-info__benefit .product-info__benefit-text br {
@@ -2430,7 +2431,8 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .template--product .shopify-section--main-product .product__icon__row .product__icon__container .product__icon__text, .shopify-section--featured-product .product__icon__row .product__icon__container .product__icon__text {
   color: #000;
   text-align: center;
-  font-size: 11.67px;
+  font-size: 15px;
+  font-family: "United Sans SemiCond";
   font-style: normal;
   font-weight: 700;
   line-height: 100%;

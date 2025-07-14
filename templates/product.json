@@ -92,16 +92,16 @@
           "type": "icon_with_text",
           "settings": {
             "image1": "shopify://shop_images/wired-outline-434-prize-padge-ribbon-hover-pinch_1.svg",
-            "icon_size1": 35,
+            "icon_size1": 40,
             "title1": "60 DAY\nGUARANTEE",
             "image2": "shopify://shop_images/wired-outline-314-three-avatars-icon-calm-hover-nodding_1.svg",
-            "icon_size2": 35,
+            "icon_size2": 40,
             "title12": "OVER 400K \nCUSTOMERS",
             "image3": "shopify://shop_images/wired-outline-757-delivery-hover-pinch_1.svg",
-            "icon_size3": 35,
+            "icon_size3": 40,
             "title3": "SAME DAY\nSHIPPING",
             "image4": "shopify://shop_images/wired-outline-1774-strength-hover-pinch_1.svg",
-            "icon_size4": 35,
+            "icon_size4": 40,
             "title4": "CERTIFIED\nSUPPLEMENTS"
           }
         },

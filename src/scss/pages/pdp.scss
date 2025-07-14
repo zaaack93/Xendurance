@@ -449,11 +449,11 @@
                 align-items: center;
                 gap: 11px;
                 .product-info__benefit-icon{
-                    width: 35px;
-                    height: 35px;
+                    width: 40px;
+                    height: 40px;
                     @media only screen and (max-width: 768px) {
-                        width: 32px;
-                        height: 32px;
+                        width: 40px;
+                        height: 40px;
                     }
                     img{
                         width: 100%;
@@ -464,8 +464,9 @@
                 .product-info__benefit-text{
                     font-weight: 500;
                     line-height: normal;
+                    font-size: 15px;
                     @media only screen and (max-width: 768px) {
-                        font-size: 13.465px;
+                        font-size: 15px;
                     }
                     br{
                         display: none;
@@ -704,7 +705,8 @@
             .product__icon__text{
                 color: #000;
                 text-align: center;
-                font-size: 11.67px;
+                font-size: 15px;
+                font-family: "United Sans SemiCond";
                 font-style: normal;
                 font-weight: 700;
                 line-height: 100%;
