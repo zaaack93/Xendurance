@@ -198,7 +198,9 @@
         {%- if section.settings.show_checkout_button -%}
           {%- render 'button', type: 'submit', content: checkout_label, icon: 'picto-lock', name: 'checkout', size: 'xl' -%}
         {%- endif -%}
-        <p class="cart-note-footer">SAME DAY SHIPPING  |  FROM SCOTTSDALE, AZ.</p>
+        {% if settings.footer_note != blank %}
+          <p class="cart-note-footer">{{settings.footer_note}}</p>
+        {% endif %}
       </form>
       
     </div>

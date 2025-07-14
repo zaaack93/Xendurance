@@ -799,6 +799,44 @@
         "label": "Free shipping minimum amount",
         "info": "Indicate the value in your store main currency.",
         "default": 50
+      },
+      {
+        "type": "header",
+        "content": "Membership text content"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_membership_banner",
+        "label": "Enable membership banner",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "membership_title",
+        "label": "Membership title",
+        "default": "TEAM XND MEMBERSHIP"
+      },
+      {
+        "type": "image_picker",
+        "id": "membership_image",
+        "label": "Image"
+      },
+      {
+        "type": "richtext",
+        "id": "membership_benefits",
+        "label": "Membership benefits"
+      },
+      {
+        "type": "text",
+        "id": "membership_button_text",
+        "label": "Button text",
+        "default": "BECOME A MEMBER & SAVE"
+      },
+      {
+        "type":"text",
+        "id": "footer_note",
+        "label": "Footer note",
+        "default": "SAME DAY SHIPPING  |  FROM SCOTTSDALE, AZ."
       }
     ]
   },
