@@ -856,6 +856,13 @@ cart-drawer .drawer::part(footer) {
   padding-top: 0px;
   border-top: none;
 }
+cart-drawer .total-footer-top .uppercase {
+  text-transform: uppercase;
+}
+cart-drawer .total-footer-top span {
+  font-size: 15px;
+  line-height: normal;
+}
 @media only screen and (max-width: 700px) {
   cart-drawer {
     padding: 0px !important;
@@ -888,10 +895,10 @@ cart-drawer .cart-drawer__top p {
 cart-drawer .subscription--price {
   font-style: italic;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: normal;
   color: #E93B40;
-  margin-top: 7px;
+  margin-top: 0px;
 }
 cart-drawer .subscription--price.with-saving {
   display: none;
@@ -902,9 +909,10 @@ cart-drawer .total-footer-section {
   -webkit-margin-end: calc(-1 * var(--container-outer-width));
           margin-inline-end: calc(-1 * var(--container-outer-width));
   padding: var(--drawer-footer-padding);
-  padding-top: 18px;
+  padding-top: 12px;
   padding-bottom: 0px;
   border-top: 1px solid #D6D6D6;
+  row-gap: 8px;
 }
 cart-drawer .add-membership-cart {
   position: relative;
@@ -917,26 +925,27 @@ cart-drawer .add-membership-cart::after {
   background-color: #fff;
   top: 0;
   left: -14px;
+  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 cart-drawer .add-membership-cart .horizontal-product {
   z-index: 9;
   position: relative;
-  padding-inline: 16px 12px;
-  padding-block: 16px 13px;
-  border-radius: 8.931px;
-  border: 0.893px solid #D6D6D6;
-  background: #F6F6F6;
+  padding-inline: 0px;
+  padding-block: 16px 0px;
   flex-wrap: wrap;
   -moz-column-gap: 18px;
        column-gap: 18px;
-  row-gap: 14px;
+  row-gap: 12px;
+  background: transparent;
+  align-items: flex-start;
 }
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__image {
-  --horizontal-product-image-size: 90px;
+  --horizontal-product-image-size: 93px;
+  aspect-ratio: 1;
 }
 cart-drawer .add-membership-cart .horizontal-product .heading-box {
   color: #000;
-  font-size: 19.649px;
+  font-size: 23.704px;
   font-family: "United Sans SemiCond";
   font-style: normal;
   font-weight: 700;
@@ -946,16 +955,16 @@ cart-drawer .add-membership-cart .horizontal-product .heading-box {
 }
 cart-drawer .add-membership-cart .horizontal-product ul li {
   color: #000;
-  font-size: 16px;
-  line-height: 28.5px;
-  font-style: normal;
-  font-weight: 500;
   background-image: url(https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576);
   background-size: 13px;
   background-position: left center;
   padding-left: 22px;
   background-repeat: no-repeat;
   list-style: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21.5px;
 }
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__cta {
   width: 100%;
@@ -963,14 +972,17 @@ cart-drawer .add-membership-cart .horizontal-product .horizontal-product__cta {
 }
 cart-drawer .add-membership-cart .horizontal-product .horizontal-product__cta button[type=submit] {
   width: 100%;
-  font-size: 15.183px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.304px;
   padding-block: 14px;
   border-radius: 8.931px;
   background: var(--Xendurance-Midnight, #1A191C);
+  font-family: "United Sans SemiCond";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  padding-block: 15px 13px;
 }
 cart-drawer #referrerInjection {
   padding-bottom: var(--spacing-6);
@@ -1247,6 +1259,13 @@ cart-drawer .cart-drawer__line-items line-item .subscribe-and-save-container inp
 }
 cart-drawer button[type=submit] {
   border-radius: 9.032px;
+  font-family: "United Sans SemiCond";
+  font-size: 18.064px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.361px;
+  padding-block: 16.5px 15.5px;
 }
 cart-drawer .buy-buttons--compact {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1256,12 +1275,13 @@ cart-drawer .cart-note-footer {
   margin-top: 12px;
   text-transform: uppercase;
   text-align: center;
-  color: #454545;
-  font-size: 15.007px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  color: #454545;
 }
 
 @media only screen and (min-width: 700px) {

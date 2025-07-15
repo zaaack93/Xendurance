@@ -1223,6 +1223,11 @@ scroll-carousel {
   display: flex;
   position: relative;
 }
+/* @media screen and (max-width: 749px) {
+  .drawer::part(content) {
+    clip-path: inset(0px round 0px) !important;
+  }
+} */
 
 .drawer::part(header) {
   padding: var(--drawer-header-padding);
@@ -1242,6 +1247,7 @@ scroll-carousel {
 .drawer::part(footer) {
   padding: var(--drawer-footer-padding);
   padding-inline: 14px 19px;
+  padding-bottom: 14px;
   border-block-start: 1px solid rgb(var(--border-color));
   margin-block-start: auto;
   position: relative;
