@@ -1973,6 +1973,9 @@ form-klaviyo-newsletter .form-klaviyo-newsletter .form_submit_container .form_on
 .template--product .shopify-section--main-product .product.cart-has-membership .offer, .shopify-section--featured-product .product.cart-has-membership .offer {
   display: none;
 }
+.template--product .shopify-section--main-product .smartrr-purchase-options, .shopify-section--featured-product .smartrr-purchase-options {
+  display: none;
+}
 .template--product .shopify-section--main-product .smartrr-purchase-options .smartrr-title, .shopify-section--featured-product .smartrr-purchase-options .smartrr-title {
   font-weight: 600;
   font-size: 20px;

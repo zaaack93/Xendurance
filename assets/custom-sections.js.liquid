@@ -411,6 +411,10 @@ class PurchaseOptions extends HTMLElement {
       }
 
     });
+
+    // Show the element after all processing is complete
+    // Remove the CSS hide rule by setting display to block
+    this.style.display = 'block';
   }
 }
 
